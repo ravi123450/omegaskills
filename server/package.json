@@ -1,0 +1,35 @@
+{
+  "name": "omega-auth-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "schema": "node -e \"import('fs').then(fs=>fs.promises.readFile('./schema.sql','utf8')).then(sql=>{import('sqlite3').then(sqlite=>{sqlite.default.verbose(); const db=new (sqlite.default).Database('data.db'); db.exec(sql,()=>{console.log('Schema migrated.'); db.close();});});});\"",
+    "gen:papers": "node generate_papers.js",
+    "import:papers": "node import_papers.js",
+    "seed:users": "node seed_users.js",
+    "alter:attempts": "node alter_attempts.js",
+    "schema:alter": "node alter.js",
+    "reset": "node -e \"import('fs').then(fs=>{try{fs.unlinkSync('data.db');console.log('DB removed');}catch(e){console.log('DB not found');}})\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+   },
+  "description": "Run seed and start.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+
+
+}

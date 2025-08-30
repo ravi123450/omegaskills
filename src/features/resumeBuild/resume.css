@@ -1,0 +1,144 @@
+:root{
+  --accent:#1e40af;              /* template accent color */
+  --resume-margin:24px;           /* user controlled */
+  --resume-lineheight:1.4;        /* user controlled */
+  --card-bg:#ffffff;
+  --card-shadow:0 6px 18px rgba(0,0,0,.08);
+  --muted:#64748b;
+}
+
+.app{
+  height:100vh;
+  display:grid;
+  grid-template-columns: 520px 1fr;
+  gap:0;
+}
+
+/* LEFT PANEL (form) */
+.panel{
+  background:#fff;
+  overflow:auto;
+  padding:20px 22px;
+  border-right:1px solid #e5e7eb;
+}
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px;
+}
+.h1{
+  font-size:20px;
+  font-weight:700;
+  margin:0;
+}
+.small{
+  font-size:12px;color:orange
+}
+.toolbar{ display:flex; gap:8px; }
+.btn{
+  appearance:none;border:1px solid #e2e8f0; background:#f8fafc;
+  border-radius:10px; padding:8px 10px; font-size:13px; cursor:pointer;
+}
+.btn.primary{ background:#0f172a;color:#fff;border-color:#0f172a }
+.btn.icon{ display:inline-flex; gap:6px; align-items:center }
+.grid2{ display:grid; grid-template-columns:1fr 1fr; gap:10px }
+.field{ margin-bottom:10px }
+.label{ font-size:12px; font-weight:600; color:orange; margin-bottom:4px; display:block }
+.input, .select, .textarea{
+  width:100%; border:1px solid #cbd5e1; border-radius:10px;
+  padding:10px 12px; font-size:14px; background:#fff;
+}
+.textarea{ resize:vertical }
+.hint{ font-size:12px; color:#64748b; margin-top:2px }
+
+/* RIGHT PANEL (preview) */
+.previewWrap{
+  padding:16px; overflow:auto; background:#f1f5f9;
+}
+.previewCard{
+  background:var(--card-bg); border-radius:14px; box-shadow:var(--card-shadow);
+  overflow:hidden; padding:0; margin:0 auto; width:794px; /* A4 width @ 96dpi approx */
+}
+.previewHeader{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 6px 12px 6px;
+}
+.previewTitle{ font-size:14px; color:#475569 }
+.previewControls{ display:flex; gap:8px }
+
+/* Resume page canvas */
+.resumePage{
+  background:#fff; width:fit; min-height:1123px; /* A4 height */
+  padding: var(--resume-margin);
+  line-height: var(--resume-lineheight);
+  color:#0f172a;
+  font-size: 14px;
+}
+
+/* Template common */
+.row{ display:flex; gap:14px }
+.col{ display:flex; flex-direction:column; gap:12px }
+.section{ margin-top:10px }
+.sectionTitle{
+  font-size:16px; font-weight:700; margin:0 0 6px 0;
+  color:var(--accent)
+}
+.hr{ height:1px; background:#e5e7eb; margin:10px 0 }
+
+/* Pills for Skills */
+.pills{ display:flex; flex-wrap:wrap; gap:6px }
+.pill{
+  border:1px solid #e2e8f0; padding:4px 8px; border-radius:999px; font-size:12px;
+  background:#f8fafc;
+}
+
+/* Template cards in gallery */
+.gallery{
+  position:fixed; inset:0; background:rgba(0,0,0,.45); display:flex; align-items:stretch; justify-content:flex-end; z-index:20;
+}
+.galleryPanel{
+  background:#fff; width:min(1100px, 100%); padding:16px; overflow:auto
+}
+.templatesGrid{
+  display:grid; grid-template-columns: repeat(3, minmax(320px, 1fr)); gap:12px;
+}
+.card{
+  background:#fff; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden;
+}
+.cardTop{ height:4px; background:var(--accent) }
+.cardBody{ padding:10px }
+.cardName{ font-weight:600; font-size:13px; color:#334155 }
+.cardPreview{
+  border:1px solid #e5e7eb; border-radius:8px; overflow:hidden; background:#fff; height:240px;
+}
+.scaleMini{
+  transform: scale(.6); transform-origin: top left; width: 1200px;
+}
+
+/* Header styles for sections */
+.hBar{ display:flex; align-items:center; gap:8px }
+.hBarDot{ width:6px; height:16px; background:var(--accent); border-radius:4px }
+.hUnderline{ border-bottom:2px solid var(--accent); padding-bottom:2px; display:inline-block }
+.hPill{ display:inline-block; background:rgba(30,64,175,.08); color:var(--accent); border-radius:999px; padding:2px 8px; font-weight:700; font-size:12px }
+.hBlock{ background:rgba(30,64,175,.06); color:var(--accent); padding:6px 8px; border-radius:8px; font-weight:700 }
+
+/* Simple timeline bullets */
+.timeline ul{ list-style:none; margin:0; padding:0 }
+.timeline li{ position:relative; padding-left:16px; margin:8px 0 }
+.timeline li::before{
+  content:""; position:absolute; left:4px; top:6px; width:6px; height:6px; border-radius:999px; background:var(--accent);
+}
+
+/* Photo header */
+.photo{
+  width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid var(--accent)
+}
+
+/* Sidebar icons (use emoji to avoid icon libs) */
+.sideItem{ display:flex; gap:8px; align-items:flex-start }
+.sideIcon{ font-size:16px; width:18px; text-align:center; margin-top:2px }
+
+/* tiny helpers */
+.right{ text-align:right }
+.m0{ margin:0 }

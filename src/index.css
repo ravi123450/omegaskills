@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+/* ---- Autofill: keep dark bg + light text on Chrome/Edge/Firefox ---- */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #e2e8f0; /* slate-300/100 */
+  caret-color: #e2e8f0;
+  transition: background-color 9999s ease-out, color 9999s ease-out;
+  box-shadow: 0 0 0px 1000px rgba(2, 6, 23, 0.6) inset; /* slate-950 ~60% */
+  -webkit-box-shadow: 0 0 0px 1000px rgba(2, 6, 23, 0.6) inset;
+}
+
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+  box-shadow: 0 0 0px 1000px rgba(2, 6, 23, 0.6) inset;
+  -moz-text-fill-color: #e2e8f0;
+  caret-color: #e2e8f0;
+}
+
+/* optional: nicer placeholder on dark */
+::placeholder { color: rgba(226, 232, 240, 0.6); }
+/* src/index.css */
+html { scroll-behavior: smooth; }
