@@ -1,6 +1,6 @@
 // src/lib/api.js
 // One source of truth for API origin
-const API_ORIGIN = (import.meta.env.VITE_API_URL || "http://localhost:4000").replace(/\/$/, "");
+const API_ORIGIN = (import.meta.env.VITE_API_URL || "https://omegabackend-production.up.railway.app").replace(/\/$/, "");
 const BASE = `${API_ORIGIN}/api`;
 
 /* -------------------------- core fetch helper -------------------------- */
