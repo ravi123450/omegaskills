@@ -1,11 +1,9 @@
-// src/pages/Dashboard.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { getDashboard, myAttempts, getCourses, getExams } from "@/lib/api";
-// If you have an auth context, this will work; otherwise greeting falls back.
 import { useAuth } from "@/context/AuthProvider";
 
 /* ---------- Small UI atoms (styled like About.jsx) ---------- */
@@ -44,32 +42,22 @@ function Pill({ children, tone = "default" }) {
 
 /* ---------- Page ---------- */
 export default function Dashboard({ token }) {
-  // Optional auth (for the greeting)
   let displayName = "";
   try {
     const auth = typeof useAuth === "function" ? useAuth() : null;
     const session = auth?.auth ?? auth ?? {};
     displayName =
-      session?.user?.name ??
-      session?.name ??
-      session?.user?.fullName ??
-      session?.profile?.name ??
-      (session?.user?.email ? session.user.email.split("@")[0] : "") ??
-      "";
-  } catch {
-    // ignore — we'll keep displayName as ""
-  }
+      session?.user?.name ?? session?.name ?? session?.user?.fullName ?? 
+      session?.profile?.name ?? (session?.user?.email ? session.user.email.split("@")[0] : "") ?? "";
+  } catch {}
 
-  // State (kept from your current working version)
   const [weak, setWeak] = useState([]);
   const [sug, setSug] = useState([]);
   const [hist, setHist] = useState([]);
-
   const [courses, setCourses] = useState([]);
-  const [entitled, setEntitled] = useState({}); // courseId -> boolean
+  const [entitled, setEntitled] = useState({});
   const [loadingCourses, setLoadingCourses] = useState(true);
 
-  // Attempts pagination
   const PER_PAGE = 10;
   const [page, setPage] = useState(0);
 
@@ -114,10 +102,10 @@ export default function Dashboard({ token }) {
         await Promise.all(
           safe.map(async (c) => {
             try {
-              await getExams(token, c.id); // 200 => has access
+              await getExams(token, c.id); 
               ent[c.id] = true;
             } catch {
-              ent[c.id] = false; // 403 => locked
+              ent[c.id] = false;
             }
           })
         );
@@ -137,12 +125,22 @@ export default function Dashboard({ token }) {
     if (page > totalPages - 1) setPage(totalPages - 1);
   }, [hist, page]);
 
-  /* ---------- Helpers ---------- */
   const friendlyDate = (ms) => {
-    if (!ms) return "";
-    const d = new Date(ms);
-    return d.toLocaleString();
-  };
+  if (!ms) return ""; // Return empty string if no date
+  const date = new Date(parseInt(ms, 10)); // Ensure the value is treated as an integer
+  
+  // Check if the date is valid
+  if (isNaN(date.getTime())) {
+    return "Invalid Date"; // Fallback if the date is invalid
+  }
+
+  // Return formatted date
+  return date.toLocaleString(); // You can change this to your preferred format
+};
+
+  
+ 
+
 
   const titleCase = (s = "") => s.replace(/\b\w/g, (c) => c.toUpperCase());
 
@@ -164,7 +162,6 @@ export default function Dashboard({ token }) {
   /* ---------- UI ---------- */
   return (
     <div className="scroll-smooth bg-slate-950 text-white selection:bg-orange-300 selection:text-slate-900">
-      {/* soft background accents */}
       <div
         aria-hidden
         className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
@@ -209,25 +206,28 @@ export default function Dashboard({ token }) {
                 <>
                   <div className="mt-2 divide-y divide-slate-800/60">
                     {pagedAttempts.map((h) => (
-                      <div
-                        key={h.id}
-                        className="flex items-center justify-between py-3"
-                      >
-                        <div className="flex items-start gap-3">
-                          <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-md bg-orange-600/20 px-2 text-sm font-semibold text-orange-300">
-                            {Math.max(0, h.score ?? 0)}
-                          </span>
-                          <div>
-                            <div className="font-medium">{h.exam_title}</div>
-                            <div className="text-xs text-slate-400">
-                              {friendlyDate(h.started_at)}
+                      // Only show block if score is valid
+                      h.score !== null && h.score !== undefined && h.score >= 0 && (
+                        <div
+                          key={h.id}
+                          className="flex items-center justify-between py-3"
+                        >
+                          <div className="flex items-start gap-3">
+                            <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-md bg-orange-600/20 px-2 text-sm font-semibold text-orange-300">
+                              {Math.max(0, h.score)}
+                            </span>
+                            <div>
+                              <div className="font-medium">{h.exam_title}</div>
+                              <div className="text-xs text-slate-400">
+                                {friendlyDate(h.started_at)} 
+                              </div>
                             </div>
                           </div>
+                          <div className="text-xs text-slate-400">
+                            {h.score !== null && h.score !== undefined && h.score >= 0 ? `${h.score} / 100` : ""}
+                          </div>
                         </div>
-                        <div className="text-xs text-slate-400">
-                          {h.score ?? 0} / 100
-                        </div>
-                      </div>
+                      )
                     ))}
                   </div>
 
@@ -303,7 +303,7 @@ export default function Dashboard({ token }) {
                                 : "bad"
                             }
                           >
-                            {w.accuracy ?? 0}%
+                            {w.accuracy ?? 0}% 
                           </Pill>
                         </div>
                         <div className="mt-2 font-medium">

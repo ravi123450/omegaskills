@@ -1,0 +1,97 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?",mcq,"[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+2,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?",mcq,"[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+3,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:",mcq,"[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+4,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?",mcq,"[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+5,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?",mcq,"[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+6,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:",mcq,"[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+7,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:",mcq,"[""planning"",""plans"",""planned"",""plan""]",1,Use context to choose the best fit.,Cloze Test,mixed
+8,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:",mcq,"[""arriving"",""arrive"",""arrived"",""arrives""]",3,Use context to choose the best fit.,Cloze Test,mixed
+9,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:",mcq,"[""access"",""accessing"",""accessed"",""accessible""]",3,Use context to choose the best fit.,Cloze Test,mixed
+10,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:",mcq,"[""contained"",""containing"",""contain"",""contains""]",3,Use context to choose the best fit.,Cloze Test,mixed
+11,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:",mcq,"[""require"",""required"",""requiring"",""requires""]",0,Use context to choose the best fit.,Cloze Test,mixed
+12,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:",mcq,"[""review"",""reviews"",""reviewed"",""reviewing""]",0,Use context to choose the best fit.,Cloze Test,mixed
+13,She insisted _____ paying the bill.,mcq,"[""on"",""to"",""at"",""for""]",0,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+14,The train arrives _____ 7 a.m.,mcq,"[""on"",""at"",""by"",""in""]",1,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+15,Choose the synonym of “eloquent”.,mcq,"[""succinct"",""massive"",""persuasive"",""tedious""]",2,“persuasive” means nearly the same as “eloquent”.,Vocabulary,mixed
+16,Choose the synonym of “abundant”.,mcq,"[""plentiful"",""elusive"",""colorful"",""brisk""]",0,“plentiful” means nearly the same as “abundant”.,Vocabulary,mixed
+17,Choose the synonym of “diligent”.,mcq,"[""ardent"",""boisterous"",""meagre"",""hardworking""]",3,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+18,Choose the synonym of “frugal”.,mcq,"[""swift"",""trivial"",""massive"",""thrifty""]",3,“thrifty” means nearly the same as “frugal”.,Vocabulary,mixed
+19,Choose the synonym of “vivid”.,mcq,"[""tedious"",""infrequent"",""clear"",""colorful""]",2,“clear” means nearly the same as “vivid”.,Vocabulary,mixed
+20,Choose the synonym of “diligent”.,mcq,"[""meagre"",""docile"",""infrequent"",""hardworking""]",3,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+21,Choose the antonym of “prudent”.,mcq,"[""succinct"",""infrequent"",""reckless"",""sturdy""]",2,“reckless” is the opposite of “prudent”.,Vocabulary,mixed
+22,Choose the antonym of “frugal”.,mcq,"[""infrequent"",""extravagant"",""succinct"",""peculiar""]",1,“extravagant” is the opposite of “frugal”.,Vocabulary,mixed
+23,Choose the antonym of “prudent”.,mcq,"[""cumbersome"",""tedious"",""brisk"",""reckless""]",3,“reckless” is the opposite of “prudent”.,Vocabulary,mixed
+24,Choose the antonym of “diligent”.,mcq,"[""docile"",""luminous"",""lazy"",""ardent""]",2,“lazy” is the opposite of “diligent”.,Vocabulary,mixed
+25,One-word substitute: A speech delivered without preparation,mcq,"[""Impromptu"",""Pioneer"",""Oligarchy"",""Bibliophile""]",0,Impromptu fits the description.,One-word Substitutes,mixed
+26,One-word substitute: One who does something for the first time,mcq,"[""Pioneer"",""Panacea"",""Impromptu"",""Oligarchy""]",0,Pioneer fits the description.,One-word Substitutes,mixed
+27,Meaning of the idiom: “Once in a blue moon”,mcq,"[""Reveal a secret"",""Undecided"",""Make people feel more comfortable"",""Very rarely""]",3,“Once in a blue moon” means “Very rarely”.,Idioms & Phrases,mixed
+28,Meaning of the idiom: “Costs an arm and a leg”,mcq,"[""Avoid the main topic"",""In brief"",""Very expensive"",""Go to sleep""]",2,“Costs an arm and a leg” means “Very expensive”.,Idioms & Phrases,mixed
+29,I _____ my work by 6 PM yesterday.,mcq,"[""finish"",""finishes"",""finishing"",""finished""]",3,Correct tense is “finished”.,Grammar,mixed
+30,He _____ the project next week.,mcq,"[""is starting"",""will start"",""starts"",""has started""]",1,Correct tense is “will start”.,Grammar,mixed
+31,They _____ cricket when it started to rain.,mcq,"[""have played"",""played"",""were playing"",""are playing""]",2,Correct tense is “were playing”.,Grammar,mixed
+32,I _____ my work by 6 PM yesterday.,mcq,"[""finish"",""finished"",""finishing"",""finishes""]",1,Correct tense is “finished”.,Grammar,mixed
+33,We _____ dinner when he arrived.,mcq,"[""were having"",""had"",""are having"",""have had""]",0,Correct tense is “were having”.,Grammar,mixed
+34,He _____ the project next week.,mcq,"[""will start"",""has started"",""is starting"",""starts""]",0,Correct tense is “will start”.,Grammar,mixed
+35,They _____ cricket when it started to rain.,mcq,"[""were playing"",""have played"",""played"",""are playing""]",0,Correct tense is “were playing”.,Grammar,mixed
+36,Choose the grammatically correct sentence:,mcq,"[""Each of the boys has a pen."",""each of the boys has a pen."",""Each  of the boys have a pen."",""Each of the boys have a pen.""]",0,Correct form: “Each of the boys has a pen.”.,Sentence Correction,mixed
+37,Choose the grammatically correct sentence:,mcq,"[""The  sceneries here are beautiful."",""the scenery here is beautiful."",""The scenery here is beautiful."",""The sceneries here are beautiful.""]",2,Correct form: “The scenery here is beautiful.”.,Sentence Correction,mixed
+38,Choose the grammatically correct sentence:,mcq,"[""The  sceneries here are beautiful."",""The sceneries here are beautiful."",""The scenery here is beautiful."",""the scenery here is beautiful.""]",2,Correct form: “The scenery here is beautiful.”.,Sentence Correction,mixed
+39,Choose the grammatically correct sentence:,mcq,"[""Each of the boys have a pen."",""each of the boys has a pen."",""Each  of the boys have a pen."",""Each of the boys has a pen.""]",3,Correct form: “Each of the boys has a pen.”.,Sentence Correction,mixed
+40,Choose the grammatically correct sentence:,mcq,"[""He  is living here since 2010."",""He has been living here since 2010."",""He is living here since 2010."",""he has been living here since 2010.""]",1,Correct form: “He has been living here since 2010.”.,Sentence Correction,mixed
+41,Choose the grammatically correct sentence:,mcq,"[""he is senior to me."",""He is senior than me."",""He  is senior than me."",""He is senior to me.""]",3,Correct form: “He is senior to me.”.,Sentence Correction,mixed
+42,Choose the grammatically correct sentence:,mcq,"[""The  sceneries here are beautiful."",""the scenery here is beautiful."",""The sceneries here are beautiful."",""The scenery here is beautiful.""]",3,Correct form: “The scenery here is beautiful.”.,Sentence Correction,mixed
+43,"Arrange the parts to form a coherent paragraph:
+A. The festival drew visitors from many cities.
+D. The park was decorated with lights and banners.
+C. Local musicians performed throughout the day.
+B. Stalls offered regional snacks and handicrafts.",mcq,"[""CABD"",""ACBD"",""ABCD"",""BACD""]",2,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+44,"Arrange the parts to form a coherent paragraph:
+B. Stalls offered regional snacks and handicrafts.
+A. The festival drew visitors from many cities.
+D. The park was decorated with lights and banners.
+C. Local musicians performed throughout the day.",mcq,"[""ABCD"",""ACBD"",""CABD"",""BACD""]",0,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+45,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?",mcq,"[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+46,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?",mcq,"[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+47,She insisted _____ paying the bill.,mcq,"[""to"",""for"",""at"",""on""]",3,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+48,The train arrives _____ 7 a.m.,mcq,"[""by"",""at"",""on"",""in""]",1,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+49,She insisted _____ paying the bill.,mcq,"[""to"",""at"",""for"",""on""]",3,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+50,He is known _____ his honesty.,mcq,"[""to"",""by"",""with"",""for""]",3,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed

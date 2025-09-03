@@ -21,6 +21,7 @@ import NotFound from "@/pages/NotFound";
 import AtsScanner from "@/features/ats/AtsScanner"; // ensure file name casing
 import ResumeBuilder from "@/features/resumeBuild/ResumeBuilder";
 import LiveWorkshops from "../pages/Programs/Workshops/LiveWorkshops"
+import Roadmap from "../components/1";
 
 
 
@@ -28,8 +29,11 @@ import LiveWorkshops from "../pages/Programs/Workshops/LiveWorkshops"
 import Login from "@/pages/Login/Login";
 import Signup from "@/pages/Login/Signup";
 import AccountCreated from "@/pages/Login/AccountCreated";
-import ForgotPassword from "@/pages/Login/ForgotPassword";
-import ResetPassword from "@/pages/Login/ResetPassword";
+import ForgotPassword from "../pages/auth/ForgotPassword";
+import ResetPassword from "../pages/auth/ResetPassword";
+import VerifyLoginOtp from "../pages/auth/VerifyLoginOtp"
+
+
 
 // Programs – courses
 import LearnCourses from "@/pages/Programs/Courses/LearnCourses";
@@ -114,6 +118,10 @@ const router = createBrowserRouter(
         // Forgot / Reset
         { path: "/forgot-password", element: <ForgotPassword /> },
         { path: "/reset-password/:token", element: <ResetPassword /> },
+        // in your router setup
+        { path:"/forgot-password", element :<ForgotPassword /> },
+        { path:"/reset-password" ,element:<ResetPassword />} ,
+        {path:"/verify-otp" ,element:<VerifyLoginOtp />},
 
         // Programs (granular public pages)
         { path: "/courses/learn", element: <LearnCourses /> },
@@ -153,6 +161,7 @@ const router = createBrowserRouter(
             { path: "/exam", element: <Exam /> },
             { path: "/exam/:id", element: <Exam /> },
             { path: "/result", element: <Result /> },
+            {path: "/1",element:<Roadmap/>},
           ],
         },
 

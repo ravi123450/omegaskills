@@ -1,0 +1,100 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?",mcq,"[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+2,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?",mcq,"[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+3,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:",mcq,"[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+4,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:",mcq,"[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+5,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?",mcq,"[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Answer follows directly from the passage.,Reading Comprehension,mixed
+6,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?",mcq,"[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+7,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:",mcq,"[""flown"",""flew"",""flows"",""fly""]",2,Use context to choose the best fit.,Cloze Test,mixed
+8,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:",mcq,"[""order"",""orders"",""ordering"",""ordered""]",3,Use context to choose the best fit.,Cloze Test,mixed
+9,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:",mcq,"[""precis"",""precise"",""precision"",""precisely""]",1,Use context to choose the best fit.,Cloze Test,mixed
+10,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:",mcq,"[""lands on"",""landing"",""lend"",""lands""]",3,Use context to choose the best fit.,Cloze Test,mixed
+11,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:",mcq,"[""hone in"",""honed"",""hone up"",""hone""]",3,Use context to choose the best fit.,Cloze Test,mixed
+12,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:",mcq,"[""service"",""serve"",""served"",""serves""]",1,Use context to choose the best fit.,Cloze Test,mixed
+13,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:",mcq,"[""affect"",""effect"",""effective"",""effects""]",1,Use context to choose the best fit.,Cloze Test,mixed
+14,The train arrives _____ 7 a.m.,mcq,"[""by"",""at"",""in"",""on""]",1,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+15,Choose the synonym of “tranquil”.,mcq,"[""calm"",""obsolete"",""elusive"",""docile""]",0,“calm” means nearly the same as “tranquil”.,Vocabulary,mixed
+16,Choose the synonym of “frugal”.,mcq,"[""ardent"",""tedious"",""thrifty"",""colorful""]",2,“thrifty” means nearly the same as “frugal”.,Vocabulary,mixed
+17,Choose the synonym of “candid”.,mcq,"[""obsolete"",""frank"",""tedious"",""cumbersome""]",1,“frank” means nearly the same as “candid”.,Vocabulary,mixed
+18,Choose the synonym of “benevolent”.,mcq,"[""peculiar"",""ardent"",""kind"",""meagre""]",2,“kind” means nearly the same as “benevolent”.,Vocabulary,mixed
+19,Choose the synonym of “diligent”.,mcq,"[""hardworking"",""luminous"",""peculiar"",""colorful""]",0,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+20,Choose the synonym of “prudent”.,mcq,"[""ardent"",""colorful"",""careful"",""infrequent""]",2,“careful” means nearly the same as “prudent”.,Vocabulary,mixed
+21,Choose the antonym of “impartial”.,mcq,"[""brisk"",""biased"",""swift"",""succinct""]",1,“biased” is the opposite of “impartial”.,Vocabulary,mixed
+22,Choose the antonym of “concise”.,mcq,"[""verbose"",""meagre"",""tedious"",""elusive""]",0,“verbose” is the opposite of “concise”.,Vocabulary,mixed
+23,Choose the antonym of “concise”.,mcq,"[""swift"",""succinct"",""trivial"",""verbose""]",3,“verbose” is the opposite of “concise”.,Vocabulary,mixed
+24,Choose the antonym of “frugal”.,mcq,"[""swift"",""luminous"",""extravagant"",""massive""]",2,“extravagant” is the opposite of “frugal”.,Vocabulary,mixed
+25,One-word substitute: A cure for all diseases,mcq,"[""Panacea"",""Pioneer"",""Hedonist"",""Impromptu""]",0,Panacea fits the description.,One-word Substitutes,mixed
+26,One-word substitute: A speech delivered without preparation,mcq,"[""Bibliophile"",""Impromptu"",""Hedonist"",""Loquacious""]",1,Impromptu fits the description.,One-word Substitutes,mixed
+27,Meaning of the idiom: “On the fence”,mcq,"[""Avoid the main topic"",""Undecided"",""Make people feel more comfortable"",""Very rarely""]",1,“On the fence” means “Undecided”.,Idioms & Phrases,mixed
+28,Meaning of the idiom: “Costs an arm and a leg”,mcq,"[""Very expensive"",""Avoid the main topic"",""Very rarely"",""In brief""]",0,“Costs an arm and a leg” means “Very expensive”.,Idioms & Phrases,mixed
+29,We _____ dinner when he arrived.,mcq,"[""are having"",""were having"",""have had"",""had""]",1,Correct tense is “were having”.,Grammar,mixed
+30,I _____ my work by 6 PM yesterday.,mcq,"[""finishing"",""finished"",""finish"",""finishes""]",1,Correct tense is “finished”.,Grammar,mixed
+31,We _____ dinner when he arrived.,mcq,"[""were having"",""had"",""have had"",""are having""]",0,Correct tense is “were having”.,Grammar,mixed
+32,I _____ my work by 6 PM yesterday.,mcq,"[""finished"",""finish"",""finishes"",""finishing""]",0,Correct tense is “finished”.,Grammar,mixed
+33,We _____ dinner when he arrived.,mcq,"[""have had"",""were having"",""are having"",""had""]",1,Correct tense is “were having”.,Grammar,mixed
+34,He _____ the project next week.,mcq,"[""is starting"",""starts"",""has started"",""will start""]",3,Correct tense is “will start”.,Grammar,mixed
+35,They _____ cricket when it started to rain.,mcq,"[""played"",""were playing"",""are playing"",""have played""]",1,Correct tense is “were playing”.,Grammar,mixed
+36,Choose the grammatically correct sentence:,mcq,"[""the scenery here is beautiful."",""The  sceneries here are beautiful."",""The scenery here is beautiful."",""The sceneries here are beautiful.""]",2,Correct form: “The scenery here is beautiful.”.,Sentence Correction,mixed
+37,Choose the grammatically correct sentence:,mcq,"[""She  do not like tea."",""She does not like tea."",""She do not like tea."",""she does not like tea.""]",1,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+38,Choose the grammatically correct sentence:,mcq,"[""She does not like tea."",""she does not like tea."",""She do not like tea."",""She  do not like tea.""]",0,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+39,Choose the grammatically correct sentence:,mcq,"[""Each  of the boys have a pen."",""Each of the boys have a pen."",""each of the boys has a pen."",""Each of the boys has a pen.""]",3,Correct form: “Each of the boys has a pen.”.,Sentence Correction,mixed
+40,Choose the grammatically correct sentence:,mcq,"[""She do not like tea."",""She  do not like tea."",""She does not like tea."",""she does not like tea.""]",2,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+41,Choose the grammatically correct sentence:,mcq,"[""She does not like tea."",""She  do not like tea."",""She do not like tea."",""she does not like tea.""]",0,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+42,Choose the grammatically correct sentence:,mcq,"[""she does not like tea."",""She do not like tea."",""She  do not like tea."",""She does not like tea.""]",3,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+43,"Arrange the parts to form a coherent paragraph:
+A. The festival drew visitors from many cities.
+C. Local musicians performed throughout the day.
+D. The park was decorated with lights and banners.
+B. Stalls offered regional snacks and handicrafts.",mcq,"[""ACBD"",""ABCD"",""BACD"",""CABD""]",1,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+44,"Arrange the parts to form a coherent paragraph:
+C. Local musicians performed throughout the day.
+A. The festival drew visitors from many cities.
+B. Stalls offered regional snacks and handicrafts.
+D. The park was decorated with lights and banners.",mcq,"[""CABD"",""ABCD"",""ACBD"",""BACD""]",1,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+45,"No apples are blue. Some fruits are apples.
+Which conclusion follows?",mcq,"[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+46,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?",mcq,"[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+47,The train arrives _____ 7 a.m.,mcq,"[""in"",""on"",""at"",""by""]",2,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+48,The train arrives _____ 7 a.m.,mcq,"[""by"",""at"",""in"",""on""]",1,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+49,She insisted _____ paying the bill.,mcq,"[""on"",""to"",""at"",""for""]",0,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+50,The train arrives _____ 7 a.m.,mcq,"[""on"",""in"",""by"",""at""]",3,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed

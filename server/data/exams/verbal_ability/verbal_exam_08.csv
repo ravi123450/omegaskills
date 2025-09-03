@@ -1,0 +1,100 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?","[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Encourage active travel,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?","[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Higher footfall,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:","[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Clearer air,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:","[""flown"",""flows"",""fly"",""flew""]",1,flows,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:","[""ordering"",""orders"",""ordered"",""order""]",2,ordered,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:","[""precis"",""precision"",""precisely"",""precise""]",3,precise,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:","[""lend"",""landing"",""lands on"",""lands""]",3,lands,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:","[""hone up"",""hone in"",""hone"",""honed""]",2,hone,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:","[""serve"",""serves"",""service"",""served""]",0,serve,Use context to choose the best fit.,mixed,1,0,
+13,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:","[""effect"",""affect"",""effective"",""effects""]",0,effect,Use context to choose the best fit.,mixed,1,0,
+14,fill-blanks,mcq,We look forward _____ your reply.,"[""at"",""to"",""on"",""for""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “eloquent”.,"[""colorful"",""coarse"",""tedious"",""persuasive""]",3,persuasive,“persuasive” means nearly the same as “eloquent”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “eloquent”.,"[""peculiar"",""persuasive"",""vague"",""brisk""]",1,persuasive,“persuasive” means nearly the same as “eloquent”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “succinct”.,"[""luminous"",""cumbersome"",""sturdy"",""concise""]",3,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “prudent”.,"[""vague"",""careful"",""meagre"",""obsolete""]",1,careful,“careful” means nearly the same as “prudent”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “vivid”.,"[""clear"",""cumbersome"",""peculiar"",""tedious""]",0,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “vivid”.,"[""vague"",""clear"",""ardent"",""boisterous""]",1,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “amiable”.,"[""hostile"",""tedious"",""trivial"",""brisk""]",0,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “meticulous”.,"[""brisk"",""careless"",""elusive"",""vague""]",1,careless,“careless” is the opposite of “meticulous”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “diligent”.,"[""infrequent"",""luminous"",""trivial"",""lazy""]",3,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “prudent”.,"[""reckless"",""trivial"",""peculiar"",""brisk""]",0,reckless,“reckless” is the opposite of “prudent”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A person who talks too much,"[""Loquacious"",""Pioneer"",""Archaeologist"",""Panacea""]",0,Loquacious,Loquacious fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who studies ancient things,"[""Loquacious"",""Oligarchy"",""Archaeologist"",""Hedonist""]",2,Archaeologist,Archaeologist fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Beat around the bush”,"[""Reveal a secret"",""In brief"",""Face a difficult situation"",""Avoid the main topic""]",3,Avoid the main topic,“Beat around the bush” means “Avoid the main topic”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Bite the bullet”,"[""Face a difficult situation"",""Reveal a secret"",""Stop working on something"",""Undecided""]",0,Face a difficult situation,“Bite the bullet” means “Face a difficult situation”.,mixed,1,0,
+29,grammar,mcq,The team _____ the project next week.,"[""will have"",""has"",""had"",""have""]",0,will have,Correct tense is “will have”.,mixed,1,0,
+30,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""having"",""have"",""had"",""has""]",2,had,Correct tense is “had”.,mixed,1,0,
+31,grammar,mcq,We _____ dinner when he arrived.,"[""were reviewing"",""are reviewing"",""have reviewed"",""had reviewed""]",0,were reviewing,Correct tense is “were reviewing”.,mixed,1,0,
+32,grammar,mcq,We _____ dinner when he arrived.,"[""are containing"",""had contained"",""have contained"",""were containing""]",3,were containing,Correct tense is “were containing”.,mixed,1,0,
+33,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""goes"",""went"",""go"",""going""]",1,went,Correct tense is “went”.,mixed,1,0,
+34,grammar,mcq,I _____ to the market every Sunday.,"[""gone"",""going"",""go""]",2,go,Correct tense is “go”.,mixed,1,0,
+35,grammar,mcq,They _____ the project next week.,"[""will go"",""gone"",""goes"",""go""]",0,will go,Correct tense is “will go”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither of the two is correct."",""Neither  of the two are correct."",""Neither of the two are correct."",""neither of the two is correct.""]",0,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I know the answer."",""I am knowing the answer."",""I  am knowing the answer."",""i know the answer.""]",0,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""Less students attended the class."",""Fewer students attended the class."",""Less  students attended the class."",""fewer students attended the class.""]",1,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""he has been living here since 2010."",""He is living here since 2010."",""He  is living here since 2010."",""He has been living here since 2010.""]",3,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither of the two are correct."",""Neither of the two is correct."",""neither of the two is correct."",""Neither  of the two are correct.""]",1,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He is senior to me."",""he is senior to me."",""He  is senior than me."",""He is senior than me.""]",0,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He is senior to me."",""He  is senior than me."",""He is senior than me."",""he is senior to me.""]",0,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The school launched a recycling drive.
+B. Students designed posters.
+C. Bins were placed across campus.
+D. Waste reduced within weeks.","[""CBAD"",""CABD"",""BCAD"",""BACD"",""ABCD"",""ACBD""]",4,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The workshop began with a quick warm-up.
+D. By evening, prototypes were shown.
+B. Teams formed around shared interests.
+C. Mentors guided the brainstorming.","[""CBAD"",""CABD"",""ABCD"",""ACBD"",""BACD"",""BCAD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""on"",""in"",""at"",""by""]",2,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+48,fill-blanks,mcq,He is known _____ his honesty.,"[""for"",""to"",""with"",""by""]",0,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+49,fill-blanks,mcq,He is allergic _____ peanuts.,"[""at"",""with"",""to"",""for""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,We look forward _____ your reply.,"[""at"",""for"",""to"",""on""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,

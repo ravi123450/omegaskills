@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:","[""plans"",""planned"",""planning"",""plan""]",0,plans,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:","[""arriving"",""arrived"",""arrives"",""arrive""]",2,arrives,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:","[""accessible"",""accessed"",""access"",""accessing""]",0,accessible,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:","[""contains"",""containing"",""contained"",""contain""]",0,contains,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:","[""require"",""required"",""requiring"",""requires""]",0,require,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:","[""reviewed"",""reviewing"",""reviews"",""review""]",3,review,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""but"",""so"",""and"",""or""]",0,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+14,fill-blanks,mcq,I agree _____ your proposal.,"[""on"",""at"",""to"",""with""]",3,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “prudent”.,"[""careful"",""elusive"",""cumbersome"",""docile""]",0,careful,“careful” means nearly the same as “prudent”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""docile"",""swift"",""peculiar"",""calm""]",3,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “succinct”.,"[""elusive"",""concise"",""harsh"",""obsolete""]",1,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “concise”.,"[""brief"",""elusive"",""massive"",""vague""]",0,brief,“brief” means nearly the same as “concise”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “candid”.,"[""coarse"",""luminous"",""frank"",""sturdy""]",2,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “succinct”.,"[""elusive"",""brisk"",""concise"",""massive""]",2,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “amiable”.,"[""boisterous"",""peculiar"",""hostile"",""colorful""]",2,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “amiable”.,"[""meagre"",""hostile"",""obsolete"",""luminous""]",1,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “amiable”.,"[""hostile"",""elusive"",""cumbersome"",""tedious""]",0,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “diligent”.,"[""brisk"",""docile"",""meagre"",""lazy""]",3,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A government by a few,"[""Cannibal"",""Archaeologist"",""Pioneer"",""Oligarchy""]",3,Oligarchy,Oligarchy fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A speech delivered without preparation,"[""Bibliophile"",""Oligarchy"",""Cannibal"",""Impromptu""]",3,Impromptu,Impromptu fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Bite the bullet”,"[""Reveal a secret"",""In brief"",""Face a difficult situation"",""Make people feel more comfortable""]",2,Face a difficult situation,“Bite the bullet” means “Face a difficult situation”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “In a nutshell”,"[""In brief"",""Reveal a secret"",""Very rarely"",""Stop working on something""]",0,In brief,“In a nutshell” means “In brief”.,mixed,1,0,
+29,grammar,mcq,He _____ to the market every Sunday.,"[""reviews"",""reviewing"",""review"",""reviewed""]",0,reviews,Correct tense is “reviews”.,mixed,1,0,
+30,grammar,mcq,The committee _____ to the market every Sunday.,"[""do"",""does"",""doing"",""done""]",1,does,Correct tense is “does”.,mixed,1,0,
+31,grammar,mcq,He _____ the project next week.,"[""will do"",""done"",""do"",""does""]",0,will do,Correct tense is “will do”.,mixed,1,0,
+32,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""had"",""have"",""having"",""has""]",0,had,Correct tense is “had”.,mixed,1,0,
+33,grammar,mcq,You _____ the project next week.,"[""contains"",""contained"",""will contain"",""contain""]",2,will contain,Correct tense is “will contain”.,mixed,1,0,
+34,grammar,mcq,The committee _____ to the market every Sunday.,"[""reviews"",""reviewing"",""review"",""reviewed""]",0,reviews,Correct tense is “reviews”.,mixed,1,0,
+35,grammar,mcq,The committee _____ the project next week.,"[""contains"",""contain"",""will contain"",""contained""]",2,will contain,Correct tense is “will contain”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""he has been living here since 2010."",""He  is living here since 2010."",""He is living here since 2010."",""He has been living here since 2010.""]",3,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He  is senior than me."",""He is senior to me."",""He is senior than me."",""he is senior to me.""]",1,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither Ram nor Shyam is here."",""neither ram nor shyam is here."",""Neither Ram nor Shyam are here."",""Neither  Ram nor Shyam are here.""]",0,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""neither of the two is correct."",""Neither of the two is correct."",""Neither of the two are correct."",""Neither  of the two are correct.""]",1,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He is senior than me."",""He  is senior than me."",""He is senior to me."",""he is senior to me.""]",2,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She  do not like tea."",""she does not like tea."",""She does not like tea."",""She do not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""Fewer students attended the class."",""fewer students attended the class."",""Less  students attended the class."",""Less students attended the class.""]",0,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+B. Students designed posters.
+A. The school launched a recycling drive.
+C. Bins were placed across campus.
+D. Waste reduced within weeks.","[""ACBD"",""CABD"",""BACD"",""ABCD"",""CBAD"",""BCAD""]",3,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The city planted trees along sidewalks.
+B. Shade made walking pleasant.
+D. Residents organized weekend cleanups.
+C. Birds returned to the area.","[""CBAD"",""ACBD"",""ABCD"",""BCAD"",""CABD"",""BACD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,She is good _____ mathematics.,"[""for"",""at"",""with"",""in""]",1,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+48,fill-blanks,mcq,We look forward _____ your reply.,"[""to"",""on"",""at"",""for""]",0,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+49,fill-blanks,mcq,He is allergic _____ peanuts.,"[""for"",""with"",""at"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,We look forward _____ your reply.,"[""on"",""at"",""for"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,

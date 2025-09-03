@@ -1,0 +1,100 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:",mcq,"[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+2,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?",mcq,"[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Answer follows directly from the passage.,Reading Comprehension,mixed
+3,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?",mcq,"[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+4,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:",mcq,"[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+5,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?",mcq,"[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Answer follows directly from the passage.,Reading Comprehension,mixed
+6,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?",mcq,"[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+7,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:",mcq,"[""fly"",""flew"",""flows"",""flown""]",2,Use context to choose the best fit.,Cloze Test,mixed
+8,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:",mcq,"[""ordering"",""ordered"",""order"",""orders""]",1,Use context to choose the best fit.,Cloze Test,mixed
+9,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:",mcq,"[""precisely"",""precis"",""precise"",""precision""]",2,Use context to choose the best fit.,Cloze Test,mixed
+10,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:",mcq,"[""lend"",""landing"",""lands"",""lands on""]",2,Use context to choose the best fit.,Cloze Test,mixed
+11,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:",mcq,"[""hone in"",""hone"",""hone up"",""honed""]",1,Use context to choose the best fit.,Cloze Test,mixed
+12,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:",mcq,"[""service"",""served"",""serves"",""serve""]",3,Use context to choose the best fit.,Cloze Test,mixed
+13,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:",mcq,"[""affect"",""effects"",""effective"",""effect""]",3,Use context to choose the best fit.,Cloze Test,mixed
+14,The train arrives _____ 7 a.m.,mcq,"[""at"",""on"",""in"",""by""]",0,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+15,Choose the synonym of “diligent”.,mcq,"[""massive"",""coarse"",""obsolete"",""hardworking""]",3,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+16,Choose the synonym of “diligent”.,mcq,"[""elusive"",""hardworking"",""swift"",""brisk""]",1,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+17,Choose the synonym of “vivid”.,mcq,"[""docile"",""clear"",""peculiar"",""tedious""]",1,“clear” means nearly the same as “vivid”.,Vocabulary,mixed
+18,Choose the synonym of “frugal”.,mcq,"[""thrifty"",""coarse"",""succinct"",""cumbersome""]",0,“thrifty” means nearly the same as “frugal”.,Vocabulary,mixed
+19,Choose the synonym of “vivid”.,mcq,"[""ardent"",""infrequent"",""tedious"",""clear""]",3,“clear” means nearly the same as “vivid”.,Vocabulary,mixed
+20,Choose the synonym of “abundant”.,mcq,"[""docile"",""infrequent"",""tedious"",""plentiful""]",3,“plentiful” means nearly the same as “abundant”.,Vocabulary,mixed
+21,Choose the antonym of “abundant”.,mcq,"[""boisterous"",""trivial"",""infrequent"",""scarce""]",3,“scarce” is the opposite of “abundant”.,Vocabulary,mixed
+22,Choose the antonym of “eloquent”.,mcq,"[""colorful"",""sturdy"",""inarticulate"",""boisterous""]",2,“inarticulate” is the opposite of “eloquent”.,Vocabulary,mixed
+23,Choose the antonym of “benevolent”.,mcq,"[""malicious"",""infrequent"",""swift"",""colorful""]",0,“malicious” is the opposite of “benevolent”.,Vocabulary,mixed
+24,Choose the antonym of “impartial”.,mcq,"[""sturdy"",""cumbersome"",""ardent"",""biased""]",3,“biased” is the opposite of “impartial”.,Vocabulary,mixed
+25,One-word substitute: One who believes pleasure is the highest good,mcq,"[""Pioneer"",""Bibliophile"",""Hedonist"",""Panacea""]",2,Hedonist fits the description.,One-word Substitutes,mixed
+26,One-word substitute: A government by a few,mcq,"[""Pioneer"",""Oligarchy"",""Loquacious"",""Impromptu""]",1,Oligarchy fits the description.,One-word Substitutes,mixed
+27,Meaning of the idiom: “In a nutshell”,mcq,"[""In brief"",""Very expensive"",""Undecided"",""Go to sleep""]",0,“In a nutshell” means “In brief”.,Idioms & Phrases,mixed
+28,Meaning of the idiom: “Costs an arm and a leg”,mcq,"[""In brief"",""Very expensive"",""Go to sleep"",""Undecided""]",1,“Costs an arm and a leg” means “Very expensive”.,Idioms & Phrases,mixed
+29,He _____ the project next week.,mcq,"[""will start"",""starts"",""is starting"",""has started""]",0,Correct tense is “will start”.,Grammar,mixed
+30,She _____ to the market every Sunday.,mcq,"[""gone"",""going"",""goes"",""go""]",2,Correct tense is “goes”.,Grammar,mixed
+31,We _____ dinner when he arrived.,mcq,"[""are having"",""had"",""have had"",""were having""]",3,Correct tense is “were having”.,Grammar,mixed
+32,She _____ to the market every Sunday.,mcq,"[""gone"",""going"",""go"",""goes""]",3,Correct tense is “goes”.,Grammar,mixed
+33,She _____ to the market every Sunday.,mcq,"[""goes"",""gone"",""going"",""go""]",0,Correct tense is “goes”.,Grammar,mixed
+34,He _____ the project next week.,mcq,"[""has started"",""starts"",""is starting"",""will start""]",3,Correct tense is “will start”.,Grammar,mixed
+35,She _____ to the market every Sunday.,mcq,"[""going"",""gone"",""go"",""goes""]",3,Correct tense is “goes”.,Grammar,mixed
+36,Choose the grammatically correct sentence:,mcq,"[""He has been living here since 2010."",""he has been living here since 2010."",""He is living here since 2010."",""He  is living here since 2010.""]",0,Correct form: “He has been living here since 2010.”.,Sentence Correction,mixed
+37,Choose the grammatically correct sentence:,mcq,"[""Each of the boys has a pen."",""Each of the boys have a pen."",""Each  of the boys have a pen."",""each of the boys has a pen.""]",0,Correct form: “Each of the boys has a pen.”.,Sentence Correction,mixed
+38,Choose the grammatically correct sentence:,mcq,"[""Neither of the two are correct."",""neither of the two is correct."",""Neither of the two is correct."",""Neither  of the two are correct.""]",2,Correct form: “Neither of the two is correct.”.,Sentence Correction,mixed
+39,Choose the grammatically correct sentence:,mcq,"[""He is living here since 2010."",""He has been living here since 2010."",""He  is living here since 2010."",""he has been living here since 2010.""]",1,Correct form: “He has been living here since 2010.”.,Sentence Correction,mixed
+40,Choose the grammatically correct sentence:,mcq,"[""neither of the two is correct."",""Neither  of the two are correct."",""Neither of the two are correct."",""Neither of the two is correct.""]",3,Correct form: “Neither of the two is correct.”.,Sentence Correction,mixed
+41,Choose the grammatically correct sentence:,mcq,"[""she does not like tea."",""She does not like tea."",""She  do not like tea."",""She do not like tea.""]",1,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+42,Choose the grammatically correct sentence:,mcq,"[""She does not like tea."",""She  do not like tea."",""she does not like tea."",""She do not like tea.""]",0,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+43,"Arrange the parts to form a coherent paragraph:
+D. The park was decorated with lights and banners.
+C. Local musicians performed throughout the day.
+A. The festival drew visitors from many cities.
+B. Stalls offered regional snacks and handicrafts.",mcq,"[""ACBD"",""BACD"",""CABD"",""ABCD""]",3,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+44,"Arrange the parts to form a coherent paragraph:
+C. Local musicians performed throughout the day.
+A. The festival drew visitors from many cities.
+D. The park was decorated with lights and banners.
+B. Stalls offered regional snacks and handicrafts.",mcq,"[""ABCD"",""ACBD"",""CABD"",""BACD""]",0,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+45,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?",mcq,"[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+46,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?",mcq,"[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+47,The train arrives _____ 7 a.m.,mcq,"[""on"",""by"",""in"",""at""]",3,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+48,He is known _____ his honesty.,mcq,"[""for"",""by"",""with"",""to""]",0,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed
+49,The train arrives _____ 7 a.m.,mcq,"[""by"",""in"",""at"",""on""]",2,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+50,He is known _____ his honesty.,mcq,"[""for"",""by"",""to"",""with""]",0,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed

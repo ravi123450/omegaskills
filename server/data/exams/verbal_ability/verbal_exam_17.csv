@@ -1,0 +1,100 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:","[""flew"",""flows"",""flown"",""fly""]",1,flows,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:","[""ordering"",""orders"",""order"",""ordered""]",3,ordered,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:","[""precis"",""precision"",""precise"",""precisely""]",2,precise,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:","[""lands on"",""lands"",""landing"",""lend""]",1,lands,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:","[""honed"",""hone up"",""hone"",""hone in""]",2,hone,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:","[""service"",""serves"",""serve"",""served""]",2,serve,Use context to choose the best fit.,mixed,1,0,
+13,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:","[""effective"",""effects"",""effect"",""affect""]",2,effect,Use context to choose the best fit.,mixed,1,0,
+14,fill-blanks,mcq,She insisted _____ paying the bill.,"[""to"",""at"",""on"",""for""]",2,on,The correct preposition/conjunction is “on”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “amiable”.,"[""infrequent"",""elusive"",""vague"",""friendly""]",3,friendly,“friendly” means nearly the same as “amiable”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""harsh"",""docile"",""calm"",""meagre""]",2,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “vivid”.,"[""ardent"",""luminous"",""clear"",""meagre""]",2,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “eloquent”.,"[""luminous"",""boisterous"",""persuasive"",""obsolete""]",2,persuasive,“persuasive” means nearly the same as “eloquent”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “frugal”.,"[""thrifty"",""infrequent"",""coarse"",""cumbersome""]",0,thrifty,“thrifty” means nearly the same as “frugal”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “candid”.,"[""frank"",""swift"",""elusive"",""infrequent""]",0,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “benevolent”.,"[""malicious"",""massive"",""swift"",""obsolete""]",0,malicious,“malicious” is the opposite of “benevolent”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “eloquent”.,"[""coarse"",""inarticulate"",""massive"",""trivial""]",1,inarticulate,“inarticulate” is the opposite of “eloquent”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “benevolent”.,"[""vague"",""malicious"",""cumbersome"",""swift""]",1,malicious,“malicious” is the opposite of “benevolent”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “abundant”.,"[""sturdy"",""infrequent"",""obsolete"",""scarce""]",3,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: One who believes pleasure is the highest good,"[""Archaeologist"",""Pioneer"",""Loquacious"",""Hedonist""]",3,Hedonist,Hedonist fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A government by a few,"[""Oligarchy"",""Archaeologist"",""Bibliophile"",""Pioneer""]",0,Oligarchy,Oligarchy fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Spill the beans”,"[""Very rarely"",""Reveal a secret"",""Stop working on something"",""Make people feel more comfortable""]",1,Reveal a secret,“Spill the beans” means “Reveal a secret”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Beat around the bush”,"[""Avoid the main topic"",""Go to sleep"",""In brief"",""Undecided""]",0,Avoid the main topic,“Beat around the bush” means “Avoid the main topic”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""were containing"",""have contained"",""had contained"",""are containing""]",0,were containing,Correct tense is “were containing”.,mixed,1,0,
+30,grammar,mcq,They _____ the project next week.,"[""will arrive"",""arrive"",""arrived"",""arrives""]",0,will arrive,Correct tense is “will arrive”.,mixed,1,0,
+31,grammar,mcq,She _____ the project next week.,"[""will go"",""goes"",""go"",""gone""]",0,will go,Correct tense is “will go”.,mixed,1,0,
+32,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""review"",""reviewed"",""reviewing"",""reviews""]",1,reviewed,Correct tense is “reviewed”.,mixed,1,0,
+33,grammar,mcq,The team _____ to the market every Sunday.,"[""contains"",""contained"",""contain"",""containing""]",0,contains,Correct tense is “contains”.,mixed,1,0,
+34,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""go"",""goes"",""going"",""went""]",3,went,Correct tense is “went”.,mixed,1,0,
+35,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""planned"",""plans"",""plan"",""planning""]",0,planned,Correct tense is “planned”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither  of the two are correct."",""neither of the two is correct."",""Neither of the two are correct."",""Neither of the two is correct.""]",3,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""fewer students attended the class."",""Fewer students attended the class."",""Less  students attended the class."",""Less students attended the class.""]",1,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each of the boys has a pen."",""Each of the boys have a pen."",""each of the boys has a pen."",""Each  of the boys have a pen.""]",0,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She do not like tea."",""She  do not like tea."",""she does not like tea."",""She does not like tea.""]",3,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He is senior to me."",""he is senior to me."",""He  is senior than me."",""He is senior than me.""]",0,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""each of the boys has a pen."",""Each of the boys have a pen."",""Each  of the boys have a pen."",""Each of the boys has a pen.""]",3,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""the scenery here is beautiful."",""The scenery here is beautiful."",""The  sceneries here are beautiful."",""The sceneries here are beautiful.""]",1,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Waste reduced within weeks.
+B. Students designed posters.
+C. Bins were placed across campus.
+A. The school launched a recycling drive.","[""ABCD"",""BACD"",""CABD"",""BCAD"",""ACBD"",""CBAD""]",0,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Visitors left with curiosity sparked.
+A. The museum opened a new wing.
+C. Volunteers explained the science.
+B. Interactive exhibits drew children.","[""BCAD"",""BACD"",""ABCD"",""CABD"",""ACBD"",""CBAD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,He is allergic _____ peanuts.,"[""for"",""at"",""with"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+48,fill-blanks,mcq,We look forward _____ your reply.,"[""for"",""at"",""to"",""on""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+49,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""so"",""but"",""or"",""and""]",1,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+50,fill-blanks,mcq,She is good _____ mathematics.,"[""with"",""for"",""in"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,

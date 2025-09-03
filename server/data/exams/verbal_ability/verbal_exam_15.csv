@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?","[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Encourage active travel,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?","[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Higher footfall,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:","[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Clearer air,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Why raised walkways?","[""Decoration"",""Festival"",""Rainy-season access"",""Tourism""]",2,Rainy-season access,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Markets:","[""Closed often"",""Stayed open"",""Moved inland"",""Were demolished""]",1,Stayed open,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Emergency services could:","[""Avoid the town"",""Navigate safely"",""Only use boats"",""Do nothing""]",1,Navigate safely,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:","[""plan"",""plans"",""planning"",""planned""]",1,plans,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:","[""arrive"",""arrived"",""arrives"",""arriving""]",2,arrives,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:","[""accessible"",""accessing"",""access"",""accessed""]",0,accessible,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:","[""contains"",""contained"",""contain"",""containing""]",0,contains,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:","[""requires"",""require"",""required"",""requiring""]",1,require,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:","[""reviews"",""review"",""reviewing"",""reviewed""]",1,review,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,We look forward _____ your reply.,"[""to"",""at"",""for"",""on""]",0,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+14,fill-blanks,mcq,He is known _____ his honesty.,"[""for"",""by"",""to"",""with""]",0,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “impartial”.,"[""neutral"",""elusive"",""ardent"",""colorful""]",0,neutral,“neutral” means nearly the same as “impartial”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""elusive"",""calm"",""luminous"",""tedious""]",1,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “candid”.,"[""frank"",""luminous"",""vague"",""trivial""]",0,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""ardent"",""luminous"",""precise"",""peculiar""]",2,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “amiable”.,"[""swift"",""peculiar"",""friendly"",""massive""]",2,friendly,“friendly” means nearly the same as “amiable”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “diligent”.,"[""massive"",""infrequent"",""hardworking"",""coarse""]",2,hardworking,“hardworking” means nearly the same as “diligent”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “amiable”.,"[""hostile"",""infrequent"",""obsolete"",""trivial""]",0,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “candid”.,"[""infrequent"",""elusive"",""brisk"",""evasive""]",3,evasive,“evasive” is the opposite of “candid”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “prudent”.,"[""coarse"",""brisk"",""reckless"",""ardent""]",2,reckless,“reckless” is the opposite of “prudent”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “abundant”.,"[""sturdy"",""luminous"",""scarce"",""docile""]",2,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: One who does something for the first time,"[""Hedonist"",""Oligarchy"",""Impromptu"",""Pioneer""]",3,Pioneer,Pioneer fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who believes pleasure is the highest good,"[""Hedonist"",""Impromptu"",""Oligarchy"",""Loquacious""]",0,Hedonist,Hedonist fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “In a nutshell”,"[""In brief"",""Very expensive"",""Undecided"",""Avoid the main topic""]",0,In brief,“In a nutshell” means “In brief”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Call it a day”,"[""Very expensive"",""Make people feel more comfortable"",""Face a difficult situation"",""Stop working on something""]",3,Stop working on something,“Call it a day” means “Stop working on something”.,mixed,1,0,
+29,grammar,mcq,We _____ to the market every Sunday.,"[""played"",""playing"",""play""]",2,play,Correct tense is “play”.,mixed,1,0,
+30,grammar,mcq,You _____ the project next week.,"[""will arrive"",""arrive"",""arrives"",""arrived""]",0,will arrive,Correct tense is “will arrive”.,mixed,1,0,
+31,grammar,mcq,We _____ dinner when he arrived.,"[""have arrived"",""are arriving"",""had arrived"",""were arriving""]",3,were arriving,Correct tense is “were arriving”.,mixed,1,0,
+32,grammar,mcq,We _____ to the market every Sunday.,"[""finishing"",""finished"",""finish""]",2,finish,Correct tense is “finish”.,mixed,1,0,
+33,grammar,mcq,We _____ dinner when he arrived.,"[""were containing"",""had contained"",""have contained"",""are containing""]",0,were containing,Correct tense is “were containing”.,mixed,1,0,
+34,grammar,mcq,The committee _____ to the market every Sunday.,"[""contain"",""containing"",""contains"",""contained""]",2,contains,Correct tense is “contains”.,mixed,1,0,
+35,grammar,mcq,The committee _____ the project next week.,"[""plays"",""will play"",""played"",""play""]",1,will play,Correct tense is “will play”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither Ram nor Shyam are here."",""neither ram nor shyam is here."",""Neither  Ram nor Shyam are here."",""Neither Ram nor Shyam is here.""]",3,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The sceneries here are beautiful."",""the scenery here is beautiful."",""The scenery here is beautiful."",""The  sceneries here are beautiful.""]",2,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""These kind of mistakes are common."",""This kind of mistake is common."",""These  kind of mistakes are common."",""this kind of mistake is common.""]",1,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither of the two is correct."",""Neither of the two are correct."",""Neither  of the two are correct."",""neither of the two is correct.""]",0,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each  of the boys have a pen."",""Each of the boys has a pen."",""Each of the boys have a pen."",""each of the boys has a pen.""]",1,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""These kind of mistakes are common."",""this kind of mistake is common."",""This kind of mistake is common."",""These  kind of mistakes are common.""]",2,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She do not like tea."",""She does not like tea."",""She  do not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Waste reduced within weeks.
+C. Bins were placed across campus.
+A. The school launched a recycling drive.
+B. Students designed posters.","[""ACBD"",""ABCD"",""CBAD"",""BCAD"",""BACD"",""CABD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Waste reduced within weeks.
+B. Students designed posters.
+A. The school launched a recycling drive.
+C. Bins were placed across campus.","[""BCAD"",""CABD"",""BACD"",""ABCD"",""CBAD"",""ACBD""]",3,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,He is allergic _____ peanuts.,"[""at"",""to"",""with"",""for""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+48,fill-blanks,mcq,She is good _____ mathematics.,"[""at"",""for"",""in"",""with""]",0,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+49,fill-blanks,mcq,We look forward _____ your reply.,"[""for"",""on"",""at"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,She insisted _____ paying the bill.,"[""for"",""at"",""on"",""to""]",2,on,The correct preposition/conjunction is “on”.,mixed,1,0,

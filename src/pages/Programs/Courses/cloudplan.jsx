@@ -25,7 +25,7 @@ import {
 
 /* -------------------- ENV + URL helpers -------------------- */
 const DEFAULT_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfnedyz4BxAKC9IwgUvoCKwCFrDWoVQeEWohLXCmOCK8KS79Q/viewform";
+  "https://docs.google.com/forms/d/e/1FAIpQLSfTqAZvDs7cgcg_TDhBsebNc0Vc_Y_MaBTEFILfIrIskK0snA/viewform";
 
 /* Prefer Vite var; gracefully support CRA var; else default */
 const ENV_FORM_URL =
@@ -399,7 +399,12 @@ export default function CloudCertPlans() {
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             <BookButton plan="cta-bottom" label="Book / Buy now" big />
-            
+            <Link
+              to={isAuthed ? "/dashboard" : "/login"}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/50 px-4 py-2 text-sm text-slate-200 hover:bg-slate-800"
+            >
+              {isAuthed ? "See plan in Dashboard" : "Log in"}
+            </Link>
           </div>
         </div>
       </section>

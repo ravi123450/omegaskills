@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?","[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Encourage active travel,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?","[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Higher footfall,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:","[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Clearer air,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:","[""planning"",""plan"",""planned"",""plans""]",3,plans,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:","[""arrives"",""arriving"",""arrive"",""arrived""]",0,arrives,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:","[""access"",""accessible"",""accessing"",""accessed""]",1,accessible,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:","[""contain"",""containing"",""contains"",""contained""]",2,contains,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:","[""requires"",""requiring"",""required"",""require""]",3,require,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:","[""reviewed"",""reviewing"",""review"",""reviews""]",2,review,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""so"",""but"",""and"",""or""]",1,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+14,fill-blanks,mcq,He is allergic _____ peanuts.,"[""with"",""at"",""for"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “diligent”.,"[""obsolete"",""massive"",""brisk"",""hardworking""]",3,hardworking,“hardworking” means nearly the same as “diligent”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “frugal”.,"[""tedious"",""boisterous"",""luminous"",""thrifty""]",3,thrifty,“thrifty” means nearly the same as “frugal”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “concise”.,"[""swift"",""brief"",""luminous"",""trivial""]",1,brief,“brief” means nearly the same as “concise”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “succinct”.,"[""brisk"",""concise"",""colorful"",""coarse""]",1,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""swift"",""precise"",""cumbersome"",""harsh""]",1,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “succinct”.,"[""peculiar"",""brisk"",""vague"",""concise""]",3,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “diligent”.,"[""sturdy"",""lazy"",""docile"",""coarse""]",1,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “abundant”.,"[""scarce"",""infrequent"",""luminous"",""massive""]",0,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “succinct”.,"[""luminous"",""wordy"",""infrequent"",""colorful""]",1,wordy,“wordy” is the opposite of “succinct”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “candid”.,"[""docile"",""luminous"",""evasive"",""elusive""]",2,evasive,“evasive” is the opposite of “candid”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A government by a few,"[""Bibliophile"",""Oligarchy"",""Panacea"",""Graphologist""]",1,Oligarchy,Oligarchy fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A person who talks too much,"[""Loquacious"",""Archaeologist"",""Bibliophile"",""Panacea""]",0,Loquacious,Loquacious fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Costs an arm and a leg”,"[""Very expensive"",""Avoid the main topic"",""Very rarely"",""Stop working on something""]",0,Very expensive,“Costs an arm and a leg” means “Very expensive”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Call it a day”,"[""Avoid the main topic"",""Face a difficult situation"",""Stop working on something"",""In brief""]",2,Stop working on something,“Call it a day” means “Stop working on something”.,mixed,1,0,
+29,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""goes"",""going"",""go"",""went""]",3,went,Correct tense is “went”.,mixed,1,0,
+30,grammar,mcq,I _____ the project next week.,"[""planned"",""plan"",""plans"",""will plan""]",3,will plan,Correct tense is “will plan”.,mixed,1,0,
+31,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""plan"",""plans"",""planned"",""planning""]",2,planned,Correct tense is “planned”.,mixed,1,0,
+32,grammar,mcq,I _____ to the market every Sunday.,"[""start"",""starting"",""started""]",0,start,Correct tense is “start”.,mixed,1,0,
+33,grammar,mcq,She _____ to the market every Sunday.,"[""going"",""gone"",""go"",""goes""]",3,goes,Correct tense is “goes”.,mixed,1,0,
+34,grammar,mcq,He _____ to the market every Sunday.,"[""does"",""do"",""doing"",""done""]",0,does,Correct tense is “does”.,mixed,1,0,
+35,grammar,mcq,I _____ the project next week.,"[""gone"",""goes"",""go"",""will go""]",3,will go,Correct tense is “will go”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""Less  students attended the class."",""fewer students attended the class."",""Less students attended the class."",""Fewer students attended the class.""]",3,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""He is living here since 2010."",""He has been living here since 2010."",""he has been living here since 2010."",""He  is living here since 2010.""]",1,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each  of the boys have a pen."",""Each of the boys has a pen."",""Each of the boys have a pen."",""each of the boys has a pen.""]",1,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She does not like tea."",""She do not like tea."",""She  do not like tea.""]",1,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""He has been living here since 2010."",""He is living here since 2010."",""He  is living here since 2010."",""he has been living here since 2010.""]",0,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I am knowing the answer."",""I  am knowing the answer."",""i know the answer."",""I know the answer.""]",3,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each of the boys have a pen."",""Each of the boys has a pen."",""Each  of the boys have a pen."",""each of the boys has a pen.""]",1,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The city planted trees along sidewalks.
+B. Shade made walking pleasant.
+D. Residents organized weekend cleanups.
+C. Birds returned to the area.","[""BACD"",""ABCD"",""ACBD"",""BCAD"",""CBAD"",""CABD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The city planted trees along sidewalks.
+C. Birds returned to the area.
+D. Residents organized weekend cleanups.
+B. Shade made walking pleasant.","[""CBAD"",""ABCD"",""CABD"",""BCAD"",""ACBD"",""BACD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"No apples are blue. Some fruits are apples.
+Which conclusion follows?","[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Some fruits are not blue.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,He is known _____ his honesty.,"[""with"",""for"",""to"",""by""]",1,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+48,fill-blanks,mcq,We look forward _____ your reply.,"[""at"",""to"",""for"",""on""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+49,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""or"",""but"",""so"",""and""]",1,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+50,fill-blanks,mcq,I agree _____ your proposal.,"[""on"",""with"",""to"",""at""]",1,with,The correct preposition/conjunction is “with”.,mixed,1,0,

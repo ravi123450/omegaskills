@@ -140,13 +140,13 @@ export default function Contact() {
 
               <div className="mt-6 mb-15">
                 <Link
-                  to="/testimonials"
+                  to="/dashboard"
                   className="inline-flex items-center gap-2 text-sm font-medium text-orange-300 hover:text-orange-200"
                 >
                   Read More Stories
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-              </div>
+              </div>  
             </div>
 
             {/* Get in touch chips */}
@@ -179,7 +179,7 @@ export default function Contact() {
                   asChild
                   className="text-base bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black"
                 >
-                  <Link to="/support">Contact Support</Link>
+                  <Link to="/contact">Contact Support</Link>
                 </Button>
                 <Link
                   to="/contact"
@@ -194,7 +194,7 @@ export default function Contact() {
               <div className="mt-6 grid gap-3 sm:grid-cols-3 mb-15">
                 <div className="flex items-center gap-2 text-sm text-slate-300">
                   <Mail className="h-4 w-4 text-orange-300" />
-                  <span>support@omegaskills.com</span>
+                  <span>info@omegaskillsacademy.online</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-slate-300">
                   <PhoneCall className="h-4 w-4 text-orange-300" />
@@ -254,7 +254,7 @@ export default function Contact() {
                   asChild
                   className="text-sm bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer"
                 >
-                  <Link to="/community">Join Community</Link>
+                  <Link to="/dashboard">Join Community</Link>
                 </Button>
               </div>
             </div>
@@ -287,7 +287,7 @@ export default function Contact() {
                   asChild
                   className="text-base bg-orange-500 text-slate-900 hover:bg-orange-400 "
                 >
-                  <Link to="/testimonials">Explore More Success Stories</Link>
+                  <Link to="/dashboard">Explore More Success Stories</Link>
                 </Button>
                 <Link
                   to="/contact"
@@ -315,7 +315,7 @@ export default function Contact() {
                     <div className="flex items-center gap-3">
                       <Mail className="h-4 w-4 text-orange-300" />
                       <span className="text-slate-200">
-                        support@omegaskills.com
+                        info@omegaskillsacademy.online
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
@@ -335,21 +335,21 @@ export default function Contact() {
                       asChild
                       className="w-full text-base  bg-slate-800 text-slate-100 hover:bg-slate-700"
                     >
-                      <Link to="/support">Contact Support</Link>
+                      <Link to="/dashboard">Contact Support</Link>
                     </Button>
                     <Button
                       asChild
                       variant="secondary"
                       className="w-full text-sm  bg-orange-500 text-slate-900 hover:bg-orange-400"
                     >
-                      <Link to="/admissions">Talk to Admissions</Link>
+                      <Link to="/dashboard">Talk to Admissions</Link>
                     </Button>
                     <Button
                       asChild
                       variant="secondary"
                       className="w-full text-sm bg-slate-800 text-slate-100 hover:bg-slate-700"
                     >
-                      <Link to="/partnerships">Partner with Us</Link>
+                      <Link to="/dashboard">Partner with Us</Link>
                     </Button>
                   </div>
 
@@ -380,7 +380,7 @@ export default function Contact() {
                     asChild
                     className="w-full text-sm bg-orange-500 text-slate-900 hover:bg-orange-400"
                   >
-                    <Link to="/community">Join Community</Link>
+                    <Link to="/dashboard">Join Community</Link>
                   </Button>
                 </div>
               </div>

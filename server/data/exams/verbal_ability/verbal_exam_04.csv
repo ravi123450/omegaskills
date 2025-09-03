@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: What are 'demo hours'?","[""Long lectures"",""Snack breaks"",""Short concept demos"",""Movie shows""]",2,Short concept demos,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Visitor behavior:","[""Left quickly"",""Stayed longer"",""Avoided stations"",""Ignored staff""]",1,Stayed longer,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Effect on understanding:","[""Worse"",""No change"",""Better"",""Unknown""]",2,Better,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?","[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Encourage active travel,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?","[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Higher footfall,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:","[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Clearer air,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:","[""plan"",""plans"",""planned"",""planning""]",1,plans,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:","[""arrived"",""arriving"",""arrives"",""arrive""]",2,arrives,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:","[""accessing"",""accessed"",""access"",""accessible""]",3,accessible,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:","[""containing"",""contain"",""contained"",""contains""]",3,contains,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:","[""requiring"",""require"",""required"",""requires""]",1,require,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:","[""reviewing"",""reviewed"",""review"",""reviews""]",2,review,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,We look forward _____ your reply.,"[""at"",""on"",""for"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+14,fill-blanks,mcq,She insisted _____ paying the bill.,"[""on"",""to"",""for"",""at""]",0,on,The correct preposition/conjunction is “on”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “arduous”.,"[""elusive"",""luminous"",""massive"",""difficult""]",3,difficult,“difficult” means nearly the same as “arduous”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “arduous”.,"[""difficult"",""elusive"",""obsolete"",""colorful""]",0,difficult,“difficult” means nearly the same as “arduous”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “candid”.,"[""vague"",""swift"",""frank"",""obsolete""]",2,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “candid”.,"[""ardent"",""frank"",""coarse"",""boisterous""]",1,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “benevolent”.,"[""brisk"",""cumbersome"",""colorful"",""kind""]",3,kind,“kind” means nearly the same as “benevolent”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “diligent”.,"[""tedious"",""hardworking"",""peculiar"",""infrequent""]",1,hardworking,“hardworking” means nearly the same as “diligent”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “tranquil”.,"[""elusive"",""ardent"",""agitated"",""boisterous""]",2,agitated,“agitated” is the opposite of “tranquil”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “prudent”.,"[""reckless"",""harsh"",""luminous"",""swift""]",0,reckless,“reckless” is the opposite of “prudent”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “arduous”.,"[""sturdy"",""easy"",""vague"",""boisterous""]",1,easy,“easy” is the opposite of “arduous”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “prudent”.,"[""reckless"",""coarse"",""vague"",""tedious""]",0,reckless,“reckless” is the opposite of “prudent”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: One who eats human flesh,"[""Cannibal"",""Bibliophile"",""Impromptu"",""Graphologist""]",0,Cannibal,Cannibal fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who believes pleasure is the highest good,"[""Hedonist"",""Oligarchy"",""Loquacious"",""Cannibal""]",0,Hedonist,Hedonist fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “On the fence”,"[""Go to sleep"",""Very rarely"",""Undecided"",""Face a difficult situation""]",2,Undecided,“On the fence” means “Undecided”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “On the fence”,"[""Undecided"",""Make people feel more comfortable"",""Very expensive"",""Reveal a secret""]",0,Undecided,“On the fence” means “Undecided”.,mixed,1,0,
+29,grammar,mcq,The committee _____ the project next week.,"[""will have"",""had"",""has"",""have""]",0,will have,Correct tense is “will have”.,mixed,1,0,
+30,grammar,mcq,We _____ dinner when he arrived.,"[""are reviewing"",""had reviewed"",""have reviewed"",""were reviewing""]",3,were reviewing,Correct tense is “were reviewing”.,mixed,1,0,
+31,grammar,mcq,I _____ to the market every Sunday.,"[""review"",""reviewing"",""reviewed""]",0,review,Correct tense is “review”.,mixed,1,0,
+32,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""plays"",""play"",""playing"",""played""]",3,played,Correct tense is “played”.,mixed,1,0,
+33,grammar,mcq,The team _____ to the market every Sunday.,"[""playing"",""plays"",""play"",""played""]",1,plays,Correct tense is “plays”.,mixed,1,0,
+34,grammar,mcq,They _____ the project next week.,"[""play"",""played"",""will play"",""plays""]",2,will play,Correct tense is “will play”.,mixed,1,0,
+35,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""starting"",""start"",""started"",""starts""]",2,started,Correct tense is “started”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""he has been living here since 2010."",""He has been living here since 2010."",""He  is living here since 2010."",""He is living here since 2010.""]",1,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""he is senior to me."",""He is senior than me."",""He is senior to me."",""He  is senior than me.""]",2,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each of the boys have a pen."",""Each  of the boys have a pen."",""each of the boys has a pen."",""Each of the boys has a pen.""]",3,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""he has been living here since 2010."",""He is living here since 2010."",""He  is living here since 2010."",""He has been living here since 2010.""]",3,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I am knowing the answer."",""I know the answer."",""i know the answer."",""I  am knowing the answer.""]",1,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The sceneries here are beautiful."",""the scenery here is beautiful."",""The  sceneries here are beautiful."",""The scenery here is beautiful.""]",3,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""Less students attended the class."",""fewer students attended the class."",""Fewer students attended the class."",""Less  students attended the class.""]",2,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. By evening, prototypes were shown.
+B. Teams formed around shared interests.
+C. Mentors guided the brainstorming.
+A. The workshop began with a quick warm-up.","[""BACD"",""CBAD"",""ACBD"",""ABCD"",""CABD"",""BCAD""]",3,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+C. Birds returned to the area.
+D. Residents organized weekend cleanups.
+B. Shade made walking pleasant.
+A. The city planted trees along sidewalks.","[""ACBD"",""BCAD"",""CABD"",""CBAD"",""BACD"",""ABCD""]",5,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"No apples are blue. Some fruits are apples.
+Which conclusion follows?","[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Some fruits are not blue.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,He is allergic _____ peanuts.,"[""at"",""to"",""with"",""for""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+48,fill-blanks,mcq,We look forward _____ your reply.,"[""on"",""for"",""to"",""at""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+49,fill-blanks,mcq,He is known _____ his honesty.,"[""for"",""by"",""with"",""to""]",0,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+50,fill-blanks,mcq,I agree _____ your proposal.,"[""with"",""at"",""on"",""to""]",0,with,The correct preposition/conjunction is “with”.,mixed,1,0,

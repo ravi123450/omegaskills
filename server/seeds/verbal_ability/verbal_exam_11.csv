@@ -1,0 +1,100 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?",mcq,"[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+2,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?",mcq,"[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+3,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:",mcq,"[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+4,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?",mcq,"[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+5,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?",mcq,"[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+6,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:",mcq,"[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Answer follows directly from the passage.,Reading Comprehension,mixed
+7,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:",mcq,"[""flown"",""flew"",""flows"",""fly""]",2,Use context to choose the best fit.,Cloze Test,mixed
+8,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:",mcq,"[""orders"",""ordering"",""order"",""ordered""]",3,Use context to choose the best fit.,Cloze Test,mixed
+9,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:",mcq,"[""precision"",""precise"",""precisely"",""precis""]",1,Use context to choose the best fit.,Cloze Test,mixed
+10,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:",mcq,"[""lend"",""landing"",""lands on"",""lands""]",3,Use context to choose the best fit.,Cloze Test,mixed
+11,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:",mcq,"[""hone in"",""honed"",""hone"",""hone up""]",2,Use context to choose the best fit.,Cloze Test,mixed
+12,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:",mcq,"[""service"",""served"",""serves"",""serve""]",3,Use context to choose the best fit.,Cloze Test,mixed
+13,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:",mcq,"[""affect"",""effect"",""effects"",""effective""]",1,Use context to choose the best fit.,Cloze Test,mixed
+14,He is known _____ his honesty.,mcq,"[""with"",""to"",""for"",""by""]",2,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed
+15,Choose the synonym of “eloquent”.,mcq,"[""succinct"",""ardent"",""coarse"",""persuasive""]",3,“persuasive” means nearly the same as “eloquent”.,Vocabulary,mixed
+16,Choose the synonym of “eloquent”.,mcq,"[""brisk"",""persuasive"",""trivial"",""peculiar""]",1,“persuasive” means nearly the same as “eloquent”.,Vocabulary,mixed
+17,Choose the synonym of “vivid”.,mcq,"[""docile"",""luminous"",""clear"",""ardent""]",2,“clear” means nearly the same as “vivid”.,Vocabulary,mixed
+18,Choose the synonym of “arduous”.,mcq,"[""obsolete"",""docile"",""difficult"",""infrequent""]",2,“difficult” means nearly the same as “arduous”.,Vocabulary,mixed
+19,Choose the synonym of “vivid”.,mcq,"[""coarse"",""clear"",""tedious"",""cumbersome""]",1,“clear” means nearly the same as “vivid”.,Vocabulary,mixed
+20,Choose the synonym of “prudent”.,mcq,"[""elusive"",""careful"",""infrequent"",""trivial""]",1,“careful” means nearly the same as “prudent”.,Vocabulary,mixed
+21,Choose the antonym of “concise”.,mcq,"[""docile"",""colorful"",""verbose"",""coarse""]",2,“verbose” is the opposite of “concise”.,Vocabulary,mixed
+22,Choose the antonym of “abundant”.,mcq,"[""infrequent"",""scarce"",""elusive"",""succinct""]",1,“scarce” is the opposite of “abundant”.,Vocabulary,mixed
+23,Choose the antonym of “frugal”.,mcq,"[""extravagant"",""boisterous"",""luminous"",""docile""]",0,“extravagant” is the opposite of “frugal”.,Vocabulary,mixed
+24,Choose the antonym of “abundant”.,mcq,"[""tedious"",""succinct"",""scarce"",""colorful""]",2,“scarce” is the opposite of “abundant”.,Vocabulary,mixed
+25,One-word substitute: A government by a few,mcq,"[""Oligarchy"",""Loquacious"",""Bibliophile"",""Panacea""]",0,Oligarchy fits the description.,One-word Substitutes,mixed
+26,One-word substitute: One who does something for the first time,mcq,"[""Loquacious"",""Pioneer"",""Graphologist"",""Impromptu""]",1,Pioneer fits the description.,One-word Substitutes,mixed
+27,Meaning of the idiom: “Spill the beans”,mcq,"[""In brief"",""Very expensive"",""Reveal a secret"",""Undecided""]",2,“Spill the beans” means “Reveal a secret”.,Idioms & Phrases,mixed
+28,Meaning of the idiom: “Beat around the bush”,mcq,"[""Very expensive"",""Undecided"",""Avoid the main topic"",""Very rarely""]",2,“Beat around the bush” means “Avoid the main topic”.,Idioms & Phrases,mixed
+29,He _____ the project next week.,mcq,"[""has started"",""is starting"",""starts"",""will start""]",3,Correct tense is “will start”.,Grammar,mixed
+30,I _____ my work by 6 PM yesterday.,mcq,"[""finished"",""finishes"",""finishing"",""finish""]",0,Correct tense is “finished”.,Grammar,mixed
+31,She _____ to the market every Sunday.,mcq,"[""goes"",""going"",""gone"",""go""]",0,Correct tense is “goes”.,Grammar,mixed
+32,He _____ the project next week.,mcq,"[""is starting"",""starts"",""will start"",""has started""]",2,Correct tense is “will start”.,Grammar,mixed
+33,He _____ the project next week.,mcq,"[""will start"",""is starting"",""starts"",""has started""]",0,Correct tense is “will start”.,Grammar,mixed
+34,I _____ my work by 6 PM yesterday.,mcq,"[""finishing"",""finish"",""finished"",""finishes""]",2,Correct tense is “finished”.,Grammar,mixed
+35,We _____ dinner when he arrived.,mcq,"[""had"",""were having"",""have had"",""are having""]",1,Correct tense is “were having”.,Grammar,mixed
+36,Choose the grammatically correct sentence:,mcq,"[""Each  of the boys have a pen."",""Each of the boys has a pen."",""each of the boys has a pen."",""Each of the boys have a pen.""]",1,Correct form: “Each of the boys has a pen.”.,Sentence Correction,mixed
+37,Choose the grammatically correct sentence:,mcq,"[""the scenery here is beautiful."",""The scenery here is beautiful."",""The  sceneries here are beautiful."",""The sceneries here are beautiful.""]",1,Correct form: “The scenery here is beautiful.”.,Sentence Correction,mixed
+38,Choose the grammatically correct sentence:,mcq,"[""he is senior to me."",""He  is senior than me."",""He is senior than me."",""He is senior to me.""]",3,Correct form: “He is senior to me.”.,Sentence Correction,mixed
+39,Choose the grammatically correct sentence:,mcq,"[""The scenery here is beautiful."",""the scenery here is beautiful."",""The  sceneries here are beautiful."",""The sceneries here are beautiful.""]",0,Correct form: “The scenery here is beautiful.”.,Sentence Correction,mixed
+40,Choose the grammatically correct sentence:,mcq,"[""She do not like tea."",""she does not like tea."",""She  do not like tea."",""She does not like tea.""]",3,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+41,Choose the grammatically correct sentence:,mcq,"[""he is senior to me."",""He is senior than me."",""He  is senior than me."",""He is senior to me.""]",3,Correct form: “He is senior to me.”.,Sentence Correction,mixed
+42,Choose the grammatically correct sentence:,mcq,"[""Neither of the two are correct."",""neither of the two is correct."",""Neither  of the two are correct."",""Neither of the two is correct.""]",3,Correct form: “Neither of the two is correct.”.,Sentence Correction,mixed
+43,"Arrange the parts to form a coherent paragraph:
+B. Stalls offered regional snacks and handicrafts.
+A. The festival drew visitors from many cities.
+D. The park was decorated with lights and banners.
+C. Local musicians performed throughout the day.",mcq,"[""ABCD"",""ACBD"",""CABD"",""BACD""]",0,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+44,"Arrange the parts to form a coherent paragraph:
+C. Local musicians performed throughout the day.
+D. The park was decorated with lights and banners.
+B. Stalls offered regional snacks and handicrafts.
+A. The festival drew visitors from many cities.",mcq,"[""CABD"",""ABCD"",""BACD"",""ACBD""]",1,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+45,"No apples are blue. Some fruits are apples.
+Which conclusion follows?",mcq,"[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+46,"No apples are blue. Some fruits are apples.
+Which conclusion follows?",mcq,"[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+47,She insisted _____ paying the bill.,mcq,"[""at"",""to"",""for"",""on""]",3,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+48,He is known _____ his honesty.,mcq,"[""to"",""by"",""with"",""for""]",3,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed
+49,She insisted _____ paying the bill.,mcq,"[""on"",""at"",""to"",""for""]",0,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+50,"This problem is tough, _____ we can solve it together.",mcq,"[""and"",""but"",""or"",""so""]",1,The correct preposition/conjunction is “but”.,Fill in the Blanks,mixed

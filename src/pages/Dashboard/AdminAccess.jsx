@@ -1,3 +1,4 @@
+// src/pages/AdminAccess.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { useAuth } from "@/context/AuthProvider";
 import {
@@ -184,9 +185,7 @@ export default function AdminAccess({ token }) {
     try {
       await grantAccessBulk(authToken, course, parsedList);
       setAccessMsg(
-        `Access granted to ${parsedList.length} ${
-          parsedList.length === 1 ? "email" : "emails"
-        }`
+        `Access granted to ${parsedList.length} ${parsedList.length === 1 ? "email" : "emails"}`
       );
       setEmails("");
     } catch (e) {
@@ -474,6 +473,101 @@ export default function AdminAccess({ token }) {
                     </div>
                   </div>
                 ))}
+              </div>
+            )}
+          </CardContent>
+        </Card>
+
+        {/* ----- NEW: Bulk Access Card ----- */}
+        <Card className="mb-6 border border-slate-800/60 bg-slate-900/40">
+          <CardContent className="p-6">
+            <div className="flex items-center gap-2">
+              <Badge className="bg-slate-700/50 text-slate-300 border border-orange-600">
+                Access
+              </Badge>
+              <h2 className="text-lg font-semibold">Bulk access for a course</h2>
+            </div>
+
+            <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
+              <div className="md:col-span-1">
+                <label className="block text-sm font-medium text-slate-200">
+                  Course
+                </label>
+                <div className="relative mt-1">
+                  <select
+                    className="w-full appearance-none rounded-lg border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 outline-none focus:border-orange-500"
+                    value={course}
+                    onChange={(e) => setCourse(e.target.value)}
+                    onBlur={() => setSelectOpen(false)}
+                    onClick={() => setSelectOpen((s) => !s)}
+                  >
+                    <option value="">Select…</option>
+                    {courses.map((c) => (
+                      <option key={c.id} value={c.id}>
+                        {c.title} {c.is_public ? "(Public)" : "(Private)"}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown
+                    className={`pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 ${selectOpen ? "opacity-70" : "opacity-50"}`}
+                  />
+                </div>
+              </div>
+
+              <div className="md:col-span-1">
+                <label className="block text-sm font-medium text-slate-200">
+                  Student Emails
+                  <span className="text-slate-400"> (comma/space/newline separated)</span>
+                </label>
+                <textarea
+                  className="mt-1 h-[92px] w-full rounded-lg border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 outline-none focus:border-orange-500"
+                  value={emails}
+                  onChange={(e) => setEmails(e.target.value)}
+                  placeholder="alice@example.com, bob@example.com&#10;charlie@example.com"
+                />
+              </div>
+            </div>
+
+            <div className="mt-2 text-xs text-slate-400">
+              {parsedList.length > 0
+                ? `Detected ${parsedList.length} unique email${parsedList.length === 1 ? "" : "s"}.`
+                : "Paste one or more student emails."}
+            </div>
+
+            <div className="mt-4 flex items-center gap-2">
+              <Button
+                className="bg-orange-500 text-slate-900 hover:bg-orange-400 cursor-pointer"
+                onClick={submitAccess}
+                disabled={!course || parsedList.length === 0 || submittingAccess}
+              >
+                {submittingAccess ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Granting…
+                  </>
+                ) : (
+                  <>
+                    <Users className="mr-2 h-4 w-4" />
+                    Grant Access
+                  </>
+                )}
+              </Button>
+            </div>
+
+            {(accessMsg || accessErr) && (
+              <div className="mt-3">
+                {accessMsg && (
+                  <div className="inline-flex items-center gap-2 rounded-lg border border-emerald-600/30 bg-emerald-600/15 px-3 py-2 text-sm text-emerald-300">
+                    <CheckCircle2 className="h-4 w-4" />
+                    <span>{accessMsg}</span>
+                  </div>
+                )}
+                {accessErr && (
+                  <div className="inline-flex items-center gap-2 rounded-lg border border-rose-600/30 bg-rose-600/15 px-3 py-2 text-sm text-rose-300">
+                    <AlertTriangle className="h-4 w-4" />
+                    <span>{accessErr}</span>
+                  </div>
+                )}
               </div>
             )}
           </CardContent>

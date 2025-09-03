@@ -1,0 +1,51 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,Find LCM of 22 and 24.,mcq,"[""266"",""263"",""264"",""263""]",2,,Number System,mixed
+2,Find LCM of 24 and 20.,mcq,"[""119"",""120"",""120"",""122""]",1,,Number System,mixed
+3,68 is what percent of 195?,mcq,"[""29.87"",""39.87"",""286.76"",""34.87""]",3,,Percentages,mixed
+4,80 is what percent of 59?,mcq,"[""73.75"",""135.59"",""130.59"",""140.59""]",1,,Percentages,mixed
+5,"Cost price = ₹396, Profit = 15%. Find selling price.",mcq,"[""336.6"",""455.4"",""445.4"",""465.4""]",1,,Profit & Loss,mixed
+6,"Cost price = ₹537, Profit = 21%. Find selling price.",mcq,"[""659.77"",""424.23"",""639.77"",""649.77""]",3,,Profit & Loss,mixed
+7,"Find average of 13, 11, 19, 26.",mcq,"[""16.25"",""14.33"",""18.25"",""17.25""]",3,,Average,mixed
+8,"Find average of 23, 38, 40, 34.",mcq,"[""32.75"",""34.75"",""33.75"",""33.67""]",2,,Average,mixed
+9,Divide ₹327 in the ratio 5:5. Share of first person?,mcq,"[""163.5"",""163.5"",""327"",""163.5""]",0,,Ratio & Proportion,mixed
+10,Divide ₹301 in the ratio 2:2. Share of first person?,mcq,"[""301"",""150.5"",""150.5"",""150.5""]",1,,Ratio & Proportion,mixed
+11,Equal volumes of 11% and 62% salt solutions are mixed. Final concentration?,mcq,"[""41.5"",""62"",""36.5"",""11""]",2,Weighted average of equal volumes is mean.,Mixtures,mixed
+12,Equal volumes of 16% and 62% salt solutions are mixed. Final concentration?,mcq,"[""44"",""16"",""39"",""62""]",2,Weighted average of equal volumes is mean.,Mixtures,mixed
+13,"A can finish in 11 days, B in 11 days. In how many days together?",mcq,"[""5.5"",""11"",""22"",""11""]",0,1/T=1/a+1/b,Time & Work,mixed
+14,"A can finish in 10 days, B in 10 days. In how many days together?",mcq,"[""20"",""10"",""10"",""5""]",3,1/T=1/a+1/b,Time & Work,mixed
+15,A car at 59 km/h for 2 h covers how many km?,mcq,"[""128"",""108"",""118"",""61""]",2,,Speed–Distance–Time,mixed
+16,A car at 70 km/h for 4 h covers how many km?,mcq,"[""74"",""270"",""290"",""280""]",3,,Speed–Distance–Time,mixed
+17,Two pipes fill a tank in 9 min and 11 min. Together time? (min),mcq,"[""99"",""20"",""4.95"",""11""]",2,Same as Work.,Pipes & Cisterns,mixed
+18,Two pipes fill a tank in 9 min and 10 min. Together time? (min),mcq,"[""19"",""90"",""4.74"",""10""]",2,Same as Work.,Pipes & Cisterns,mixed
+19,Solve: 3x + 12 = 12. Find x.,mcq,"[""8"",""1"",""0"",""-1""]",2,,Algebra,mixed
+20,Solve: 5x + 5 = 46. Find x.,mcq,"[""8.2"",""10.2"",""7.199999999999999"",""9.2""]",0,,Algebra,mixed
+21,"In a triangle, two angles are 58° and 62°. Find the third angle.",mcq,"[""60"",""122"",""90"",""118""]",0,,Geometry,mixed
+22,"In a triangle, two angles are 56° and 67°. Find the third angle.",mcq,"[""124"",""57"",""113"",""90""]",1,,Geometry,mixed
+23,"At 45° elevation, a tower is seen from 23 m away. Height of tower?",mcq,"[""28"",""46"",""23"",""12""]",2,tan45°=1 → h=d,Height & Distance,mixed
+24,"At 45° elevation, a tower is seen from 17 m away. Height of tower?",mcq,"[""17"",""22"",""34"",""9""]",0,tan45°=1 → h=d,Height & Distance,mixed
+25,"Area of circle (r=11 cm), use π=22/7.",mcq,"[""380"",""761"",""69"",""402""]",0,,Mensuration,mixed
+26,"Area of circle (r=7 cm), use π=22/7.",mcq,"[""154"",""176"",""44"",""308""]",0,,Mensuration,mixed
+27,"Distance between (1,5) and (5,12).",mcq,"[""7"",""11"",""4"",""8.06""]",3,,Co-ordinate Geometry,mixed
+28,"Distance between (1,3) and (4,11).",mcq,"[""3"",""11"",""8.54"",""8""]",2,,Co-ordinate Geometry,mixed
+29,How many combinations: 9C3?,mcq,"[""84"",""87"",""36"",""504""]",0,,Permutations & Combinations,mixed
+30,How many combinations: 5C2?,mcq,"[""13"",""20"",""10"",""5""]",2,,Permutations & Combinations,mixed
+31,A fair die is rolled. Probability of a prime number?,mcq,"[""2/3"",""1/3"",""1/2"",""1/6""]",2,,Probability,mixed
+32,A fair die is rolled. Probability of a prime number?,mcq,"[""1/2"",""1/3"",""2/3"",""1/6""]",0,,Probability,mixed
+33,Simple Interest on ₹4583 at 10% p.a. for 2 years?,mcq,"[""917"",""1017"",""867"",""962""]",0,,Simple & Compound Interest,mixed
+34,Simple Interest on ₹2529 at 6% p.a. for 2 years?,mcq,"[""403"",""303"",""253"",""313""]",1,,Simple & Compound Interest,mixed
+35,Sum of ages = 42. Ratio 4:2. Elder's age?,mcq,"[""14"",""28"",""26"",""30""]",1,,Ages,mixed
+36,Sum of ages = 53. Ratio 4:2. Elder's age?,mcq,"[""37"",""35"",""33"",""18""]",1,,Ages,mixed
+37,Evaluate: log₁₀(10^1).,mcq,"[""1"",""2"",""0"",""0""]",0,,Logs,mixed
+38,Evaluate: log₁₀(10^2).,mcq,"[""3"",""2"",""0"",""1""]",1,,Logs,mixed
+39,"In a class, 35 like Maths, 35 like Science, 11 like both. How many like at least one?",mcq,"[""70"",""11"",""59"",""0""]",2,n(A∪B)=A+B−both,Sets,mixed
+40,"In a class, 35 like Maths, 29 like Science, 9 like both. How many like at least one?",mcq,"[""55"",""64"",""9"",""6""]",0,n(A∪B)=A+B−both,Sets,mixed
+41,Two pipes fill a tank in 7 min and 10 min. Together time? (min),mcq,"[""70"",""4.12"",""10"",""17""]",1,Same as Work.,Pipes & Cisterns,mixed
+42,Two pipes fill a tank in 7 min and 10 min. Together time? (min),mcq,"[""10"",""70"",""17"",""4.12""]",3,Same as Work.,Pipes & Cisterns,mixed
+43,"A can finish in 7 days, B in 10 days. In how many days together?",mcq,"[""7"",""10"",""17"",""4.12""]",3,1/T=1/a+1/b,Time & Work,mixed
+44,"At 45° elevation, a tower is seen from 37 m away. Height of tower?",mcq,"[""42"",""37"",""74"",""19""]",1,tan45°=1 → h=d,Height & Distance,mixed
+45,A car at 71 km/h for 5 h covers how many km?,mcq,"[""345"",""365"",""355"",""76""]",2,,Speed–Distance–Time,mixed
+46,A car at 47 km/h for 5 h covers how many km?,mcq,"[""245"",""52"",""235"",""225""]",2,,Speed–Distance–Time,mixed
+47,Simple Interest on ₹4538 at 9% p.a. for 2 years?,mcq,"[""854"",""817"",""767"",""917""]",1,,Simple & Compound Interest,mixed
+48,"In a class, 30 like Maths, 29 like Science, 13 like both. How many like at least one?",mcq,"[""1"",""59"",""13"",""46""]",3,n(A∪B)=A+B−both,Sets,mixed
+49,81 is what percent of 63?,mcq,"[""128.57"",""133.57"",""123.57"",""77.78""]",0,,Percentages,mixed
+50,"Distance between (4,1) and (7,8).",mcq,"[""3"",""7.62"",""10"",""7""]",1,,Co-ordinate Geometry,mixed

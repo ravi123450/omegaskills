@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {1}:","[""setting"",""set"",""settle"",""sets""]",1,set,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {2}:","[""builds"",""building"",""build"",""built""]",2,build,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {3}:","[""surfaces"",""surfacing"",""surface"",""surfaced""]",2,surface,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {4}:","[""reduced"",""reduce"",""reducing"",""reduces""]",2,reducing,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {5}:","[""reduces"",""reduce"",""reducing"",""reduced""]",1,reduce,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {6}:","[""increased"",""increase"",""increases"",""increasing""]",1,increase,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,He is allergic _____ peanuts.,"[""at"",""for"",""with"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+14,fill-blanks,mcq,We look forward _____ your reply.,"[""on"",""for"",""to"",""at""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “impartial”.,"[""infrequent"",""peculiar"",""meagre"",""neutral""]",3,neutral,“neutral” means nearly the same as “impartial”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “vivid”.,"[""coarse"",""swift"",""boisterous"",""clear""]",3,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “amiable”.,"[""cumbersome"",""obsolete"",""brisk"",""friendly""]",3,friendly,“friendly” means nearly the same as “amiable”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""cumbersome"",""swift"",""obsolete"",""precise""]",3,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""massive"",""luminous"",""precise"",""meagre""]",2,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “frugal”.,"[""massive"",""infrequent"",""thrifty"",""colorful""]",2,thrifty,“thrifty” means nearly the same as “frugal”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “arduous”.,"[""elusive"",""peculiar"",""luminous"",""easy""]",3,easy,“easy” is the opposite of “arduous”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “diligent”.,"[""coarse"",""tedious"",""peculiar"",""lazy""]",3,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “abundant”.,"[""colorful"",""scarce"",""swift"",""coarse""]",1,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “abundant”.,"[""scarce"",""ardent"",""vague"",""massive""]",0,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: One who does something for the first time,"[""Bibliophile"",""Archaeologist"",""Hedonist"",""Pioneer""]",3,Pioneer,Pioneer fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who believes pleasure is the highest good,"[""Hedonist"",""Pioneer"",""Archaeologist"",""Oligarchy""]",0,Hedonist,Hedonist fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Call it a day”,"[""Stop working on something"",""Go to sleep"",""Very expensive"",""Reveal a secret""]",0,Stop working on something,“Call it a day” means “Stop working on something”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Hit the sack”,"[""Go to sleep"",""Very rarely"",""Avoid the main topic"",""Stop working on something""]",0,Go to sleep,“Hit the sack” means “Go to sleep”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""were arriving"",""are arriving"",""have arrived"",""had arrived""]",0,were arriving,Correct tense is “were arriving”.,mixed,1,0,
+30,grammar,mcq,You _____ the project next week.,"[""contained"",""contain"",""will contain"",""contains""]",2,will contain,Correct tense is “will contain”.,mixed,1,0,
+31,grammar,mcq,We _____ dinner when he arrived.,"[""are arriving"",""were arriving"",""have arrived"",""had arrived""]",1,were arriving,Correct tense is “were arriving”.,mixed,1,0,
+32,grammar,mcq,I _____ the project next week.,"[""do"",""does"",""done"",""will do""]",3,will do,Correct tense is “will do”.,mixed,1,0,
+33,grammar,mcq,We _____ dinner when he arrived.,"[""are planning"",""had planned"",""have planned"",""were planning""]",3,were planning,Correct tense is “were planning”.,mixed,1,0,
+34,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""contained"",""containing"",""contain"",""contains""]",0,contained,Correct tense is “contained”.,mixed,1,0,
+35,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""arriving"",""arrives"",""arrived"",""arrive""]",2,arrived,Correct tense is “arrived”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""neither of the two is correct."",""Neither of the two is correct."",""Neither of the two are correct."",""Neither  of the two are correct.""]",1,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""This kind of mistake is common."",""These kind of mistakes are common."",""These  kind of mistakes are common."",""this kind of mistake is common.""]",0,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""he is senior to me."",""He is senior than me."",""He is senior to me."",""He  is senior than me.""]",2,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She does not like tea."",""She  do not like tea."",""She do not like tea."",""she does not like tea.""]",0,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She do not like tea."",""She  do not like tea."",""She does not like tea."",""she does not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I know the answer."",""I am knowing the answer."",""I  am knowing the answer."",""i know the answer.""]",0,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each of the boys have a pen."",""Each of the boys has a pen."",""each of the boys has a pen."",""Each  of the boys have a pen.""]",1,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+C. Volunteers explained the science.
+D. Visitors left with curiosity sparked.
+B. Interactive exhibits drew children.
+A. The museum opened a new wing.","[""BACD"",""CABD"",""BCAD"",""ACBD"",""CBAD"",""ABCD""]",5,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Residents organized weekend cleanups.
+A. The city planted trees along sidewalks.
+B. Shade made walking pleasant.
+C. Birds returned to the area.","[""ABCD"",""CABD"",""BACD"",""CBAD"",""BCAD"",""ACBD""]",0,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"No apples are blue. Some fruits are apples.
+Which conclusion follows?","[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Some fruits are not blue.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,We look forward _____ your reply.,"[""on"",""at"",""to"",""for""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+48,fill-blanks,mcq,I agree _____ your proposal.,"[""at"",""with"",""to"",""on""]",1,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+49,fill-blanks,mcq,He is known _____ his honesty.,"[""with"",""for"",""by"",""to""]",1,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+50,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""but"",""or"",""and"",""so""]",0,but,The correct preposition/conjunction is “but”.,mixed,1,0,

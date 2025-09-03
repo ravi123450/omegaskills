@@ -1,0 +1,100 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: What are 'demo hours'?","[""Long lectures"",""Snack breaks"",""Short concept demos"",""Movie shows""]",2,Short concept demos,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Visitor behavior:","[""Left quickly"",""Stayed longer"",""Avoided stations"",""Ignored staff""]",1,Stayed longer,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Effect on understanding:","[""Worse"",""No change"",""Better"",""Unknown""]",2,Better,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?","[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Encourage active travel,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?","[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Higher footfall,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:","[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Clearer air,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:","[""flown"",""flew"",""flows"",""fly""]",2,flows,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:","[""ordered"",""order"",""ordering"",""orders""]",0,ordered,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:","[""precisely"",""precise"",""precision"",""precis""]",1,precise,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:","[""lend"",""lands"",""lands on"",""landing""]",1,lands,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:","[""honed"",""hone"",""hone up"",""hone in""]",1,hone,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:","[""served"",""service"",""serves"",""serve""]",3,serve,Use context to choose the best fit.,mixed,1,0,
+13,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:","[""effect"",""affect"",""effective"",""effects""]",0,effect,Use context to choose the best fit.,mixed,1,0,
+14,fill-blanks,mcq,I agree _____ your proposal.,"[""with"",""at"",""on"",""to""]",0,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “abundant”.,"[""plentiful"",""colorful"",""boisterous"",""peculiar""]",0,plentiful,“plentiful” means nearly the same as “abundant”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “candid”.,"[""ardent"",""vague"",""frank"",""massive""]",2,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “arduous”.,"[""colorful"",""difficult"",""harsh"",""massive""]",1,difficult,“difficult” means nearly the same as “arduous”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “succinct”.,"[""ardent"",""sturdy"",""colorful"",""concise""]",3,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “arduous”.,"[""ardent"",""vague"",""difficult"",""docile""]",2,difficult,“difficult” means nearly the same as “arduous”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “benevolent”.,"[""massive"",""kind"",""vague"",""coarse""]",1,kind,“kind” means nearly the same as “benevolent”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “abundant”.,"[""coarse"",""scarce"",""swift"",""brisk""]",1,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “frugal”.,"[""boisterous"",""extravagant"",""tedious"",""peculiar""]",1,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “eloquent”.,"[""inarticulate"",""swift"",""peculiar"",""tedious""]",0,inarticulate,“inarticulate” is the opposite of “eloquent”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “benevolent”.,"[""swift"",""vague"",""coarse"",""malicious""]",3,malicious,“malicious” is the opposite of “benevolent”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: One who does something for the first time,"[""Hedonist"",""Pioneer"",""Archaeologist"",""Cannibal""]",1,Pioneer,Pioneer fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A government by a few,"[""Oligarchy"",""Archaeologist"",""Hedonist"",""Cannibal""]",0,Oligarchy,Oligarchy fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Bite the bullet”,"[""Face a difficult situation"",""Avoid the main topic"",""Very expensive"",""Undecided""]",0,Face a difficult situation,“Bite the bullet” means “Face a difficult situation”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Call it a day”,"[""Undecided"",""Face a difficult situation"",""Reveal a secret"",""Stop working on something""]",3,Stop working on something,“Call it a day” means “Stop working on something”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""were planning"",""are planning"",""have planned"",""had planned""]",0,were planning,Correct tense is “were planning”.,mixed,1,0,
+30,grammar,mcq,We _____ dinner when he arrived.,"[""had planned"",""have planned"",""were planning"",""are planning""]",2,were planning,Correct tense is “were planning”.,mixed,1,0,
+31,grammar,mcq,We _____ dinner when he arrived.,"[""were going"",""had gone"",""are going"",""have gone""]",0,were going,Correct tense is “were going”.,mixed,1,0,
+32,grammar,mcq,The team _____ the project next week.,"[""finished"",""finishes"",""will finish"",""finish""]",2,will finish,Correct tense is “will finish”.,mixed,1,0,
+33,grammar,mcq,The team _____ the project next week.,"[""reviewed"",""will review"",""review"",""reviews""]",1,will review,Correct tense is “will review”.,mixed,1,0,
+34,grammar,mcq,We _____ dinner when he arrived.,"[""have gone"",""were going"",""are going"",""had gone""]",1,were going,Correct tense is “were going”.,mixed,1,0,
+35,grammar,mcq,We _____ to the market every Sunday.,"[""have"",""had"",""having""]",0,have,Correct tense is “have”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""These  kind of mistakes are common."",""These kind of mistakes are common."",""this kind of mistake is common."",""This kind of mistake is common.""]",3,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""He is living here since 2010."",""He  is living here since 2010."",""He has been living here since 2010."",""he has been living here since 2010.""]",2,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""This kind of mistake is common."",""this kind of mistake is common."",""These  kind of mistakes are common."",""These kind of mistakes are common.""]",0,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither of the two is correct."",""Neither  of the two are correct."",""neither of the two is correct."",""Neither of the two are correct.""]",0,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""each of the boys has a pen."",""Each of the boys has a pen."",""Each  of the boys have a pen."",""Each of the boys have a pen.""]",1,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither  Ram nor Shyam are here."",""Neither Ram nor Shyam is here."",""neither ram nor shyam is here."",""Neither Ram nor Shyam are here.""]",1,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The sceneries here are beautiful."",""The scenery here is beautiful."",""The  sceneries here are beautiful."",""the scenery here is beautiful.""]",1,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Visitors left with curiosity sparked.
+B. Interactive exhibits drew children.
+A. The museum opened a new wing.
+C. Volunteers explained the science.","[""BACD"",""BCAD"",""CBAD"",""ACBD"",""CABD"",""ABCD""]",5,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+B. Teams formed around shared interests.
+C. Mentors guided the brainstorming.
+A. The workshop began with a quick warm-up.
+D. By evening, prototypes were shown.","[""BACD"",""BCAD"",""ABCD"",""CBAD"",""CABD"",""ACBD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"No apples are blue. Some fruits are apples.
+Which conclusion follows?","[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Some fruits are not blue.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,He is allergic _____ peanuts.,"[""with"",""to"",""for"",""at""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+48,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""and"",""so"",""but"",""or""]",2,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+49,fill-blanks,mcq,We look forward _____ your reply.,"[""for"",""on"",""at"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,She is good _____ mathematics.,"[""at"",""with"",""for"",""in""]",0,at,The correct preposition/conjunction is “at”.,mixed,1,0,

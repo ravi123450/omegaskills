@@ -1,0 +1,100 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Why raised walkways?","[""Decoration"",""Festival"",""Rainy-season access"",""Tourism""]",2,Rainy-season access,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Markets:","[""Closed often"",""Stayed open"",""Moved inland"",""Were demolished""]",1,Stayed open,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Emergency services could:","[""Avoid the town"",""Navigate safely"",""Only use boats"",""Do nothing""]",1,Navigate safely,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {1}:","[""flew"",""fly"",""flows"",""flown""]",2,flows,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {2}:","[""ordering"",""ordered"",""orders"",""order""]",1,ordered,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {3}:","[""precis"",""precision"",""precisely"",""precise""]",3,precise,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {4}:","[""lands"",""landing"",""lend"",""lands on""]",0,lands,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {5}:","[""hone"",""honed"",""hone up"",""hone in""]",0,hone,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {6}:","[""serve"",""service"",""served"",""serves""]",0,serve,Use context to choose the best fit.,mixed,1,0,
+13,cloze-test,mcq,"Cloze Passage:
+Good writing {1} from clear thinking. When ideas are {2}, sentences become {3} and the message {4}. With practice, writers {5} their craft and {6} their audience with clarity and {7}.
+
+Fill {7}:","[""affect"",""effect"",""effects"",""effective""]",1,effect,Use context to choose the best fit.,mixed,1,0,
+14,fill-blanks,mcq,She is good _____ mathematics.,"[""for"",""in"",""with"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “diligent”.,"[""sturdy"",""coarse"",""boisterous"",""hardworking""]",3,hardworking,“hardworking” means nearly the same as “diligent”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “abundant”.,"[""plentiful"",""massive"",""obsolete"",""vague""]",0,plentiful,“plentiful” means nearly the same as “abundant”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “vivid”.,"[""colorful"",""tedious"",""cumbersome"",""clear""]",3,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “benevolent”.,"[""kind"",""peculiar"",""massive"",""cumbersome""]",0,kind,“kind” means nearly the same as “benevolent”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “amiable”.,"[""friendly"",""harsh"",""cumbersome"",""obsolete""]",0,friendly,“friendly” means nearly the same as “amiable”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “succinct”.,"[""concise"",""luminous"",""peculiar"",""boisterous""]",0,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “succinct”.,"[""cumbersome"",""wordy"",""colorful"",""swift""]",1,wordy,“wordy” is the opposite of “succinct”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “amiable”.,"[""hostile"",""tedious"",""swift"",""elusive""]",0,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “succinct”.,"[""wordy"",""tedious"",""coarse"",""ardent""]",0,wordy,“wordy” is the opposite of “succinct”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “concise”.,"[""elusive"",""trivial"",""verbose"",""docile""]",2,verbose,“verbose” is the opposite of “concise”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A handwriting expert,"[""Graphologist"",""Loquacious"",""Impromptu"",""Bibliophile""]",0,Graphologist,Graphologist fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who studies ancient things,"[""Oligarchy"",""Graphologist"",""Archaeologist"",""Panacea""]",2,Archaeologist,Archaeologist fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Once in a blue moon”,"[""Reveal a secret"",""Very rarely"",""Go to sleep"",""Avoid the main topic""]",1,Very rarely,“Once in a blue moon” means “Very rarely”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Break the ice”,"[""Go to sleep"",""In brief"",""Very expensive"",""Make people feel more comfortable""]",3,Make people feel more comfortable,“Break the ice” means “Make people feel more comfortable”.,mixed,1,0,
+29,grammar,mcq,We _____ to the market every Sunday.,"[""finishing"",""finish"",""finished""]",1,finish,Correct tense is “finish”.,mixed,1,0,
+30,grammar,mcq,I _____ the project next week.,"[""arrived"",""arrives"",""will arrive"",""arrive""]",2,will arrive,Correct tense is “will arrive”.,mixed,1,0,
+31,grammar,mcq,She _____ the project next week.,"[""will play"",""plays"",""play"",""played""]",0,will play,Correct tense is “will play”.,mixed,1,0,
+32,grammar,mcq,You _____ to the market every Sunday.,"[""starting"",""start"",""started""]",1,start,Correct tense is “start”.,mixed,1,0,
+33,grammar,mcq,We _____ the project next week.,"[""will plan"",""planned"",""plan"",""plans""]",0,will plan,Correct tense is “will plan”.,mixed,1,0,
+34,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""finished"",""finishing"",""finishes"",""finish""]",0,finished,Correct tense is “finished”.,mixed,1,0,
+35,grammar,mcq,I _____ the project next week.,"[""has"",""will have"",""have"",""had""]",1,will have,Correct tense is “will have”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She do not like tea."",""She does not like tea."",""She  do not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""These kind of mistakes are common."",""this kind of mistake is common."",""These  kind of mistakes are common."",""This kind of mistake is common.""]",3,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""i know the answer."",""I am knowing the answer."",""I  am knowing the answer."",""I know the answer.""]",3,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I am knowing the answer."",""I know the answer."",""I  am knowing the answer."",""i know the answer.""]",1,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither  of the two are correct."",""neither of the two is correct."",""Neither of the two are correct."",""Neither of the two is correct.""]",3,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She do not like tea."",""She  do not like tea."",""She does not like tea.""]",3,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She do not like tea."",""she does not like tea."",""She does not like tea."",""She  do not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+C. Bins were placed across campus.
+D. Waste reduced within weeks.
+A. The school launched a recycling drive.
+B. Students designed posters.","[""BACD"",""CABD"",""ACBD"",""CBAD"",""ABCD"",""BCAD""]",4,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+B. Students designed posters.
+D. Waste reduced within weeks.
+A. The school launched a recycling drive.
+C. Bins were placed across campus.","[""ABCD"",""CBAD"",""ACBD"",""BCAD"",""BACD"",""CABD""]",0,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""but"",""or"",""so"",""and""]",0,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+48,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""on"",""at"",""by"",""in""]",1,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+49,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""and"",""so"",""or"",""but""]",3,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+50,fill-blanks,mcq,She is good _____ mathematics.,"[""in"",""for"",""at"",""with""]",2,at,The correct preposition/conjunction is “at”.,mixed,1,0,

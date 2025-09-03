@@ -32,18 +32,24 @@ export default function Signup() {
     e.preventDefault();
     setErr("");
 
-    // client validations
     if (!name.trim()) return setErr("Please enter your name.");
     if (!emailIsValid(email)) return setErr("Please enter a valid email address.");
-    if (!passwordIsStrong(password))
-      return setErr("Please create a stronger password that meets all requirements.");
+    if (!passwordIsStrong(password)) return setErr("Please create a stronger password that meets all requirements.");
 
     setLoading(true);
     try {
-      await signup(name.trim(), email.trim(), password);
+      // Start OTP signup (does NOT create the account yet)
+      const res = await signup(name.trim(), email.trim(), password);
+
+      // If server enforces OTP (recommended): go to verify screen
+      if (res?.otp_required && res?.pending_id) {
+        nav(`/verify-otp?pid=${encodeURIComponent(res.pending_id)}${res.email_masked ? `&email=${encodeURIComponent(res.email_masked)}` : ""}`, { replace: true });
+        return;
+      }
+
+      // Fallback (dev mode without OTP)
       nav("/account-created", { replace: true });
     } catch (e) {
-      // Map server errors to friendly copy
       const msg = e?.message || "Could not create account. Please try again.";
       setErr(msg.includes("already") ? "That email is already registered. Try logging in." : msg);
     } finally {
@@ -53,7 +59,6 @@ export default function Signup() {
 
   return (
     <div className="scroll-smooth bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center selection:bg-orange-300 selection:text-slate-900">
-      {/* background */}
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-orange-500/20 blur-[90px]" />
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-indigo-500/20 blur-[110px]" />
@@ -68,8 +73,7 @@ export default function Signup() {
             </div>
 
             <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-              Start your{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">Journey</span>
+              Start your <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">Journey</span>
             </h1>
             <p className="mt-3 text-sm text-slate-300">Sign up to access live cohorts, workshops, resume tools, and more.</p>
 
@@ -78,13 +82,7 @@ export default function Signup() {
                 Name
                 <div className="mt-2 flex items-center gap-2 rounded-xl border border-slate-800/60 bg-slate-900/40 px-3 focus-within:border-orange-600/50">
                   <User className="h-4 w-4 text-orange-300" />
-                  <input
-                    autoComplete="name"
-                    className="w-full bg-transparent py-3 text-slate-100 outline-none"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                  />
+                  <input autoComplete="name" className="w-full bg-transparent py-3 text-slate-100 outline-none" value={name} onChange={(e) => setName(e.target.value)} required />
                 </div>
               </label>
 
@@ -92,14 +90,7 @@ export default function Signup() {
                 Email
                 <div className="mt-2 flex items-center gap-2 rounded-xl border border-slate-800/60 bg-slate-900/40 px-3 focus-within:border-orange-600/50">
                   <Mail className="h-4 w-4 text-orange-300" />
-                  <input
-                    type="email"
-                    autoComplete="email"
-                    className="w-full bg-transparent py-3 text-slate-100 outline-none"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
+                  <input type="email" autoComplete="email" className="w-full bg-transparent py-3 text-slate-100 outline-none" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 </div>
               </label>
 
@@ -107,24 +98,11 @@ export default function Signup() {
                 Password
                 <div className="mt-2 flex items-center gap-2 rounded-xl border border-slate-800/60 bg-slate-900/40 px-3 focus-within:border-orange-600/50">
                   <Lock className="h-4 w-4 text-orange-300" />
-                  <input
-                    type={showPassword ? "text" : "password"}
-                    autoComplete="new-password"
-                    className="w-full bg-transparent py-3 text-slate-100 outline-none"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowPassword((s) => !s)}
-                    aria-label={showPassword ? "Hide password" : "Show password"}
-                    className="text-slate-400 hover:text-orange-300 focus:outline-none"
-                  >
+                  <input type={showPassword ? "text" : "password"} autoComplete="new-password" className="w-full bg-transparent py-3 text-slate-100 outline-none" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                  <button type="button" onClick={() => setShowPassword((s) => !s)} aria-label={showPassword ? "Hide password" : "Show password"} className="text-slate-400 hover:text-orange-300 focus:outline-none">
                     {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                   </button>
                 </div>
-                {/* Strength checklist */}
                 <ul className="mt-3 space-y-1">
                   {checklist.map((item) => (
                     <li key={item.label} className="flex items-center gap-2 text-xs">
@@ -143,8 +121,7 @@ export default function Signup() {
             </form>
 
             <p className="mt-6 text-sm text-slate-300">
-              Already have an account?{" "}
-              <Link to="/login" className="text-orange-300 hover:text-orange-200 underline">Log in</Link>
+              Already have an account? <Link to="/login" className="text-orange-300 hover:text-orange-200 underline">Log in</Link>
             </p>
           </CardContent>
         </Card>

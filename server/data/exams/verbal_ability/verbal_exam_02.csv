@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: What are 'demo hours'?","[""Long lectures"",""Snack breaks"",""Short concept demos"",""Movie shows""]",2,Short concept demos,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Visitor behavior:","[""Left quickly"",""Stayed longer"",""Avoided stations"",""Ignored staff""]",1,Stayed longer,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Effect on understanding:","[""Worse"",""No change"",""Better"",""Unknown""]",2,Better,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {1}:","[""setting"",""set"",""settle"",""sets""]",1,set,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {2}:","[""build"",""builds"",""building"",""built""]",0,build,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {3}:","[""surfaced"",""surfacing"",""surface"",""surfaces""]",2,surface,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {4}:","[""reduces"",""reduced"",""reduce"",""reducing""]",3,reducing,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {5}:","[""reduced"",""reducing"",""reduce"",""reduces""]",2,reduce,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {6}:","[""increasing"",""increase"",""increased"",""increases""]",1,increase,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,We look forward _____ your reply.,"[""at"",""for"",""to"",""on""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+14,fill-blanks,mcq,She is good _____ mathematics.,"[""with"",""for"",""in"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “concise”.,"[""coarse"",""ardent"",""brief"",""harsh""]",2,brief,“brief” means nearly the same as “concise”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “abundant”.,"[""harsh"",""plentiful"",""cumbersome"",""colorful""]",1,plentiful,“plentiful” means nearly the same as “abundant”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “eloquent”.,"[""cumbersome"",""peculiar"",""persuasive"",""vague""]",2,persuasive,“persuasive” means nearly the same as “eloquent”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""harsh"",""calm"",""boisterous"",""trivial""]",1,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “succinct”.,"[""concise"",""colorful"",""luminous"",""elusive""]",0,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “vivid”.,"[""swift"",""clear"",""peculiar"",""boisterous""]",1,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “impartial”.,"[""obsolete"",""biased"",""tedious"",""ardent""]",1,biased,“biased” is the opposite of “impartial”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “frugal”.,"[""tedious"",""coarse"",""extravagant"",""brisk""]",2,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “amiable”.,"[""elusive"",""hostile"",""brisk"",""vague""]",1,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “benevolent”.,"[""malicious"",""coarse"",""cumbersome"",""ardent""]",0,malicious,“malicious” is the opposite of “benevolent”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A speech delivered without preparation,"[""Pioneer"",""Impromptu"",""Oligarchy"",""Cannibal""]",1,Impromptu,Impromptu fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A person who loves books,"[""Graphologist"",""Impromptu"",""Panacea"",""Bibliophile""]",3,Bibliophile,Bibliophile fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Spill the beans”,"[""Reveal a secret"",""Go to sleep"",""Face a difficult situation"",""Avoid the main topic""]",0,Reveal a secret,“Spill the beans” means “Reveal a secret”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “In a nutshell”,"[""Stop working on something"",""Make people feel more comfortable"",""In brief"",""Undecided""]",2,In brief,“In a nutshell” means “In brief”.,mixed,1,0,
+29,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""go"",""goes"",""going"",""went""]",3,went,Correct tense is “went”.,mixed,1,0,
+30,grammar,mcq,We _____ dinner when he arrived.,"[""had gone"",""are going"",""have gone"",""were going""]",3,were going,Correct tense is “were going”.,mixed,1,0,
+31,grammar,mcq,We _____ dinner when he arrived.,"[""have started"",""are starting"",""were starting"",""had started""]",2,were starting,Correct tense is “were starting”.,mixed,1,0,
+32,grammar,mcq,We _____ dinner when he arrived.,"[""are planning"",""were planning"",""had planned"",""have planned""]",1,were planning,Correct tense is “were planning”.,mixed,1,0,
+33,grammar,mcq,He _____ the project next week.,"[""finished"",""will finish"",""finishes"",""finish""]",1,will finish,Correct tense is “will finish”.,mixed,1,0,
+34,grammar,mcq,He _____ the project next week.,"[""play"",""plays"",""will play"",""played""]",2,will play,Correct tense is “will play”.,mixed,1,0,
+35,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""finishes"",""finish"",""finished"",""finishing""]",2,finished,Correct tense is “finished”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither Ram nor Shyam are here."",""Neither Ram nor Shyam is here."",""neither ram nor shyam is here."",""Neither  Ram nor Shyam are here.""]",1,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither  of the two are correct."",""neither of the two is correct."",""Neither of the two are correct."",""Neither of the two is correct.""]",3,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither Ram nor Shyam is here."",""Neither Ram nor Shyam are here."",""neither ram nor shyam is here."",""Neither  Ram nor Shyam are here.""]",0,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She do not like tea."",""She does not like tea."",""She  do not like tea."",""she does not like tea.""]",1,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The scenery here is beautiful."",""the scenery here is beautiful."",""The sceneries here are beautiful."",""The  sceneries here are beautiful.""]",0,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each  of the boys have a pen."",""Each of the boys have a pen."",""each of the boys has a pen."",""Each of the boys has a pen.""]",3,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The sceneries here are beautiful."",""The scenery here is beautiful."",""The  sceneries here are beautiful."",""the scenery here is beautiful.""]",1,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+B. Interactive exhibits drew children.
+C. Volunteers explained the science.
+D. Visitors left with curiosity sparked.
+A. The museum opened a new wing.","[""BACD"",""CBAD"",""ABCD"",""ACBD"",""BCAD"",""CABD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The city planted trees along sidewalks.
+D. Residents organized weekend cleanups.
+C. Birds returned to the area.
+B. Shade made walking pleasant.","[""ACBD"",""ABCD"",""CBAD"",""CABD"",""BACD"",""BCAD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"Some books are heavy. All heavy things sink.
+Which conclusion follows?","[""Some books may sink."",""All books sink."",""No book sinks."",""Books are never heavy.""]",0,Some books may sink.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"No apples are blue. Some fruits are apples.
+Which conclusion follows?","[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Some fruits are not blue.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,She is good _____ mathematics.,"[""with"",""for"",""at"",""in""]",2,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+48,fill-blanks,mcq,He is known _____ his honesty.,"[""by"",""to"",""with"",""for""]",3,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+49,fill-blanks,mcq,We look forward _____ your reply.,"[""to"",""at"",""on"",""for""]",0,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,She is good _____ mathematics.,"[""in"",""for"",""at"",""with""]",2,at,The correct preposition/conjunction is “at”.,mixed,1,0,

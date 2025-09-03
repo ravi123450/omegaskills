@@ -11,6 +11,49 @@ import { Button } from "@/components/ui/button";
 // Icons
 import { BookOpen, Clock, Layers, Lock, LockOpen } from "lucide-react";
 
+/* ---------------- Razorpay Payment Button helper ---------------- */
+function PaymentButtonForm({ paymentButtonId, className }) {
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    if (!formRef.current) return;
+
+    // Remove any leftover script (hot reload or re-renders)
+    const prev = formRef.current.querySelector(
+      "script[src*='checkout.razorpay.com/v1/payment-button.js']"
+    );
+    if (prev) prev.remove();
+
+    // Create and append Razorpay script
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+    script.async = true;
+    script.setAttribute("data-payment_button_id", paymentButtonId);
+
+    // Optional: customize button label via data attributes
+    // script.setAttribute("data-button_text", "Enroll Now");
+
+    formRef.current.appendChild(script);
+
+    return () => {
+      // Clean up on unmount
+      script.remove();
+    };
+  }, [paymentButtonId]);
+
+  // Stop click bubbling so card onClick doesn't trigger when user clicks the pay button
+  const stopCardClick = (e) => e.stopPropagation();
+
+  return (
+    <form
+      ref={formRef}
+      onClick={stopCardClick}
+      className={className}
+      // You can add hidden inputs here if your Razorpay setup needs them.
+    />
+  );
+}
+
 export default function Courses({ token }) {
   const [courses, setCourses] = useState([]);
   const [loadingCourses, setLoadingCourses] = useState(true);
@@ -29,7 +72,6 @@ export default function Courses({ token }) {
 
   // helper to scroll to the mock tests section smoothly
   const scrollToMocks = () => {
-    // use rAF to ensure the section is in the DOM before scrolling
     requestAnimationFrame(() => {
       if (mockRef.current) {
         mockRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -37,7 +79,7 @@ export default function Courses({ token }) {
     });
   };
 
-  // Load courses (token-first; cookie session supported by api.js)
+  // Load courses
   useEffect(() => {
     (async () => {
       try {
@@ -51,7 +93,7 @@ export default function Courses({ token }) {
     })();
   }, [token]);
 
-  // Auto-open course if router passed { state: { openCourseId } } (e.g., from Dashboard)
+  // Auto-open course
   useEffect(() => {
     if (!openCourseId || !courses?.length) return;
     const target = courses.find((c) => String(c.id) === String(openCourseId));
@@ -66,7 +108,6 @@ export default function Courses({ token }) {
     setError("");
     setLoadingExams(true);
 
-    // Scroll immediately so the user is taken to the section (even while it loads)
     scrollToMocks();
 
     try {
@@ -77,12 +118,10 @@ export default function Courses({ token }) {
       setError(msg);
     } finally {
       setLoadingExams(false);
-      // Optional: scroll again after load in case layout height changed
       scrollToMocks();
     }
   };
 
-  // Robust navigation: keep state AND a sessionStorage fallback
   const startExam = (exam) => {
     if (!exam) return;
     try {
@@ -93,6 +132,9 @@ export default function Courses({ token }) {
 
   const questionsLabel = (ex) =>
     ex?.num_questions ? `${ex.num_questions} Questions` : "90 Questions";
+
+  // ⬅️ Put your real Razorpay Payment Button ID here
+  const PAYMENT_BUTTON_ID = "pl_RC4fYVag9khclc";
 
   return (
     <main className="bg-slate-950 text-slate-100 min-h-[70vh]">
@@ -129,6 +171,38 @@ export default function Courses({ token }) {
             </Card>
           ) : (
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {/* ---------- STATIC ALL-IN-ONE BUNDLE CARD (added) ---------- */}
+              <Card className="border border-amber-500/30 bg-gradient-to-br from-slate-900/60 to-slate-900/30">
+                <CardContent className="p-5">
+                  <div className="mb-4 h-24 w-full rounded-lg bg-gradient-to-br from-amber-500/20 via-orange-500/20 to-pink-500/20" />
+                  <h3 className="text-base font-semibold md:text-lg">
+                    All-in-One Mock Test Bundle
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-300">
+                    Includes <b>Logical Reasoning</b>, <b>Quantitative Aptitude</b>,{" "}
+                    <b>Verbal Ability</b>, and <b>Soft Skills Mastery</b>.
+                  </p>
+
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <Badge className="bg-slate-800/60 text-slate-200">Logical Reasoning</Badge>
+                    <Badge className="bg-slate-800/60 text-slate-200">Quantitative Aptitude</Badge>
+                    <Badge className="bg-slate-800/60 text-slate-200">Verbal Ability</Badge>
+                    <Badge className="bg-slate-800/60 text-slate-200">Soft Skills Mastery</Badge>
+                  </div>
+
+                  {/* Standalone Razorpay button for bundle (exact snippet) */}
+                  <div className="mt-4" onClick={(e) => e.stopPropagation()}>
+  <PaymentButtonForm
+    key="rzp-bundle"
+    paymentButtonId="pl_RCfSfZmmVyI1U3"
+    className="inline-block"
+  />
+</div>
+
+                </CardContent>
+              </Card>
+              {/* ---------- END STATIC BUNDLE CARD ---------- */}
+
               {courses.map((c) => (
                 <Card
                   key={c.id}
@@ -173,6 +247,15 @@ export default function Courses({ token }) {
                         Open
                       </Button>
                     </div>
+
+                    {/* Razorpay Payment Button (renders inside this form) */}
+                    <div className="mt-4">
+                      <PaymentButtonForm
+                        key={`rzp-${c.id}`}
+                        paymentButtonId={PAYMENT_BUTTON_ID}
+                        className="inline-block"
+                      />
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -190,7 +273,6 @@ export default function Courses({ token }) {
 
         {/* SELECTED COURSE & EXAMS */}
         {activeCourse && (
-          // attach ref right before the section so we scroll to the heading cleanly
           <div ref={mockRef} className="mt-10">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-lg font-semibold md:text-xl">

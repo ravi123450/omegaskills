@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Primary purpose of the measure?","[""Reduce noise"",""Encourage active travel"",""Lower taxes"",""Increase tourism""]",1,Encourage active travel,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Immediate effect on shops?","[""Lower sales"",""No change"",""Higher footfall"",""Closed early""]",2,Higher footfall,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+The city introduced a weekly car-free hour on major roads to encourage walking and cycling. Local shops reported higher footfall, while residents noted clearer air and a calmer soundscape.
+
+Q: Residents mainly noticed:","[""More traffic"",""Clearer air"",""Longer commutes"",""Heavier rainfall""]",1,Clearer air,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {1}:","[""settle"",""set"",""sets"",""setting""]",1,set,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {2}:","[""build"",""building"",""builds"",""built""]",0,build,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {3}:","[""surface"",""surfaces"",""surfaced"",""surfacing""]",0,surface,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {4}:","[""reduce"",""reduced"",""reducing"",""reduces""]",2,reducing,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {5}:","[""reduces"",""reducing"",""reduce"",""reduced""]",2,reduce,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {6}:","[""increases"",""increase"",""increased"",""increasing""]",1,increase,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,She is good _____ mathematics.,"[""in"",""with"",""for"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+14,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""at"",""on"",""by"",""in""]",0,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “abundant”.,"[""tedious"",""docile"",""plentiful"",""elusive""]",2,plentiful,“plentiful” means nearly the same as “abundant”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “prudent”.,"[""docile"",""luminous"",""careful"",""coarse""]",2,careful,“careful” means nearly the same as “prudent”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “prudent”.,"[""careful"",""peculiar"",""elusive"",""trivial""]",0,careful,“careful” means nearly the same as “prudent”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “frugal”.,"[""thrifty"",""obsolete"",""elusive"",""docile""]",0,thrifty,“thrifty” means nearly the same as “frugal”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “prudent”.,"[""brisk"",""careful"",""cumbersome"",""boisterous""]",1,careful,“careful” means nearly the same as “prudent”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “candid”.,"[""massive"",""frank"",""cumbersome"",""infrequent""]",1,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “frugal”.,"[""ardent"",""extravagant"",""brisk"",""peculiar""]",1,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “amiable”.,"[""coarse"",""hostile"",""cumbersome"",""harsh""]",1,hostile,“hostile” is the opposite of “amiable”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “diligent”.,"[""infrequent"",""lazy"",""elusive"",""obsolete""]",1,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “tranquil”.,"[""agitated"",""trivial"",""elusive"",""cumbersome""]",0,agitated,“agitated” is the opposite of “tranquil”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: One who does something for the first time,"[""Pioneer"",""Bibliophile"",""Archaeologist"",""Panacea""]",0,Pioneer,Pioneer fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who believes pleasure is the highest good,"[""Pioneer"",""Panacea"",""Hedonist"",""Graphologist""]",2,Hedonist,Hedonist fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Costs an arm and a leg”,"[""Very rarely"",""Stop working on something"",""Very expensive"",""In brief""]",2,Very expensive,“Costs an arm and a leg” means “Very expensive”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Bite the bullet”,"[""Very rarely"",""Avoid the main topic"",""Face a difficult situation"",""Go to sleep""]",2,Face a difficult situation,“Bite the bullet” means “Face a difficult situation”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""are containing"",""were containing"",""have contained"",""had contained""]",1,were containing,Correct tense is “were containing”.,mixed,1,0,
+30,grammar,mcq,We _____ dinner when he arrived.,"[""had reviewed"",""are reviewing"",""were reviewing"",""have reviewed""]",2,were reviewing,Correct tense is “were reviewing”.,mixed,1,0,
+31,grammar,mcq,The committee _____ to the market every Sunday.,"[""played"",""plays"",""play"",""playing""]",1,plays,Correct tense is “plays”.,mixed,1,0,
+32,grammar,mcq,We _____ the project next week.,"[""finishes"",""finish"",""finished"",""will finish""]",3,will finish,Correct tense is “will finish”.,mixed,1,0,
+33,grammar,mcq,He _____ the project next week.,"[""start"",""starts"",""will start"",""started""]",2,will start,Correct tense is “will start”.,mixed,1,0,
+34,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""starting"",""starts"",""start"",""started""]",3,started,Correct tense is “started”.,mixed,1,0,
+35,grammar,mcq,We _____ dinner when he arrived.,"[""had gone"",""are going"",""were going"",""have gone""]",2,were going,Correct tense is “were going”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither  Ram nor Shyam are here."",""neither ram nor shyam is here."",""Neither Ram nor Shyam is here."",""Neither Ram nor Shyam are here.""]",2,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither  of the two are correct."",""Neither of the two is correct."",""neither of the two is correct."",""Neither of the two are correct.""]",1,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Each of the boys have a pen.”),"[""Each of the boys have a pen."",""Each of the boys has a pen."",""Each  of the boys have a pen."",""each of the boys has a pen.""]",1,Each of the boys has a pen.,Correct form: “Each of the boys has a pen.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""neither of the two is correct."",""Neither of the two is correct."",""Neither  of the two are correct."",""Neither of the two are correct.""]",1,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He  is senior than me."",""He is senior to me."",""He is senior than me."",""he is senior to me.""]",1,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I  am knowing the answer."",""I know the answer."",""i know the answer."",""I am knowing the answer.""]",1,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “These kind of mistakes are common.”),"[""This kind of mistake is common."",""These  kind of mistakes are common."",""These kind of mistakes are common."",""this kind of mistake is common.""]",0,This kind of mistake is common.,Correct form: “This kind of mistake is common.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+C. Local musicians performed throughout the day.
+D. The park was decorated with lights and banners.
+B. Stalls offered regional snacks and handicrafts.
+A. The festival drew visitors from many cities.","[""BCAD"",""ABCD"",""ACBD"",""BACD"",""CABD"",""CBAD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+C. Birds returned to the area.
+B. Shade made walking pleasant.
+D. Residents organized weekend cleanups.
+A. The city planted trees along sidewalks.","[""CABD"",""ABCD"",""BACD"",""BCAD"",""ACBD"",""CBAD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"No apples are blue. Some fruits are apples.
+Which conclusion follows?","[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Some fruits are not blue.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,I agree _____ your proposal.,"[""to"",""at"",""with"",""on""]",2,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+48,fill-blanks,mcq,She insisted _____ paying the bill.,"[""for"",""at"",""to"",""on""]",3,on,The correct preposition/conjunction is “on”.,mixed,1,0,
+49,fill-blanks,mcq,She is good _____ mathematics.,"[""with"",""at"",""in"",""for""]",1,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+50,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""at"",""in"",""by"",""on""]",0,at,The correct preposition/conjunction is “at”.,mixed,1,0,

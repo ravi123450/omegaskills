@@ -1,0 +1,51 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,Find LCM of 7 and 11.,mcq,"[""76"",""79"",""77"",""76""]",2,,Number System,mixed
+2,Find LCM of 24 and 7.,mcq,"[""168"",""167"",""170"",""168""]",0,,Number System,mixed
+3,61 is what percent of 164?,mcq,"[""42.2"",""37.2"",""268.85"",""32.2""]",1,,Percentages,mixed
+4,45 is what percent of 164?,mcq,"[""364.44"",""22.44"",""32.44"",""27.44""]",3,,Percentages,mixed
+5,"Cost price = ₹364, Profit = 23%. Find selling price.",mcq,"[""447.72"",""280.28"",""437.72"",""457.72""]",0,,Profit & Loss,mixed
+6,"Cost price = ₹104, Profit = 33%. Find selling price.",mcq,"[""148.32"",""128.32"",""69.68"",""138.32""]",3,,Profit & Loss,mixed
+7,"Find average of 34, 20, 11, 22.",mcq,"[""22.75"",""21.75"",""21.67"",""20.75""]",1,,Average,mixed
+8,"Find average of 34, 36, 39, 14.",mcq,"[""30.75"",""36.33"",""31.75"",""29.75""]",0,,Average,mixed
+9,Divide ₹142 in the ratio 6:5. Share of first person?,mcq,"[""71"",""64.55"",""77.45"",""142""]",2,,Ratio & Proportion,mixed
+10,Divide ₹214 in the ratio 3:2. Share of first person?,mcq,"[""214"",""128.4"",""85.6"",""107""]",1,,Ratio & Proportion,mixed
+11,Equal volumes of 19% and 69% salt solutions are mixed. Final concentration?,mcq,"[""69"",""19"",""44"",""49""]",2,Weighted average of equal volumes is mean.,Mixtures,mixed
+12,Equal volumes of 25% and 50% salt solutions are mixed. Final concentration?,mcq,"[""37.5"",""25"",""50"",""42.5""]",0,Weighted average of equal volumes is mean.,Mixtures,mixed
+13,"A can finish in 8 days, B in 14 days. In how many days together?",mcq,"[""14"",""8"",""5.09"",""22""]",2,1/T=1/a+1/b,Time & Work,mixed
+14,"A can finish in 8 days, B in 14 days. In how many days together?",mcq,"[""5.09"",""8"",""22"",""14""]",0,1/T=1/a+1/b,Time & Work,mixed
+15,A car at 37 km/h for 6 h covers how many km?,mcq,"[""43"",""222"",""232"",""212""]",1,,Speed–Distance–Time,mixed
+16,A car at 72 km/h for 5 h covers how many km?,mcq,"[""350"",""360"",""77"",""370""]",1,,Speed–Distance–Time,mixed
+17,Two pipes fill a tank in 6 min and 13 min. Together time? (min),mcq,"[""19"",""13"",""78"",""4.11""]",3,Same as Work.,Pipes & Cisterns,mixed
+18,Two pipes fill a tank in 6 min and 14 min. Together time? (min),mcq,"[""20"",""14"",""4.2"",""84""]",2,Same as Work.,Pipes & Cisterns,mixed
+19,Solve: 9x + 14 = 43. Find x.,mcq,"[""6.333333333333333"",""3.22"",""2.22"",""4.220000000000001""]",1,,Algebra,mixed
+20,Solve: 4x + 5 = 45. Find x.,mcq,"[""9"",""10"",""11"",""12.5""]",1,,Algebra,mixed
+21,"In a triangle, two angles are 58° and 56°. Find the third angle.",mcq,"[""66"",""90"",""124"",""122""]",0,,Geometry,mixed
+22,"In a triangle, two angles are 30° and 57°. Find the third angle.",mcq,"[""150"",""93"",""90"",""123""]",1,,Geometry,mixed
+23,"At 45° elevation, a tower is seen from 32 m away. Height of tower?",mcq,"[""16"",""37"",""64"",""32""]",3,tan45°=1 → h=d,Height & Distance,mixed
+24,"At 45° elevation, a tower is seen from 26 m away. Height of tower?",mcq,"[""26"",""13"",""31"",""52""]",0,tan45°=1 → h=d,Height & Distance,mixed
+25,"Area of circle (r=13 cm), use π=22/7.",mcq,"[""531"",""1062"",""82"",""553""]",0,,Mensuration,mixed
+26,"Area of circle (r=9 cm), use π=22/7.",mcq,"[""57"",""509"",""255"",""277""]",2,,Mensuration,mixed
+27,"Distance between (3,4) and (7,11).",mcq,"[""4"",""7"",""8.06"",""11""]",2,,Co-ordinate Geometry,mixed
+28,"Distance between (0,1) and (5,9).",mcq,"[""13"",""5"",""9.43"",""8""]",2,,Co-ordinate Geometry,mixed
+29,How many combinations: 7C2?,mcq,"[""7"",""42"",""24"",""21""]",3,,Permutations & Combinations,mixed
+30,How many combinations: 8C3?,mcq,"[""56"",""59"",""336"",""28""]",0,,Permutations & Combinations,mixed
+31,A fair die is rolled. Probability of a prime number?,mcq,"[""1/3"",""1/6"",""2/3"",""1/2""]",3,,Probability,mixed
+32,A fair die is rolled. Probability of a prime number?,mcq,"[""1/3"",""1/6"",""2/3"",""1/2""]",3,,Probability,mixed
+33,Simple Interest on ₹4096 at 7% p.a. for 2 years?,mcq,"[""523"",""594"",""573"",""673""]",2,,Simple & Compound Interest,mixed
+34,Simple Interest on ₹3705 at 8% p.a. for 2 years?,mcq,"[""543"",""617"",""693"",""593""]",3,,Simple & Compound Interest,mixed
+35,Sum of ages = 59. Ratio 3:4. Elder's age?,mcq,"[""27"",""23"",""34"",""25""]",3,,Ages,mixed
+36,Sum of ages = 50. Ratio 2:4. Elder's age?,mcq,"[""33"",""15"",""17"",""19""]",2,,Ages,mixed
+37,Evaluate: log₁₀(10^4).,mcq,"[""5"",""4"",""0"",""3""]",1,,Logs,mixed
+38,Evaluate: log₁₀(10^2).,mcq,"[""3"",""1"",""0"",""2""]",3,,Logs,mixed
+39,"In a class, 32 like Maths, 29 like Science, 13 like both. How many like at least one?",mcq,"[""48"",""13"",""3"",""61""]",0,n(A∪B)=A+B−both,Sets,mixed
+40,"In a class, 40 like Maths, 25 like Science, 8 like both. How many like at least one?",mcq,"[""15"",""65"",""57"",""8""]",2,n(A∪B)=A+B−both,Sets,mixed
+41,"A can finish in 6 days, B in 15 days. In how many days together?",mcq,"[""15"",""6"",""4.29"",""21""]",2,1/T=1/a+1/b,Time & Work,mixed
+42,"In a triangle, two angles are 34° and 45°. Find the third angle.",mcq,"[""135"",""146"",""90"",""101""]",3,,Geometry,mixed
+43,Simple Interest on ₹1421 at 7% p.a. for 2 years?,mcq,"[""199"",""149"",""206"",""299""]",0,,Simple & Compound Interest,mixed
+44,Solve: 2x + 9 = 24. Find x.,mcq,"[""8.5"",""16.5"",""7.5"",""6.5""]",2,,Algebra,mixed
+45,"In a class, 30 like Maths, 27 like Science, 11 like both. How many like at least one?",mcq,"[""46"",""3"",""57"",""11""]",0,n(A∪B)=A+B−both,Sets,mixed
+46,Divide ₹170 in the ratio 9:3. Share of first person?,mcq,"[""127.5"",""170"",""42.5"",""85""]",0,,Ratio & Proportion,mixed
+47,"In a class, 38 like Maths, 33 like Science, 11 like both. How many like at least one?",mcq,"[""71"",""5"",""11"",""60""]",3,n(A∪B)=A+B−both,Sets,mixed
+48,86 is what percent of 153?,mcq,"[""56.21"",""61.21"",""177.91"",""51.21""]",0,,Percentages,mixed
+49,"In a triangle, two angles are 30° and 60°. Find the third angle.",mcq,"[""150"",""90"",""90"",""120""]",1,,Geometry,mixed
+50,Simple Interest on ₹3416 at 9% p.a. for 2 years?,mcq,"[""643"",""565"",""615"",""715""]",2,,Simple & Compound Interest,mixed

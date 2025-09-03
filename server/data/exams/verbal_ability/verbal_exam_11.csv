@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: What are 'demo hours'?","[""Long lectures"",""Snack breaks"",""Short concept demos"",""Movie shows""]",2,Short concept demos,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Visitor behavior:","[""Left quickly"",""Stayed longer"",""Avoided stations"",""Ignored staff""]",1,Stayed longer,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Effect on understanding:","[""Worse"",""No change"",""Better"",""Unknown""]",2,Better,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Why raised walkways?","[""Decoration"",""Festival"",""Rainy-season access"",""Tourism""]",2,Rainy-season access,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Markets:","[""Closed often"",""Stayed open"",""Moved inland"",""Were demolished""]",1,Stayed open,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Emergency services could:","[""Avoid the town"",""Navigate safely"",""Only use boats"",""Do nothing""]",1,Navigate safely,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {1}:","[""set"",""setting"",""sets"",""settle""]",0,set,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {2}:","[""builds"",""building"",""build"",""built""]",2,build,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {3}:","[""surface"",""surfaces"",""surfacing"",""surfaced""]",0,surface,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {4}:","[""reduced"",""reduces"",""reducing"",""reduce""]",2,reducing,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {5}:","[""reduced"",""reduce"",""reduces"",""reducing""]",1,reduce,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {6}:","[""increase"",""increased"",""increasing"",""increases""]",0,increase,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,I agree _____ your proposal.,"[""at"",""with"",""to"",""on""]",1,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+14,fill-blanks,mcq,She insisted _____ paying the bill.,"[""for"",""at"",""on"",""to""]",2,on,The correct preposition/conjunction is “on”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “diligent”.,"[""hardworking"",""tedious"",""colorful"",""peculiar""]",0,hardworking,“hardworking” means nearly the same as “diligent”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “concise”.,"[""brief"",""swift"",""luminous"",""sturdy""]",0,brief,“brief” means nearly the same as “concise”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “succinct”.,"[""coarse"",""luminous"",""concise"",""cumbersome""]",2,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""precise"",""elusive"",""harsh"",""sturdy""]",0,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “benevolent”.,"[""kind"",""obsolete"",""coarse"",""massive""]",0,kind,“kind” means nearly the same as “benevolent”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “impartial”.,"[""coarse"",""boisterous"",""swift"",""neutral""]",3,neutral,“neutral” means nearly the same as “impartial”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “abundant”.,"[""docile"",""scarce"",""infrequent"",""cumbersome""]",1,scarce,“scarce” is the opposite of “abundant”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “vivid”.,"[""dull"",""swift"",""meagre"",""elusive""]",0,dull,“dull” is the opposite of “vivid”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “arduous”.,"[""easy"",""cumbersome"",""boisterous"",""vague""]",0,easy,“easy” is the opposite of “arduous”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “frugal”.,"[""coarse"",""tedious"",""meagre"",""extravagant""]",3,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A person who talks too much,"[""Oligarchy"",""Graphologist"",""Loquacious"",""Cannibal""]",2,Loquacious,Loquacious fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: One who eats human flesh,"[""Cannibal"",""Archaeologist"",""Oligarchy"",""Loquacious""]",0,Cannibal,Cannibal fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “In a nutshell”,"[""In brief"",""Very expensive"",""Face a difficult situation"",""Stop working on something""]",0,In brief,“In a nutshell” means “In brief”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Once in a blue moon”,"[""Very rarely"",""Avoid the main topic"",""Undecided"",""Make people feel more comfortable""]",0,Very rarely,“Once in a blue moon” means “Very rarely”.,mixed,1,0,
+29,grammar,mcq,We _____ the project next week.,"[""does"",""do"",""will do"",""done""]",2,will do,Correct tense is “will do”.,mixed,1,0,
+30,grammar,mcq,We _____ dinner when he arrived.,"[""had started"",""are starting"",""were starting"",""have started""]",2,were starting,Correct tense is “were starting”.,mixed,1,0,
+31,grammar,mcq,We _____ dinner when he arrived.,"[""have had"",""had had"",""are having"",""were having""]",3,were having,Correct tense is “were having”.,mixed,1,0,
+32,grammar,mcq,They _____ to the market every Sunday.,"[""gone"",""go"",""going""]",1,go,Correct tense is “go”.,mixed,1,0,
+33,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""reviews"",""reviewed"",""reviewing"",""review""]",1,reviewed,Correct tense is “reviewed”.,mixed,1,0,
+34,grammar,mcq,She _____ the project next week.,"[""will finish"",""finishes"",""finished"",""finish""]",0,will finish,Correct tense is “will finish”.,mixed,1,0,
+35,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""does"",""do"",""doing"",""did""]",3,did,Correct tense is “did”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither  of the two are correct."",""Neither of the two are correct."",""Neither of the two is correct."",""neither of the two is correct.""]",2,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He  is senior than me."",""He is senior than me."",""He is senior to me."",""he is senior to me.""]",2,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She do not like tea."",""she does not like tea."",""She does not like tea."",""She  do not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither of the two is correct."",""Neither of the two are correct."",""Neither  of the two are correct."",""neither of the two is correct.""]",0,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The  sceneries here are beautiful."",""The sceneries here are beautiful."",""the scenery here is beautiful."",""The scenery here is beautiful.""]",3,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""Less students attended the class."",""Less  students attended the class."",""Fewer students attended the class."",""fewer students attended the class.""]",2,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The scenery here is beautiful."",""The sceneries here are beautiful."",""The  sceneries here are beautiful."",""the scenery here is beautiful.""]",0,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+B. Students designed posters.
+D. Waste reduced within weeks.
+A. The school launched a recycling drive.
+C. Bins were placed across campus.","[""ACBD"",""CABD"",""CBAD"",""BACD"",""ABCD"",""BCAD""]",4,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The school launched a recycling drive.
+B. Students designed posters.
+C. Bins were placed across campus.
+D. Waste reduced within weeks.","[""ABCD"",""CBAD"",""BCAD"",""BACD"",""ACBD"",""CABD""]",0,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""on"",""in"",""by"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+48,fill-blanks,mcq,I agree _____ your proposal.,"[""to"",""with"",""at"",""on""]",1,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+49,fill-blanks,mcq,We look forward _____ your reply.,"[""for"",""to"",""at"",""on""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,I agree _____ your proposal.,"[""with"",""to"",""on"",""at""]",0,with,The correct preposition/conjunction is “with”.,mixed,1,0,

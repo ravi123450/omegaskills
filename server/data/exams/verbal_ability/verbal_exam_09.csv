@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Why raised walkways?","[""Decoration"",""Festival"",""Rainy-season access"",""Tourism""]",2,Rainy-season access,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Markets:","[""Closed often"",""Stayed open"",""Moved inland"",""Were demolished""]",1,Stayed open,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Emergency services could:","[""Avoid the town"",""Navigate safely"",""Only use boats"",""Do nothing""]",1,Navigate safely,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:","[""plan"",""planned"",""plans"",""planning""]",2,plans,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:","[""arrive"",""arriving"",""arrives"",""arrived""]",2,arrives,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:","[""accessed"",""accessible"",""accessing"",""access""]",1,accessible,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:","[""contained"",""containing"",""contain"",""contains""]",3,contains,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:","[""requiring"",""required"",""require"",""requires""]",2,require,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:","[""reviewing"",""reviewed"",""reviews"",""review""]",3,review,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,I agree _____ your proposal.,"[""at"",""on"",""to"",""with""]",3,with,The correct preposition/conjunction is “with”.,mixed,1,0,
+14,fill-blanks,mcq,He is known _____ his honesty.,"[""with"",""for"",""by"",""to""]",1,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “vivid”.,"[""clear"",""harsh"",""elusive"",""swift""]",0,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""meagre"",""vague"",""obsolete"",""precise""]",3,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “meticulous”.,"[""sturdy"",""precise"",""massive"",""cumbersome""]",1,precise,“precise” means nearly the same as “meticulous”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""calm"",""massive"",""trivial"",""tedious""]",0,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “succinct”.,"[""trivial"",""concise"",""meagre"",""boisterous""]",1,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “impartial”.,"[""swift"",""meagre"",""neutral"",""sturdy""]",2,neutral,“neutral” means nearly the same as “impartial”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “frugal”.,"[""extravagant"",""massive"",""swift"",""boisterous""]",0,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “frugal”.,"[""extravagant"",""coarse"",""sturdy"",""tedious""]",0,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “tranquil”.,"[""ardent"",""luminous"",""agitated"",""coarse""]",2,agitated,“agitated” is the opposite of “tranquil”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “diligent”.,"[""docile"",""swift"",""coarse"",""lazy""]",3,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A cure for all diseases,"[""Archaeologist"",""Panacea"",""Impromptu"",""Oligarchy""]",1,Panacea,Panacea fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A person who loves books,"[""Cannibal"",""Loquacious"",""Hedonist"",""Bibliophile""]",3,Bibliophile,Bibliophile fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Beat around the bush”,"[""Avoid the main topic"",""Stop working on something"",""Undecided"",""Go to sleep""]",0,Avoid the main topic,“Beat around the bush” means “Avoid the main topic”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Break the ice”,"[""Undecided"",""Very expensive"",""Reveal a secret"",""Make people feel more comfortable""]",3,Make people feel more comfortable,“Break the ice” means “Make people feel more comfortable”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""are reviewing"",""were reviewing"",""have reviewed"",""had reviewed""]",1,were reviewing,Correct tense is “were reviewing”.,mixed,1,0,
+30,grammar,mcq,You _____ the project next week.,"[""will play"",""play"",""plays"",""played""]",0,will play,Correct tense is “will play”.,mixed,1,0,
+31,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""finished"",""finishing"",""finish"",""finishes""]",0,finished,Correct tense is “finished”.,mixed,1,0,
+32,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""planning"",""plan"",""planned"",""plans""]",2,planned,Correct tense is “planned”.,mixed,1,0,
+33,grammar,mcq,We _____ to the market every Sunday.,"[""reviewed"",""reviewing"",""review""]",2,review,Correct tense is “review”.,mixed,1,0,
+34,grammar,mcq,We _____ dinner when he arrived.,"[""had reviewed"",""have reviewed"",""were reviewing"",""are reviewing""]",2,were reviewing,Correct tense is “were reviewing”.,mixed,1,0,
+35,grammar,mcq,We _____ dinner when he arrived.,"[""were playing"",""had played"",""are playing"",""have played""]",0,were playing,Correct tense is “were playing”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She do not like tea."",""She does not like tea."",""She  do not like tea.""]",2,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He is senior than me."",""he is senior to me."",""He is senior to me."",""He  is senior than me.""]",2,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I am knowing the answer."",""I  am knowing the answer."",""I know the answer."",""i know the answer.""]",2,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She do not like tea."",""She  do not like tea."",""She does not like tea.""]",3,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Less students attended the class.”),"[""Less  students attended the class."",""fewer students attended the class."",""Less students attended the class."",""Fewer students attended the class.""]",3,Fewer students attended the class.,Correct form: “Fewer students attended the class.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither of the two are correct.”),"[""Neither of the two is correct."",""Neither  of the two are correct."",""Neither of the two are correct."",""neither of the two is correct.""]",0,Neither of the two is correct.,Correct form: “Neither of the two is correct.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He  is senior than me."",""he is senior to me."",""He is senior than me."",""He is senior to me.""]",3,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The museum opened a new wing.
+D. Visitors left with curiosity sparked.
+B. Interactive exhibits drew children.
+C. Volunteers explained the science.","[""ACBD"",""ABCD"",""CBAD"",""BACD"",""BCAD"",""CABD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. By evening, prototypes were shown.
+A. The workshop began with a quick warm-up.
+B. Teams formed around shared interests.
+C. Mentors guided the brainstorming.","[""CBAD"",""CABD"",""BCAD"",""ABCD"",""ACBD"",""BACD""]",3,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,She is good _____ mathematics.,"[""in"",""at"",""with"",""for""]",1,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+48,fill-blanks,mcq,He is allergic _____ peanuts.,"[""with"",""at"",""for"",""to""]",3,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+49,fill-blanks,mcq,She insisted _____ paying the bill.,"[""for"",""to"",""at"",""on""]",3,on,The correct preposition/conjunction is “on”.,mixed,1,0,
+50,fill-blanks,mcq,She is good _____ mathematics.,"[""in"",""with"",""for"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,

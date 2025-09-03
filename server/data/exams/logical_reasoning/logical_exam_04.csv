@@ -1,0 +1,99 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"In a row of 6 people facing North, the left-to-right order is:
+A, B, E, C, D, F.
+Who is at the extreme left end?",mcq,"[""C"",""D"",""A"",""B""]",2,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+2,"In a row of 8 people facing North, the left-to-right order is:
+A, C, E, B, D, H, G, F.
+Who sits between A and E?",mcq,"[""C"",""F"",""E"",""G""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+3,"In a row of 6 people facing North, the left-to-right order is:
+C, D, E, F, A, B.
+Who sits immediately to the right of E?",mcq,"[""F"",""C"",""B"",""E""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+4,"In a row of 8 people facing North, the left-to-right order is:
+D, G, H, A, F, E, B, C.
+Who sits immediately to the right of G?",mcq,"[""H"",""F"",""B"",""D""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+5,"In a row of 6 people facing North, the left-to-right order is:
+F, A, C, B, E, D.
+Who is at the extreme right end?",mcq,"[""D"",""B"",""E"",""C""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+6,"In a row of 6 people facing North, the left-to-right order is:
+D, C, F, A, B, E.
+Who sits immediately to the right of F?",mcq,"[""E"",""B"",""A"",""C""]",2,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+7,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+A < E < F < C < D < B (left is bottom, right is top).
+Which box is on the top?",mcq,"[""E"",""D"",""F"",""B""]",3,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+8,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+D < F < C < B < A < E (left is bottom, right is top).
+Which box is at the bottom?",mcq,"[""A"",""F"",""E"",""D""]",3,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+9,"Boxes A, B, C, D, E are stacked from bottom to top as:
+A < E < B < C < D (left is bottom, right is top).
+Which box is on the top?",mcq,"[""C"",""D"",""B"",""E""]",1,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+10,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+C < B < A < D < F < E (left is bottom, right is top).
+Which box is at the bottom?",mcq,"[""D"",""B"",""C"",""A""]",2,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+11,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+B < A < C < D < E < F (left is bottom, right is top).
+Which box is on the top?",mcq,"[""C"",""A"",""F"",""D""]",2,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+12,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+E < D < A < C < F < B (left is bottom, right is top).
+Which box is at the bottom?",mcq,"[""E"",""B"",""F"",""C""]",0,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+13,"All engineers are players. Some players are gardeners.
+Which conclusion follows?",mcq,"[""Some engineers may be gardeners."",""All gardeners are engineers."",""No engineers is gardeners."",""Some gardeners are engineers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+14,"All pilots are players. Some players are poets.
+Which conclusion follows?",mcq,"[""Some pilots may be poets."",""All poets are pilots."",""No pilots is poets."",""Some poets are pilots.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+15,"All doctors are readers. Some readers are players.
+Which conclusion follows?",mcq,"[""Some doctors may be players."",""All players are doctors."",""No doctors is players."",""Some players are doctors.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+16,"All poets are scientists. Some scientists are artists.
+Which conclusion follows?",mcq,"[""Some poets may be artists."",""All artists are poets."",""No poets is artists."",""Some artists are poets.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+17,"All drivers are players. Some players are teachers.
+Which conclusion follows?",mcq,"[""Some drivers may be teachers."",""All teachers are drivers."",""No drivers is teachers."",""Some teachers are drivers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+18,"All teachers are players. Some players are gardeners.
+Which conclusion follows?",mcq,"[""Some teachers may be gardeners."",""All gardeners are teachers."",""No teachers is gardeners."",""Some gardeners are teachers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+19,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""QUEUE"" is written as 69, what is ""PUZZLE"" written as?",mcq,"[""106"",""107"",""105"",""108""]",0,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+20,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""LOGIC"" is written as 46, what is ""CODE"" written as?",mcq,"[""26"",""27"",""29"",""28""]",1,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+21,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""SERIES"" is written as 75, what is ""LOGIC"" written as?",mcq,"[""48"",""46"",""47"",""45""]",1,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+22,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""ARRAY"" is written as 63, what is ""CAT"" written as?",mcq,"[""23"",""24"",""26"",""25""]",1,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+23,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""DOG"" is written as 26, what is ""CAT"" written as?",mcq,"[""23"",""24"",""26"",""25""]",1,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+24,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""LOGIC"" is written as 46, what is ""BRAIN"" written as?",mcq,"[""43"",""45"",""46"",""44""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+25,"Find the next number: 18, 22, 20, 24, 22 , ?",mcq,"[""28"",""25"",""27"",""26""]",3,"Alternating +4, -2.",Series,mixed
+26,"Find the next number: 8, 15, 22, 29, 36 , ?",mcq,"[""44"",""42"",""43"",""45""]",2,Arithmetic progression with common difference 7.,Series,mixed
+27,"Find the next number: 9, 12, 15, 18, 21 , ?",mcq,"[""23"",""24"",""26"",""25""]",1,Arithmetic progression with common difference 3.,Series,mixed
+28,"Find the next number: 11, 16, 14, 19, 17 , ?",mcq,"[""22"",""24"",""23"",""21""]",0,"Alternating +5, -2.",Series,mixed
+29,"Find the next number: 7, 14, 21, 28, 35 , ?",mcq,"[""44"",""43"",""41"",""42""]",3,Arithmetic progression with common difference 7.,Series,mixed
+30,"Find the next number: 5, 11, 17, 23, 29 , ?",mcq,"[""35"",""37"",""36"",""34""]",0,Arithmetic progression with common difference 6.,Series,mixed
+31,"Find the next number: 5, 10, 15, 20, 25 , ?",mcq,"[""32"",""30"",""29"",""31""]",1,Arithmetic progression with common difference 5.,Series,mixed
+32,"Find the next number: 6, 11, 16, 21, 26 , ?",mcq,"[""30"",""31"",""33"",""32""]",1,Arithmetic progression with common difference 5.,Series,mixed
+33,"In a group of 110 people, 32 like Tea, 32 like Coffee, and 19 like both.
+How many like only Tea?",mcq,"[""13"",""11"",""14"",""15""]",0,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+34,"In a group of 89 people, 37 like Tea, 44 like Coffee, and 28 like both.
+How many like at least one of Tea or Coffee?",mcq,"[""53"",""51"",""54"",""55""]",0,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+35,"In a group of 81 people, 59 like Tea, 35 like Coffee, and 26 like both.
+How many like only Coffee?",mcq,"[""10"",""7"",""9"",""11""]",2,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+36,"In a group of 110 people, 36 like Tea, 48 like Coffee, and 25 like both.
+How many like only Coffee?",mcq,"[""21"",""24"",""23"",""25""]",2,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+37,"In a test, the scores are:
+Chirag=80, Eshan=74, Aman=71.
+Who scored the highest?",mcq,"[""Chirag"",""Eshan"",""Aman""]",0,Compare the given numbers.,Analytical Reasoning,mixed
+38,"In a test, the scores are:
+Aman=78, Eshan=81, Dia=82.
+Who scored the highest?",mcq,"[""Eshan"",""Dia"",""Aman""]",1,Compare the given numbers.,Analytical Reasoning,mixed
+39,"In a test, the scores are:
+Aman=77, Dia=82, Chirag=66.
+Who scored the second highest?",mcq,"[""Dia"",""Aman"",""Chirag""]",1,Compare the given numbers.,Analytical Reasoning,mixed
+40,"In a test, the scores are:
+Dia=72, Chirag=69, Eshan=72.
+Who scored the highest?",mcq,"[""Chirag"",""Eshan"",""Dia""]",2,Compare the given numbers.,Analytical Reasoning,mixed
+41,Arun is the son of Deep. Divya is the sister of Arun. How is Divya related to Deep?,mcq,"[""Daughter"",""Uncle"",""Brother"",""Mother""]",0,Map roles carefully from the statements.,Blood Relations,mixed
+42,Bhavya is the mother of Deep. Eshan is the husband of Bhavya. How is Eshan related to Deep?,mcq,"[""Mother"",""Uncle"",""Brother"",""Father""]",3,Map roles carefully from the statements.,Blood Relations,mixed
+43,"A person starts from a point, walks 3 units South, then 3 units West, then 2 units North. In which direction is the person from the starting point now?",mcq,"[""East"",""South-West"",""North-East"",""South-East""]",1,Resolve x/y displacement and convert to compass direction.,Direction Sense,mixed
+44,"A person starts from a point, walks 2 units South, then 2 units North, then 2 units East. In which direction is the person from the starting point now?",mcq,"[""West"",""South-East"",""East"",""North""]",2,Resolve x/y displacement and convert to compass direction.,Direction Sense,mixed
+45,"Find the next number: 4, 16, 64, 256, 1024 , ?",mcq,"[""4096"",""4095"",""4097"",""4098""]",0,Geometric progression with ratio 4.,Series,mixed
+46,"Find the next number: 13, 19, 17, 23, 21 , ?",mcq,"[""26"",""29"",""28"",""27""]",3,"Alternating +6, -2.",Series,mixed
+47,"Find the next number: 6, 24, 96, 384, 1536 , ?",mcq,"[""6144"",""6143"",""6145"",""6146""]",0,Geometric progression with ratio 4.,Series,mixed
+48,"Find the next number: 6, 12, 24, 48, 96 , ?",mcq,"[""192"",""194"",""191"",""193""]",0,Geometric progression with ratio 2.,Series,mixed
+49,"Find the next number: 18, 24, 22, 28, 26 , ?",mcq,"[""34"",""33"",""32"",""31""]",2,"Alternating +6, -2.",Series,mixed
+50,"Find the next number: 6, 8, 10, 12, 14 , ?",mcq,"[""15"",""16"",""18"",""17""]",1,Arithmetic progression with common difference 2.,Series,mixed

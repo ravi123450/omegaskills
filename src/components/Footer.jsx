@@ -210,7 +210,7 @@ export default function Footer() {
                   My Courses
                 </Link>
                 <Link
-                  to="/support"
+                  to="/contact"
                   className="rounded-xl bg-orange-500 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-orange-400 hover:text-black"
                 >
                   Support
@@ -225,10 +225,10 @@ export default function Footer() {
                 © {year} Omega Skills Academy
               </div>
               <div className="flex gap-4">
-                <Link className="hover:text-slate-300" to="/privacy">
+                <Link className="hover:text-slate-300" to="/dashboard">
                   Privacy
                 </Link>
-                <Link className="hover:text-slate-300" to="/terms">
+                <Link className="hover:text-slate-300" to="/dashboard">
                   Terms
                 </Link>
                 <Link className="hover:text-slate-300" to="/contact">

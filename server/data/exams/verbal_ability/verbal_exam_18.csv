@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: What did rooftops become?","[""Solar fields"",""Vegetable patches"",""Playgrounds"",""Parking""]",1,Vegetable patches,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Who learned soil care?","[""Tourists"",""Volunteers"",""Vendors"",""Police""]",1,Volunteers,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+An urban farm turned unused rooftops into vegetable patches. Volunteers learned soil care and irrigation, and nearby schools used the site for hands-on lessons about food systems.
+
+Q: Schools used the site for:","[""Sports"",""Food-system lessons"",""Parking"",""Cafeterias""]",1,Food-system lessons,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:","[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Take & leave,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?","[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Friendly ritual,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?","[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Readers,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {1}:","[""settle"",""sets"",""setting"",""set""]",3,set,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {2}:","[""builds"",""building"",""built"",""build""]",3,build,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {3}:","[""surface"",""surfacing"",""surfaces"",""surfaced""]",0,surface,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {4}:","[""reduces"",""reduced"",""reduce"",""reducing""]",3,reducing,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {5}:","[""reduces"",""reduced"",""reducing"",""reduce""]",3,reduce,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {6}:","[""increase"",""increased"",""increases"",""increasing""]",0,increase,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,She is good _____ mathematics.,"[""with"",""for"",""in"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+14,fill-blanks,mcq,"This problem is tough, _____ we can solve it together.","[""and"",""but"",""or"",""so""]",1,but,The correct preposition/conjunction is “but”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “concise”.,"[""brief"",""elusive"",""cumbersome"",""trivial""]",0,brief,“brief” means nearly the same as “concise”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “arduous”.,"[""infrequent"",""cumbersome"",""colorful"",""difficult""]",3,difficult,“difficult” means nearly the same as “arduous”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “abundant”.,"[""plentiful"",""boisterous"",""swift"",""obsolete""]",0,plentiful,“plentiful” means nearly the same as “abundant”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""infrequent"",""calm"",""trivial"",""coarse""]",1,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “candid”.,"[""frank"",""cumbersome"",""obsolete"",""sturdy""]",0,frank,“frank” means nearly the same as “candid”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “succinct”.,"[""sturdy"",""brisk"",""concise"",""obsolete""]",2,concise,“concise” means nearly the same as “succinct”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “impartial”.,"[""coarse"",""infrequent"",""biased"",""swift""]",2,biased,“biased” is the opposite of “impartial”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “diligent”.,"[""lazy"",""vague"",""ardent"",""obsolete""]",0,lazy,“lazy” is the opposite of “diligent”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “eloquent”.,"[""docile"",""infrequent"",""elusive"",""inarticulate""]",3,inarticulate,“inarticulate” is the opposite of “eloquent”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “concise”.,"[""massive"",""sturdy"",""verbose"",""ardent""]",2,verbose,“verbose” is the opposite of “concise”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A cure for all diseases,"[""Panacea"",""Impromptu"",""Pioneer"",""Bibliophile""]",0,Panacea,Panacea fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A person who talks too much,"[""Panacea"",""Hedonist"",""Bibliophile"",""Loquacious""]",3,Loquacious,Loquacious fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Beat around the bush”,"[""Very expensive"",""Avoid the main topic"",""Make people feel more comfortable"",""Very rarely""]",1,Avoid the main topic,“Beat around the bush” means “Avoid the main topic”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Bite the bullet”,"[""Face a difficult situation"",""Reveal a secret"",""Undecided"",""Stop working on something""]",0,Face a difficult situation,“Bite the bullet” means “Face a difficult situation”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""were starting"",""have started"",""are starting"",""had started""]",0,were starting,Correct tense is “were starting”.,mixed,1,0,
+30,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""planning"",""planned"",""plans"",""plan""]",1,planned,Correct tense is “planned”.,mixed,1,0,
+31,grammar,mcq,They _____ the project next week.,"[""starts"",""started"",""will start"",""start""]",2,will start,Correct tense is “will start”.,mixed,1,0,
+32,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""playing"",""played"",""plays"",""play""]",1,played,Correct tense is “played”.,mixed,1,0,
+33,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""plays"",""playing"",""played"",""play""]",2,played,Correct tense is “played”.,mixed,1,0,
+34,grammar,mcq,She _____ to the market every Sunday.,"[""planned"",""plans"",""plan"",""planning""]",1,plans,Correct tense is “plans”.,mixed,1,0,
+35,grammar,mcq,I _____ the project next week.,"[""plans"",""plan"",""will plan"",""planned""]",2,will plan,Correct tense is “will plan”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""He has been living here since 2010."",""He is living here since 2010."",""he has been living here since 2010."",""He  is living here since 2010.""]",0,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""he has been living here since 2010."",""He has been living here since 2010."",""He is living here since 2010."",""He  is living here since 2010.""]",1,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She does not like tea."",""She  do not like tea."",""She do not like tea."",""she does not like tea.""]",0,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""Neither Ram nor Shyam are here."",""Neither  Ram nor Shyam are here."",""Neither Ram nor Shyam is here."",""neither ram nor shyam is here.""]",2,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""she does not like tea."",""She  do not like tea."",""She do not like tea."",""She does not like tea.""]",3,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “I am knowing the answer.”),"[""I know the answer."",""I  am knowing the answer."",""I am knowing the answer."",""i know the answer.""]",0,I know the answer.,Correct form: “I know the answer.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “Neither Ram nor Shyam are here.”),"[""neither ram nor shyam is here."",""Neither Ram nor Shyam are here."",""Neither  Ram nor Shyam are here."",""Neither Ram nor Shyam is here.""]",3,Neither Ram nor Shyam is here.,Correct form: “Neither Ram nor Shyam is here.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The city planted trees along sidewalks.
+D. Residents organized weekend cleanups.
+B. Shade made walking pleasant.
+C. Birds returned to the area.","[""BACD"",""CBAD"",""ABCD"",""ACBD"",""CABD"",""BCAD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+D. Residents organized weekend cleanups.
+B. Shade made walking pleasant.
+C. Birds returned to the area.
+A. The city planted trees along sidewalks.","[""BACD"",""ABCD"",""CBAD"",""BCAD"",""ACBD"",""CABD""]",1,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,He is known _____ his honesty.,"[""for"",""with"",""by"",""to""]",0,for,The correct preposition/conjunction is “for”.,mixed,1,0,
+48,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""by"",""in"",""on"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+49,fill-blanks,mcq,She is good _____ mathematics.,"[""at"",""with"",""in"",""for""]",0,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+50,fill-blanks,mcq,He is known _____ his honesty.,"[""to"",""for"",""by"",""with""]",1,for,The correct preposition/conjunction is “for”.,mixed,1,0,

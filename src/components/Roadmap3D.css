@@ -1,0 +1,66 @@
+.roadmap-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  perspective: 1500px;
+  background: #0f1115;
+}
+.roadmap-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #4ade80;
+  text-shadow: 0 0 15px #4ade80, 0 0 30px #22c55e;
+}
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.course-card {
+  background: linear-gradient(145deg,#1c1f2a,#2b2f3d);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  color:#cbd5e1;
+  transition:0.3s;
+}
+.course-card:hover { transform:translateY(-5px) rotateY(5deg); box-shadow:0 0 20px #4ade80,0 0 40px #22c55e; }
+
+.roadmap-wrapper { margin-top:2rem; }
+.roadmap-header { display:flex; justify-content:space-between; align-items:center; }
+.back-btn { background:#111827; color:#22c55e; padding:0.5rem 1rem; border-radius:0.5rem; border:none; cursor:pointer; }
+.back-btn:hover { background:#1f2937; }
+
+.roadmap-steps { position:relative; margin-top:3rem; }
+
+.step-wrapper { position:relative; }
+.step-card {
+  padding:1.5rem;
+  border-radius:1rem;
+  background:linear-gradient(135deg,#111827,#1a1c2b);
+  color:#e5e7eb;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.5);
+  width:45%;
+  transition:0.3s;
+  position:relative;
+}
+.step-card.left { margin-left:0; }
+.step-card.right { margin-left:55%; }
+.step-card:hover { transform:translateY(-5px) rotateY(3deg); }
+
+.step-header { display:flex; align-items:center; gap:1rem; }
+.step-circle { width:2rem;height:2rem;border-radius:50%;background:#4ade80; display:flex;align-items:center;justify-content:center; }
+.step-circle.completed { background:#22c55e; }
+.step-desc { margin-top:1rem; line-height:1.5; }
+
+.bezier-curve { position:absolute; width:100%; height:120px; overflow:visible; }
+.particle { animation:moveAlong 2s linear infinite; }
+
+@keyframes moveAlong {
+  0% { transform: translate(0,0) scale(0.5); opacity:0.3; }
+  50% { opacity:1; }
+  100% { transform: translate(0,100px) scale(1); opacity:0; }
+}

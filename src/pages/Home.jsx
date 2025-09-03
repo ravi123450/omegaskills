@@ -623,8 +623,8 @@ export default function OmegaHomePage() {
           </Button>
 
           {/* Contact details below message box */}
-          <ContactLine icon={Mail} href="mailto:support@omegaskills.com">
-            support@omegaskills.com
+          <ContactLine icon={Mail} href="mailto:info@omegaskillsacademy.online">
+            info@omegaskillsacademy.online
           </ContactLine>
           <ContactLine icon={Phone} href="tel:+91XXXXXXXXXX">
             +91-XXXXXXXXXX

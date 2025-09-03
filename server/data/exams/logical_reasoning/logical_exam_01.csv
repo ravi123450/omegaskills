@@ -1,0 +1,115 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"In a row of 6 people facing North, the left-to-right order is:
+F, A, C, E, D, B.
+Who is at the extreme right end?",mcq,"[""A"",""D"",""B"",""E""]",2,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+2,"In a row of 6 people facing North, the left-to-right order is:
+C, B, D, A, E, F.
+Who is at the extreme right end?",mcq,"[""F"",""A"",""D"",""C""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+3,"In a row of 6 people facing North, the left-to-right order is:
+D, F, A, B, E, C.
+Who sits between D and A?",mcq,"[""F"",""B"",""C"",""E""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+4,"In a row of 6 people facing North, the left-to-right order is:
+D, B, A, F, C, E.
+Who is at the extreme left end?",mcq,"[""B"",""D"",""E"",""C""]",1,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+5,"In a row of 8 people facing North, the left-to-right order is:
+B, A, E, D, H, G, F, C.
+Who is at the extreme right end?",mcq,"[""A"",""C"",""D"",""H""]",1,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+6,"In a row of 8 people facing North, the left-to-right order is:
+B, H, A, G, E, F, D, C.
+Who sits immediately to the right of F?",mcq,"[""D"",""G"",""A"",""H""]",0,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+7,"Boxes A, B, C, D, E are stacked from bottom to top as:
+D < C < A < B < E (left is bottom, right is top).
+Which box is the 2nd from the bottom?",mcq,"[""A"",""B"",""D"",""C""]",3,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+8,"Boxes A, B, C, D, E are stacked from bottom to top as:
+C < A < D < E < B (left is bottom, right is top).
+Which box is on the top?",mcq,"[""D"",""B"",""A"",""C""]",1,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+9,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+C < B < D < F < A < E (left is bottom, right is top).
+Which box is the 2nd from the bottom?",mcq,"[""F"",""D"",""B"",""A""]",2,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+10,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+E < F < B < C < A < D (left is bottom, right is top).
+Which box is at the bottom?",mcq,"[""B"",""E"",""A"",""C""]",1,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+11,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+E < C < D < B < A < F (left is bottom, right is top).
+Which box is the 2nd from the top?",mcq,"[""D"",""A"",""B"",""C""]",1,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+12,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+C < F < D < A < E < B (left is bottom, right is top).
+Which box is at the bottom?",mcq,"[""E"",""C"",""D"",""F""]",1,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+13,"All players are scientists. Some scientists are chefs.
+Which conclusion follows?",mcq,"[""Some players may be chefs."",""All chefs are players."",""No players is chefs."",""Some chefs are players.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+14,"All chefs are teachers. Some teachers are players.
+Which conclusion follows?",mcq,"[""Some chefs may be players."",""All players are chefs."",""No chefs is players."",""Some players are chefs.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+15,"All dancers are gardeners. Some gardeners are artists.
+Which conclusion follows?",mcq,"[""Some dancers may be artists."",""All artists are dancers."",""No dancers is artists."",""Some artists are dancers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+16,"All pilots are engineers. Some engineers are poets.
+Which conclusion follows?",mcq,"[""Some pilots may be poets."",""All poets are pilots."",""No pilots is poets."",""Some poets are pilots.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+17,"All drivers are engineers. Some engineers are players.
+Which conclusion follows?",mcq,"[""Some drivers may be players."",""All players are drivers."",""No drivers is players."",""Some players are drivers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+18,"All drivers are poets. Some poets are scientists.
+Which conclusion follows?",mcq,"[""Some drivers may be scientists."",""All scientists are drivers."",""No drivers is scientists."",""Some scientists are drivers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+19,"Statement: Should shops be allowed to open 24/7?
+Arguments:
+I. Yes, it increases convenience and economic activity.
+II. No, it may exploit workers and increase operational costs.
+Which is strong?",mcq,"[""Only Argument I is strong"",""Only Argument II is strong"",""Both I and II are strong"",""Neither I nor II is strong""]",2,"Judge relevance, breadth and impact; avoid personal bias.",Statements & Arguments,mixed
+20,"Statement: Should school homework be abolished for primary classes?
+Arguments:
+I. Yes, children should spend time on play and social skills.
+II. No, homework builds a routine and responsibility.
+Which is strong?",mcq,"[""Only Argument I is strong"",""Only Argument II is strong"",""Both I and II are strong"",""Neither I nor II is strong""]",2,"Judge relevance, breadth and impact; avoid personal bias.",Statements & Arguments,mixed
+21,"Statement: Should public transport fares be reduced in big cities?
+Arguments:
+I. Yes, it will reduce private vehicle usage and congestion.
+II. No, it will burden the government budget heavily.
+Which is strong?",mcq,"[""Only Argument I is strong"",""Only Argument II is strong"",""Both I and II are strong"",""Neither I nor II is strong""]",2,"Judge relevance, breadth and impact; avoid personal bias.",Statements & Arguments,mixed
+22,"Statement: Should single-use plastics be banned?
+Arguments:
+I. Yes, they cause long-term environmental damage.
+II. No, they are cheaper and convenient for consumers.
+Which is strong?",mcq,"[""Only Argument I is strong"",""Only Argument II is strong"",""Both I and II are strong"",""Neither I nor II is strong""]",0,"Judge relevance, breadth and impact; avoid personal bias.",Statements & Arguments,mixed
+23,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""SERIES"" is written as 75, what is ""QUIZ"" written as?",mcq,"[""72"",""75"",""73"",""74""]",2,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+24,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""MATH"" is written as 42, what is ""SERIES"" written as?",mcq,"[""74"",""77"",""76"",""75""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+25,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""BRAIN"" is written as 44, what is ""CAT"" written as?",mcq,"[""23"",""25"",""26"",""24""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+26,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""CODE"" is written as 27, what is ""ARRAY"" written as?",mcq,"[""65"",""63"",""62"",""64""]",1,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+27,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""QUEUE"" is written as 69, what is ""ARRAY"" written as?",mcq,"[""65"",""64"",""63"",""62""]",2,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+28,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""BRAIN"" is written as 44, what is ""QUIZ"" written as?",mcq,"[""74"",""75"",""72"",""73""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+29,"Find the next number: 14, 16, 18, 20, 22 , ?",mcq,"[""23"",""26"",""24"",""25""]",2,Arithmetic progression with common difference 2.,Series,mixed
+30,"Find the next number: 5, 7, 9, 11, 13 , ?",mcq,"[""15"",""17"",""16"",""14""]",0,Arithmetic progression with common difference 2.,Series,mixed
+31,"Find the next number: 3, 9, 27, 81, 243 , ?",mcq,"[""730"",""728"",""731"",""729""]",3,Geometric progression with ratio 3.,Series,mixed
+32,"Find the next number: 12, 15, 18, 21, 24 , ?",mcq,"[""26"",""29"",""27"",""28""]",2,Arithmetic progression with common difference 3.,Series,mixed
+33,"Find the next number: 17, 20, 19, 22, 21 , ?",mcq,"[""24"",""23"",""25"",""26""]",0,"Alternating +3, -1.",Series,mixed
+34,"Find the next number: 2, 8, 32, 128, 512 , ?",mcq,"[""2048"",""2050"",""2049"",""2047""]",0,Geometric progression with ratio 4.,Series,mixed
+35,"Find the next number: 5, 20, 80, 320, 1280 , ?",mcq,"[""5120"",""5121"",""5119"",""5122""]",0,Geometric progression with ratio 4.,Series,mixed
+36,"Find the next number: 4, 8, 16, 32, 64 , ?",mcq,"[""128"",""127"",""129"",""130""]",0,Geometric progression with ratio 2.,Series,mixed
+37,"In a group of 107 people, 43 like Tea, 33 like Coffee, and 26 like both.
+How many like only Tea?",mcq,"[""19"",""15"",""17"",""18""]",2,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+38,"In a group of 109 people, 33 like Tea, 39 like Coffee, and 21 like both.
+How many like at least one of Tea or Coffee?",mcq,"[""53"",""49"",""52"",""51""]",3,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+39,"In a group of 95 people, 36 like Tea, 27 like Coffee, and 21 like both.
+How many like at least one of Tea or Coffee?",mcq,"[""40"",""42"",""44"",""43""]",1,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+40,"In a group of 95 people, 53 like Tea, 37 like Coffee, and 28 like both.
+How many like at least one of Tea or Coffee?",mcq,"[""63"",""64"",""62"",""60""]",2,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+41,"In a test, the scores are:
+Aman=67, Chirag=85, Eshan=81.
+Who scored the highest?",mcq,"[""Eshan"",""Aman"",""Chirag""]",2,Compare the given numbers.,Analytical Reasoning,mixed
+42,"In a test, the scores are:
+Eshan=84, Aman=67, Chirag=74.
+Who scored the second highest?",mcq,"[""Aman"",""Eshan"",""Chirag""]",2,Compare the given numbers.,Analytical Reasoning,mixed
+43,"In a test, the scores are:
+Eshan=67, Bela=83, Dia=66.
+Who scored the highest?",mcq,"[""Bela"",""Dia"",""Eshan""]",0,Compare the given numbers.,Analytical Reasoning,mixed
+44,"In a test, the scores are:
+Eshan=84, Chirag=67, Dia=80.
+Who scored the second highest?",mcq,"[""Eshan"",""Dia"",""Chirag""]",1,Compare the given numbers.,Analytical Reasoning,mixed
+45,Anita is the mother of Deep. Chetan is the husband of Anita. How is Chetan related to Deep?,mcq,"[""Uncle"",""Brother"",""Father"",""Mother""]",2,Map roles carefully from the statements.,Blood Relations,mixed
+46,Bharat is the son of Eshan. Anita is the sister of Bharat. How is Anita related to Eshan?,mcq,"[""Daughter"",""Mother"",""Brother"",""Uncle""]",0,Map roles carefully from the statements.,Blood Relations,mixed
+47,"A person starts from a point, walks 5 units North, then 2 units South, then 2 units East. In which direction is the person from the starting point now?",mcq,"[""South-West"",""North-East"",""South"",""South-East""]",1,Resolve x/y displacement and convert to compass direction.,Direction Sense,mixed
+48,"A person starts from a point, walks 5 units West, then 5 units East, then 5 units South. In which direction is the person from the starting point now?",mcq,"[""North-East"",""South"",""North-West"",""North""]",1,Resolve x/y displacement and convert to compass direction.,Direction Sense,mixed
+49,"Find the next number: 8, 12, 16, 20, 24 , ?",mcq,"[""29"",""30"",""27"",""28""]",3,Arithmetic progression with common difference 4.,Series,mixed
+50,"Find the next number: 18, 23, 20, 25, 22 , ?",mcq,"[""26"",""27"",""28"",""29""]",1,"Alternating +5, -3.",Series,mixed

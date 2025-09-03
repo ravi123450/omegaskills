@@ -1,0 +1,97 @@
+id,topic_slug,type,text,options_json,correct_index,answer,explanation,difficulty,marks,negative_marks,tags
+1,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Why raised walkways?","[""Decoration"",""Festival"",""Rainy-season access"",""Tourism""]",2,Rainy-season access,Answer follows directly from the passage.,mixed,1,0,
+2,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Markets:","[""Closed often"",""Stayed open"",""Moved inland"",""Were demolished""]",1,Stayed open,Answer follows directly from the passage.,mixed,1,0,
+3,rc,mcq,"Passage:
+A coastal town mapped its flood-prone lanes and installed raised walkways for the rainy season. The plan kept markets open and allowed emergency services to navigate safely.
+
+Q: Emergency services could:","[""Avoid the town"",""Navigate safely"",""Only use boats"",""Do nothing""]",1,Navigate safely,Answer follows directly from the passage.,mixed,1,0,
+4,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: What are 'demo hours'?","[""Long lectures"",""Snack breaks"",""Short concept demos"",""Movie shows""]",2,Short concept demos,Answer follows directly from the passage.,mixed,1,0,
+5,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Visitor behavior:","[""Left quickly"",""Stayed longer"",""Avoided stations"",""Ignored staff""]",1,Stayed longer,Answer follows directly from the passage.,mixed,1,0,
+6,rc,mcq,"Passage:
+A science museum scheduled short 'demo hours' where staff explained one concept with simple props. Visitors stayed longer at these stations and reported better understanding.
+
+Q: Effect on understanding:","[""Worse"",""No change"",""Better"",""Unknown""]",2,Better,Answer follows directly from the passage.,mixed,1,0,
+7,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {1}:","[""setting"",""set"",""sets"",""settle""]",1,set,Use context to choose the best fit.,mixed,1,0,
+8,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {2}:","[""build"",""built"",""building"",""builds""]",0,build,Use context to choose the best fit.,mixed,1,0,
+9,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {3}:","[""surfaces"",""surface"",""surfacing"",""surfaced""]",1,surface,Use context to choose the best fit.,mixed,1,0,
+10,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {4}:","[""reduces"",""reduced"",""reducing"",""reduce""]",2,reducing,Use context to choose the best fit.,mixed,1,0,
+11,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {5}:","[""reduces"",""reduced"",""reduce"",""reducing""]",2,reduce,Use context to choose the best fit.,mixed,1,0,
+12,cloze-test,mcq,"Cloze Passage:
+When teams {1} goals early, they {2} momentum. Regular check-ins {3} issues quickly, {4} delays. Clear roles {5} confusion and {6} ownership across members.
+
+Fill {6}:","[""increased"",""increases"",""increasing"",""increase""]",3,increase,Use context to choose the best fit.,mixed,1,0,
+13,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""by"",""in"",""on"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+14,fill-blanks,mcq,He is allergic _____ peanuts.,"[""for"",""with"",""to"",""at""]",2,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+15,vocabulary,mcq,Choose the synonym of “arduous”.,"[""coarse"",""difficult"",""infrequent"",""obsolete""]",1,difficult,“difficult” means nearly the same as “arduous”.,mixed,1,0,
+16,vocabulary,mcq,Choose the synonym of “frugal”.,"[""luminous"",""peculiar"",""thrifty"",""brisk""]",2,thrifty,“thrifty” means nearly the same as “frugal”.,mixed,1,0,
+17,vocabulary,mcq,Choose the synonym of “benevolent”.,"[""tedious"",""brisk"",""obsolete"",""kind""]",3,kind,“kind” means nearly the same as “benevolent”.,mixed,1,0,
+18,vocabulary,mcq,Choose the synonym of “vivid”.,"[""trivial"",""docile"",""clear"",""peculiar""]",2,clear,“clear” means nearly the same as “vivid”.,mixed,1,0,
+19,vocabulary,mcq,Choose the synonym of “impartial”.,"[""coarse"",""obsolete"",""neutral"",""sturdy""]",2,neutral,“neutral” means nearly the same as “impartial”.,mixed,1,0,
+20,vocabulary,mcq,Choose the synonym of “tranquil”.,"[""elusive"",""trivial"",""sturdy"",""calm""]",3,calm,“calm” means nearly the same as “tranquil”.,mixed,1,0,
+21,vocabulary,mcq,Choose the antonym of “arduous”.,"[""easy"",""tedious"",""colorful"",""peculiar""]",0,easy,“easy” is the opposite of “arduous”.,mixed,1,0,
+22,vocabulary,mcq,Choose the antonym of “frugal”.,"[""tedious"",""extravagant"",""luminous"",""vague""]",1,extravagant,“extravagant” is the opposite of “frugal”.,mixed,1,0,
+23,vocabulary,mcq,Choose the antonym of “meticulous”.,"[""massive"",""careless"",""colorful"",""trivial""]",1,careless,“careless” is the opposite of “meticulous”.,mixed,1,0,
+24,vocabulary,mcq,Choose the antonym of “arduous”.,"[""luminous"",""easy"",""peculiar"",""elusive""]",1,easy,“easy” is the opposite of “arduous”.,mixed,1,0,
+25,one-word,mcq,One-word substitute: A handwriting expert,"[""Archaeologist"",""Loquacious"",""Graphologist"",""Impromptu""]",2,Graphologist,Graphologist fits the description.,mixed,1,0,
+26,one-word,mcq,One-word substitute: A speech delivered without preparation,"[""Panacea"",""Pioneer"",""Cannibal"",""Impromptu""]",3,Impromptu,Impromptu fits the description.,mixed,1,0,
+27,idioms,mcq,Meaning of the idiom: “Spill the beans”,"[""Reveal a secret"",""Undecided"",""Face a difficult situation"",""Go to sleep""]",0,Reveal a secret,“Spill the beans” means “Reveal a secret”.,mixed,1,0,
+28,idioms,mcq,Meaning of the idiom: “Call it a day”,"[""Stop working on something"",""In brief"",""Very expensive"",""Reveal a secret""]",0,Stop working on something,“Call it a day” means “Stop working on something”.,mixed,1,0,
+29,grammar,mcq,We _____ dinner when he arrived.,"[""had planned"",""have planned"",""are planning"",""were planning""]",3,were planning,Correct tense is “were planning”.,mixed,1,0,
+30,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""has"",""have"",""having"",""had""]",3,had,Correct tense is “had”.,mixed,1,0,
+31,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""start"",""started"",""starting"",""starts""]",1,started,Correct tense is “started”.,mixed,1,0,
+32,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""have"",""had"",""has"",""having""]",1,had,Correct tense is “had”.,mixed,1,0,
+33,grammar,mcq,I _____ the project next week.,"[""played"",""will play"",""play"",""plays""]",1,will play,Correct tense is “will play”.,mixed,1,0,
+34,grammar,mcq,We _____ dinner when he arrived.,"[""have arrived"",""are arriving"",""were arriving"",""had arrived""]",2,were arriving,Correct tense is “were arriving”.,mixed,1,0,
+35,grammar,mcq,They _____ the task by 6 PM yesterday.,"[""arrive"",""arriving"",""arrived"",""arrives""]",2,arrived,Correct tense is “arrived”.,mixed,1,0,
+36,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “The sceneries here are beautiful.”),"[""The  sceneries here are beautiful."",""the scenery here is beautiful."",""The sceneries here are beautiful."",""The scenery here is beautiful.""]",3,The scenery here is beautiful.,Correct form: “The scenery here is beautiful.”.,mixed,1,0,
+37,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She do not like tea."",""She does not like tea."",""she does not like tea."",""She  do not like tea.""]",1,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+38,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She  do not like tea."",""She does not like tea."",""She do not like tea."",""she does not like tea.""]",1,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+39,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She  do not like tea."",""she does not like tea."",""She do not like tea."",""She does not like tea.""]",3,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+40,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is living here since 2010.”),"[""he has been living here since 2010."",""He has been living here since 2010."",""He  is living here since 2010."",""He is living here since 2010.""]",1,He has been living here since 2010.,Correct form: “He has been living here since 2010.”.,mixed,1,0,
+41,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “He is senior than me.”),"[""He is senior to me."",""He  is senior than me."",""He is senior than me."",""he is senior to me.""]",0,He is senior to me.,Correct form: “He is senior to me.”.,mixed,1,0,
+42,sentence-correction,mcq,Choose the grammatically correct sentence (fix: “She do not like tea.”),"[""She  do not like tea."",""She does not like tea."",""she does not like tea."",""She do not like tea.""]",1,She does not like tea.,Correct form: “She does not like tea.”.,mixed,1,0,
+43,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+A. The city planted trees along sidewalks.
+D. Residents organized weekend cleanups.
+C. Birds returned to the area.
+B. Shade made walking pleasant.","[""ACBD"",""CABD"",""CBAD"",""BCAD"",""ABCD"",""BACD""]",4,ABCD,Overview → details → activity → close.,mixed,1,0,
+44,para-jumbles,mcq,"Arrange the parts to form a coherent paragraph:
+C. Local musicians performed throughout the day.
+D. The park was decorated with lights and banners.
+B. Stalls offered regional snacks and handicrafts.
+A. The festival drew visitors from many cities.","[""CBAD"",""BCAD"",""ABCD"",""CABD"",""ACBD"",""BACD""]",2,ABCD,Overview → details → activity → close.,mixed,1,0,
+45,verbal-reasoning,mcq,"All athletes are disciplined. No undisciplined person is a leader.
+Which conclusion follows?","[""Some leaders are athletes."",""All leaders are athletes."",""Athletes cannot be leaders."",""A disciplined person can be a leader.""]",3,A disciplined person can be a leader.,Basic syllogism/logic.,mixed,1,0,
+46,verbal-reasoning,mcq,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?","[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Some poets may be teachers.,Basic syllogism/logic.,mixed,1,0,
+47,fill-blanks,mcq,The train arrives _____ 7 a.m.,"[""on"",""by"",""in"",""at""]",3,at,The correct preposition/conjunction is “at”.,mixed,1,0,
+48,fill-blanks,mcq,We look forward _____ your reply.,"[""on"",""to"",""for"",""at""]",1,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+49,fill-blanks,mcq,He is allergic _____ peanuts.,"[""to"",""for"",""with"",""at""]",0,to,The correct preposition/conjunction is “to”.,mixed,1,0,
+50,fill-blanks,mcq,I agree _____ your proposal.,"[""at"",""to"",""on"",""with""]",3,with,The correct preposition/conjunction is “with”.,mixed,1,0,

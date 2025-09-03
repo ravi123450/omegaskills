@@ -1,0 +1,51 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,Find LCM of 14 and 19.,mcq,"[""266"",""268"",""265"",""264""]",0,,Number System,mixed
+2,Find LCM of 17 and 9.,mcq,"[""153"",""151"",""155"",""152""]",0,,Number System,mixed
+3,46 is what percent of 165?,mcq,"[""358.7"",""22.88"",""27.88"",""32.88""]",2,,Percentages,mixed
+4,82 is what percent of 116?,mcq,"[""141.46"",""70.69"",""75.69"",""65.69""]",1,,Percentages,mixed
+5,"Cost price = ₹340, Profit = 20%. Find selling price.",mcq,"[""272"",""408"",""398"",""418""]",1,,Profit & Loss,mixed
+6,"Cost price = ₹109, Profit = 13%. Find selling price.",mcq,"[""94.83"",""123.17"",""113.17"",""133.17000000000002""]",1,,Profit & Loss,mixed
+7,"Find average of 28, 11, 50, 44.",mcq,"[""29.67"",""33.25"",""32.25"",""34.25""]",1,,Average,mixed
+8,"Find average of 18, 22, 50, 11.",mcq,"[""26.25"",""24.25"",""30"",""25.25""]",3,,Average,mixed
+9,Divide ₹167 in the ratio 8:8. Share of first person?,mcq,"[""83.5"",""83.5"",""167"",""83.5""]",0,,Ratio & Proportion,mixed
+10,Divide ₹391 in the ratio 9:5. Share of first person?,mcq,"[""391"",""195.5"",""251.36"",""139.64""]",2,,Ratio & Proportion,mixed
+11,Equal volumes of 26% and 50% salt solutions are mixed. Final concentration?,mcq,"[""26"",""43"",""50"",""38""]",3,Weighted average of equal volumes is mean.,Mixtures,mixed
+12,Equal volumes of 28% and 53% salt solutions are mixed. Final concentration?,mcq,"[""40.5"",""53"",""28"",""45.5""]",0,Weighted average of equal volumes is mean.,Mixtures,mixed
+13,"A can finish in 12 days, B in 8 days. In how many days together?",mcq,"[""12"",""20"",""8"",""4.8""]",3,1/T=1/a+1/b,Time & Work,mixed
+14,"A can finish in 10 days, B in 14 days. In how many days together?",mcq,"[""10"",""14"",""24"",""5.83""]",3,1/T=1/a+1/b,Time & Work,mixed
+15,A car at 52 km/h for 2 h covers how many km?,mcq,"[""114"",""94"",""104"",""54""]",2,,Speed–Distance–Time,mixed
+16,A car at 62 km/h for 3 h covers how many km?,mcq,"[""196"",""186"",""176"",""65""]",1,,Speed–Distance–Time,mixed
+17,Two pipes fill a tank in 8 min and 8 min. Together time? (min),mcq,"[""64"",""16"",""8"",""4""]",3,Same as Work.,Pipes & Cisterns,mixed
+18,Two pipes fill a tank in 12 min and 11 min. Together time? (min),mcq,"[""5.74"",""132"",""23"",""12""]",0,Same as Work.,Pipes & Cisterns,mixed
+19,Solve: 8x + 12 = 17. Find x.,mcq,"[""-0.37"",""0.63"",""3.625"",""1.63""]",1,,Algebra,mixed
+20,Solve: 3x + 15 = 49. Find x.,mcq,"[""11.33"",""12.33"",""21.333333333333332"",""10.33""]",0,,Algebra,mixed
+21,"In a triangle, two angles are 47° and 52°. Find the third angle.",mcq,"[""81"",""128"",""133"",""90""]",0,,Geometry,mixed
+22,"In a triangle, two angles are 49° and 31°. Find the third angle.",mcq,"[""90"",""131"",""149"",""100""]",3,,Geometry,mixed
+23,"At 45° elevation, a tower is seen from 40 m away. Height of tower?",mcq,"[""80"",""20"",""45"",""40""]",3,tan45°=1 → h=d,Height & Distance,mixed
+24,"At 45° elevation, a tower is seen from 34 m away. Height of tower?",mcq,"[""68"",""17"",""39"",""34""]",3,tan45°=1 → h=d,Height & Distance,mixed
+25,"Area of circle (r=11 cm), use π=22/7.",mcq,"[""761"",""69"",""402"",""380""]",3,,Mensuration,mixed
+26,"Area of circle (r=9 cm), use π=22/7.",mcq,"[""277"",""57"",""509"",""255""]",3,,Mensuration,mixed
+27,"Distance between (4,5) and (7,12).",mcq,"[""3"",""7"",""10"",""7.62""]",3,,Co-ordinate Geometry,mixed
+28,"Distance between (2,0) and (6,8).",mcq,"[""12"",""4"",""8.94"",""8""]",2,,Co-ordinate Geometry,mixed
+29,How many combinations: 6C3?,mcq,"[""20"",""23"",""15"",""120""]",0,,Permutations & Combinations,mixed
+30,How many combinations: 8C4?,mcq,"[""70"",""1680"",""73"",""56""]",0,,Permutations & Combinations,mixed
+31,A fair die is rolled. Probability of a prime number?,mcq,"[""1/6"",""1/2"",""2/3"",""1/3""]",1,,Probability,mixed
+32,A fair die is rolled. Probability of a prime number?,mcq,"[""2/3"",""1/2"",""1/3"",""1/6""]",1,,Probability,mixed
+33,Simple Interest on ₹4362 at 12% p.a. for 2 years?,mcq,"[""997"",""1047"",""1110"",""1147""]",1,,Simple & Compound Interest,mixed
+34,Simple Interest on ₹3023 at 6% p.a. for 2 years?,mcq,"[""313"",""463"",""363"",""374""]",2,,Simple & Compound Interest,mixed
+35,Sum of ages = 47. Ratio 3:4. Elder's age?,mcq,"[""18"",""20"",""27"",""22""]",1,,Ages,mixed
+36,Sum of ages = 46. Ratio 5:4. Elder's age?,mcq,"[""28"",""24"",""26"",""20""]",2,,Ages,mixed
+37,Evaluate: log₁₀(10^3).,mcq,"[""4"",""3"",""0"",""2""]",1,,Logs,mixed
+38,Evaluate: log₁₀(10^1).,mcq,"[""2"",""0"",""0"",""1""]",3,,Logs,mixed
+39,"In a class, 39 like Maths, 34 like Science, 5 like both. How many like at least one?",mcq,"[""5"",""73"",""68"",""5""]",2,n(A∪B)=A+B−both,Sets,mixed
+40,"In a class, 24 like Maths, 25 like Science, 13 like both. How many like at least one?",mcq,"[""-1"",""36"",""13"",""49""]",1,n(A∪B)=A+B−both,Sets,mixed
+41,"In a triangle, two angles are 61° and 70°. Find the third angle.",mcq,"[""119"",""90"",""49"",""110""]",2,,Geometry,mixed
+42,"In a triangle, two angles are 32° and 45°. Find the third angle.",mcq,"[""135"",""148"",""103"",""90""]",2,,Geometry,mixed
+43,Solve: 6x + 8 = 12. Find x.,mcq,"[""3.3333333333333335"",""0.67"",""1.67"",""-0.32999999999999996""]",1,,Algebra,mixed
+44,Sum of ages = 37. Ratio 4:2. Elder's age?,mcq,"[""12"",""25"",""23"",""27""]",1,,Ages,mixed
+45,"Find average of 38, 22, 35, 17.",mcq,"[""27"",""28"",""31.67"",""29""]",1,,Average,mixed
+46,"Find average of 39, 25, 48, 31.",mcq,"[""36.75"",""37.33"",""35.75"",""34.75""]",2,,Average,mixed
+47,A car at 74 km/h for 3 h covers how many km?,mcq,"[""232"",""212"",""222"",""77""]",2,,Speed–Distance–Time,mixed
+48,Sum of ages = 45. Ratio 2:2. Elder's age?,mcq,"[""25"",""23"",""22"",""21""]",1,,Ages,mixed
+49,"A can finish in 10 days, B in 8 days. In how many days together?",mcq,"[""4.44"",""10"",""18"",""8""]",0,1/T=1/a+1/b,Time & Work,mixed
+50,Divide ₹362 in the ratio 9:7. Share of first person?,mcq,"[""158.38"",""203.63"",""181"",""362""]",1,,Ratio & Proportion,mixed

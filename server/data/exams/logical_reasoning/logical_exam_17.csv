@@ -1,0 +1,85 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"In a row of 6 people facing North, the left-to-right order is:
+B, E, A, F, C, D.
+Who sits between B and A?",mcq,"[""F"",""A"",""C"",""E""]",3,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+2,"In a row of 8 people facing North, the left-to-right order is:
+C, H, B, E, G, F, D, A.
+Who sits between C and B?",mcq,"[""D"",""E"",""F"",""H""]",3,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+3,"In a row of 6 people facing North, the left-to-right order is:
+D, B, E, C, F, A.
+Who sits between D and E?",mcq,"[""E"",""D"",""A"",""B""]",3,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+4,"In a row of 6 people facing North, the left-to-right order is:
+E, F, C, A, D, B.
+Who is at the extreme left end?",mcq,"[""F"",""E"",""B"",""C""]",1,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+5,"In a row of 8 people facing North, the left-to-right order is:
+F, A, C, E, B, D, H, G.
+Who sits between F and C?",mcq,"[""E"",""B"",""A"",""G""]",2,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+6,"In a row of 6 people facing North, the left-to-right order is:
+D, A, E, B, F, C.
+Who is at the extreme right end?",mcq,"[""F"",""E"",""B"",""C""]",3,Read the fixed order carefully and map the required position.,Seating Arrangements,mixed
+7,"Boxes A, B, C, D, E are stacked from bottom to top as:
+D < A < E < C < B (left is bottom, right is top).
+Which box is on the top?",mcq,"[""A"",""D"",""E"",""B""]",3,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+8,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+C < A < D < B < E < F (left is bottom, right is top).
+Which box is on the top?",mcq,"[""B"",""D"",""E"",""F""]",3,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+9,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+A < B < F < E < C < D (left is bottom, right is top).
+Which box is the 2nd from the bottom?",mcq,"[""B"",""D"",""F"",""E""]",0,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+10,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+A < E < F < B < D < C (left is bottom, right is top).
+Which box is the 2nd from the bottom?",mcq,"[""C"",""D"",""E"",""F""]",2,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+11,"Boxes A, B, C, D, E, F are stacked from bottom to top as:
+D < B < A < C < E < F (left is bottom, right is top).
+Which box is on the top?",mcq,"[""A"",""E"",""F"",""B""]",2,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+12,"Boxes A, B, C, D, E are stacked from bottom to top as:
+E < A < D < B < C (left is bottom, right is top).
+Which box is on the top?",mcq,"[""C"",""D"",""B"",""A""]",0,Trace positions carefully from the declared bottom/top.,Puzzles,mixed
+13,"All singers are pilots. Some pilots are poets.
+Which conclusion follows?",mcq,"[""Some singers may be poets."",""All poets are singers."",""No singers is poets."",""Some poets are singers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+14,"All pilots are dancers. Some dancers are leaders.
+Which conclusion follows?",mcq,"[""Some pilots may be leaders."",""All leaders are pilots."",""No pilots is leaders."",""Some leaders are pilots.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+15,"All leaders are readers. Some readers are chefs.
+Which conclusion follows?",mcq,"[""Some leaders may be chefs."",""All chefs are leaders."",""No leaders is chefs."",""Some chefs are leaders.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+16,"All engineers are poets. Some poets are scientists.
+Which conclusion follows?",mcq,"[""Some engineers may be scientists."",""All scientists are engineers."",""No engineers is scientists."",""Some scientists are engineers.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+17,"All chefs are dancers. Some dancers are poets.
+Which conclusion follows?",mcq,"[""Some chefs may be poets."",""All poets are chefs."",""No chefs is poets."",""Some poets are chefs.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+18,"All scientists are players. Some players are singers.
+Which conclusion follows?",mcq,"[""Some scientists may be singers."",""All singers are scientists."",""No scientists is singers."",""Some singers are scientists.""]",0,"From All X⊆Y and Some Y∩Z ≠ ∅, it is possible (may be) that Some X are Z.",Syllogisms,mixed
+19,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""QUIZ"" is written as 73, what is ""SERIES"" written as?",mcq,"[""77"",""74"",""76"",""75""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+20,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""MATH"" is written as 42, what is ""CODE"" written as?",mcq,"[""29"",""26"",""28"",""27""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+21,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""CODE"" is written as 27, what is ""CAT"" written as?",mcq,"[""26"",""23"",""25"",""24""]",3,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+22,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""LOGIC"" is written as 46, what is ""ARRAY"" written as?",mcq,"[""65"",""62"",""63"",""64""]",2,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+23,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""QUEUE"" is written as 69, what is ""SERIES"" written as?",mcq,"[""74"",""75"",""77"",""76""]",1,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+24,"In a certain code, the value of a word is the sum of its letter positions (A=1, B=2, ...).
+If ""STACK"" is written as 54, what is ""QUIZ"" written as?",mcq,"[""74"",""72"",""73"",""75""]",2,Add alphabet positions of letters in the word.,Coding–Decoding,mixed
+25,"In a group of 93 people, 43 like Tea, 46 like Coffee, and 34 like both.
+How many like only Tea?",mcq,"[""9"",""11"",""10"",""7""]",0,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+26,"In a group of 90 people, 42 like Tea, 38 like Coffee, and 25 like both.
+How many like at least one of Tea or Coffee?",mcq,"[""57"",""55"",""53"",""56""]",1,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+27,"In a group of 110 people, 36 like Tea, 45 like Coffee, and 23 like both.
+How many like only Tea?",mcq,"[""15"",""13"",""11"",""14""]",1,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+28,"In a group of 100 people, 36 like Tea, 54 like Coffee, and 31 like both.
+How many like only Coffee?",mcq,"[""24"",""23"",""21"",""25""]",1,Use inclusion–exclusion: only Tea = Tea−Both; only Coffee = Coffee−Both; at least one = Tea+Coffee−Both.,Venn Diagrams,mixed
+29,"In a test, the scores are:
+Eshan=65, Aman=66, Chirag=73.
+Who scored the highest?",mcq,"[""Eshan"",""Aman"",""Chirag""]",2,Compare the given numbers.,Analytical Reasoning,mixed
+30,"In a test, the scores are:
+Eshan=67, Aman=75, Dia=66.
+Who scored the highest?",mcq,"[""Aman"",""Dia"",""Eshan""]",0,Compare the given numbers.,Analytical Reasoning,mixed
+31,"In a test, the scores are:
+Dia=68, Eshan=65, Bela=82.
+Who scored the highest?",mcq,"[""Bela"",""Dia"",""Eshan""]",0,Compare the given numbers.,Analytical Reasoning,mixed
+32,"In a test, the scores are:
+Eshan=74, Aman=81, Bela=68.
+Who scored the second highest?",mcq,"[""Eshan"",""Aman"",""Bela""]",0,Compare the given numbers.,Analytical Reasoning,mixed
+33,Divya is the mother of Bharat. Eshan is the husband of Divya. How is Eshan related to Bharat?,mcq,"[""Mother"",""Father"",""Uncle"",""Brother""]",1,Map roles carefully from the statements.,Blood Relations,mixed
+34,Anita is the mother of Arun. Eshan is the husband of Anita. How is Eshan related to Arun?,mcq,"[""Father"",""Brother"",""Mother"",""Uncle""]",0,Map roles carefully from the statements.,Blood Relations,mixed
+35,"A person starts from a point, walks 2 units East, then 2 units West, then 2 units North. In which direction is the person from the starting point now?",mcq,"[""North-East"",""South-West"",""South"",""North""]",3,Resolve x/y displacement and convert to compass direction.,Direction Sense,mixed
+36,"A person starts from a point, walks 6 units East, then 4 units North, then 2 units South. In which direction is the person from the starting point now?",mcq,"[""Same place"",""North-East"",""North"",""South""]",1,Resolve x/y displacement and convert to compass direction.,Direction Sense,mixed

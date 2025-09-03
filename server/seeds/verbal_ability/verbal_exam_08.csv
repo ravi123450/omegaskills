@@ -1,0 +1,97 @@
+id,text,type,options_json,correct_index,explanation,topic,difficulty
+1,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:",mcq,"[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+2,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?",mcq,"[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Answer follows directly from the passage.,Reading Comprehension,mixed
+3,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?",mcq,"[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+4,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: The shelf policy was:",mcq,"[""Paid borrowing"",""Members-only"",""Take & leave"",""No returns""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+5,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Result of the initiative?",mcq,"[""Less diversity"",""Fewer visits"",""Hostile debates"",""Friendly ritual""]",3,Answer follows directly from the passage.,Reading Comprehension,mixed
+6,"Passage:
+A small library launched a 'take-a-book, leave-a-book' shelf. Over time, readers curated the shelf with diverse titles, and the habit built a friendly ritual around sharing stories.
+
+Q: Who curated the shelf?",mcq,"[""Publishers"",""Librarians only"",""Readers"",""Sponsors""]",2,Answer follows directly from the passage.,Reading Comprehension,mixed
+7,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {1}:",mcq,"[""plan"",""planned"",""plans"",""planning""]",2,Use context to choose the best fit.,Cloze Test,mixed
+8,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {2}:",mcq,"[""arrive"",""arrives"",""arrived"",""arriving""]",1,Use context to choose the best fit.,Cloze Test,mixed
+9,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {3}:",mcq,"[""access"",""accessed"",""accessing"",""accessible""]",3,Use context to choose the best fit.,Cloze Test,mixed
+10,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {4}:",mcq,"[""contained"",""contain"",""containing"",""contains""]",3,Use context to choose the best fit.,Cloze Test,mixed
+11,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {5}:",mcq,"[""required"",""require"",""requiring"",""requires""]",1,Use context to choose the best fit.,Cloze Test,mixed
+12,"Cloze Passage:
+The committee {1} to publish its findings after all data {2}. While the summary is {3}, the full report {4} technical details that {5} careful reading and {6}.
+
+Fill {6}:",mcq,"[""reviews"",""reviewed"",""review"",""reviewing""]",2,Use context to choose the best fit.,Cloze Test,mixed
+13,"This problem is tough, _____ we can solve it together.",mcq,"[""so"",""and"",""but"",""or""]",2,The correct preposition/conjunction is “but”.,Fill in the Blanks,mixed
+14,She insisted _____ paying the bill.,mcq,"[""at"",""on"",""to"",""for""]",1,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+15,Choose the synonym of “benevolent”.,mcq,"[""brisk"",""infrequent"",""tedious"",""kind""]",3,“kind” means nearly the same as “benevolent”.,Vocabulary,mixed
+16,Choose the synonym of “diligent”.,mcq,"[""colorful"",""hardworking"",""coarse"",""ardent""]",1,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+17,Choose the synonym of “prudent”.,mcq,"[""colorful"",""sturdy"",""careful"",""peculiar""]",2,“careful” means nearly the same as “prudent”.,Vocabulary,mixed
+18,Choose the synonym of “diligent”.,mcq,"[""swift"",""brisk"",""hardworking"",""tedious""]",2,“hardworking” means nearly the same as “diligent”.,Vocabulary,mixed
+19,Choose the synonym of “arduous”.,mcq,"[""obsolete"",""difficult"",""boisterous"",""coarse""]",1,“difficult” means nearly the same as “arduous”.,Vocabulary,mixed
+20,Choose the synonym of “prudent”.,mcq,"[""meagre"",""ardent"",""coarse"",""careful""]",3,“careful” means nearly the same as “prudent”.,Vocabulary,mixed
+21,Choose the antonym of “abundant”.,mcq,"[""boisterous"",""obsolete"",""scarce"",""cumbersome""]",2,“scarce” is the opposite of “abundant”.,Vocabulary,mixed
+22,Choose the antonym of “impartial”.,mcq,"[""infrequent"",""luminous"",""massive"",""biased""]",3,“biased” is the opposite of “impartial”.,Vocabulary,mixed
+23,Choose the antonym of “impartial”.,mcq,"[""biased"",""boisterous"",""colorful"",""meagre""]",0,“biased” is the opposite of “impartial”.,Vocabulary,mixed
+24,Choose the antonym of “vivid”.,mcq,"[""colorful"",""succinct"",""dull"",""swift""]",2,“dull” is the opposite of “vivid”.,Vocabulary,mixed
+25,One-word substitute: One who does something for the first time,mcq,"[""Pioneer"",""Oligarchy"",""Panacea"",""Loquacious""]",0,Pioneer fits the description.,One-word Substitutes,mixed
+26,One-word substitute: A cure for all diseases,mcq,"[""Panacea"",""Graphologist"",""Bibliophile"",""Impromptu""]",0,Panacea fits the description.,One-word Substitutes,mixed
+27,Meaning of the idiom: “Spill the beans”,mcq,"[""Make people feel more comfortable"",""Very expensive"",""In brief"",""Reveal a secret""]",3,“Spill the beans” means “Reveal a secret”.,Idioms & Phrases,mixed
+28,Meaning of the idiom: “Spill the beans”,mcq,"[""Avoid the main topic"",""Very expensive"",""Make people feel more comfortable"",""Reveal a secret""]",3,“Spill the beans” means “Reveal a secret”.,Idioms & Phrases,mixed
+29,They _____ cricket when it started to rain.,mcq,"[""are playing"",""played"",""were playing"",""have played""]",2,Correct tense is “were playing”.,Grammar,mixed
+30,He _____ the project next week.,mcq,"[""starts"",""is starting"",""has started"",""will start""]",3,Correct tense is “will start”.,Grammar,mixed
+31,He _____ the project next week.,mcq,"[""has started"",""will start"",""is starting"",""starts""]",1,Correct tense is “will start”.,Grammar,mixed
+32,He _____ the project next week.,mcq,"[""will start"",""has started"",""starts"",""is starting""]",0,Correct tense is “will start”.,Grammar,mixed
+33,They _____ cricket when it started to rain.,mcq,"[""were playing"",""have played"",""are playing"",""played""]",0,Correct tense is “were playing”.,Grammar,mixed
+34,I _____ my work by 6 PM yesterday.,mcq,"[""finishes"",""finish"",""finishing"",""finished""]",3,Correct tense is “finished”.,Grammar,mixed
+35,We _____ dinner when he arrived.,mcq,"[""had"",""have had"",""are having"",""were having""]",3,Correct tense is “were having”.,Grammar,mixed
+36,Choose the grammatically correct sentence:,mcq,"[""He has been living here since 2010."",""he has been living here since 2010."",""He  is living here since 2010."",""He is living here since 2010.""]",0,Correct form: “He has been living here since 2010.”.,Sentence Correction,mixed
+37,Choose the grammatically correct sentence:,mcq,"[""he is senior to me."",""He  is senior than me."",""He is senior than me."",""He is senior to me.""]",3,Correct form: “He is senior to me.”.,Sentence Correction,mixed
+38,Choose the grammatically correct sentence:,mcq,"[""He is senior than me."",""He is senior to me."",""He  is senior than me."",""he is senior to me.""]",1,Correct form: “He is senior to me.”.,Sentence Correction,mixed
+39,Choose the grammatically correct sentence:,mcq,"[""Neither  of the two are correct."",""neither of the two is correct."",""Neither of the two is correct."",""Neither of the two are correct.""]",2,Correct form: “Neither of the two is correct.”.,Sentence Correction,mixed
+40,Choose the grammatically correct sentence:,mcq,"[""She do not like tea."",""She  do not like tea."",""she does not like tea."",""She does not like tea.""]",3,Correct form: “She does not like tea.”.,Sentence Correction,mixed
+41,Choose the grammatically correct sentence:,mcq,"[""Each of the boys has a pen."",""Each of the boys have a pen."",""each of the boys has a pen."",""Each  of the boys have a pen.""]",0,Correct form: “Each of the boys has a pen.”.,Sentence Correction,mixed
+42,Choose the grammatically correct sentence:,mcq,"[""he has been living here since 2010."",""He  is living here since 2010."",""He has been living here since 2010."",""He is living here since 2010.""]",2,Correct form: “He has been living here since 2010.”.,Sentence Correction,mixed
+43,"Arrange the parts to form a coherent paragraph:
+B. Stalls offered regional snacks and handicrafts.
+C. Local musicians performed throughout the day.
+A. The festival drew visitors from many cities.
+D. The park was decorated with lights and banners.",mcq,"[""ABCD"",""ACBD"",""CABD"",""BACD""]",0,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+44,"Arrange the parts to form a coherent paragraph:
+D. The park was decorated with lights and banners.
+B. Stalls offered regional snacks and handicrafts.
+A. The festival drew visitors from many cities.
+C. Local musicians performed throughout the day.",mcq,"[""CABD"",""ABCD"",""BACD"",""ACBD""]",1,Logical flow: A (overview) → B (stalls) → C (music) → D (decor).,Para Jumbles,mixed
+45,"All poets are dreamers. Some dreamers are teachers.
+Which conclusion follows?",mcq,"[""Some poets may be teachers."",""All dreamers are poets."",""No teacher is a poet."",""Some teachers are not dreamers.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+46,"No apples are blue. Some fruits are apples.
+Which conclusion follows?",mcq,"[""Some fruits are not blue."",""All fruits are blue."",""Some apples are blue."",""No fruits are blue.""]",0,Basic syllogism/logic.,Verbal Reasoning,mixed
+47,The train arrives _____ 7 a.m.,mcq,"[""on"",""in"",""at"",""by""]",2,The correct preposition/conjunction is “at”.,Fill in the Blanks,mixed
+48,She insisted _____ paying the bill.,mcq,"[""on"",""at"",""to"",""for""]",0,The correct preposition/conjunction is “on”.,Fill in the Blanks,mixed
+49,He is known _____ his honesty.,mcq,"[""by"",""to"",""for"",""with""]",2,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed
+50,He is known _____ his honesty.,mcq,"[""to"",""for"",""with"",""by""]",1,The correct preposition/conjunction is “for”.,Fill in the Blanks,mixed
