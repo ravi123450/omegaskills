@@ -11,7 +11,7 @@ export default function ForgotPassword() {
   async function submit() {
     setErr("");
     try {
-      const r = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:4000"}/api/auth/forgot-password`, {
+      const r = await fetch(`${import.meta.env.VITE_API_URL || "https://omegabackend-production.up.railway.app"}/api/auth/forgot-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
