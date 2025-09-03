@@ -16,7 +16,7 @@ export default function ResetPassword() {
   const [err, setErr] = useState("");
 
   const canToken = !!token;
-  const api = import.meta.env.VITE_API_URL || "http://localhost:4000";
+  const api = import.meta.env.VITE_API_URL || "https://omegabackend-production.up.railway.app";
 
   const strongHint = useMemo(
     () => "8+ chars with upper, lower, number, and symbol.",
