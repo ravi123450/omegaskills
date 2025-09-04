@@ -14,7 +14,7 @@ export default function VerifyLoginOtp() {
   const [code, setCode] = useState("");
   const [err, setErr] = useState("");
   const nav = useNavigate();
-  const api = import.meta.env.VITE_API_URL || "http://54.89.165.43";
+  const api = import.meta.env.VITE_API_URL || "https://api.omegaskillsacademy.online";
 
   async function submit() {
     setErr("");
