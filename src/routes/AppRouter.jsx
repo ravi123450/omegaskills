@@ -161,7 +161,7 @@ const router = createBrowserRouter(
             { path: "/exam", element: <Exam /> },
             { path: "/exam/:id", element: <Exam /> },
             { path: "/result", element: <Result /> },
-            {path: "/1",element:<Roadmap/>},
+            {path: "/roadmap",element:<Roadmap/>},
           ],
         },
 
