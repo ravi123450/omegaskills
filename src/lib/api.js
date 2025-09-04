@@ -1,6 +1,6 @@
 // src/lib/api.js
 // One source of truth for API origin
-const API_ORIGIN = (import.meta.env.VITE_API_URL || "http://54.89.165.43").replace(/\/$/, "");
+const API_ORIGIN = (import.meta.env.VITE_API_URL || "https://api.omegaskillsacademy.online").replace(/\/$/, "");
 const BASE = `${API_ORIGIN}/api`;
 
 /* -------------------------- core fetch helper -------------------------- */
