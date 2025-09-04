@@ -16,7 +16,7 @@ export default function ResetPassword() {
   const [err, setErr] = useState("");
 
   const canToken = !!token;
-  const api = import.meta.env.VITE_API_URL || "https://api.omegaskillsacademy.online/";
+  const api = import.meta.env.VITE_API_URL || "https://api.omegaskillsacademy.online";
 
   const strongHint = useMemo(
     () => "8+ chars with upper, lower, number, and symbol.",
