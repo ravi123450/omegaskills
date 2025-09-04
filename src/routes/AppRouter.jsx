@@ -19,7 +19,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 import AtsScanner from "@/features/ats/AtsScanner"; // ensure file name casing
-import ResumeBuilder from "@/features/resumeBuild/ResumeBuilder";
+import Resumebuilder from "@/features/resumeBuild/ResumeBuilder";
 import LiveWorkshops from "../pages/Programs/Workshops/LiveWorkshops"
 import Roadmap from "../components/1";
 
