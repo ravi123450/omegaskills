@@ -315,6 +315,10 @@ export default function Navbar() {
                     Cloud
                   </MenuItem>
 
+                  <MenuItem to="/roadmap" icon={<User className="h-4 w-4" />}>
+                    course Roadmaps
+                  </MenuItem>
+                  
                   <MenuItem to="/friends" icon={<Users className="h-4 w-4" />}>
                     Friends
                   </MenuItem>
@@ -322,7 +326,7 @@ export default function Navbar() {
                   <MenuItem to="/profile" icon={<User className="h-4 w-4" />}>
                     Profile
                   </MenuItem>
-
+                      
                   {/* Optional Admin link */}
                   {String(role).toLowerCase() === "admin" && (
                     <MenuItem to="/admin/access" icon={<ChevronRight className="h-4 w-4" />}>
