@@ -112,7 +112,7 @@ export default function ResumeBuilder() {
             className="flex items-center gap-2 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60 hover:border-orange-400"
           >
             <Link
-              to="/ats"
+              to="/ats-scanner"
               className="flex items-center justify-center gap-2 px-6"
             >
               Open ATS Scanner
