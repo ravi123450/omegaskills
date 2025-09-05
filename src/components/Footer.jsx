@@ -217,10 +217,10 @@ export default function Footer() {
                   Dashboard
                 </Link>
                 <Link
-                  to="/courses/learn"
+                  to="/courses"
                   className="rounded-xl border border-slate-700 bg-slate-900/40 px-4 py-2 text-sm text-slate-200 hover:bg-slate-900/60"
                 >
-                  My Courses
+                  Courses
                 </Link>
                 <Link
                   to="/contact"
