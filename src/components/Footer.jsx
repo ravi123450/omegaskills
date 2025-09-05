@@ -15,19 +15,23 @@ import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa";
 import useAuthFlag from "@/lib/useAuthFlag";
 
+
 export default function Footer() {
   const year = new Date().getFullYear();
   const [showTop, setShowTop] = useState(false);
   const [liftButtons, setLiftButtons] = useState(false);
   const footerRef = useRef(null);
 
+
   const isAuthed = useAuthFlag();
+
 
   useEffect(() => {
     const onScroll = () => setShowTop(window.scrollY > 400);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
 
   useEffect(() => {
     if (!footerRef.current) return;
@@ -38,6 +42,7 @@ export default function Footer() {
     obs.observe(footerRef.current);
     return () => obs.disconnect();
   }, []);
+
 
   return (
     <footer
@@ -67,6 +72,7 @@ export default function Footer() {
                 </div>
               </div>
 
+
               <Link
                 to="/ats-scanner"
                 className="inline-flex items-center gap-2 rounded-xl bg-orange-500 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-orange-400  hover:text-black"
@@ -76,45 +82,49 @@ export default function Footer() {
             </div>
           </div>
 
+
           {/* link grid */}
           <div className="mx-auto max-w-7xl px-4 py-10 md:px-6">
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
               <FooterCol title="Courses & Services">
-                <FooterLink to="/courses">Courses</FooterLink>
-                <FooterLink to="/workshops">Workshops & Events</FooterLink>
+                <FooterLink to="/courses/learn">Courses</FooterLink>
+                <FooterLink to="/workshops/online">Workshops & Events</FooterLink>
                 <FooterLink to="/resume">Resume Tools</FooterLink>
-                <FooterLink to="/certifications">Certifications</FooterLink>
-                <FooterLink to="/community">Community</FooterLink>
-                <FooterLink to="/resources">Resources</FooterLink>
+                <FooterLink to="/cloud/cert-concierge">Certifications</FooterLink>
+                <FooterLink to="/community/projects">Community</FooterLink>
+                <FooterLink to="/resources/notes">Resources</FooterLink>
               </FooterCol>
 
+
               <FooterCol title="More">
-                <FooterLink to="/faqs">FAQs</FooterLink>
-                <FooterLink to="/blog">Blog / Insights</FooterLink>
-                <FooterLink to="/dashboard">Student Dashboard</FooterLink>
-                <FooterLink to="/partnerships">
+                <FooterLink to="#">FAQs</FooterLink>
+                <FooterLink to="#">Blog / Insights</FooterLink>
+                <FooterLink to="/login">Student Dashboard</FooterLink>
+                <FooterLink to="/contact">
                   Partnership Enquiries
                 </FooterLink>
               </FooterCol>
 
+
               <FooterCol title="Legal">
-                <FooterLink to="/terms">Terms & Conditions</FooterLink>
-                <FooterLink to="/privacy">Privacy Policy</FooterLink>
-                <FooterLink to="/refunds">Refund Policy</FooterLink>
-                <FooterLink to="/placement-assistance">
+                <FooterLink to="/legal/terms">Terms & Conditions</FooterLink>
+                <FooterLink to="/legal/privacy-policy">Privacy Policy</FooterLink>
+                <FooterLink to="/legal/refund-policy">Refund Policy</FooterLink>
+                <FooterLink to="/legal/placement-assistance">
                   Placement-Assistance Policy
                 </FooterLink>
-                <FooterLink to="/disclaimer">Disclaimer</FooterLink>
+                <FooterLink to="/legal/disclaimer">Disclaimer</FooterLink>
               </FooterCol>
+
 
               <FooterCol title="Contact">
                 <FooterRow>
                   <Mail className="h-4 w-4 text-orange-300" />
                   <a
-                    href="mailto:info@omegaskillsacademy.in"
+                    href="mailto:info@omegaskillsacademy.online"
                     className="text-white"
                   >
-                    info@omegaskillsacademy.in
+                    info@omegaskillsacademy.online
                   </a>
                 </FooterRow>
                 <FooterRow>
@@ -123,9 +133,10 @@ export default function Footer() {
                 </FooterRow>
               </FooterCol>
 
+
               <FooterCol title="Stay Connected">
                 <FooterExt
-                  href="#"
+                  href="https://www.linkedin.com/in/omegaskillsacademy/"
                   label="LinkedIn"
                   icon={<Linkedin className="h-4 w-4" />}
                 />
@@ -135,7 +146,7 @@ export default function Footer() {
                   icon={<Youtube className="h-4 w-4" />}
                 />
                 <FooterExt
-                  href="#"
+                  href="https://www.instagram.com/omegaskillsacademy/"
                   label="Instagram"
                   icon={<Instagram className="h-4 w-4" />}
                 />
@@ -148,6 +159,7 @@ export default function Footer() {
             </div>
           </div>
 
+
           {/* bottom bar */}
           <div className="border-t border-slate-800/60 bg-slate-900/40 backdrop-blur">
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-slate-400 md:flex-row md:px-6">
@@ -158,16 +170,16 @@ export default function Footer() {
                 <div>All rights reserved.</div>
               </div>
               <div className="flex gap-4">
-                <Link className="hover:text-slate-300" to="/privacy">
+                <Link className="hover:text-slate-300" to="/legal/privacy-policy">
                   Privacy
                 </Link>
-                <Link className="hover:text-slate-300" to="/terms">
+                <Link className="hover:text-slate-300" to="/legal/terms">
                   Terms
                 </Link>
-                <Link className="hover:text-slate-300" to="/refunds">
+                <Link className="hover:text-slate-300" to="/legal/refund-policy">
                   Refunds
                 </Link>
-                <Link className="hover:text-slate-300" to="/disclaimer">
+                <Link className="hover:text-slate-300" to="/legal/disclaimer">
                   Disclaimer
                 </Link>
                 <Link className="hover:text-slate-300" to="/contact">
@@ -196,6 +208,7 @@ export default function Footer() {
                 </div>
               </div>
 
+
               <div className="flex flex-wrap gap-2">
                 <Link
                   to="/dashboard"
@@ -204,7 +217,7 @@ export default function Footer() {
                   Dashboard
                 </Link>
                 <Link
-                  to="/courses"
+                  to="/courses/learn"
                   className="rounded-xl border border-slate-700 bg-slate-900/40 px-4 py-2 text-sm text-slate-200 hover:bg-slate-900/60"
                 >
                   My Courses
@@ -219,16 +232,17 @@ export default function Footer() {
             </div>
           </div>
 
+
           <div className="mx-auto max-w-7xl px-4 py-6 md:px-6">
             <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
               <div className="text-slate-300">
                 © {year} Omega Skills Academy
               </div>
               <div className="flex gap-4">
-                <Link className="hover:text-slate-300" to="/dashboard">
+                <Link className="hover:text-slate-300" to="/legal/privacy-policy">
                   Privacy
                 </Link>
-                <Link className="hover:text-slate-300" to="/dashboard">
+                <Link className="hover:text-slate-300" to="/legal/terms">
                   Terms
                 </Link>
                 <Link className="hover:text-slate-300" to="/contact">
@@ -239,6 +253,7 @@ export default function Footer() {
           </div>
         </>
       )}
+
 
       {/* floating buttons (common) */}
       <div
@@ -267,6 +282,7 @@ export default function Footer() {
           </Button>
         </div>
 
+
         {/* Scroll to Top Button */}
         {showTop && (
           <div className="pointer-events-auto">
@@ -284,6 +300,7 @@ export default function Footer() {
   );
 }
 
+
 /* ---------- atoms ---------- */
 function FooterCol({ title, children }) {
   return (
@@ -296,6 +313,7 @@ function FooterCol({ title, children }) {
     </div>
   );
 }
+
 
 function FooterLink({ to, children }) {
   return (
@@ -310,6 +328,7 @@ function FooterLink({ to, children }) {
   );
 }
 
+
 function FooterRow({ children }) {
   return (
     <div className="flex items-center gap-2 px-2 py-1.5 text-sm">
@@ -317,6 +336,7 @@ function FooterRow({ children }) {
     </div>
   );
 }
+
 
 function FooterExt({ href, label, icon }) {
   return (
@@ -335,3 +355,6 @@ function FooterExt({ href, label, icon }) {
     </li>
   );
 }
+
+
+

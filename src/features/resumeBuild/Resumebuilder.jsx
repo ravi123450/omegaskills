@@ -7,12 +7,15 @@ import { buildTemplateConfigs } from "./templates";
 import { Link } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LayoutTemplate, FileText, ArrowRight, Sparkles } from "lucide-react";
 
+
 import "./resume.css";
+
 
 /* ---------- local atoms ---------- */
 function SectionTitle({ children, eyebrow }) {
@@ -31,8 +34,10 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 /* ---------- builder ---------- */
 const DEFAULT_CFG = buildTemplateConfigs()[0];
+
 
 export default function ResumeBuilder() {
   const [font, setFont] = useState(FONT_OPTIONS[0]);
@@ -42,8 +47,10 @@ export default function ResumeBuilder() {
   const [margin, setMargin] = useState(24);
   const [lineHeight, setLineHeight] = useState(1.4);
 
+
   const handleData = useCallback((d) => setData(d), []);
   const parsedData = useMemo(() => data, [data]);
+
 
   // --- print setup (v3 API) ---
   const resumeRef = useRef(null);
@@ -61,6 +68,7 @@ export default function ResumeBuilder() {
     `,
   });
 
+
   return (
     <div className="scroll-smooth bg-slate-950 text-white selection:bg-orange-300 selection:text-slate-900 min-h-screen">
       {/* background blobs */}
@@ -72,6 +80,7 @@ export default function ResumeBuilder() {
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-indigo-500/20 blur-[110px]" />
       </div>
 
+
       {/* Hero */}
       <section className="relative mx-auto max-w-7xl px-4 pb-8 pt-10 md:px-6 md:pt-14">
         <div className="flex flex-wrap items-center gap-2">
@@ -79,6 +88,7 @@ export default function ResumeBuilder() {
             Resume Builder
           </Badge>
         </div>
+
 
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Build a clean,{" "}
@@ -93,16 +103,18 @@ export default function ResumeBuilder() {
           impress recruiters.
         </p>
 
+
         <div className="mt-6 flex flex-wrap items-center gap-3">
           {/* Choose Template */}
           <Button
             size="lg"
-            className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black flex items-center"
+            className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black flex items-center cursor-pointer"
             onClick={() => setOpenGallery(true)}
           >
             <LayoutTemplate className="mr-2 h-5 w-5" />
             Choose Template
           </Button>
+
 
           {/* Open ATS Scanner */}
           <Button
@@ -112,7 +124,7 @@ export default function ResumeBuilder() {
             className="flex items-center gap-2 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60 hover:border-orange-400"
           >
             <Link
-              to="/ats-scanner"
+              to="/ats"
               className="flex items-center justify-center gap-2 px-6"
             >
               Open ATS Scanner
@@ -121,6 +133,7 @@ export default function ResumeBuilder() {
           </Button>
         </div>
       </section>
+
 
       {/* Main grid */}
       <section className="mx-auto max-w-8xl px-4 pb-16 md:px-6">
@@ -134,6 +147,7 @@ export default function ResumeBuilder() {
                   <Sparkles className="h-4 w-4 text-orange-300" /> Live Preview
                 </span>
               </div>
+
 
               <ResumeForm
                 onData={handleData}
@@ -149,6 +163,7 @@ export default function ResumeBuilder() {
             </CardContent>
           </Card>
 
+
           {/* RIGHT: Preview */}
           <Card className="border-slate-800/60 bg-slate-900/40 backdrop-blur">
             <CardContent className="p-4 md:p-6">
@@ -158,6 +173,7 @@ export default function ResumeBuilder() {
                   {cfg?.name || "Selected Template"}
                 </span>
               </div>
+
 
               <div className="relative rounded-2xl border border-slate-800/60 bg-slate-900/40 p-2 mt-8">
                 {/* Attach the print ref to an element that wraps the preview */}
@@ -172,6 +188,7 @@ export default function ResumeBuilder() {
                   />
                 </div>
               </div>
+
 
               <div className="mt-4 flex flex-wrap gap-2">
                 <Button
@@ -194,6 +211,7 @@ export default function ResumeBuilder() {
           </Card>
         </div>
       </section>
+
 
       {/* Quick Tips */}
       <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6">
@@ -222,6 +240,7 @@ export default function ResumeBuilder() {
         </Card>
       </section>
 
+
       {openGallery && (
         <TemplateSelector
           font={font}
@@ -235,3 +254,8 @@ export default function ResumeBuilder() {
     </div>
   );
 }
+
+
+
+
+

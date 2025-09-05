@@ -23,15 +23,18 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
+
 /* -------------------- ENV + URL helpers -------------------- */
 const DEFAULT_FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfTqAZvDs7cgcg_TDhBsebNc0Vc_Y_MaBTEFILfIrIskK0snA/viewform";
+
 
 /* Prefer Vite var; gracefully support CRA var; else default */
 const ENV_FORM_URL =
   (typeof import.meta !== "undefined" && import.meta?.env?.VITE_CLOUD_COURSES_FORM_URL) ||
   (typeof process !== "undefined" && process?.env?.REACT_APP_CLOUD_COURSES_FORM_URL) ||
   "";
+
 
 function isHttpUrl(u) {
   try {
@@ -43,6 +46,7 @@ function isHttpUrl(u) {
 }
 const BASE_FORM_URL = isHttpUrl(ENV_FORM_URL) ? ENV_FORM_URL : DEFAULT_FORM_URL;
 
+
 function buildFormHref(plan = "general") {
   try {
     const u = new URL(BASE_FORM_URL);
@@ -52,6 +56,7 @@ function buildFormHref(plan = "general") {
     return DEFAULT_FORM_URL;
   }
 }
+
 
 /* -------------------- tiny atoms -------------------- */
 function SectionTitle({ children, eyebrow }) {
@@ -70,24 +75,27 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 function BookButton({ plan = "general", label = "Get Started", big = false, full = false }) {
   const href = useMemo(() => buildFormHref(plan), [plan]);
   const cls =
-    "bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black " +
+    "shrink-0 bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black " +
     (big ? "h-11 px-5 " : "") +
     (full ? "w-full " : "");
   return (
     <Button asChild className={cls} title="Open booking form">
-      <a href={href} target="_blank" rel="noreferrer">
+      <a href={href} target="_blank" rel="noreferrer" className="inline-flex items-center">
         {label} <ExternalLink className="ml-2 h-4 w-4" />
       </a>
     </Button>
   );
 }
 
+
 /* -------------------- page -------------------- */
 export default function CloudCertPlans() {
   const isAuthed = useAuthFlag();
+
 
   const tracks = useMemo(
     () => [
@@ -97,6 +105,7 @@ export default function CloudCertPlans() {
     ],
     []
   );
+
 
   const roadmap = useMemo(
     () => [
@@ -151,6 +160,7 @@ export default function CloudCertPlans() {
     []
   );
 
+
   const packages = useMemo(
     () => [
       {
@@ -196,6 +206,7 @@ export default function CloudCertPlans() {
     []
   );
 
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Hero */}
@@ -205,6 +216,7 @@ export default function CloudCertPlans() {
           <Badge className="bg-slate-800/60 text-slate-200 !text-base">Cert Concierge</Badge>
         </div>
 
+
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           End-to-end help from{" "}
           <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
@@ -212,21 +224,24 @@ export default function CloudCertPlans() {
           </span>
         </h1>
 
+
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
           AWS • Azure • GCP — guided study plans, mock tests, voucher purchase, scheduling, and exam-day prep.
           No hosted labs; we use vendor free-tier & cloud shells. All selections and payment are completed in the form.
         </p>
 
-        <div className="mt-6 flex flex-wrap items-center gap-3">
+
+        <div className="mt-6 flex flex-wrap items-center gap-3 flex-nowrap">
           <BookButton plan="hero" label="Get Started" big />
           <Link
             to=""
-            className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-orange-300"
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-orange-300 whitespace-nowrap shrink-0"
           >
             Practice with Question Bank coming soon<ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>
+
 
       {/* Content */}
       <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6">
@@ -250,6 +265,7 @@ export default function CloudCertPlans() {
                 ))}
               </div>
             </div>
+
 
             {/* Roadmap */}
             <div>
@@ -279,6 +295,7 @@ export default function CloudCertPlans() {
               </div>
             </div>
 
+
             {/* How it works */}
             <div>
               <SectionTitle eyebrow="Concierge">How it works</SectionTitle>
@@ -307,6 +324,7 @@ export default function CloudCertPlans() {
             </div>
           </div>
 
+
           {/* Right column */}
           <aside className="md:col-span-1">
             <div className="md:sticky md:top-24 space-y-4">
@@ -316,6 +334,7 @@ export default function CloudCertPlans() {
                   <div className="mb-2">
                     <Badge className="bg-orange-600/20 text-orange-300">Packages</Badge>
                   </div>
+
 
                   <div className="space-y-4">
                     {packages.map((p) => (
@@ -341,7 +360,9 @@ export default function CloudCertPlans() {
                           </span>
                         </div>
 
+
                         <div className="mt-1 text-sm text-slate-300/90">{p.pitch}</div>
+
 
                         <ul className="mt-3 space-y-1 text-sm">
                           {p.features.map((f) => (
@@ -352,6 +373,7 @@ export default function CloudCertPlans() {
                           ))}
                         </ul>
 
+
                         <div className="mt-4">
                           <BookButton full plan={p.slug} label={p.cta} />
                         </div>
@@ -359,11 +381,13 @@ export default function CloudCertPlans() {
                     ))}
                   </div>
 
+
                   <p className="mt-4 text-xs text-slate-400">
                     All selections and payment are completed in the secure form.
                   </p>
                 </CardContent>
               </Card>
+
 
               {/* Notes */}
               <Card className="border-slate-800/70 bg-slate-900/50">
@@ -391,6 +415,7 @@ export default function CloudCertPlans() {
           </aside>
         </div>
 
+
         {/* Final CTA */}
         <div className="mt-12 rounded-2xl border border-slate-800/70 bg-slate-900/40 p-6 text-center">
           <h3 className="text-xl font-bold">Ready to earn your cloud badge?</h3>
@@ -411,3 +436,8 @@ export default function CloudCertPlans() {
     </main>
   );
 }
+
+
+
+
+

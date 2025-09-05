@@ -3,20 +3,25 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { getCourses, getExams } from "@/lib/api";
 
+
 // UI (shadcn)
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
+
 // Icons
 import { BookOpen, Clock, Layers, Lock, LockOpen } from "lucide-react";
+
 
 /* ---------------- Razorpay Payment Button helper ---------------- */
 function PaymentButtonForm({ paymentButtonId, className }) {
   const formRef = useRef(null);
 
+
   useEffect(() => {
     if (!formRef.current) return;
+
 
     // Remove any leftover script (hot reload or re-renders)
     const prev = formRef.current.querySelector(
@@ -24,16 +29,20 @@ function PaymentButtonForm({ paymentButtonId, className }) {
     );
     if (prev) prev.remove();
 
+
     // Create and append Razorpay script
     const script = document.createElement("script");
     script.src = "https://checkout.razorpay.com/v1/payment-button.js";
     script.async = true;
     script.setAttribute("data-payment_button_id", paymentButtonId);
 
+
     // Optional: customize button label via data attributes
     // script.setAttribute("data-button_text", "Enroll Now");
 
+
     formRef.current.appendChild(script);
+
 
     return () => {
       // Clean up on unmount
@@ -41,8 +50,10 @@ function PaymentButtonForm({ paymentButtonId, className }) {
     };
   }, [paymentButtonId]);
 
+
   // Stop click bubbling so card onClick doesn't trigger when user clicks the pay button
   const stopCardClick = (e) => e.stopPropagation();
+
 
   return (
     <form
@@ -54,21 +65,26 @@ function PaymentButtonForm({ paymentButtonId, className }) {
   );
 }
 
+
 export default function Courses({ token }) {
   const [courses, setCourses] = useState([]);
   const [loadingCourses, setLoadingCourses] = useState(true);
+
 
   const [activeCourse, setActiveCourse] = useState(null);
   const [exams, setExams] = useState([]);
   const [loadingExams, setLoadingExams] = useState(false);
   const [error, setError] = useState("");
 
+
   const navigate = useNavigate();
   const location = useLocation();
   const openCourseId = location?.state?.openCourseId ?? null;
 
+
   // NEW: ref to the mock tests section
   const mockRef = useRef(null);
+
 
   // helper to scroll to the mock tests section smoothly
   const scrollToMocks = () => {
@@ -78,6 +94,7 @@ export default function Courses({ token }) {
       }
     });
   };
+
 
   // Load courses
   useEffect(() => {
@@ -93,6 +110,7 @@ export default function Courses({ token }) {
     })();
   }, [token]);
 
+
   // Auto-open course
   useEffect(() => {
     if (!openCourseId || !courses?.length) return;
@@ -101,6 +119,7 @@ export default function Courses({ token }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [openCourseId, courses]);
 
+
   // Open a course and fetch its exams
   const openCourse = async (course) => {
     setActiveCourse(course);
@@ -108,7 +127,9 @@ export default function Courses({ token }) {
     setError("");
     setLoadingExams(true);
 
+
     scrollToMocks();
+
 
     try {
       const list = await getExams(token, course.id);
@@ -122,6 +143,7 @@ export default function Courses({ token }) {
     }
   };
 
+
   const startExam = (exam) => {
     if (!exam) return;
     try {
@@ -130,11 +152,14 @@ export default function Courses({ token }) {
     navigate("/exam", { state: { exam } });
   };
 
+
   const questionsLabel = (ex) =>
     ex?.num_questions ? `${ex.num_questions} Questions` : "90 Questions";
 
+
   // ⬅️ Put your real Razorpay Payment Button ID here
   const PAYMENT_BUTTON_ID = "pl_RC4fYVag9khclc";
+
 
   return (
     <main className="bg-slate-950 text-slate-100 min-h-[70vh]">
@@ -147,6 +172,7 @@ export default function Courses({ token }) {
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-indigo-500/20 blur-[110px]" />
       </div>
 
+
       <div className="mx-auto max-w-6xl px-4 py-10">
         {/* HERO */}
         <div className="mb-6">
@@ -157,9 +183,11 @@ export default function Courses({ token }) {
           </p>
         </div>
 
+
         {/* COURSES GRID */}
         <div className="mt-6">
           <h2 className="mb-4 text-xl font-bold md:text-2xl">Available Courses</h2>
+
 
           {loadingCourses ? (
             <Card className="border border-slate-800/60 bg-slate-900/40">
@@ -183,6 +211,7 @@ export default function Courses({ token }) {
                     <b>Verbal Ability</b>, and <b>Soft Skills Mastery</b>.
                   </p>
 
+
                   <div className="mt-3 flex flex-wrap gap-2">
                     <Badge className="bg-slate-800/60 text-slate-200">Logical Reasoning</Badge>
                     <Badge className="bg-slate-800/60 text-slate-200">Quantitative Aptitude</Badge>
@@ -190,8 +219,9 @@ export default function Courses({ token }) {
                     <Badge className="bg-slate-800/60 text-slate-200">Soft Skills Mastery</Badge>
                   </div>
 
+
                   {/* Standalone Razorpay button for bundle (exact snippet) */}
-                  <div className="mt-4" onClick={(e) => e.stopPropagation()}>
+                  <div className="mt-4 flex justify-center" onClick={(e) => e.stopPropagation()}>
   <PaymentButtonForm
     key="rzp-bundle"
     paymentButtonId="pl_RCfSfZmmVyI1U3"
@@ -199,9 +229,11 @@ export default function Courses({ token }) {
   />
 </div>
 
+
                 </CardContent>
               </Card>
               {/* ---------- END STATIC BUNDLE CARD ---------- */}
+
 
               {courses.map((c) => (
                 <Card
@@ -215,6 +247,7 @@ export default function Courses({ token }) {
                     <p className="mt-1 text-sm text-slate-400">
                       {c.description || "Curated content with per-topic analytics."}
                     </p>
+
 
                     <div className="mt-4 flex items-center justify-between">
                       <span
@@ -235,6 +268,7 @@ export default function Courses({ token }) {
                         )}
                       </span>
 
+
                       <Button
                         size="sm"
                         type="button"
@@ -248,8 +282,9 @@ export default function Courses({ token }) {
                       </Button>
                     </div>
 
+
                     {/* Razorpay Payment Button (renders inside this form) */}
-                    <div className="mt-4">
+                    <div className="mt-9 flex justify-center">
                       <PaymentButtonForm
                         key={`rzp-${c.id}`}
                         paymentButtonId={PAYMENT_BUTTON_ID}
@@ -259,6 +294,7 @@ export default function Courses({ token }) {
                   </CardContent>
                 </Card>
               ))}
+
 
               {courses.length === 0 && (
                 <Card className="border border-slate-800/60 bg-slate-900/40">
@@ -270,6 +306,7 @@ export default function Courses({ token }) {
             </div>
           )}
         </div>
+
 
         {/* SELECTED COURSE & EXAMS */}
         {activeCourse && (
@@ -283,6 +320,7 @@ export default function Courses({ token }) {
               </span>
             </div>
 
+
             {loadingExams && (
               <Card className="border border-slate-800/60 bg-slate-900/40">
                 <CardContent className="space-y-2 p-5">
@@ -291,6 +329,7 @@ export default function Courses({ token }) {
                 </CardContent>
               </Card>
             )}
+
 
             {!loadingExams && error && (
               <Card className="border border-rose-600/30 bg-rose-600/10">
@@ -304,6 +343,7 @@ export default function Courses({ token }) {
                 </CardContent>
               </Card>
             )}
+
 
             {!loadingExams && !error && (
               <>
@@ -326,6 +366,7 @@ export default function Courses({ token }) {
                             </h3>
                           </div>
 
+
                           <div className="mb-3 text-sm text-slate-300">
                             <span className="inline-flex items-center gap-1">
                               <Clock className="h-4 w-4 opacity-80" />
@@ -334,11 +375,13 @@ export default function Courses({ token }) {
                             </span>
                           </div>
 
+
                           <div className="flex items-center justify-between">
                             <span className="inline-flex items-center gap-1 rounded-md border border-slate-700 px-2 py-1 text-xs text-slate-200">
                               <Layers className="h-3.5 w-3.5 opacity-80" />
                               {questionsLabel(ex)}
                             </span>
+
 
                             <Button
                               size="sm"
@@ -362,3 +405,8 @@ export default function Courses({ token }) {
     </main>
   );
 }
+
+
+
+
+

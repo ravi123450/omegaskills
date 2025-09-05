@@ -15,8 +15,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+
 /* LocalStorage keys reused from workshops admin */
 const WS_LIST_KEY = "live_workshops_list";
+
 
 /* --- UI bits --- */
 function SectionTitle({ children, eyebrow }) {
@@ -35,6 +37,7 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 function Info({ icon, label }) {
   return (
     <div className="flex items-center gap-2">
@@ -46,6 +49,7 @@ function Info({ icon, label }) {
   );
 }
 
+
 /* Hide month names like "Sep 10" -> "Starts 10" */
 function startsLabel(starts) {
   if (!starts) return "Dates will be shared after registration";
@@ -53,8 +57,10 @@ function startsLabel(starts) {
   return onlyDay ? `Starts ${onlyDay}` : "Dates will be shared after registration";
 }
 
+
 export default function LiveCohorts() {
   const [items, setItems] = useState([]);
+
 
   useEffect(() => {
     try {
@@ -65,6 +71,7 @@ export default function LiveCohorts() {
     }
   }, []);
 
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Header */}
@@ -74,6 +81,7 @@ export default function LiveCohorts() {
           <Badge className="bg-slate-800/60 text-slate-200 !text-base">Live Cohorts</Badge>
         </div>
 
+
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Learn together,{" "}
           <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
@@ -81,10 +89,12 @@ export default function LiveCohorts() {
           </span>
         </h1>
 
+
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
           Instructor-led live sessions, deadlines that keep you on track, and mentor feedback
           every week. Cohort seats are limited for tight feedback loops.
         </p>
+
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button className="h-11 px-4 bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black" asChild>
@@ -99,12 +109,14 @@ export default function LiveCohorts() {
         </div>
       </section>
 
+
       {/* Body */}
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-2 md:px-6">
         <div className="grid gap-10 md:grid-cols-3">
           {/* Left: cohorts/workshops list (from admin-configured localStorage) */}
           <div className="md:col-span-2 space-y-6">
             <SectionTitle eyebrow="Upcoming cohorts">Open for applications</SectionTitle>
+
 
             {!items.length ? (
               <Card className="mt-6 border-slate-800/70 bg-slate-900/40">
@@ -123,6 +135,7 @@ export default function LiveCohorts() {
                       ? w.features
                       : ["Hands-on labs", "Mock exam", "Interview prep"];
 
+
                   return (
                     <Card
                       key={w.id}
@@ -136,12 +149,14 @@ export default function LiveCohorts() {
                               <h3 className="text-lg font-semibold">{w.title}</h3>
                             </div>
 
+
                             <div className="mt-2 grid gap-2 text-sm text-slate-300/90 sm:grid-cols-2">
                               <Info icon={<CalendarDays className="h-4 w-4" />} label={startsLabel(w.starts)} />
                               <Info icon={<Clock className="h-4 w-4" />} label={duration} />
                               {seats && <Info icon={<Users className="h-4 w-4" />} label={seats} />}
                               <Info icon={<Video className="h-4 w-4" />} label={schedule} />
                             </div>
+
 
                             <ul className="mt-3 flex flex-wrap gap-2">
                               {features.map((o) => (
@@ -154,6 +169,7 @@ export default function LiveCohorts() {
                               ))}
                             </ul>
                           </div>
+
 
                           {/* Pre-login CTA is always "Log in" */}
                           <div className="shrink-0 self-center">
@@ -169,6 +185,7 @@ export default function LiveCohorts() {
               </div>
             )}
           </div>
+
 
           {/* Right: Why cohorts (unchanged) */}
           <aside className="md:col-span-1">
@@ -192,17 +209,19 @@ export default function LiveCohorts() {
                     ))}
                   </ul>
 
+
                   <div className="mt-5">
                     <Button
                       asChild
                       variant="secondary"
                       className="w-full text-sm bg-slate-800 text-slate-100 hover:bg-slate-700"
                     >
-                      <Link to="/courses/campus">Prefer campus bootcamps?</Link>
+                      <Link to="/contact">Prefer campus bootcamps?</Link>
                     </Button>
                   </div>
                 </CardContent>
               </Card>
+
 
               <Card className="border-slate-800/70 bg-slate-900/50">
                 <CardContent className="p-6">
@@ -213,6 +232,7 @@ export default function LiveCohorts() {
                     Complete at least 80% of sessions and the capstone to earn a cohort completion
                     certificate.
                   </p>
+
 
                   <div className="mt-4 flex items-center gap-2 text-sm text-slate-300">
                     <Award className="h-4 w-4 text-orange-300" />
@@ -227,3 +247,8 @@ export default function LiveCohorts() {
     </main>
   );
 }
+
+
+
+
+

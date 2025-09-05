@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+
 /* ----- local atoms (kept simple & consistent with your system) ----- */
 function SectionTitle({ children, eyebrow }) {
   return (
@@ -35,6 +36,7 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 function Point({ icon: Icon, children }) {
   return (
     <li className="flex items-start gap-2">
@@ -46,6 +48,7 @@ function Point({ icon: Icon, children }) {
   );
 }
 
+
 function Pill({ icon: Icon, children }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-xl border border-slate-800/60 bg-slate-900/40 px-3 py-1.5 text-sm text-slate-200">
@@ -54,6 +57,7 @@ function Pill({ icon: Icon, children }) {
     </span>
   );
 }
+
 
 /* ----- page ----- */
 export default function About() {
@@ -65,6 +69,7 @@ export default function About() {
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-indigo-500/20 blur-[110px]" />
       </div>
 
+
       {/* Hero */}
       <section className="relative mx-auto max-w-7xl px-4 pb-10 pt-10 md:px-6 md:pt-14">
         <div className="flex flex-wrap gap-2">
@@ -72,6 +77,7 @@ export default function About() {
             About Us — 'Ω' Omega Skills Academy
           </Badge>
         </div>
+
 
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Built on{" "}
@@ -85,11 +91,13 @@ export default function About() {
           .
         </h1>
 
+
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
           We bridge the gap between classroom theory and real-world employability by delivering
           live learning, career tools, and opportunities. No false promises — only real skills you
           can learn, practice, build, and showcase.
         </p>
+
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
@@ -106,6 +114,7 @@ export default function About() {
           </Button>
         </div>
       </section>
+
 
       {/* Who We Are */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="who-we-are">
@@ -124,6 +133,7 @@ export default function About() {
                   helps you <span className="text-white font-semibold">learn, practice, build, and showcase</span>.
                 </p>
 
+
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Pill icon={GraduationCap}>Live Cohorts</Pill>
                   <Pill icon={Users}>On-Campus Bootcamps</Pill>
@@ -132,6 +142,7 @@ export default function About() {
                   <Pill icon={Trophy}>Projects & Hackathons</Pill>
                 </div>
               </div>
+
 
               {/* Quick principles card */}
               <div className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-5">
@@ -145,6 +156,7 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
+
 
       {/* Mission */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="mission">
@@ -178,6 +190,7 @@ export default function About() {
         </div>
       </section>
 
+
       {/* Why We Exist */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="why">
         <SectionTitle eyebrow="Why We Exist">We Chose a Different Path</SectionTitle>
@@ -201,9 +214,11 @@ export default function About() {
         </div>
       </section>
 
+
       {/* What We Do */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="what-we-do">
         <SectionTitle eyebrow="What We Do">Programs & Services</SectionTitle>
+
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
@@ -211,14 +226,14 @@ export default function About() {
               title: "Live Cohorts",
               desc: "Mentor-led classes to learn, practice, and get real-time feedback.",
               icon: GraduationCap,
-              to: "/courses#cohorts",
+              to: "/courses/cohorts",
               tag: "Live",
             },
             {
               title: "On-Campus Bootcamps",
               desc: "Intensive skill workshops with resume clinics & mini-hackathons.",
               icon: Users,
-              to: "/courses#campus",
+              to: "/courses/campus",
               tag: "On-campus",
             },
             {
@@ -232,14 +247,14 @@ export default function About() {
               title: "Cloud Cert Concierge",
               desc: "End-to-end support for AWS, GCP, and Azure certifications.",
               icon: Cloud,
-              to: "/courses#cloud",
+              to: "/courses/cloud",
               tag: "Concierge",
             },
             {
               title: "Projects & Hackathons",
               desc: "Real-world challenges to build portfolio-ready work.",
               icon: Trophy,
-              to: "/community#projects",
+              to: "/community/projects",
               tag: "Challenge",
             },
           ].map((o, i) => (
@@ -264,6 +279,7 @@ export default function About() {
         </div>
       </section>
 
+
       {/* Vision & Values */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="vision-values">
         <div className="grid gap-6 md:grid-cols-[1.05fr,1fr]">
@@ -280,6 +296,7 @@ export default function About() {
             </CardContent>
           </Card>
 
+
           <Card>
             <CardContent className="p-6">
               <SectionTitle eyebrow="Our Values">How We Operate</SectionTitle>
@@ -294,6 +311,7 @@ export default function About() {
         </div>
       </section>
 
+
       {/* Team */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="team">
         <SectionTitle eyebrow="Our Team">Educators, Mentors, Practitioners</SectionTitle>
@@ -305,7 +323,8 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
-      
+     
+
 
       {/* Partners */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="partners">
@@ -347,6 +366,7 @@ export default function About() {
         </div>
       </section>
 
+
       {/* What Change We Make */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="impact">
         <SectionTitle eyebrow="What Change We Make">Education → Outcomes</SectionTitle>
@@ -362,6 +382,7 @@ export default function About() {
           ))}
         </div>
       </section>
+
 
       {/* Punchlines / Quotations */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="quotes">
@@ -386,6 +407,7 @@ export default function About() {
         </div>
       </section>
 
+
       {/* Final CTA */}
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-2 md:px-6">
         <div className="flex flex-wrap items-center gap-3">
@@ -406,3 +428,8 @@ export default function About() {
     </div>
   );
 }
+
+
+
+
+

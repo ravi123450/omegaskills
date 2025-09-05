@@ -7,12 +7,14 @@
   --muted:#64748b;
 }
 
+
 .app{
   height:100vh;
   display:grid;
   grid-template-columns: 520px 1fr;
   gap:0;
 }
+
 
 /* LEFT PANEL (form) */
 .panel{
@@ -33,7 +35,7 @@
   margin:0;
 }
 .small{
-  font-size:12px;color:orange
+  font-size:12px;color:black
 }
 .toolbar{ display:flex; gap:8px; }
 .btn{
@@ -52,6 +54,7 @@
 .textarea{ resize:vertical }
 .hint{ font-size:12px; color:#64748b; margin-top:2px }
 
+
 /* RIGHT PANEL (preview) */
 .previewWrap{
   padding:16px; overflow:auto; background:#f1f5f9;
@@ -67,6 +70,7 @@
 .previewTitle{ font-size:14px; color:#475569 }
 .previewControls{ display:flex; gap:8px }
 
+
 /* Resume page canvas */
 .resumePage{
   background:#fff; width:fit; min-height:1123px; /* A4 height */
@@ -75,6 +79,7 @@
   color:#0f172a;
   font-size: 14px;
 }
+
 
 /* Template common */
 .row{ display:flex; gap:14px }
@@ -86,12 +91,14 @@
 }
 .hr{ height:1px; background:#e5e7eb; margin:10px 0 }
 
+
 /* Pills for Skills */
 .pills{ display:flex; flex-wrap:wrap; gap:6px }
 .pill{
   border:1px solid #e2e8f0; padding:4px 8px; border-radius:999px; font-size:12px;
   background:#f8fafc;
 }
+
 
 /* Template cards in gallery */
 .gallery{
@@ -116,12 +123,14 @@
   transform: scale(.6); transform-origin: top left; width: 1200px;
 }
 
+
 /* Header styles for sections */
 .hBar{ display:flex; align-items:center; gap:8px }
 .hBarDot{ width:6px; height:16px; background:var(--accent); border-radius:4px }
 .hUnderline{ border-bottom:2px solid var(--accent); padding-bottom:2px; display:inline-block }
 .hPill{ display:inline-block; background:rgba(30,64,175,.08); color:var(--accent); border-radius:999px; padding:2px 8px; font-weight:700; font-size:12px }
 .hBlock{ background:rgba(30,64,175,.06); color:var(--accent); padding:6px 8px; border-radius:8px; font-weight:700 }
+
 
 /* Simple timeline bullets */
 .timeline ul{ list-style:none; margin:0; padding:0 }
@@ -130,15 +139,23 @@
   content:""; position:absolute; left:4px; top:6px; width:6px; height:6px; border-radius:999px; background:var(--accent);
 }
 
+
 /* Photo header */
 .photo{
   width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid var(--accent)
 }
 
+
 /* Sidebar icons (use emoji to avoid icon libs) */
 .sideItem{ display:flex; gap:8px; align-items:flex-start }
 .sideIcon{ font-size:16px; width:18px; text-align:center; margin-top:2px }
 
+
 /* tiny helpers */
 .right{ text-align:right }
 .m0{ margin:0 }
+
+
+
+
+

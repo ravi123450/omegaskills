@@ -1,15 +1,19 @@
 // src/pages/Exam.jsx
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useLocation, useNavigate } from "react-router-dom";
 import { finishAttempt, saveAnswer, startAttempt } from "@/lib/api";
+
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Monitor } from "lucide-react";
 
+
 export default function Exam({ token }) {
   const { state } = useLocation();
   const navigate = useNavigate();
+
 
   const [attempt, setAttempt] = useState(null);
   const [idx, setIdx] = useState(0);
@@ -18,14 +22,17 @@ export default function Exam({ token }) {
   const [section, setSection] = useState("All");
   const [marked, setMarked] = useState(new Set());
 
+
   const [warnOpen, setWarnOpen] = useState(false);
   const [needsFS, setNeedsFS] = useState(false);
+
 
   const timerRef = useRef(null);
   const timeOnCurrentStart = useRef(Date.now());
   const violationCountRef = useRef(0);
   const coolRef = useRef(Date.now() + 1200);
   const endingRef = useRef(false);
+
 
   const enterFullscreen = async () => {
     try {
@@ -43,6 +50,7 @@ export default function Exam({ token }) {
     } catch {}
   };
 
+
   const persistMarked = (mSet) => {
     try {
       sessionStorage.setItem("exam_marked", JSON.stringify([...mSet]));
@@ -54,6 +62,7 @@ export default function Exam({ token }) {
       setMarked(new Set(m));
     } catch {}
   };
+
 
   const safeSaveCurrent = async () => {
     const q = attempt?.questions?.[idx];
@@ -76,6 +85,7 @@ export default function Exam({ token }) {
     timeOnCurrentStart.current = Date.now();
   };
 
+
   const doFinish = async (attempt_id = attempt?.attempt_id) => {
     if (!attempt_id || endingRef.current) return;
     endingRef.current = true;
@@ -96,6 +106,7 @@ export default function Exam({ token }) {
     }
   };
 
+
   useEffect(() => {
     if (!state?.exam) {
       navigate("/courses");
@@ -103,12 +114,14 @@ export default function Exam({ token }) {
     }
     let unmounted = false;
 
+
     (async () => {
       try {
         const r = await startAttempt(token, state.exam.id);
         if (unmounted) return;
         setAttempt(r);
         setSection("All");
+
 
         setTimeLeft(Math.max(0, Math.floor((r.ends_at - Date.now()) / 1000)));
         timerRef.current = setInterval(() => {
@@ -122,12 +135,14 @@ export default function Exam({ token }) {
           });
         }, 1000);
 
+
         loadMarked();
         await enterFullscreen();
       } catch {
         if (!unmounted) navigate("/courses");
       }
     })();
+
 
     return () => {
       unmounted = true;
@@ -136,9 +151,11 @@ export default function Exam({ token }) {
     };
   }, [state?.exam?.id, token, navigate]);
 
+
   const triggerViolation = async () => {
     if (Date.now() < coolRef.current) return;
     violationCountRef.current += 1;
+
 
     if (violationCountRef.current === 1) {
       setWarnOpen(true);
@@ -163,8 +180,10 @@ export default function Exam({ token }) {
     }
   };
 
+
   useEffect(() => {
     if (!attempt) return;
+
 
     const onFSChange = () => {
       if (document.fullscreenElement) {
@@ -179,24 +198,24 @@ export default function Exam({ token }) {
     };
     const onBlur = () => triggerViolation();
 
+
     // Block common back/forward keys while in exam
     const onKeyDown = (e) => {
       const k = e.key;
-      // Alt+Left/Right or dedicated browser navigation keys
       const navCombo =
         (e.altKey && (k === "ArrowLeft" || k === "ArrowRight")) ||
         k === "BrowserBack" ||
         k === "BrowserForward";
 
-      // Backspace when not in an editable field (legacy nav)
+
       const isEditable =
         ["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName) ||
         document.activeElement?.isContentEditable;
 
+
       if (navCombo || (!isEditable && k === "Backspace")) {
         e.preventDefault();
         e.stopPropagation();
-        // keep user on the same history entry
         try {
           history.pushState(null, "", window.location.href);
         } catch {}
@@ -204,14 +223,17 @@ export default function Exam({ token }) {
         return;
       }
 
+
       if (k === "Escape") triggerViolation();
       if (k?.toLowerCase() === "r") toggleReview();
     };
+
 
     document.addEventListener("fullscreenchange", onFSChange);
     document.addEventListener("visibilitychange", onVisibility);
     window.addEventListener("blur", onBlur);
     document.addEventListener("keydown", onKeyDown);
+
 
     return () => {
       document.removeEventListener("fullscreenchange", onFSChange);
@@ -221,32 +243,30 @@ export default function Exam({ token }) {
     };
   }, [attempt]); // eslint-disable-line
 
-  /* ===== HARD BLOCK history back/forward (touchpad two-finger & back/forward buttons) ===== */
+
+  /* ===== HARD BLOCK history back/forward ===== */
   useEffect(() => {
     if (!attempt) return;
 
-    // Seed a lock state and re-push on popstate
+
     const lockHistory = () => {
       try {
         history.pushState(null, "", window.location.href);
       } catch {}
     };
-    const onPopState = (e) => {
-      // Immediately push back to keep URL/page in place
+    const onPopState = () => {
       lockHistory();
-      // Treat as violation attempt
       triggerViolation();
     };
 
-    // Wheel: prevent horizontal swipe gestures from becoming back/forward
+
     const onWheel = (e) => {
-      // Only if horizontal intent dominates
       if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 0) {
         e.preventDefault();
       }
     };
 
-    // Some mice send extra buttons for back/forward (button 3/4)
+
     const onMouseUp = (e) => {
       if (e.button === 3 || e.button === 4) {
         e.preventDefault();
@@ -256,17 +276,19 @@ export default function Exam({ token }) {
       }
     };
 
-    // Before unload — show native prompt to avoid accidental navigation
+
     const onBeforeUnload = (e) => {
       e.preventDefault();
       e.returnValue = "";
     };
+
 
     lockHistory();
     window.addEventListener("popstate", onPopState);
     window.addEventListener("wheel", onWheel, { passive: false });
     window.addEventListener("mouseup", onMouseUp, true);
     window.addEventListener("beforeunload", onBeforeUnload);
+
 
     return () => {
       window.removeEventListener("popstate", onPopState);
@@ -276,12 +298,15 @@ export default function Exam({ token }) {
     };
   }, [attempt]); // eslint-disable-line
 
+
   const q = attempt?.questions?.[idx];
+
 
   const scrollPageTop = () =>
     requestAnimationFrame(() =>
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
     );
+
 
   const switchQuestion = async (newIdx) => {
     await safeSaveCurrent();
@@ -289,6 +314,7 @@ export default function Exam({ token }) {
     timeOnCurrentStart.current = Date.now();
     scrollPageTop();
   };
+
 
   const pick = async (choice) => {
     if (!attempt || !q) return;
@@ -306,6 +332,7 @@ export default function Exam({ token }) {
     } catch {}
   };
 
+
   const toggleReview = () => {
     if (!q) return;
     const next = new Set(marked);
@@ -314,6 +341,7 @@ export default function Exam({ token }) {
     setMarked(next);
     persistMarked(next);
   };
+
 
   const mmss = useMemo(() => {
     const m = Math.floor(timeLeft / 60)
@@ -325,10 +353,16 @@ export default function Exam({ token }) {
     return `${m}:${s}`;
   }, [timeLeft]);
 
+
+  /* ---- FIX #1: sections = union(config.sections, questions.section) with "All" first ---- */
   const sections = useMemo(() => {
-    const raw = attempt?.exam?.config?.sections || [];
-    return ["All", ...raw];
-  }, [attempt]);
+    const cfg = attempt?.exam?.config?.sections ?? [];
+    const fromQs =
+      attempt?.questions?.map((qq) => qq.section).filter(Boolean) ?? [];
+    const uniq = Array.from(new Set([...cfg, ...fromQs]));
+    return ["All", ...uniq];
+  }, [attempt?.exam?.config?.sections, attempt?.questions]);
+
 
   const filteredIndices = useMemo(() => {
     if (!attempt?.questions) return [];
@@ -338,6 +372,7 @@ export default function Exam({ token }) {
         (i) => section === "All" || attempt.questions[i].section === section
       );
   }, [attempt, section]);
+
 
   if (!attempt)
     return (
@@ -350,6 +385,7 @@ export default function Exam({ token }) {
     );
   if (!q) return null;
 
+
   const answeredCount = [...answers.keys()].length;
   const sectionLabel =
     q.section || (q.topic_slug ? q.topic_slug.toUpperCase() : "Section");
@@ -357,9 +393,11 @@ export default function Exam({ token }) {
   const difficulty = q.difficulty || "";
   const isMarked = marked.has(q.id);
 
+
   return (
     <main className="examWrap">
       <Style />
+
 
       {warnOpen && (
         <div className="alert warn">
@@ -367,6 +405,7 @@ export default function Exam({ token }) {
           violation will auto-submit.
         </div>
       )}
+
 
       {needsFS && (
         <div className="fixed inset-0 z-50 grid place-items-center bg-black/60">
@@ -395,6 +434,7 @@ export default function Exam({ token }) {
         </div>
       )}
 
+
       <div className="row between headerRow">
         <div className="headBlock">
           <span className="chip">
@@ -406,10 +446,12 @@ export default function Exam({ token }) {
           </h1>
         </div>
 
+
         <div className="timerRing" title="Time left">
           <span>{mmss}</span>
         </div>
       </div>
+
 
       <div className="grid2">
         <div>
@@ -428,7 +470,9 @@ export default function Exam({ token }) {
               )}
             </div>
 
+
             <div className="qtext">{q.text}</div>
+
 
             <div className="opts">
               {Array.isArray(q.options) &&
@@ -452,6 +496,7 @@ export default function Exam({ token }) {
                 })}
             </div>
 
+
             <div className="row between" style={{ marginTop: 16 }}>
               <div className="row" style={{ gap: 8 }}>
                 <button
@@ -462,6 +507,7 @@ export default function Exam({ token }) {
                   Prev
                 </button>
 
+
                 <button
                   className={`btn ${isMarked ? "purple" : "ghost"}`}
                   onClick={toggleReview}
@@ -470,6 +516,7 @@ export default function Exam({ token }) {
                   {isMarked ? "Unmark Review" : "Mark for Review"}
                 </button>
               </div>
+
 
               {idx < attempt.questions.length - 1 ? (
                 <button
@@ -490,10 +537,12 @@ export default function Exam({ token }) {
             </div>
           </div>
 
+
           <div className="small dim" style={{ marginTop: 10 }}>
             Answered: {answeredCount} / {attempt.questions.length}
           </div>
         </div>
+
 
         <div>
           <div className="card">
@@ -505,6 +554,7 @@ export default function Exam({ token }) {
                 onChange={setSection}
               />
             </div>
+
 
             <div className="palette">
               {filteredIndices.map((i) => {
@@ -532,6 +582,7 @@ export default function Exam({ token }) {
               })}
             </div>
 
+
             <div className="legend">
               <span>
                 <span className="dot done" />
@@ -548,6 +599,7 @@ export default function Exam({ token }) {
             </div>
           </div>
 
+
           <div className="card notesCard" style={{ marginTop: 9 }}>
             <div className="sectionTitle red">Exam Notes</div>
             <p className="small redText" style={{ marginTop: 8 }}>
@@ -562,44 +614,80 @@ export default function Exam({ token }) {
   );
 }
 
+
+/* ---------- DROPDOWN (portal + fixed positioning to avoid clipping) ---------- */
 function SectionSelect({ value, options, onChange }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
+  const [pos, setPos] = useState({ left: 0, top: 0, width: 0 });
+
 
   useEffect(() => {
     const onDoc = (e) => {
-      if (!ref.current) return;
-      if (!ref.current.contains(e.target)) setOpen(false);
+      // close when clicking outside button or the menu
+      const menu = document.getElementById("exam-dd-menu");
+      if (
+        ref.current &&
+        !ref.current.contains(e.target) &&
+        menu &&
+        !menu.contains(e.target)
+      ) {
+        setOpen(false);
+      }
     };
     document.addEventListener("mousedown", onDoc);
     return () => document.removeEventListener("mousedown", onDoc);
   }, []);
 
+
+  useEffect(() => {
+    if (!open || !ref.current) return;
+    const r = ref.current.getBoundingClientRect();
+    setPos({ left: r.left, top: r.bottom + 8, width: r.width });
+  }, [open]);
+
+
   return (
-    <div className="dd" ref={ref}>
-      <button className="ddBtn" onClick={() => setOpen((v) => !v)}>
-        <span>{value}</span>
-        <span className="chev">▾</span>
-      </button>
-      {open && (
-        <div className="ddMenu">
-          {options.map((opt) => (
-            <button
-              key={opt}
-              className={`ddItem ${opt === value ? "active" : ""}`}
-              onClick={() => {
-                onChange(opt);
-                setOpen(false);
-              }}
-            >
-              {opt}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <div className="dd" ref={ref}>
+        <button className="ddBtn" onClick={() => setOpen((v) => !v)}>
+          <span>{value}</span>
+          <span className="chev">▾</span>
+        </button>
+      </div>
+
+
+      {open &&
+        createPortal(
+          <div
+            id="exam-dd-menu"
+            className="ddMenu"
+            style={{
+              position: "fixed",
+              left: pos.left,
+              top: pos.top,
+              width: pos.width,
+            }}
+          >
+            {options.map((opt) => (
+              <button
+                key={opt}
+                className={`ddItem ${opt === value ? "active" : ""}`}
+                onClick={() => {
+                  onChange(opt);
+                  setOpen(false);
+                }}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>,
+          document.body
+        )}
+    </>
   );
 }
+
 
 /* ========================= Styles ========================= */
 function Style() {
@@ -609,6 +697,7 @@ function Style() {
 html, body { overscroll-behavior: none; }
 body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 
+
 /* Layout */
 .examWrap { color:#e5e7eb; background:#0b1120; min-height:100vh; padding:24px 16px; touch-action: pan-y; overscroll-behavior: none; }
 .grid2 { display:grid; grid-template-columns: 1fr; gap:20px; max-width:1200px; margin:0 auto; }
@@ -616,6 +705,7 @@ body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 .row { display:flex; align-items:center; gap:10px; }
 .row.between { justify-content:space-between; }
 .headerRow { max-width:1200px; margin:0 auto 16px; align-items:flex-start; }
+
 
 /* Head & timer */
 .headBlock { display:flex; flex-direction:column; gap:8px; }
@@ -625,20 +715,24 @@ body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 .chipDot{ width:8px; height:8px; border-radius:999px; background:#f59e0b; box-shadow:0 0 0 6px rgba(245,158,11,.15); }
 .examTitle { font-size:34px; line-height:1.15; font-weight:800; margin:0; letter-spacing:.2px; }
 
+
 .card { background:rgba(2,6,23,.6); border:1px solid rgba(30,41,59,.75); border-radius:14px; padding:16px; box-shadow:0 8px 20px rgba(0,0,0,.2); }
 .sectionTitle{ font-weight:700; font-size:16px; }
 .small{ font-size:12px; }
 .dim { color:#94a3b8; }
+
 
 .timerRing{ position:fixed; top:28px; right:72px; width:86px; height:86px; border-radius:999px; display:grid; place-items:center;
   color:#e2e8f0; background:radial-gradient(120px 120px at 50% 40%, #0ea5e9 0%, rgba(2,6,23,.45) 55%); border:2px solid rgba(99,102,241,.35);
   box-shadow:0 0 0 6px rgba(99,102,241,.12), 0 0 44px 12px rgba(14,165,233,.15); z-index:35; }
 .timerRing span{ font-variant-numeric:tabular-nums; font-weight:800; }
 
+
 /* Warning */
 .alert.warn{ position:fixed; left:20px; right:20px; top:76px; z-index:60;
   background:rgba(245,158,11,.15); border:1px solid rgba(245,158,11,.35);
   padding:10px 12px; border-radius:12px; color:#fde68a; }
+
 
 /* Buttons */
 .btn{ background:transparent; color:#e5e7eb; border:1px solid #334155; border-radius:10px; padding:9px 14px; cursor:pointer;}
@@ -651,9 +745,11 @@ body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 .tag{ display:inline-flex; align-items:center; gap:6px; padding:4px 8px; font-size:12px; border-radius:10px; border:1px solid #334155;}
 .tag.purple{ background:rgba(124,58,237,.12); border-color:rgba(124,58,237,.35); color:#c4b5fd; }
 
+
 /* Question & options */
 .qtext{ margin-top:14px; line-height:1.6; font-size:16px; }
 .opts{ display:grid; gap:12px; margin-top:16px; }
+
 
 /* Clean single-circle bullet — kill any extra rings */
 .opt{ display:flex; gap:14px; align-items:center; text-align:left; padding:14px; border:1px solid #334155; border-radius:12px;
@@ -662,11 +758,12 @@ body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 .opt.selected{ border-color:#f59e0b; background:rgba(245,158,11,.12); }
 .opt:focus, .opt:focus-visible{ outline:none; }
 
+
 /* the bullet itself */
-.optBullet{ 
+.optBullet{
   display:grid; place-items:center;
   width:36px; height:36px; aspect-ratio:1/1;
-  border-radius:999px; 
+  border-radius:999px;
   border:1.5px solid #475569;
   background:none;
   box-shadow:none !important;
@@ -675,10 +772,12 @@ body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 }
 .optBullet::before, .optBullet::after{ content:none !important; }
 
+
 .optBullet.bSel{ border-color:#f59e0b; }
 .optLetter{ font-weight:800; font-size:14px; letter-spacing:.3px; line-height:1; }
 .optText{ font-size:15px; }
 .opt::before { display:none }
+
 
 /* Palette – 8 per row on desktop */
 .palette{ display:grid; gap:10px; margin-top:12px; grid-template-columns:repeat(6, 1fr); }
@@ -691,30 +790,49 @@ body { touch-action: pan-y; } /* allow vertical scroll, block horizontal pan */
 .pal.todo{ background:rgba(148,163,184,.1); }
 .pal.review{ background:rgba(124,58,237,.14); border-color:rgba(124,58,237,.45); color:#ddd6fe; }
 
+
 .legend{ display:flex; gap:18px; align-items:center; margin-top:12px; color:#94a3b8; font-size:12px; }
 .dot{ display:inline-block; width:10px; height:10px; border-radius:999px; margin-right:6px; }
 .dot.done{ background:#22c55e; }
 .dot.todo{ background:#94a3b8; }
 .dot.review{ background:#a78bfa; }
 
+
 /* Custom select */
 .dd{ position:relative; width:200px; }
 .ddBtn{ width:100%; display:flex; align-items:center; justify-content:space-between; gap:8px;
   padding:10px 12px; border-radius:12px; border:1px solid #334155; background:rgba(0,0,0,0); color:#e5e7eb; font-size:13px; }
 .ddBtn:hover{ background:rgba(2,6,23,.22); }
-.ddMenu{ position:absolute; top:100%; left:0; right:0; margin-top:8px; background:rgba(2,6,23,.95);
-  border:1px solid #334155; border-radius:12px; padding:6px; z-index:40; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+
+
+/* ---- FIX #2: menu floats above everything + can scroll ---- */
+.ddMenu{
+  background:rgba(2,6,23,.98);
+  border:1px solid #334155; border-radius:12px; padding:6px;
+  z-index: 10000;
+  box-shadow:0 12px 32px rgba(0,0,0,.5);
+  max-height: 60vh;
+  overflow: auto;
+  backdrop-filter: blur(2px);
+}
 .ddItem{ width:100%; text-align:left; padding:10px 10px; border-radius:10px; color:#e5e7eb; background:transparent; border:none; cursor:pointer; }
 .ddItem:hover{ background:rgba(30,41,59,.6); }
 .ddItem.active{ background:rgba(245,158,11,.12); color:#fde68a; border:1px solid rgba(245,158,11,.35); }
 .chev{ color:#94a3b8; }
+
 
 /* Notes (red) */
 .notesCard{ border-color:rgba(244,63,94,.35); background:rgba(244,63,94,.08); }
 .red{ color:#fecaca; }
 .redText{ color:#fda4af; }
 
+
 .h2{ font-size:20px; font-weight:800; margin:0; }
 `}</style>
   );
 }
+
+
+
+
+

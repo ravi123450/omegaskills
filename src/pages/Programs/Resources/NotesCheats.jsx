@@ -18,6 +18,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import useAuthFlag from "@/lib/useAuthFlag";
+// import UpdatesTicker from "@/components/ui/UpdatesTicker";
+import { PillTicker } from "@/components/ui/MarqueeTicker";
+
+
+
 
 /* local atom: section title */
 function SectionTitle({ children, eyebrow }) {
@@ -36,49 +41,121 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 /* demo data: plug in real files later */
 const LIB = [
   // Cloud
-  { id: "c1", cat: "Cloud", title: "AWS Core Services—One Pager", size: "214 KB", ext: "PDF" },
-  { id: "c2", cat: "Cloud", title: "IAM Cheatsheet (Roles/Policies)", size: "172 KB", ext: "PDF" },
+  {
+    id: "c1",
+    cat: "Cloud",
+    title: "AWS Core Services—One Pager",
+    size: "214 KB",
+    ext: "PDF",
+  },
+  {
+    id: "c2",
+    cat: "Cloud",
+    title: "IAM Cheatsheet (Roles/Policies)",
+    size: "172 KB",
+    ext: "PDF",
+  },
   // DSA
-  { id: "d1", cat: "DSA", title: "Big-O & Patterns Quick Ref", size: "138 KB", ext: "PDF" },
-  { id: "d2", cat: "DSA", title: "Common DP Templates", size: "201 KB", ext: "PDF" },
+  {
+    id: "d1",
+    cat: "DSA",
+    title: "Big-O & Patterns Quick Ref",
+    size: "138 KB",
+    ext: "PDF",
+  },
+  {
+    id: "d2",
+    cat: "DSA",
+    title: "Common DP Templates",
+    size: "201 KB",
+    ext: "PDF",
+  },
   // Security
-  { id: "s1", cat: "Security", title: "OWASP Top-10 Summary", size: "126 KB", ext: "PDF" },
-  { id: "s2", cat: "Security", title: "JWT Hardening Checklist", size: "96 KB", ext: "PDF" },
+  {
+    id: "s1",
+    cat: "Security",
+    title: "OWASP Top-10 Summary",
+    size: "126 KB",
+    ext: "PDF",
+  },
+  {
+    id: "s2",
+    cat: "Security",
+    title: "JWT Hardening Checklist",
+    size: "96 KB",
+    ext: "PDF",
+  },
   // Data
-  { id: "ds1", cat: "Data", title: "SQL Window Functions", size: "189 KB", ext: "PDF" },
-  { id: "ds2", cat: "Data", title: "Pandas Playbook", size: "231 KB", ext: "PDF" },
+  {
+    id: "ds1",
+    cat: "Data",
+    title: "SQL Window Functions",
+    size: "189 KB",
+    ext: "PDF",
+  },
+  {
+    id: "ds2",
+    cat: "Data",
+    title: "Pandas Playbook",
+    size: "231 KB",
+    ext: "PDF",
+  },
   // Dev
-  { id: "dev1", cat: "Dev", title: "Git Everyday Commands", size: "84 KB", ext: "PDF" },
-  { id: "dev2", cat: "Dev", title: "HTTP Status Codes Map", size: "77 KB", ext: "PDF" },
+  {
+    id: "dev1",
+    cat: "Dev",
+    title: "Git Everyday Commands",
+    size: "84 KB",
+    ext: "PDF",
+  },
+  {
+    id: "dev2",
+    cat: "Dev",
+    title: "HTTP Status Codes Map",
+    size: "77 KB",
+    ext: "PDF",
+  },
 ];
 
+
 const CATS = ["All", "Cloud", "DSA", "Security", "Data", "Dev"];
+
 
 export default function NotesCheats() {
   const isAuthed = useAuthFlag();
   const [q, setQ] = useState("");
   const [cat, setCat] = useState("All");
 
+
   const filtered = useMemo(() => {
     const ql = q.trim().toLowerCase();
     return LIB.filter((x) => {
       if (cat !== "All" && x.cat !== cat) return false;
       if (!ql) return true;
-      return x.title.toLowerCase().includes(ql) || x.cat.toLowerCase().includes(ql);
+      return (
+        x.title.toLowerCase().includes(ql) || x.cat.toLowerCase().includes(ql)
+      );
     });
   }, [q, cat]);
+
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Header */}
-      <section className="relative mx-auto max-w-7xl px-4 pb-10 pt-10 md:px-6 md:pt-14">
+      <section className="relative mx-auto max-w-7xl px-4 pb-8 pt-10 md:px-6 md:pt-14">
         <div className="flex flex-wrap gap-2">
-          <Badge className="bg-orange-600/20 text-orange-300 !text-base">Resources</Badge>
-          <Badge className="bg-slate-800/60 text-slate-200 !text-base">Notes & Cheat Sheets</Badge>
+          <Badge className="bg-orange-600/20 text-orange-300 !text-base">
+            Resources
+          </Badge>
+          <Badge className="bg-slate-800/60 text-slate-200 !text-base">
+            Notes & Cheat Sheets
+          </Badge>
         </div>
+
 
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Concise notes,{" "}
@@ -87,10 +164,12 @@ export default function NotesCheats() {
           </span>
         </h1>
 
+
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
-          One-pagers and cheat sheets for Cloud, DSA, Security, SQL, Git, and more.
-          Save to dashboard, download, or print before interviews.
+          One-pagers and cheat sheets for Cloud, DSA, Security, SQL, Git, and
+          more. Save to dashboard, download, or print before interviews.
         </p>
+
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button
@@ -110,6 +189,19 @@ export default function NotesCheats() {
         </div>
       </section>
 
+
+      <section>
+        <PillTicker
+          className="mt-0 mb-5"
+          speed={38}
+          items={[
+            "⭐ Notes are being added — stay tuned!",
+            "🔒 Log in to access resources & save favorites (stars).",
+          ]}
+        />
+      </section>
+
+
       {/* Body */}
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-2 md:px-6">
         <div className="grid gap-10 md:grid-cols-3">
@@ -128,6 +220,7 @@ export default function NotesCheats() {
                       onChange={(e) => setQ(e.target.value)}
                     />
                   </div>
+
 
                   <div className="flex items-center gap-2">
                     <Tags className="h-4 w-4 text-orange-300 hidden sm:block" />
@@ -159,6 +252,7 @@ export default function NotesCheats() {
               </CardContent>
             </Card>
 
+
             {/* list */}
             <div className="grid gap-3">
               {filtered.map((doc) => (
@@ -187,6 +281,7 @@ export default function NotesCheats() {
                         </div>
                       </div>
 
+
                       <div className="flex gap-2">
                         <Button
                           asChild
@@ -213,6 +308,7 @@ export default function NotesCheats() {
                 </Card>
               ))}
 
+
               {filtered.length === 0 && (
                 <div className="rounded-xl border border-slate-800/60 bg-slate-900/40 p-6 text-slate-300">
                   No notes found. Try a different keyword or category.
@@ -220,6 +316,7 @@ export default function NotesCheats() {
               )}
             </div>
           </div>
+
 
           {/* Right column: quick packs */}
           <aside className="md:col-span-1">
@@ -243,10 +340,13 @@ export default function NotesCheats() {
                 </span>
               </div>
 
+
               <Card className="border-slate-800/70 bg-slate-900/50">
                 <CardContent className="p-6">
                   <div className="mb-2">
-                    <Badge className="bg-orange-600/20 text-orange-300">Quick packs</Badge>
+                    <Badge className="bg-orange-600/20 text-orange-300">
+                      Quick packs
+                    </Badge>
                   </div>
                   <ul className="space-y-2 text-sm text-slate-300/90">
                     {[
@@ -260,6 +360,7 @@ export default function NotesCheats() {
                       </li>
                     ))}
                   </ul>
+
 
                   <div className="mt-5 grid gap-2">
                     <Button
@@ -287,3 +388,8 @@ export default function NotesCheats() {
     </main>
   );
 }
+
+
+
+
+

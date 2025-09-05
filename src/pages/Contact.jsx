@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+
 /* ----- local atoms (kept simple & consistent with your system) ----- */
 function SectionTitle({ children, eyebrow }) {
   return (
@@ -34,6 +35,7 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 export default function Contact() {
   const quotes = [
     "Omega Skills Academy helped me build confidence and land my first internship.",
@@ -43,11 +45,13 @@ export default function Contact() {
     "The cloud certification concierge made AWS prep simple and stress-free. I cleared my exam on the first attempt.",
   ];
 
+
   const stats = [
     { label: "learners supported", value: "2400+" },
     { label: "workshops delivered", value: "85+" },
     { label: "partner colleges", value: "32+" },
   ];
+
 
   const chips = [
     {
@@ -70,6 +74,7 @@ export default function Contact() {
     },
   ];
 
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Top header / breadcrumb */}
@@ -80,6 +85,7 @@ export default function Contact() {
           </Badge>
         </div>
 
+
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Real Voices,{" "}
           <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
@@ -87,21 +93,24 @@ export default function Contact() {
           </span>
         </h1>
 
+
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
           Our students and partners share their journeys with Omega Skills
           Academy.
         </p>
 
+
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button
             asChild
             variant="outline"
-            className="h-10 px-3 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
+            className="h-10 px-3 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60 hover:border-orange-800"
           >
             <Link to="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>
+
 
       {/* Body */}
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-8 md:px-6">
@@ -113,6 +122,7 @@ export default function Contact() {
               <SectionTitle eyebrow="Testimonials">
                 Student Stories
               </SectionTitle>
+
 
               <div className="mt-9 grid gap-4 sm:grid-cols-2">
                 {quotes.map((q, i) => (
@@ -138,6 +148,7 @@ export default function Contact() {
                 ))}
               </div>
 
+
               <div className="mt-6 mb-15">
                 <Link
                   to="/dashboard"
@@ -146,8 +157,9 @@ export default function Contact() {
                   Read More Stories
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-              </div>  
+              </div>
             </div>
+
 
             {/* Get in touch chips */}
             <div>
@@ -157,6 +169,7 @@ export default function Contact() {
               <p className="mt-9 text-base text-slate-300/90">
                 We’re here to support students, colleges, and partners.
               </p>
+
 
               <div className="mt-5 grid gap-4 md:grid-cols-3">
                 {chips.map((c) => (
@@ -174,6 +187,7 @@ export default function Contact() {
                 ))}
               </div>
 
+
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button
                   asChild
@@ -189,6 +203,7 @@ export default function Contact() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
+
 
               {/* Quick contact lines */}
               <div className="mt-6 grid gap-3 sm:grid-cols-3 mb-15">
@@ -207,6 +222,7 @@ export default function Contact() {
               </div>
             </div>
 
+
             {/* Dedicated Support */}
             <div>
               <SectionTitle eyebrow="Dedicated Support">
@@ -220,6 +236,7 @@ export default function Contact() {
               </p>
             </div>
 
+
             {/* Stay Connected */}
             <div>
               <SectionTitle eyebrow="Stay Connected">
@@ -231,25 +248,61 @@ export default function Contact() {
                 peer-to-peer discussions, Q&A sessions, and networking
                 opportunities.
               </p>
+
+
               <div className="mt-4 flex flex-wrap gap-3 mb-15">
+                {/* LinkedIn */}
                 <Button
+                  asChild
                   variant="secondary"
                   className="text-sm bg-slate-800 text-slate-100 hover:bg-orange-500 hover:text-black cursor-pointer"
                 >
-                  LinkedIn
+                  <a
+                    href="https://www.linkedin.com/company/omegaskillsacademy/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Follow Omega Skills Academy on LinkedIn"
+                  >
+                    LinkedIn
+                  </a>
                 </Button>
+
+
+                {/* YouTube (replace URL if you have a specific channel handle) */}
                 <Button
+                  asChild
                   variant="secondary"
                   className="text-sm bg-orange-500 text-slate-100 hover:bg-orange-400 hover:text-black cursor-pointer"
                 >
+                  {/* <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Subscribe to Omega Skills Academy on YouTube"
+                  > */}
                   YouTube
+                  {/* </a> */}
                 </Button>
+
+
+                {/* Instagram */}
                 <Button
+                  asChild
                   variant="secondary"
                   className="text-sm bg-slate-800 text-slate-100 hover:bg-orange-500 hover:text-black cursor-pointer"
                 >
-                  Instagram
+                  <a
+                    href="https://www.instagram.com/omegaskillsacademy/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Follow Omega Skills Academy on Instagram"
+                  >
+                    Instagram
+                  </a>
                 </Button>
+
+
+                {/* Join Community (internal route stays Link) */}
                 <Button
                   asChild
                   className="text-sm bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer"
@@ -258,6 +311,7 @@ export default function Contact() {
                 </Button>
               </div>
             </div>
+
 
             {/* Success Stories at a Glance */}
             <div>
@@ -282,6 +336,7 @@ export default function Contact() {
                 ))}
               </div>
 
+
               <div className="mt-6 flex items-center gap-3">
                 <Button
                   asChild
@@ -300,6 +355,7 @@ export default function Contact() {
             </div>
           </div>
 
+
           {/* Right column: sticky contact card */}
           <aside className="md:col-span-1">
             <div className="md:sticky md:top-24">
@@ -311,47 +367,73 @@ export default function Contact() {
                     </Badge>
                   </div>
 
+
+                  {/* Direct contact links */}
                   <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-3">
+                    <a
+                      href="mailto:info@omegaskillsacademy.online"
+                      className="flex items-center gap-3 text-slate-200 hover:text-orange-300"
+                    >
                       <Mail className="h-4 w-4 text-orange-300" />
-                      <span className="text-slate-200">
-                        info@omegaskillsacademy.online
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
+                      <span>info@omegaskillsacademy.online</span>
+                    </a>
+
+
+                    <a
+                      href="tel:+91XXXXXXXXXX"
+                      className="flex items-center gap-3 text-slate-200 hover:text-orange-300"
+                    >
                       <PhoneCall className="h-4 w-4 text-orange-300" />
-                      <span className="text-slate-200">+91-XXXXXXXXXX</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <MessageCircleMore className="h-4 w-4 text-orange-300" />
-                      <span className="text-slate-200">
-                        Live chat available
-                      </span>
-                    </div>
+                      <span>Call us</span>
+                    </a>
+
+
+                    <a
+                      // href="https://wa.me/91xxxxxxx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-slate-200 hover:text-green-400"
+                    >
+                      <MessageCircleMore className="h-4 w-4 text-green-400" />
+                      <span>Live chat (WhatsApp)</span>
+                    </a>
                   </div>
 
+
+                  {/* Quick action buttons */}
                   <div className="mt-5 grid gap-2">
                     <Button
                       asChild
-                      className="w-full text-base  bg-slate-800 text-slate-100 hover:bg-slate-700"
+                      className="w-full text-base bg-slate-800 text-slate-100 hover:bg-slate-700"
                     >
-                      <Link to="/dashboard">Contact Support</Link>
+                      <a href="mailto:support@omegaskillsacademy.online">
+                        Contact Support
+                      </a>
                     </Button>
+
+
                     <Button
                       asChild
                       variant="secondary"
-                      className="w-full text-sm  bg-orange-500 text-slate-900 hover:bg-orange-400"
+                      className="w-full text-sm bg-orange-500 text-slate-900 hover:bg-orange-400"
                     >
-                      <Link to="/dashboard">Talk to Admissions</Link>
+                      <a href="mailto:admissions@omegaskillsacademy.online">
+                        Talk to Admissions
+                      </a>
                     </Button>
+
+
                     <Button
                       asChild
                       variant="secondary"
                       className="w-full text-sm bg-slate-800 text-slate-100 hover:bg-slate-700"
                     >
-                      <Link to="/dashboard">Partner with Us</Link>
+                      <a href="mailto:partnerships@omegaskillsacademy.online">
+                        Partner with Us
+                      </a>
                     </Button>
                   </div>
+
 
                   <div className="mt-6 rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
                     <p className="text-xs text-slate-300/90">
@@ -365,6 +447,8 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
+
+              {/* Student community block */}
               <div className="mt-4 rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4">
                 <div className="flex items-center gap-2 text-slate-200">
                   <Users className="h-4 w-4 text-orange-300" />
@@ -380,7 +464,7 @@ export default function Contact() {
                     asChild
                     className="w-full text-sm bg-orange-500 text-slate-900 hover:bg-orange-400"
                   >
-                    <Link to="/dashboard">Join Community</Link>
+                    <Link to="/community">Join Community</Link>
                   </Button>
                 </div>
               </div>
@@ -391,3 +475,8 @@ export default function Contact() {
     </main>
   );
 }
+
+
+
+
+

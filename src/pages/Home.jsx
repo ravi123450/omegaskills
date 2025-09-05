@@ -24,8 +24,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone } from "lucide-react";
+import HomeCoursesScrollerAd from "@/components/HomeCoursesScrollerAd";
+
 
 /** ---------- helpers & data ---------- */
+
 
 const usp = [
   {
@@ -65,19 +68,20 @@ const usp = [
   },
 ];
 
+
 const offerings = [
   {
     icon: <GraduationCap className="h-6 w-6" />,
     title: "Live Cohorts",
     desc: "Small‑group, interactive classes led by mentors.",
-    href: "/courses#cohorts",
+    href: "/courses/cohorts",
     tag: "Live",
   },
   {
     icon: <Users className="h-6 w-6" />,
     title: "On‑Campus Bootcamps",
     desc: "Skill workshops, resume clinics & mini‑hackathons.",
-    href: "/courses#campus",
+    href: "/courses/campus",
     tag: "On‑campus",
   },
   {
@@ -91,24 +95,25 @@ const offerings = [
     icon: <Cloud className="h-6 w-6" />,
     title: "Cloud Certification Concierge",
     desc: "AWS/GCP/Azure logistics, prep plan & mock tests.",
-    href: "/courses#cloud",
+    href: "/courses/cloud",
     tag: "Concierge",
   },
   {
     icon: <BookOpen className="h-6 w-6" />,
     title: "Projects Assistance",
     desc: "Minor/Major projects with code reviews & viva prep.",
-    href: "/community#projects",
+    href: "/community/projects",
     tag: "Practice",
   },
   {
     icon: <Trophy className="h-6 w-6" />,
     title: "Hackathons",
     desc: "Real challenges, prizes, and recruiter‑ready proof.",
-    href: "/community#hackathons",
+    href: "/community/hackathons",
     tag: "Challenge",
   },
 ];
+
 
 const faqs = [
   {
@@ -129,6 +134,7 @@ const faqs = [
   },
 ];
 
+
 // Simple number animation hook
 function useCountUp(target, duration = 1500) {
   const [value, setValue] = useState(0);
@@ -146,6 +152,7 @@ function useCountUp(target, duration = 1500) {
   return value;
 }
 
+
 function SectionTitle({ children }) {
   return (
     <h2 className="relative text-2xl md:text-3xl font-bold">
@@ -155,10 +162,13 @@ function SectionTitle({ children }) {
   );
 }
 
+
 /** ---------- page ---------- */
+
 
 export default function OmegaHomePage() {
   const [progress, setProgress] = useState(0);
+
 
   useEffect(() => {
     const onScroll = () => {
@@ -170,9 +180,38 @@ export default function OmegaHomePage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+
   const statStudents = useCountUp(2400);
   const statWorkshops = useCountUp(85);
   const statColleges = useCountUp(32);
+  // Quick message form state
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactMsg, setContactMsg] = useState("");
+  const [sending, setSending] = useState(false);
+
+
+  function handleQuickMessageSubmit(e) {
+    e.preventDefault();
+    if (!contactEmail || !contactMsg) {
+      alert("Please enter your email and a message.");
+      return;
+    }
+    setSending(true);
+
+
+    // Option A: mailto (no backend)
+    const to = "info@omegaskillsacademy.online";
+    const subject = encodeURIComponent(
+      "Quick message from Omega Skills Academy site"
+    );
+    const body = encodeURIComponent(`From: ${contactEmail}\n\n${contactMsg}`);
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
+
+    // give UI a moment, then reset the sending flag
+    setTimeout(() => setSending(false), 600);
+  }
+
 
   return (
     <div className="scroll-smooth bg-slate-950 text-white dark:bg-slate-950 dark:text-slate-100 selection:bg-orange-300 selection:text-slate-900">
@@ -182,6 +221,7 @@ export default function OmegaHomePage() {
         style={{ width: `${progress}%` }}
       />
 
+
       {/* Background blobs */}
       <div
         aria-hidden
@@ -190,6 +230,7 @@ export default function OmegaHomePage() {
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-orange-500/20 blur-[90px]" />
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-indigo-500/20 blur-[110px]" />
       </div>
+
 
       {/* Hero */}
       <section
@@ -204,13 +245,14 @@ export default function OmegaHomePage() {
           >
             {/* twin badges (same style) */}
             <div className="flex flex-wrap gap-2">
-              <Badge className="bg-orange-600/20 text-orange-300 hover:bg-orange-600/20  hover:text-black">
+              <Badge className="bg-orange-600/20 text-orange-300 hover:bg-orange-600/20">
                 Live • On‑Campus • Concierge
               </Badge>
-              <Badge className="bg-orange-600/20 text-orange-300 hover:bg-orange-600/20  hover:text-black">
+              <Badge className="bg-orange-600/20 text-orange-300 hover:bg-orange-600/20">
                 Where Catalysts Build Careers
               </Badge>
             </div>
+
 
             {/* headline */}
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
@@ -225,6 +267,7 @@ export default function OmegaHomePage() {
               .
             </h1>
 
+
             {/* subcopy (exact) */}
             <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
               Become career‑ready with our live cohorts, on‑campus bootcamps,
@@ -232,6 +275,7 @@ export default function OmegaHomePage() {
               the skills, innovation, and honest opportunities to help you shape
               your future.
             </p>
+
 
             {/* CTA rows with paired buttons */}
             <div className="mt-6 flex flex-wrap items-center gap-8">
@@ -257,6 +301,7 @@ export default function OmegaHomePage() {
                 </Button>
               </div>
 
+
               {/* Row B: Explore Programs + Events */}
               <div className="flex items-center gap-2">
                 <Button
@@ -271,7 +316,10 @@ export default function OmegaHomePage() {
                   variant="outline"
                   className="h-10 px-3 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
                 >
-                  <Link to="/events" className="flex items-center gap-1">
+                  <Link
+                    to="/community/hackathons"
+                    className="flex items-center gap-1"
+                  >
                     <CalendarDays className="h-4 w-4" /> Events
                   </Link>
                 </Button>
@@ -280,6 +328,11 @@ export default function OmegaHomePage() {
           </motion.div>
         </div>
       </section>
+
+
+      {/* Student-Favorite Mock Tests*/}
+      <HomeCoursesScrollerAd />
+
 
       {/* What Makes Us Different */}
       <section id="why" className="mx-auto max-w-7xl pb-9 px-4 py-9 md:px-6">
@@ -309,6 +362,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
+
       {/* Our Core Offerings */}
       <section
         id="offerings"
@@ -320,9 +374,10 @@ export default function OmegaHomePage() {
             asChild
             className="hidden sm:inline-flex bg-orange-500 text-slate-900 hover:bg-orange-400   hover:text-black"
           >
-            <Link to="/admissions">Enroll Now</Link>
+            <Link to="/courses/learn">Enroll Now</Link>
           </Button>
         </div>
+
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {offerings.map((o, i) => (
@@ -354,6 +409,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
+
       {/* Impact in Numbers */}
       <section className="border-y border-slate-800/60 bg-slate-900/30 mt-9">
         <div className="mx-auto max-w-7xl px-4 py-10 md:px-6">
@@ -370,6 +426,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
+
       {/* Upcoming Workshops */}
       <section id="workshops" className="mx-auto max-w-7xl px-4 py-19 md:px-6">
         <div className="mb-12 flex items-end justify-between">
@@ -379,7 +436,7 @@ export default function OmegaHomePage() {
             variant="outline"
             className="border-slate-700 bg-slate-900/40 hover:bg-slate-900/60   hover:text-orange-400"
           >
-            <Link to="/events">Request Full Schedule</Link>
+            <Link to="/contact">Request Full Schedule</Link>
           </Button>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
@@ -406,6 +463,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
+
       {/* Resume & ATS Tools */}
       <section id="resume" className="mx-auto max-w-7xl px-4 py-12 md:px-6">
         <div className="grid items-center gap-8 md:grid-cols-2">
@@ -417,17 +475,26 @@ export default function OmegaHomePage() {
               48 hours.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
-                Get ATS Score
+              <Button
+                asChild
+                className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer "
+              >
+                <Link to="/ats-scanner" className="flex items-center gap-2">
+                  Get ATS Score
+                </Link>
               </Button>
               <Button
                 variant="outline"
-                className="border-slate-700   hover:text-orange-400"
+                className="border-slate-700   hover:text-orange-400 cursor-pointer"
               >
-                Submit for Review
+                <Link to="/mentor" className="flex items-center gap-2">
+                  Submit for Review
+                </Link>
               </Button>
-              <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
-                Build Resume
+              <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer">
+                <Link to="/resume" className="flex items-center gap-2">
+                  Build Resume
+                </Link>
               </Button>
             </div>
           </div>
@@ -455,6 +522,7 @@ export default function OmegaHomePage() {
           </Card>
         </div>
       </section>
+
 
       {/* Cloud Certification Concierge */}
       <section id="cert" className="mx-auto max-w-7xl px-4 py-12 md:px-6">
@@ -484,12 +552,15 @@ export default function OmegaHomePage() {
             </p>
             <div className="mt-8 ml-50">
               <Button className="!text-base font-semibold bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black h-13 w-58">
-                Talk to an Advisor
+                <Link to="/courses/cloud" className="flex items-center gap-2">
+                  Talk to an Advisor
+                </Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Projects & Hackathons */}
       <section id="projects" className="mx-auto max-w-7xl px-4 py-12 md:px-6 ">
@@ -512,15 +583,23 @@ export default function OmegaHomePage() {
         <div className="mt-6 flex gap-9">
           <Button
             variant="outline"
-            className="border-slate-700 hover:text-orange-400 cursor-pointer h-15 w-55 ml-96"
+            className="border-slate-700 hover:text-orange-400 cursor-pointer h-15 w-55 ml-96 cursor-pointer"
           >
-            Start Project
+            <Link to="/community/projects" className="flex items-center gap-2">
+              Start Project
+            </Link>
           </Button>
           <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black cursor-pointer h-15 w-55">
-            Join Hackathon
+            <Link
+              to="/community/hackathons"
+              className="flex items-center gap-2"
+            >
+              Join Hackathon
+            </Link>
           </Button>
         </div>
       </section>
+
 
       {/* FAQs */}
       <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 ">
@@ -552,96 +631,121 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
+
       {/* Contact */}
       <section
-  id="contact"
-  className="mx-auto max-w-7xl px-4 pb-16 pt-6 md:px-6"
->
-  <div className="grid gap-8 md:grid-cols-3">
-    <div className="md:col-span-2">
-      <SectionTitle>Get in touch</SectionTitle>
-      <p className="mt-8 text-sm text-slate-300">
-        We typically respond within 24 hours.
-      </p>
+        id="contact"
+        className="mx-auto max-w-7xl px-4 pb-16 pt-6 md:px-6"
+      >
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="md:col-span-2">
+            <SectionTitle>Get in touch</SectionTitle>
+            <p className="mt-8 text-sm text-slate-300">
+              We typically respond within 24 hours.
+            </p>
 
-      <div className="mt-4 grid gap-4 md:grid-cols-2">
-        <Link
-          to="/admissions"
-          className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
-        >
-          <div className="flex items-center gap-3 text-slate-200">
-            <PhoneCall className="h-5 w-5 text-orange-300" /> Admissions
+
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <Link
+                to="/admissions"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
+              >
+                <div className="flex items-center gap-3 text-slate-200">
+                  <PhoneCall className="h-5 w-5 text-orange-300" /> Admissions
+                </div>
+                <p className="mt-1 text-sm text-slate-300/90">
+                  Questions about joining a cohort or workshop.
+                </p>
+              </Link>
+
+
+              <Link
+                to="/partnerships"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
+              >
+                <div className="flex items-center gap-3 text-slate-200">
+                  <Newspaper className="h-5 w-5 text-orange-300" /> Partnerships
+                </div>
+                <p className="mt-1 text-sm text-slate-300/90">
+                  Colleges & companies—let’s collaborate.
+                </p>
+              </Link>
+
+
+              <Link
+                to="/support"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
+              >
+                <div className="flex items-center gap-3 text-slate-200">
+                  <LifeBuoy className="h-5 w-5 text-orange-300" /> Support
+                </div>
+                <p className="mt-1 text-sm text-slate-300/90">
+                  Resume tools, login help, certification concierge.
+                </p>
+              </Link>
+            </div>
           </div>
-          <p className="mt-1 text-sm text-slate-300/90">
-            Questions about joining a cohort or workshop.
-          </p>
-        </Link>
 
-        <Link
-          to="/partnerships"
-          className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
-        >
-          <div className="flex items-center gap-3 text-slate-200">
-            <Newspaper className="h-5 w-5 text-orange-300" /> Partnerships
-          </div>
-          <p className="mt-1 text-sm text-slate-300/90">
-            Colleges & companies—let’s collaborate.
-          </p>
-        </Link>
 
-        <Link
-          to="/support"
-          className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
-        >
-          <div className="flex items-center gap-3 text-slate-200">
-            <LifeBuoy className="h-5 w-5 text-orange-300" /> Support
-          </div>
-          <p className="mt-1 text-sm text-slate-300/90">
-            Resume tools, login help, certification concierge.
-          </p>
-        </Link>
-      </div>
-    </div>
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="text-sm font-semibold text-white">
+                Quick message
+              </h3>
+              <form
+                onSubmit={handleQuickMessageSubmit}
+                className="mt-3 grid gap-3"
+              >
+                <input
+                  type="email"
+                  required
+                  value={contactEmail}
+                  onChange={(e) => setContactEmail(e.target.value)}
+                  className="rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
+                  placeholder="Your email"
+                />
+                <textarea
+                  rows={4}
+                  required
+                  value={contactMsg}
+                  onChange={(e) => setContactMsg(e.target.value)}
+                  className="rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
+                  placeholder="How can we help?"
+                />
+                <Button
+                  type="submit"
+                  disabled={sending}
+                  className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
+                >
+                  {sending ? "Sending..." : "Send"}
+                </Button>
 
-    <Card>
-      <CardContent className="p-6">
-        <h3 className="text-sm font-semibold text-white">
-          Quick message
-        </h3>
-        <div className="mt-3 grid gap-3">
-          <input
-            className="rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
-            placeholder="Your email"
-          />
-          <textarea
-            rows={4}
-            className="rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
-            placeholder="How can we help?"
-          />
-          <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
-            Send
-          </Button>
 
-          {/* Contact details below message box */}
-          <ContactLine icon={Mail} href="mailto:info@omegaskillsacademy.online">
-            info@omegaskillsacademy.online
-          </ContactLine>
-          <ContactLine icon={Phone} href="tel:+91XXXXXXXXXX">
-            +91-XXXXXXXXXX
-          </ContactLine>
+                {/* Contact details below message box */}
+                <ContactLine
+                  icon={Mail}
+                  href="mailto:info@omegaskillsacademy.online"
+                >
+                  info@omegaskillsacademy.online
+                </ContactLine>
+                <ContactLine icon={Phone} href="tel:+91XXXXXXXXXX">
+                  +91-XXXXXXXXXX
+                </ContactLine>
 
-          <ContactFormCTA />
+
+                <ContactFormCTA />
+              </form>
+            </CardContent>
+          </Card>
         </div>
-      </CardContent>
-    </Card>
-  </div>
-</section>
-
+      </section>
     </div>
   );
 }
 
+
 /** ---------- atoms ---------- */
+
 
 function Stat({ label, value, suffix = "" }) {
   return (
@@ -654,6 +758,7 @@ function Stat({ label, value, suffix = "" }) {
     </div>
   );
 }
+
 
 function WorkshopCard({ title, date, duration, price, invert = false }) {
   return (
@@ -691,6 +796,7 @@ function WorkshopCard({ title, date, duration, price, invert = false }) {
   );
 }
 
+
 function ProjectCard({ title, tag, invert = false }) {
   return (
     <Card>
@@ -721,13 +827,14 @@ function ProjectCard({ title, tag, invert = false }) {
                 : "bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black")
             }
           >
-            <Link to="/admissions">Enroll</Link>
+            <Link to="/workshops/online">Enroll</Link>
           </Button>
         </div>
       </CardContent>
     </Card>
   );
 }
+
 
 function ContactLine({ icon: Icon, href, children }) {
   const Tag = href ? "a" : "div";
@@ -746,6 +853,7 @@ function ContactLine({ icon: Icon, href, children }) {
   );
 }
 
+
 function ContactFormCTA() {
   return (
     <div className="mt-0 w-full text-center">
@@ -760,3 +868,8 @@ function ContactFormCTA() {
     </div>
   );
 }
+
+
+
+
+

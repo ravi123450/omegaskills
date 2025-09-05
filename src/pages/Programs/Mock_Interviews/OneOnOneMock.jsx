@@ -1,4 +1,4 @@
-// src/pages/mock/OneOnOneMock.jsx
+// src/pages/mock/OneOnOneMock.jsx //outside login static page
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -14,6 +14,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import useAuthFlag from "@/lib/useAuthFlag";
 import { getMockSlotsPublic } from "@/lib/api";
+
 
 /* ---------- tiny atom ---------- */
 function SectionTitle({ children, eyebrow }) {
@@ -32,12 +33,15 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
+
 /* ---------- page ---------- */
 export default function OneOnOneMock() {
   const isAuthed = useAuthFlag();
 
+
   const [slots, setSlots] = useState([]);
   const [loading, setLoading] = useState(true);
+
 
   // load public sample slots
   useEffect(() => {
@@ -54,6 +58,7 @@ export default function OneOnOneMock() {
     })();
   }, []);
 
+
   // group by track (DSA / SYSTEM DESIGN / BEHAVIORAL / etc.)
   const grouped = useMemo(() => {
     const m = new Map();
@@ -69,6 +74,7 @@ export default function OneOnOneMock() {
     for (const [k, v] of m.entries()) if (!ordered.has(k)) ordered.set(k, v);
     return ordered;
   }, [slots]);
+
 
   const formats = [
     {
@@ -88,6 +94,7 @@ export default function OneOnOneMock() {
     },
   ];
 
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Header */}
@@ -97,6 +104,7 @@ export default function OneOnOneMock() {
           <Badge className="bg-slate-800/60 text-slate-200 !text-base">1:1 Sessions</Badge>
         </div>
 
+
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Nail interviews with{" "}
           <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
@@ -104,10 +112,12 @@ export default function OneOnOneMock() {
           </span>
         </h1>
 
+
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
           Practice real interview rounds with mentors. Get precise, actionable feedback and a
           focused action plan to improve fast.
         </p>
+
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button
@@ -126,6 +136,7 @@ export default function OneOnOneMock() {
           </Link>
         </div>
       </section>
+
 
       {/* Content */}
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-2 md:px-6">
@@ -150,9 +161,11 @@ export default function OneOnOneMock() {
               </div>
             </div>
 
+
             {/* Availability (dynamic) */}
             <div>
               <SectionTitle eyebrow="Availability">Sample slots</SectionTitle>
+
 
               {/* Loading state */}
               {loading && (
@@ -169,6 +182,7 @@ export default function OneOnOneMock() {
                 </div>
               )}
 
+
               {/* Empty state */}
               {!loading && slots.length === 0 && (
                 <Card className="mt-8 border-slate-800/70 bg-slate-900/40">
@@ -177,6 +191,7 @@ export default function OneOnOneMock() {
                   </CardContent>
                 </Card>
               )}
+
 
               {/* Grouped tracks */}
               {!loading && slots.length > 0 && (
@@ -187,6 +202,7 @@ export default function OneOnOneMock() {
                 </div>
               )}
             </div>
+
 
             {/* What you get */}
             <div>
@@ -211,6 +227,7 @@ export default function OneOnOneMock() {
             </div>
           </div>
 
+
           {/* Right column (sticky) */}
           <aside className="md:col-span-1">
             <div className="md:sticky md:top-24 space-y-4">
@@ -232,6 +249,7 @@ export default function OneOnOneMock() {
                       </li>
                     ))}
                   </ul>
+
 
                   <div className="mt-5 grid gap-2">
                     <Button
@@ -260,6 +278,7 @@ export default function OneOnOneMock() {
   );
 }
 
+
 /* ---------- pieces ---------- */
 function SlotSection({ track, list, isAuthed }) {
   return (
@@ -273,6 +292,7 @@ function SlotSection({ track, list, isAuthed }) {
     </div>
   );
 }
+
 
 function SlotCard({ s, isAuthed }) {
   return (
@@ -303,3 +323,8 @@ function SlotCard({ s, isAuthed }) {
     </div>
   );
 }
+
+
+
+
+

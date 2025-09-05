@@ -9,13 +9,14 @@ import {
   FileText,
   CalendarDays,
   Users,
-  Mic,                 // ← already present; used for account menu item
+  Mic, // ← already present; used for account menu item
   BookOpen,
   User,
   LayoutDashboard,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/context/AuthProvider";
+
 
 /* ---------- data (Programs groups) ---------- */
 const PROGRAM_SECTIONS = [
@@ -79,6 +80,7 @@ const PROGRAM_SECTIONS = [
   },
 ];
 
+
 export default function Navbar() {
   const auth = useAuth();
   const user = auth?.user ?? null;
@@ -86,9 +88,12 @@ export default function Navbar() {
   const logout = auth?.logout ?? (() => {});
   const nav = useNavigate();
 
+
   const brandTarget = isAuthed ? "/dashboard" : "/";
 
+
   const [scrolled, setScrolled] = useState(false);
+
 
   // public "Programs" flyout state
   const [openMenu, setOpenMenu] = useState(false);
@@ -96,13 +101,16 @@ export default function Navbar() {
   const wrapRef = useRef(null);
   const hoverT = useRef(null);
 
+
   // account dropdown
   const [profileOpen, setProfileOpen] = useState(false);
   const profileRef = useRef(null);
 
+
   // nested Programs inside account
   const [acctProgramsOpen, setAcctProgramsOpen] = useState(false);
   const acctProgramsRef = useRef(null);
+
 
   const location = useLocation();
   const programsRoutes = [
@@ -116,6 +124,7 @@ export default function Navbar() {
   const programsActive =
     openMenu || programsRoutes.some((p) => location.pathname.startsWith(p));
 
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
@@ -123,21 +132,27 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+
   // close menus on outside click
   useEffect(() => {
     const onDocClick = (e) => {
-      if (wrapRef.current && !wrapRef.current.contains(e.target)) setOpenMenu(false);
+      if (wrapRef.current && !wrapRef.current.contains(e.target))
+        setOpenMenu(false);
       if (profileRef.current && !profileRef.current.contains(e.target)) {
         setProfileOpen(false);
         setAcctProgramsOpen(false);
       }
-      if (acctProgramsRef.current && !acctProgramsRef.current.contains(e.target)) {
+      if (
+        acctProgramsRef.current &&
+        !acctProgramsRef.current.contains(e.target)
+      ) {
         setAcctProgramsOpen(false);
       }
     };
     document.addEventListener("click", onDocClick);
     return () => document.removeEventListener("click", onDocClick);
   }, []);
+
 
   const menuOpenNow = () => {
     if (hoverT.current) clearTimeout(hoverT.current);
@@ -148,8 +163,10 @@ export default function Navbar() {
     hoverT.current = setTimeout(() => setOpenMenu(false), 140);
   };
 
+
   // underline under public trigger: only show when menu is CLOSED
   const underlineOn = !openMenu && programsActive;
+
 
   // derive username + initial + role
   const username =
@@ -157,12 +174,20 @@ export default function Navbar() {
     user?.fullName ??
     (user?.email ? user.email.split("@")[0] : "Account");
 
+
   const userInitial = String(username).charAt(0).toUpperCase();
 
-  const roleRaw = (user?.role || user?.type || user?.accountType || "").toString();
+
+  const roleRaw = (
+    user?.role ||
+    user?.type ||
+    user?.accountType ||
+    ""
+  ).toString();
   const role = roleRaw
     ? roleRaw.charAt(0).toUpperCase() + roleRaw.slice(1).toLowerCase()
     : "Student"; // fallback
+
 
   // role pill tone
   const roleTone =
@@ -172,6 +197,7 @@ export default function Navbar() {
       ? "bg-indigo-600/20 text-indigo-300 border-indigo-600/30"
       : "bg-emerald-600/20 text-emerald-300 border-emerald-600/30"; // student/other
 
+
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/60 dark:bg-slate-950">
       {/* gradient + glass background */}
@@ -180,10 +206,13 @@ export default function Navbar() {
         <div
           className={[
             "absolute inset-0 transition-all",
-            scrolled ? "bg-slate-950/60 backdrop-blur-md" : "bg-transparent backdrop-blur-0",
+            scrolled
+              ? "bg-slate-950/60 backdrop-blur-md"
+              : "bg-transparent backdrop-blur-0",
           ].join(" ")}
         />
       </div>
+
 
       <div className="relative mx-auto flex h-16 md:h-20 max-w-7xl items-center gap-4 px-4 md:px-6 text-white">
         {/* Brand */}
@@ -196,7 +225,9 @@ export default function Navbar() {
           </span>
         </Link>
 
+
         <div className="grow" />
+
 
         {/* NAV: show only when LOGGED OUT */}
         {!isAuthed && (
@@ -204,8 +235,10 @@ export default function Navbar() {
             <NavItem to="/" label="Home" end />
             <NavItem to="/about" label="About" />
 
+
             {/* NEW: direct top-level link to Mock Interviews */}
             <NavItem to="/mock-interviews/one-one" label="Mock Interviews" />
+
 
             {/* Public Programs dropdown */}
             <div
@@ -220,7 +253,9 @@ export default function Navbar() {
                 onKeyDown={(e) => e.key === "Escape" && setOpenMenu(false)}
                 className={[
                   "group relative inline-flex items-center gap-1 rounded-lg px-3 py-2 text-[15px] font-semibold tracking-tight",
-                  programsActive ? "text-white" : "text-slate-100/90 hover:text-white",
+                  programsActive
+                    ? "text-white"
+                    : "text-slate-100/90 hover:text-white",
                   "focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60",
                 ].join(" ")}
                 aria-haspopup="menu"
@@ -241,6 +276,7 @@ export default function Navbar() {
                 />
               </button>
 
+
               {openMenu && (
                 <div
                   role="menu"
@@ -249,6 +285,7 @@ export default function Navbar() {
                   <div className="px-3 pt-1 pb-2">
                     <div className="h-0.5 w-24 rounded-full bg-gradient-to-r from-orange-500 via-amber-400 to-transparent" />
                   </div>
+
 
                   <ul className="divide-y divide-white/10">
                     {PROGRAM_SECTIONS.map((sec) => (
@@ -264,9 +301,11 @@ export default function Navbar() {
               )}
             </div>
 
+
             <NavItem to="/contact" label="Contact" />
           </nav>
         )}
+
 
         {/* AUTH AREA (visible only when logged in) */}
         {isAuthed && (
@@ -292,50 +331,110 @@ export default function Navbar() {
                 <ChevronDown className="h-4 w-4 opacity-80" />
               </button>
 
+
               {profileOpen && (
                 <div className="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-white/10 bg-slate-900/95 p-1 shadow-2xl backdrop-blur">
-                  <MenuItem to="/dashboard" icon={<LayoutDashboard className="h-4 w-4" />}>
+                  <MenuItem
+                    to="/dashboard"
+                    icon={<LayoutDashboard className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     Dashboard
                   </MenuItem>
-                  <MenuItem to="/courses" icon={<BookOpen className="h-4 w-4" />}>
+
+
+                  <MenuItem
+                    to="/courses"
+                    icon={<BookOpen className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     Mock tests
                   </MenuItem>
 
-                  {/* Live Workshops entry */}
-                  <MenuItem to="/workshops/live" icon={<CalendarDays className="h-4 w-4" />}>
+
+                  <MenuItem
+                    to="/workshops/live"
+                    icon={<CalendarDays className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     courses Live Workshops
                   </MenuItem>
 
-                  {/* NEW: quick link to Mock Interviews */}
-                  <MenuItem to="/mock_interviews/one-one" icon={<Mic className="h-4 w-4" />}>
+
+                  <MenuItem
+                    to="/mock-interviews/one-one" // ⚠️ also fix the path here (hyphen)
+                    icon={<Mic className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     Mock Interviews
                   </MenuItem>
 
-                   <MenuItem to="/cloud/cert-concierge" icon={<BookOpen className="h-4 w-4" />}>
+
+                  <MenuItem
+                    to="/cloud/cert-concierge"
+                    icon={<BookOpen className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     Cloud
                   </MenuItem>
 
-                  <MenuItem to="/roadmap" icon={<User className="h-4 w-4" />}>
-                    course Roadmaps
-                  </MenuItem>
-                  
-                  <MenuItem to="/friends" icon={<Users className="h-4 w-4" />}>
+
+                  <MenuItem
+                    to="/friends"
+                    icon={<Users className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     Friends
                   </MenuItem>
 
-                  <MenuItem to="/profile" icon={<User className="h-4 w-4" />}>
+
+                  <MenuItem
+                    to="/profile"
+                    icon={<User className="h-4 w-4" />}
+                    onSelect={() => {
+                      setProfileOpen(false);
+                      setAcctProgramsOpen(false);
+                    }}
+                  >
                     Profile
                   </MenuItem>
-                      
+
+
                   {/* Optional Admin link */}
                   {String(role).toLowerCase() === "admin" && (
-                    <MenuItem to="/admin/access" icon={<ChevronRight className="h-4 w-4" />}>
+                    <MenuItem
+                      to="/admin/access"
+                      icon={<ChevronRight className="h-4 w-4" />}
+                      onSelect={() => {
+                        setProfileOpen(false);
+                        setAcctProgramsOpen(false);
+                      }}
+                    >
                       Admin
                     </MenuItem>
                   )}
 
+
                   {/* ---- Programs nested submenu inside Account ---- */}
-                 {/* <button
+                  {/* <button
                     ref={acctProgramsRef}
                     type="button"
                     onMouseEnter={() => setAcctProgramsOpen(true)}
@@ -373,7 +472,9 @@ export default function Navbar() {
                     )}
                   </button>*/}
 
+
                   <hr className="my-1 border-white/10" />
+
 
                   <button
                     onClick={() => {
@@ -390,6 +491,7 @@ export default function Navbar() {
               )}
             </div>
 
+
             {/* Role pill */}
             <span
               className={[
@@ -402,6 +504,7 @@ export default function Navbar() {
             </span>
           </div>
         )}
+
 
         {/* AUTH CTAs (when logged out) */}
         {!isAuthed && (
@@ -430,6 +533,7 @@ export default function Navbar() {
   );
 }
 
+
 /* ---------- small atoms ---------- */
 function NavItem({ to, label, end }) {
   return (
@@ -448,14 +552,20 @@ function NavItem({ to, label, end }) {
   );
 }
 
-function MenuItem({ to, icon, children }) {
+
+function MenuItem({ to, icon, children, onSelect }) {
   return (
     <NavLink
       to={to}
+      onClick={() => {
+        if (typeof onSelect === "function") onSelect();
+      }}
       className={({ isActive }) =>
         [
           "flex items-center gap-2 rounded-lg px-3 py-2 text-sm",
-          isActive ? "bg-white/10 text-white" : "text-slate-200 hover:bg-white/10",
+          isActive
+            ? "bg-white/10 text-white"
+            : "text-slate-200 hover:bg-white/10",
         ].join(" ")
       }
     >
@@ -466,6 +576,7 @@ function MenuItem({ to, icon, children }) {
     </NavLink>
   );
 }
+
 
 /* Accordion group (used in public Programs and nested submenu) */
 function AccordionGroup({ section, open, onOpen }) {
@@ -483,9 +594,13 @@ function AccordionGroup({ section, open, onOpen }) {
         </span>
         <span className="flex-1">{section.title}</span>
         <ChevronRight
-          className={["h-4 w-4 transition-transform", open ? "rotate-90" : "rotate-0"].join(" ")}
+          className={[
+            "h-4 w-4 transition-transform",
+            open ? "rotate-90" : "rotate-0",
+          ].join(" ")}
         />
       </button>
+
 
       <div
         className={[
@@ -518,3 +633,6 @@ function AccordionGroup({ section, open, onOpen }) {
     </li>
   );
 }
+
+
+

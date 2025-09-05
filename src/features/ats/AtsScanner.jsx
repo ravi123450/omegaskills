@@ -13,13 +13,16 @@ import {
   Sparkles,
 } from "lucide-react";
 
+
 // ----- PDF.js worker (Vite-friendly) -----
 import * as pdfjsLib from "pdfjs-dist";
 import pdfjsWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
+
 // ----- Rule-based ATS scoring (modular) -----
 import { computeAtsScore } from "./scoring"; // <-- create file per section 2
+
 
 // ----- Small shared section title (same vibe as Home.jsx) -----
 function SectionTitle({ children }) {
@@ -30,6 +33,7 @@ function SectionTitle({ children }) {
     </h2>
   );
 }
+
 
 export default function AtsScanner() {
   // ------- UI state -------
@@ -42,14 +46,17 @@ export default function AtsScanner() {
   const [result, setResult] = useState(null);
   const [note, setNote] = useState("");
 
+
   const previewRef = useRef(null);
   const setNoteOnce = (msg) => setNote((prev) => (prev === msg ? prev : msg));
+
 
   useEffect(() => {
     return () => {
       if (fileUrl) URL.revokeObjectURL(fileUrl);
     };
   }, [fileUrl]);
+
 
   // ------- PDF text extraction -------
   async function extractPdfText(file, maxPages = 8) {
@@ -60,6 +67,7 @@ export default function AtsScanner() {
       isEvalSupported: false,
     });
     const pdf = await loadingTask.promise;
+
 
     let text = "";
     const pages = Math.min(pdf.numPages, maxPages);
@@ -77,10 +85,12 @@ export default function AtsScanner() {
       .trim();
   }
 
+
   // ------- Upload handling -------
   const onFile = async (e) => {
     const f = e.target.files?.[0];
     if (!f) return;
+
 
     const ext = (f.name.split(".").pop() || "").toLowerCase();
     const url = URL.createObjectURL(f);
@@ -88,6 +98,7 @@ export default function AtsScanner() {
     setFileMeta({ name: f.name, ext });
     setResult(null);
     setProgress(0);
+
 
     if (ext === "txt" || ext === "md") {
       const t = await f.text();
@@ -120,6 +131,7 @@ export default function AtsScanner() {
     }
   };
 
+
   // ------- Scan with animated progress -------
   const runScan = () => {
     if (!fileUrl && !resumeText.trim()) {
@@ -130,11 +142,13 @@ export default function AtsScanner() {
     setProgress(0);
     setResult(null);
 
+
     const t0 = Date.now();
     const timer = setInterval(
       () => setProgress((p) => (p < 95 ? p + 3 : p)),
       60
     );
+
 
     // Compute score synchronously (rule-based)
     const r = computeAtsScore({
@@ -144,9 +158,11 @@ export default function AtsScanner() {
       fileType: (fileMeta.ext || "").toLowerCase(),
     });
 
+
     const elapsed = Date.now() - t0;
     const minAnim = 1200;
     const wait = elapsed < minAnim ? minAnim - elapsed : 0;
+
 
     setTimeout(() => {
       clearInterval(timer);
@@ -158,7 +174,9 @@ export default function AtsScanner() {
     }, wait);
   };
 
+
   const isPdf = fileMeta.ext === "pdf";
+
 
   return (
     <div className="scroll-smooth bg-slate-950 text-white dark:bg-slate-950 dark:text-slate-100 selection:bg-orange-300 selection:text-slate-900 min-h-screen">
@@ -171,6 +189,7 @@ export default function AtsScanner() {
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-indigo-500/20 blur-[110px]" />
       </div>
 
+
       {/* Page header */}
       <section className="mx-auto max-w-7xl px-4 pt-10 md:px-6">
         <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -180,6 +199,7 @@ export default function AtsScanner() {
           </Badge>
         </div>
 
+
         <div className="flex items-center justify-between">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
             Resume{" "}
@@ -187,6 +207,7 @@ export default function AtsScanner() {
               Scanner
             </span>
           </h1>
+
 
           <Button
             onClick={() => (window.location.href = "/resume")}
@@ -196,11 +217,13 @@ export default function AtsScanner() {
           </Button>
         </div>
 
+
         <p className="mt-3 text-base text-slate-300 max-w-3xl">
           Upload your CV to get an instant ATS score, keyword coverage against a
           JD, and clear improvements—no external APIs.
         </p>
       </section>
+
 
       {/* Main grid */}
       <section className="mx-auto max-w-7xl px-4 py-8 md:px-6">
@@ -214,6 +237,7 @@ export default function AtsScanner() {
                   {fileMeta.name || "No file selected"}
                 </span>
               </div>
+
 
               <div className="relative rounded-2xl border border-slate-800/60 bg-slate-900/40 mt-36">
                 {/* Preview area */}
@@ -249,6 +273,7 @@ export default function AtsScanner() {
                   )}
                 </div>
 
+
                 {/* Scan overlay */}
                 {scanning && (
                   <div className="absolute inset-0 rounded-2xl bg-black/50 backdrop-blur-sm overflow-hidden">
@@ -270,17 +295,20 @@ export default function AtsScanner() {
                 )}
               </div>
 
+
               {note && (
                 <div className="mt-2 text-base text-slate-400">{note}</div>
               )}
             </CardContent>
           </Card>
 
+
           {/* RIGHT: Controls + Results */}
           <div className="flex flex-col gap-6">
             <Card className="border-slate-800/60 bg-slate-900/40 backdrop-blur">
               <CardContent className="p-5">
                 <SectionTitle>1) Upload or Paste</SectionTitle>
+
 
                 <div className="mt-4 grid gap-3">
                   <label className="text-sm text-slate-400">
@@ -301,6 +329,7 @@ export default function AtsScanner() {
                     />
                   </label>
 
+
                   <label className="mt-2 text-sm text-slate-400">
                     Or paste resume text
                   </label>
@@ -316,6 +345,7 @@ export default function AtsScanner() {
                     className="w-full rounded-xl border border-slate-800/60 bg-slate-900/40 p-3 text-sm text-slate-100 outline-none focus:border-orange-600"
                   />
 
+
                   <label className="mt-3 text-base text-orange-300">
                     Job Description (optional)
                   </label>
@@ -327,11 +357,12 @@ export default function AtsScanner() {
                     className="w-full rounded-xl border border-slate-800/60 bg-slate-900/40 p-3 text-sm text-slate-100 outline-none focus:border-orange-600"
                   />
 
+
                   <div className="mt-4">
                     <Button
                       onClick={runScan}
                       disabled={scanning}
-                      className="w-full bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black"
+                      className="w-full bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer"
                     >
                       {scanning ? "Scanning…" : "Scan Now"}
                       {!scanning && <ArrowRight className="ml-2 h-4 w-4" />}
@@ -340,6 +371,7 @@ export default function AtsScanner() {
                 </div>
               </CardContent>
             </Card>
+
 
             <Card className="border-slate-800/60 bg-slate-900/40 backdrop-blur">
               <CardContent className="p-5">
@@ -350,6 +382,7 @@ export default function AtsScanner() {
                     Instant
                   </Badge>
                 </div>
+
 
                 {result ? (
                   <div className="grid gap-4">
@@ -392,6 +425,7 @@ export default function AtsScanner() {
                       </div>
                     </div>
 
+
                     {/* Improvements */}
                     <div>
                       <div className="mb-2 text-lg font-semibold text-orange-300">
@@ -403,6 +437,7 @@ export default function AtsScanner() {
                         ))}
                       </ul>
                     </div>
+
 
                     {/* Missing keywords */}
                     {result.missingKeywords?.length ? (
@@ -416,6 +451,7 @@ export default function AtsScanner() {
                         </div>
                       </div>
                     ) : null}
+
 
                     <div className="pt-2">
                       <Button
@@ -444,6 +480,7 @@ export default function AtsScanner() {
         </div>
       </section>
 
+
       {/* Page footer hint */}
       <section className="mx-auto max-w-7xl px-4 pb-12 md:px-6">
         <Card>
@@ -465,6 +502,7 @@ export default function AtsScanner() {
         </Card>
       </section>
 
+
       {/* Keyframes used by the scanning overlay */}
       <style>{`
         @keyframes scanSlide { 0% { transform: translateX(-30%); } 100% { transform: translateX(30%); } }
@@ -474,6 +512,7 @@ export default function AtsScanner() {
     </div>
   );
 }
+
 
 /* ---------- Score Donut (Tailwind-friendly SVG) ---------- */
 function ScoreDonut({ value = 0 }) {
@@ -490,6 +529,7 @@ function ScoreDonut({ value = 0 }) {
       : clamped >= 40
       ? "#d97706"
       : "#e11d48";
+
 
   return (
     <div className="relative h-[110px] w-[110px]">
@@ -522,3 +562,8 @@ function ScoreDonut({ value = 0 }) {
     </div>
   );
 }
+
+
+
+
+
