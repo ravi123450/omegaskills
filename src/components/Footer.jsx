@@ -59,7 +59,7 @@ export default function Footer() {
                 <span className="grid h-11 w-16 place-items-center rounded-xl bg-gradient-to-br from-orange-500 to-amber-500 text-3xl font-black text-slate-900">
                   Ω
                 </span>
-                <div>
+                <div className="min-w-0">
                   <p className="text-lg font-semibold text-white">
                     Omega Skills Academy
                   </p>
@@ -75,7 +75,7 @@ export default function Footer() {
 
               <Link
                 to="/ats-scanner"
-                className="inline-flex items-center gap-2 rounded-xl bg-orange-500 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-orange-400  hover:text-black"
+                className="inline-flex items-center gap-2 rounded-xl bg-orange-500 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-orange-400 hover:text-black"
               >
                 Explore <ArrowRight className="h-4 w-4" />
               </Link>
@@ -88,9 +88,13 @@ export default function Footer() {
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
               <FooterCol title="Courses & Services">
                 <FooterLink to="/courses/learn">Courses</FooterLink>
-                <FooterLink to="/workshops/online">Workshops & Events</FooterLink>
+                <FooterLink to="/workshops/online">
+                  Workshops & Events
+                </FooterLink>
                 <FooterLink to="/resume">Resume Tools</FooterLink>
-                <FooterLink to="/cloud/cert-concierge">Certifications</FooterLink>
+                <FooterLink to="/cloud/cert-concierge">
+                  Certifications
+                </FooterLink>
                 <FooterLink to="/community/projects">Community</FooterLink>
                 <FooterLink to="/resources/notes">Resources</FooterLink>
               </FooterCol>
@@ -100,15 +104,19 @@ export default function Footer() {
                 <FooterLink to="#">FAQs</FooterLink>
                 <FooterLink to="#">Blog / Insights</FooterLink>
                 <FooterLink to="/login">Student Dashboard</FooterLink>
-                <FooterLink to="/contact">
-                  Partnership Enquiries
-                </FooterLink>
+                <FooterLink to="/contact">Partnership Enquiries</FooterLink>
               </FooterCol>
 
 
-              <FooterCol title="Legal">
+              {/* Legal = compact auto-fit grid (works great for small items) */}
+              <FooterCol
+                title="Legal"
+                listClassName="grid gap-2 [grid-template-columns:repeat(auto-fit,minmax(140px,1fr))]"
+              >
                 <FooterLink to="/legal/terms">Terms & Conditions</FooterLink>
-                <FooterLink to="/legal/privacy-policy">Privacy Policy</FooterLink>
+                <FooterLink to="/legal/privacy-policy">
+                  Privacy Policy
+                </FooterLink>
                 <FooterLink to="/legal/refund-policy">Refund Policy</FooterLink>
                 <FooterLink to="/legal/placement-assistance">
                   Placement-Assistance Policy
@@ -117,7 +125,11 @@ export default function Footer() {
               </FooterCol>
 
 
-              <FooterCol title="Contact">
+              {/* Contact in 2-up cards when there’s room */}
+              <FooterCol
+                title="Contact"
+                listClassName="grid gap-2 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))]"
+              >
                 <FooterRow>
                   <Mail className="h-4 w-4 text-orange-300" />
                   <a
@@ -169,14 +181,23 @@ export default function Footer() {
                 </div>
                 <div>All rights reserved.</div>
               </div>
-              <div className="flex gap-4">
-                <Link className="hover:text-slate-300" to="/legal/privacy-policy">
+
+
+              {/* auto-fit grid on mobile; row on md+ */}
+              <div className="w-full md:w-auto flex items-center justify-center md:justify-end gap-4 whitespace-nowrap overflow-x-auto">
+                <Link
+                  className="hover:text-slate-300"
+                  to="/legal/privacy-policy"
+                >
                   Privacy
                 </Link>
                 <Link className="hover:text-slate-300" to="/legal/terms">
                   Terms
                 </Link>
-                <Link className="hover:text-slate-300" to="/legal/refund-policy">
+                <Link
+                  className="hover:text-slate-300"
+                  to="/legal/refund-policy"
+                >
                   Refunds
                 </Link>
                 <Link className="hover:text-slate-300" to="/legal/disclaimer">
@@ -217,10 +238,10 @@ export default function Footer() {
                   Dashboard
                 </Link>
                 <Link
-                  to="/courses/learn"
+                  to="/courses"
                   className="rounded-xl border border-slate-700 bg-slate-900/40 px-4 py-2 text-sm text-slate-200 hover:bg-slate-900/60"
                 >
-                  My Courses
+                  Courses
                 </Link>
                 <Link
                   to="/contact"
@@ -239,7 +260,10 @@ export default function Footer() {
                 © {year} Omega Skills Academy
               </div>
               <div className="flex gap-4">
-                <Link className="hover:text-slate-300" to="/legal/privacy-policy">
+                <Link
+                  className="hover:text-slate-300"
+                  to="/legal/privacy-policy"
+                >
                   Privacy
                 </Link>
                 <Link className="hover:text-slate-300" to="/legal/terms">
@@ -302,14 +326,16 @@ export default function Footer() {
 
 
 /* ---------- atoms ---------- */
-function FooterCol({ title, children }) {
+function FooterCol({ title, children, listClassName = "" }) {
+  // Default: 2-up grid on mobile, vertical from sm+
+  const defaultList = "grid grid-cols-2 gap-x-4 gap-y-1 sm:block sm:space-y-1";
   return (
     <div>
       <h4 className="relative mb-3 inline-block text-sm font-semibold uppercase tracking-wide text-slate-200">
         {title}
         <span className="absolute -bottom-1 left-0 h-[2px] w-10 rounded-full bg-gradient-to-r from-orange-500 via-amber-400 to-transparent"></span>
       </h4>
-      <ul className="space-y-1">{children}</ul>
+      <ul className={listClassName || defaultList}>{children}</ul>
     </div>
   );
 }
@@ -317,7 +343,7 @@ function FooterCol({ title, children }) {
 
 function FooterLink({ to, children }) {
   return (
-    <li>
+    <li className="min-w-0">
       <Link
         to={to}
         className="block rounded-lg px-2 py-1.5 text-sm text-slate-300 hover:bg-white/10 hover:text-white"
@@ -331,7 +357,7 @@ function FooterLink({ to, children }) {
 
 function FooterRow({ children }) {
   return (
-    <div className="flex items-center gap-2 px-2 py-1.5 text-sm">
+    <div className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-white/10">
       {children}
     </div>
   );
@@ -340,7 +366,7 @@ function FooterRow({ children }) {
 
 function FooterExt({ href, label, icon }) {
   return (
-    <li>
+    <li className="min-w-0">
       <a
         href={href}
         target="_blank"
@@ -355,6 +381,7 @@ function FooterExt({ href, label, icon }) {
     </li>
   );
 }
+
 
 
 

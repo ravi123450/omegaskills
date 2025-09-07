@@ -15,7 +15,6 @@ import {
   Sparkles,
   ArrowRight,
   PhoneCall,
-  ChevronUp,
   CalendarDays,
   Newspaper,
   LifeBuoy,
@@ -34,12 +33,12 @@ const usp = [
   {
     icon: <Rocket className="h-5 w-5" />,
     title: "Live, not recorded",
-    desc: "Interactive, mentor‑led cohorts—ask, practice, get feedback.",
+    desc: "Interactive, mentor-led cohorts—ask, practice, get feedback.",
   },
   {
     icon: <Users className="h-5 w-5" />,
-    title: "On‑campus bootcamps",
-    desc: "Hands‑on college workshops + micro‑hackathons with certificates.",
+    title: "On-campus bootcamps",
+    desc: "Hands-on college workshops + micro-hackathons with certificates.",
   },
   {
     icon: <FileText className="h-5 w-5" />,
@@ -49,12 +48,12 @@ const usp = [
   {
     icon: <Cloud className="h-5 w-5" />,
     title: "Cloud cert concierge",
-    desc: "Payment → slot → prep → exam day—end‑to‑end support.",
+    desc: "Payment → slot → prep → exam day—end-to-end support.",
   },
   {
     icon: <Trophy className="h-5 w-5" />,
     title: "Projects & hackathons",
-    desc: "Portfolio‑ready challenges with mentor feedback.",
+    desc: "Portfolio-ready challenges with mentor feedback.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
@@ -73,16 +72,16 @@ const offerings = [
   {
     icon: <GraduationCap className="h-6 w-6" />,
     title: "Live Cohorts",
-    desc: "Small‑group, interactive classes led by mentors.",
+    desc: "Small-group, interactive classes led by mentors.",
     href: "/courses/cohorts",
     tag: "Live",
   },
   {
     icon: <Users className="h-6 w-6" />,
-    title: "On‑Campus Bootcamps",
-    desc: "Skill workshops, resume clinics & mini‑hackathons.",
+    title: "On-Campus Bootcamps",
+    desc: "Skill workshops, resume clinics & mini-hackathons.",
     href: "/courses/campus",
-    tag: "On‑campus",
+    tag: "On-campus",
   },
   {
     icon: <FileText className="h-6 w-6" />,
@@ -108,7 +107,7 @@ const offerings = [
   {
     icon: <Trophy className="h-6 w-6" />,
     title: "Hackathons",
-    desc: "Real challenges, prizes, and recruiter‑ready proof.",
+    desc: "Real challenges, prizes, and recruiter-ready proof.",
     href: "/community/hackathons",
     tag: "Challenge",
   },
@@ -122,15 +121,15 @@ const faqs = [
   },
   {
     q: "Are sessions recorded?",
-    a: "We are live‑first. Recordings may be provided for revision when appropriate.",
+    a: "We are live-first. Recordings may be provided for revision when appropriate.",
   },
   {
     q: "Can you run a workshop at our college?",
-    a: "Yes. We offer on‑campus bootcamps & hackathons. Contact us for dates and agenda.",
+    a: "Yes. We offer on-campus bootcamps & hackathons. Contact us for dates and agenda.",
   },
   {
     q: "How does the ATS score work?",
-    a: "We parse your CV like recruiters’ systems and return a score with fix‑suggestions. Optional human review is available.",
+    a: "We parse your CV like recruiters’ systems and return a score with fix-suggestions. Optional human review is available.",
   },
 ];
 
@@ -184,6 +183,8 @@ export default function OmegaHomePage() {
   const statStudents = useCountUp(2400);
   const statWorkshops = useCountUp(85);
   const statColleges = useCountUp(32);
+
+
   // Quick message form state
   const [contactEmail, setContactEmail] = useState("");
   const [contactMsg, setContactMsg] = useState("");
@@ -199,7 +200,6 @@ export default function OmegaHomePage() {
     setSending(true);
 
 
-    // Option A: mailto (no backend)
     const to = "info@omegaskillsacademy.online";
     const subject = encodeURIComponent(
       "Quick message from Omega Skills Academy site"
@@ -208,7 +208,6 @@ export default function OmegaHomePage() {
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
 
 
-    // give UI a moment, then reset the sending flag
     setTimeout(() => setSending(false), 600);
   }
 
@@ -243,10 +242,9 @@ export default function OmegaHomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* twin badges (same style) */}
             <div className="flex flex-wrap gap-2">
               <Badge className="bg-orange-600/20 text-orange-300 hover:bg-orange-600/20">
-                Live • On‑Campus • Concierge
+                Live • On-Campus • Concierge
               </Badge>
               <Badge className="bg-orange-600/20 text-orange-300 hover:bg-orange-600/20">
                 Where Catalysts Build Careers
@@ -254,7 +252,6 @@ export default function OmegaHomePage() {
             </div>
 
 
-            {/* headline */}
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
               Empowering{" "}
               <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
@@ -268,9 +265,8 @@ export default function OmegaHomePage() {
             </h1>
 
 
-            {/* subcopy (exact) */}
             <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
-              Become career‑ready with our live cohorts, on‑campus bootcamps,
+              Become career-ready with our live cohorts, on-campus bootcamps,
               resume tools, hackathons, and certification guidance. We provide
               the skills, innovation, and honest opportunities to help you shape
               your future.
@@ -279,12 +275,12 @@ export default function OmegaHomePage() {
 
             {/* CTA rows with paired buttons */}
             <div className="mt-6 flex flex-wrap items-center gap-8">
-              {/* Row A: Join Free Workshop + Enroll */}
+              {/* Row A */}
               <div className="flex items-center gap-2">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black"
+                  className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black rounded-2xl"
                 >
                   <Link to="/admissions" className="flex items-center gap-2">
                     Join Free Workshop <ArrowRight className="h-4 w-4" />
@@ -293,7 +289,7 @@ export default function OmegaHomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="h-10 px-3 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
+                  className="h-10 px-3 rounded-2xl border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
                 >
                   <Link to="/admissions" className="flex items-center gap-1">
                     <GraduationCap className="h-4 w-4" /> Enroll
@@ -302,19 +298,19 @@ export default function OmegaHomePage() {
               </div>
 
 
-              {/* Row B: Explore Programs + Events */}
+              {/* Row B */}
               <div className="flex items-center gap-2">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black"
+                  className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black rounded-2xl"
                 >
                   <Link to="/programs">Explore Programs</Link>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
-                  className="h-10 px-3 border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
+                  className="h-10 px-3 rounded-2xl border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
                 >
                   <Link
                     to="/community/hackathons"
@@ -372,7 +368,7 @@ export default function OmegaHomePage() {
           <SectionTitle>Our Core Offerings</SectionTitle>
           <Button
             asChild
-            className="hidden sm:inline-flex bg-orange-500 text-slate-900 hover:bg-orange-400   hover:text-black"
+            className="hidden sm:inline-flex bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black rounded-2xl"
           >
             <Link to="/courses/learn">Enroll Now</Link>
           </Button>
@@ -434,14 +430,14 @@ export default function OmegaHomePage() {
           <Button
             asChild
             variant="outline"
-            className="border-slate-700 bg-slate-900/40 hover:bg-slate-900/60   hover:text-orange-400"
+            className="hidden md:inline-flex rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 hover:text-orange-400"
           >
             <Link to="/contact">Request Full Schedule</Link>
           </Button>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           <WorkshopCard
-            title="Full‑Stack Web Bootcamp"
+            title="Full-Stack Web Bootcamp"
             date="Sep 05"
             duration="4 weeks"
             price="Free Demo"
@@ -477,7 +473,7 @@ export default function OmegaHomePage() {
             <div className="mt-4 flex flex-wrap gap-3">
               <Button
                 asChild
-                className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer "
+                className="rounded-2xl bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black"
               >
                 <Link to="/ats-scanner" className="flex items-center gap-2">
                   Get ATS Score
@@ -485,13 +481,13 @@ export default function OmegaHomePage() {
               </Button>
               <Button
                 variant="outline"
-                className="border-slate-700   hover:text-orange-400 cursor-pointer"
+                className="rounded-2xl border-slate-700 hover:text-orange-400"
               >
                 <Link to="/mentor" className="flex items-center gap-2">
                   Submit for Review
                 </Link>
               </Button>
-              <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black cursor-pointer">
+              <Button className="rounded-2xl bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
                 <Link to="/resume" className="flex items-center gap-2">
                   Build Resume
                 </Link>
@@ -507,7 +503,7 @@ export default function OmegaHomePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 h-2 w-2 rounded-full bg-orange-400" />{" "}
-                  Score with fix‑suggestions
+                  Score with fix-suggestions
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 h-2 w-2 rounded-full bg-orange-400" />{" "}
@@ -539,19 +535,24 @@ export default function OmegaHomePage() {
                 <li>Choose exam & date</li>
                 <li>We handle payment & scheduling</li>
                 <li>Personalised prep plan + mock tests</li>
-                <li>Exam‑day reminders & checklist</li>
-                <li>Post‑exam guidance</li>
+                <li>Exam-day reminders & checklist</li>
+                <li>Post-exam guidance</li>
               </ol>
             </CardContent>
           </Card>
+
+
           <div>
             <SectionTitle>Cloud Certs, Simplified</SectionTitle>
             <p className="mt-7 text-sm text-slate-300">
               Focus on learning—we’ll handle logistics, reminders, and readiness
               checks for GCP, AWS & Azure.
             </p>
-            <div className="mt-8 ml-50">
-              <Button className="!text-base font-semibold bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black h-13 w-58">
+
+
+            {/* FIX: responsive width, keep same pill styling */}
+            <div className="mt-8">
+              <Button className="w-full sm:w-auto !text-base font-semibold rounded-2xl bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
                 <Link to="/courses/cloud" className="flex items-center gap-2">
                   Talk to an Advisor
                 </Link>
@@ -563,33 +564,23 @@ export default function OmegaHomePage() {
 
 
       {/* Projects & Hackathons */}
-      <section id="projects" className="mx-auto max-w-7xl px-4 py-12 md:px-6 ">
+      <section id="projects" className="mx-auto max-w-7xl px-4 py-12 md:px-6">
         <SectionTitle>Projects & Hackathons</SectionTitle>
         <p className="mt-8 text-sm text-slate-300">
-          Build portfolio‑ready projects and compete in real‑world challenges.
+          Build portfolio-ready projects and compete in real-world challenges.
         </p>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <ProjectCard
-            title="Data Science Project — Resume Screener (NLP)"
-            tag="Data Science"
-          />
-          <ProjectCard
-            title="E‑commerce Analytics Project — Major Data Project"
-            tag="Data"
-            invert
-          />
-          <ProjectCard title="Hackathon — Cloud FinOps Challenge" tag="Cloud" />
-        </div>
-        <div className="mt-6 flex gap-9">
+<div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
           <Button
             variant="outline"
-            className="border-slate-700 hover:text-orange-400 cursor-pointer h-15 w-55 ml-96 cursor-pointer"
+            className="w-full sm:w-auto rounded-2xl border-slate-700 hover:text-orange-400"
           >
             <Link to="/community/projects" className="flex items-center gap-2">
               Start Project
             </Link>
           </Button>
-          <Button className="bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black cursor-pointer h-15 w-55">
+
+
+          <Button className="w-full sm:w-auto rounded-2xl bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
             <Link
               to="/community/hackathons"
               className="flex items-center gap-2"
@@ -598,11 +589,26 @@ export default function OmegaHomePage() {
             </Link>
           </Button>
         </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <ProjectCard
+            title="Data Science Project — Resume Screener (NLP)"
+            tag="Data Science"
+          />
+          <ProjectCard
+            title="E-commerce Analytics Project — Major Data Project"
+            tag="Data"
+            invert
+          />
+          <ProjectCard title="Hackathon — Cloud FinOps Challenge" tag="Cloud" />
+        </div>
+
+
+       
       </section>
 
 
       {/* FAQs */}
-      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 ">
+      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6">
         <SectionTitle>Frequently Asked Questions</SectionTitle>
         <p className="mt-10 text-sm text-slate-300">
           Quick answers to the most common queries.
@@ -613,7 +619,7 @@ export default function OmegaHomePage() {
               key={i}
               className="group rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50"
             >
-              <summary className="cursor-pointer list-none text-sm font-semibold text-white marker:hidden ">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-white marker:hidden">
                 <span className="inline-flex items-center gap-2">{f.q}</span>
               </summary>
               <p className="mt-2 text-sm text-slate-300/90">{f.a}</p>
@@ -624,7 +630,7 @@ export default function OmegaHomePage() {
           <Button
             asChild
             variant="outline"
-            className="border-slate-700 bg-slate-900/40 hover:bg-slate-900/60  hover:text-orange-400"
+            className="rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 hover:text-orange-400"
           >
             <Link to="/faqs">More FAQs</Link>
           </Button>
@@ -648,7 +654,7 @@ export default function OmegaHomePage() {
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <Link
                 to="/admissions"
-                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50"
               >
                 <div className="flex items-center gap-3 text-slate-200">
                   <PhoneCall className="h-5 w-5 text-orange-300" /> Admissions
@@ -661,7 +667,7 @@ export default function OmegaHomePage() {
 
               <Link
                 to="/partnerships"
-                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50"
               >
                 <div className="flex items-center gap-3 text-slate-200">
                   <Newspaper className="h-5 w-5 text-orange-300" /> Partnerships
@@ -674,7 +680,7 @@ export default function OmegaHomePage() {
 
               <Link
                 to="/support"
-                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50 hover:text-black"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 hover:border-orange-600/50"
               >
                 <div className="flex items-center gap-3 text-slate-200">
                   <LifeBuoy className="h-5 w-5 text-orange-300" /> Support
@@ -701,7 +707,7 @@ export default function OmegaHomePage() {
                   required
                   value={contactEmail}
                   onChange={(e) => setContactEmail(e.target.value)}
-                  className="rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
+                  className="rounded-2xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
                   placeholder="Your email"
                 />
                 <textarea
@@ -709,13 +715,13 @@ export default function OmegaHomePage() {
                   required
                   value={contactMsg}
                   onChange={(e) => setContactMsg(e.target.value)}
-                  className="rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
+                  className="rounded-2xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-sm outline-none focus:border-orange-600"
                   placeholder="How can we help?"
                 />
                 <Button
                   type="submit"
                   disabled={sending}
-                  className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
+                  className="rounded-2xl bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {sending ? "Sending..." : "Send"}
                 </Button>
@@ -768,8 +774,8 @@ function WorkshopCard({ title, date, duration, price, invert = false }) {
           <Badge
             className={
               invert
-                ? "bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black"
-                : "bg-slate-800 text-slate-300 hover:bg-slate-800  hover:text-black"
+                ? "bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black"
+                : "bg-slate-800 text-slate-300 hover:bg-slate-800 hover:text-black"
             }
           >
             {date}
@@ -784,8 +790,8 @@ function WorkshopCard({ title, date, duration, price, invert = false }) {
             className={
               "w-full " +
               (invert
-                ? "bg-slate-800 text-slate-300 hover:bg-slate-700  hover:text-black"
-                : "bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black")
+                ? "bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-black rounded-2xl"
+                : "bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black rounded-2xl")
             }
           >
             <Link to="/admissions">Enroll</Link>
@@ -801,7 +807,7 @@ function ProjectCard({ title, tag, invert = false }) {
   return (
     <Card>
       <CardContent className="p-5">
-        <div className="flex items-center justify-between hover:border-orange-600/50">
+        <div className="flex items-center justify-between">
           <Badge
             className={
               invert
@@ -815,7 +821,7 @@ function ProjectCard({ title, tag, invert = false }) {
         </div>
         <h3 className="mt-3 text-base font-semibold text-white">{title}</h3>
         <p className="mt-1 text-sm text-slate-300/90">
-          Portfolio‑ready deliverables with mentor feedback.
+          Portfolio-ready deliverables with mentor feedback.
         </p>
         <div className="mt-4">
           <Button
@@ -823,8 +829,8 @@ function ProjectCard({ title, tag, invert = false }) {
             className={
               "w-full " +
               (invert
-                ? "bg-slate-800 text-slate-300 hover:bg-slate-700  hover:text-orange-400"
-                : "bg-orange-500 text-slate-900 hover:bg-orange-400  hover:text-black")
+                ? "bg-slate-800 text-slate-300 hover:bg-slate-700 rounded-2xl"
+                : "bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black rounded-2xl")
             }
           >
             <Link to="/workshops/online">Enroll</Link>
@@ -859,16 +865,15 @@ function ContactFormCTA() {
     <div className="mt-0 w-full text-center">
       <Button
         asChild
-        className="bg-slate-800/55 text-black hover:bg-orange-400/55  hover:text-white w-full"
+        className="w-full h-12 rounded-2xl bg-slate-800/55 text-black hover:bg-orange-400/55 hover:text-white"
       >
-        <Link to="/contact" className="flex items-center gap-2">
+        <Link to="/contact" className="flex items-center justify-center gap-2">
           Contact Form <ArrowRight className="h-4 w-4" />
         </Link>
       </Button>
     </div>
   );
 }
-
 
 
 
