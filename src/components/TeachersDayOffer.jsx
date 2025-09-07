@@ -40,7 +40,7 @@ export default function TeachersDayOffer() {
 
         {/* CTA */}
         <a
-          href="http://localhost:5173/courses"
+          href="https://omegaskillsacademy.online/courses"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block rounded-lg bg-orange-500 px-6 py-2 text-base font-semibold text-white hover:bg-orange-400 transition"
