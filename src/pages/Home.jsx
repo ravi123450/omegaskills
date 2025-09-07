@@ -24,6 +24,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone } from "lucide-react";
 import HomeCoursesScrollerAd from "@/components/HomeCoursesScrollerAd";
+import TeachersDayOffer from "../components/TeachersDayOffer";
 
 
 /** ---------- helpers & data ---------- */
@@ -219,7 +220,7 @@ export default function OmegaHomePage() {
         className="fixed left-0 top-0 z-[60] h-1 bg-orange-500 transition-[width]"
         style={{ width: `${progress}%` }}
       />
-
+     <TeachersDayOffer />
 
       {/* Background blobs */}
       <div
@@ -264,7 +265,7 @@ export default function OmegaHomePage() {
               .
             </h1>
 
-
+          
             <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
               Become career-ready with our live cohorts, on-campus bootcamps,
               resume tools, hackathons, and certification guidance. We provide

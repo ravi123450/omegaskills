@@ -8,6 +8,7 @@ import { getCourses, getExams } from "@/lib/api";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import TeachersDayOffer from "../../components/TeachersDayOffer";
 
 
 // Icons
@@ -182,7 +183,7 @@ export default function Courses({ token }) {
             Data Science, AI/ML, Cybersecurity, Cloud, Full Stack.
           </p>
         </div>
-
+           <TeachersDayOffer />
 
         {/* COURSES GRID */}
         <div className="mt-6">
@@ -221,12 +222,17 @@ export default function Courses({ token }) {
 
 
                   {/* Standalone Razorpay button for bundle (exact snippet) */}
-                  <div className="mt-4 flex justify-center" onClick={(e) => e.stopPropagation()}>
-  <PaymentButtonForm
-    key="rzp-bundle"
-    paymentButtonId="pl_RCfSfZmmVyI1U3"
-    className="inline-block"
-  />
+                
+               <div className="mt-3">
+  <a
+    href="https://pages.razorpay.com/omegaskills1"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block rounded bg-gradient-to-r from-green-500 to-emerald-600 px-5 py-2 text-sm font-bold text-white shadow-lg hover:from-green-400 hover:to-emerald-500 transition-all duration-200"
+    onClick={(e) => e.stopPropagation()}
+  >
+    Buy Course
+  </a>
 </div>
 
 
@@ -284,13 +290,17 @@ export default function Courses({ token }) {
 
 
                     {/* Razorpay Payment Button (renders inside this form) */}
-                    <div className="mt-9 flex justify-center">
-                      <PaymentButtonForm
-                        key={`rzp-${c.id}`}
-                        paymentButtonId={PAYMENT_BUTTON_ID}
-                        className="inline-block"
-                      />
-                    </div>
+                     <div className="mt-3">
+  <a
+    href="https://rzp.io/rzp/omegaskills"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block rounded bg-gradient-to-r from-green-500 to-emerald-600 px-5 py-2 text-sm font-bold text-white shadow-lg hover:from-green-400 hover:to-emerald-500 transition-all duration-200"
+    onClick={(e) => e.stopPropagation()}
+  >
+    Buy Course
+  </a>
+</div>
                   </CardContent>
                 </Card>
               ))}
