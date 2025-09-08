@@ -167,7 +167,7 @@ const router = createBrowserRouter(
 
         { path: "/mock-interviews/one-one", element: <OneOnOneMock /> },
         { path: "/mock-interviews/question-bank", element: <QuestionBank /> },
-        { path: "/mock_interviews/one-one", element: <OneOne /> }, // keep existing alt path
+        { path: "/mock-interviews/oneone", element: <OneOne /> }, // keep existing alt path
 
 
         // Cloud cert plans (as requested)
