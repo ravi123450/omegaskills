@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import { getMockSlotsPublic } from "@/lib/api";
 
-
 /* ---------- tiny atom ---------- */
 function SectionTitle({ children, eyebrow }) {
   return (
@@ -33,16 +32,13 @@ function SectionTitle({ children, eyebrow }) {
   );
 }
 
-
 export default function OneOne() {
   const auth = useAuth?.();
   const isAuthed = !!(auth?.user || auth?.token || auth?.auth_token);
 
-
   const [slots, setSlots] = useState([]);
   const [loading, setLoading] = useState(true);
   const [formUrl, setFormUrl] = useState("");
-
 
   useEffect(() => {
     let cancel = false;
@@ -62,14 +58,12 @@ export default function OneOne() {
     };
   }, []);
 
-
   useEffect(() => {
     const KEY = "mock_interviews_form_url";
     setFormUrl(localStorage.getItem(KEY) || "");
   }, []);
   const bookingHref =
     formUrl && /^https?:\/\//i.test(formUrl) ? formUrl : undefined;
-
 
   const grouped = useMemo(() => {
     const m = new Map();
@@ -91,7 +85,6 @@ export default function OneOne() {
     return out;
   }, [slots]);
 
-
   const formats = [
     {
       icon: <Timer className="h-5 w-5 text-orange-300" />,
@@ -110,7 +103,6 @@ export default function OneOne() {
     },
   ];
 
-
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Hero */}
@@ -124,7 +116,6 @@ export default function OneOne() {
           </Badge>
         </div>
 
-
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Nail interviews with{" "}
           <span className="bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
@@ -132,14 +123,12 @@ export default function OneOne() {
           </span>
         </h1>
 
-
         <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
           Practice real interview rounds with mentors. Get precise, actionable
           feedback and a plan to improve.
         </p>
 
-
-        <div className="mt-6 flex flex-wrap items-center gap-3">
+        <div className="mt-6 flex flex-wrap items-center gap-3 flex-nowrap">
           <BookButton bookingHref={bookingHref} big />
           <Link
             to=""
@@ -162,7 +151,6 @@ export default function OneOne() {
           </Link>
         </div>
       </section>
-
 
       {/* Content */}
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-2 md:px-6">
@@ -190,11 +178,9 @@ export default function OneOne() {
               </div>
             </div>
 
-
             {/* Availability */}
             <div>
               <SectionTitle eyebrow="Availability">Sample slots</SectionTitle>
-
 
               {loading && (
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -213,7 +199,6 @@ export default function OneOne() {
                 </div>
               )}
 
-
               {!loading && slots.length === 0 && (
                 <Card className="mt-8 border-slate-800/70 bg-slate-900/40">
                   <CardContent className="p-6 text-sm text-slate-300">
@@ -221,7 +206,6 @@ export default function OneOne() {
                   </CardContent>
                 </Card>
               )}
-
 
               {!loading && slots.length > 0 && (
                 <div className="mt-8 space-y-6">
@@ -236,7 +220,6 @@ export default function OneOne() {
                 </div>
               )}
             </div>
-
 
             {/* What you get */}
             <div>
@@ -263,7 +246,6 @@ export default function OneOne() {
             </div>
           </div>
 
-
           {/* Right column */}
           <aside className="md:col-span-1">
             <div className="md:sticky md:top-24 space-y-4">
@@ -288,7 +270,6 @@ export default function OneOne() {
                     ))}
                   </ul>
 
-
                   <div className="mt-5 grid gap-2">
                     <BookButton bookingHref={bookingHref} />
                     <Button
@@ -307,7 +288,6 @@ export default function OneOne() {
   );
 }
 
-
 /* ---------- pieces ---------- */
 function SlotSection({ track, list, bookingHref }) {
   return (
@@ -324,11 +304,9 @@ function SlotSection({ track, list, bookingHref }) {
   );
 }
 
-
 /* FLEX-BASED CARD — calendar full-width, notes wrap, CTA under notes */
 function SlotCard({ s, bookingHref }) {
   const disabled = !bookingHref;
-
 
   return (
     <div className="rounded-xl border border-slate-800/60 bg-gradient-to-br from-slate-900/70 to-slate-900/40 p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.4)] hover:border-orange-600/40 transition-colors">
@@ -345,7 +323,6 @@ function SlotCard({ s, bookingHref }) {
             </span>
           </div>
 
-
           {/* Meta chips */}
           <div className="mt-2 flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
             <span className="rounded-full bg-slate-800/60 px-2 py-0.5">
@@ -356,14 +333,12 @@ function SlotCard({ s, bookingHref }) {
             </span>
           </div>
 
-
           {/* Notes block */}
           {s.notes ? (
             <div className="mt-2 w-full rounded-lg bg-slate-800/50 px-3 py-2 text-[12px] leading-snug text-slate-300/90 whitespace-pre-line break-words">
               {s.notes}
             </div>
           ) : null}
-
 
           {/* CTA under notes */}
           <div className="mt-3">
@@ -377,8 +352,14 @@ function SlotCard({ s, bookingHref }) {
                 className="h-9 px-4 bg-orange-500 text-slate-900 hover:bg-orange-400"
                 title="Open booking form"
               >
-                <a href={bookingHref} target="_blank" rel="noreferrer">
-                  Book <ExternalLink className="ml-1 h-4 w-4" />
+                <a
+                  href={bookingHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  Book
+                  <ExternalLink className="h-4 w-4" />
                 </a>
               </Button>
             )}
@@ -388,7 +369,6 @@ function SlotCard({ s, bookingHref }) {
     </div>
   );
 }
-
 
 function BookButton({ bookingHref, big = false }) {
   const disabled = !bookingHref;
@@ -413,14 +393,15 @@ function BookButton({ bookingHref, big = false }) {
         (big ? "h-11 px-4" : "w-full")
       }
     >
-      <a href={bookingHref} target="_blank" rel="noreferrer">
-        Book a Session <ExternalLink className="ml-2 h-4 w-4" />
+      <a
+        href={bookingHref}
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center justify-center gap-2"
+      >
+        Book a Session
+        <ExternalLink className="h-4 w-4" />
       </a>
     </Button>
   );
 }
-
-
-
-
-
