@@ -177,17 +177,17 @@ export default function Courses({ token }) {
       <div className="mx-auto max-w-6xl px-4 py-10">
         {/* HERO */}
         <div className="mb-6">
-          <Badge className="bg-orange-600/20 text-orange-300">Courses</Badge>
-          <h1 className="mt-2 text-3xl font-extrabold">Courses &amp; Programs</h1>
+          <Badge className="bg-orange-600/20 text-orange-300">Mock tests</Badge>
+          <h1 className="mt-2 text-3xl font-extrabold">Placement &amp; Mock Tests</h1>
           <p className="mt-2 text-sm text-slate-300">
-            Data Science, AI/ML, Cybersecurity, Cloud, Full Stack.
+            Placement Preparation Mock Tests
           </p>
         </div>
            <TeachersDayOffer />
 
         {/* COURSES GRID */}
         <div className="mt-6">
-          <h2 className="mb-4 text-xl font-bold md:text-2xl">Available Courses</h2>
+          <h2 className="mb-4 text-xl font-bold md:text-2xl">Available Mock tests</h2>
 
 
           {loadingCourses ? (

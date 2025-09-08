@@ -355,7 +355,7 @@ export default function Navbar() {
                   </MenuItem>
 
                   <MenuItem
-                    to="/mock-interviews/one-one"
+                   to="/mock-interviews/oneone"
                     icon={<Mic className="h-4 w-4" />}
                     onSelect={() => setProfileOpen(false)}
                   >
