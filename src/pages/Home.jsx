@@ -26,6 +26,11 @@ import { Mail, Phone } from "lucide-react";
 import HomeCoursesScrollerAd from "@/components/HomeCoursesScrollerAd";
 import TeachersDayOffer from "../components/TeachersDayOffer";
 import LiveProjects from "./projects/LiveProjects";
+import PricingPlans from "@/components/PricingPlans";
+import WorkshopImageSection from "@/components/WorkshopImageSection";
+
+
+
 
 
 /** ---------- helpers & data ---------- */
@@ -327,7 +332,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
-
+      <PricingPlans/>
       {/* Student-Favorite Mock Tests*/}
       <HomeCoursesScrollerAd />
 
@@ -410,58 +415,8 @@ export default function OmegaHomePage() {
       </section>
 
 
-      {/* Impact in Numbers */}
-      <section className="border-y border-slate-800/60 bg-slate-900/30 mt-9">
-        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6">
-          <SectionTitle>Impact in Numbers</SectionTitle>
-          <div className="mt-6 grid grid-cols-2 gap-6 md:grid-cols-3">
-            <Stat label="learners supported" value={statStudents} suffix="+" />
-            <Stat
-              label="workshops delivered"
-              value={statWorkshops}
-              suffix="+"
-            />
-            <Stat label="partner colleges" value={statColleges} suffix="+" />
-          </div>
-        </div>
-      </section>
-
-
-      {/* Upcoming Workshops */}
-      <section id="workshops" className="mx-auto max-w-7xl px-4 py-19 md:px-6">
-        <div className="mb-12 flex items-end justify-between">
-          <SectionTitle>Upcoming Workshops</SectionTitle>
-          <Button
-            asChild
-            variant="outline"
-            className="hidden md:inline-flex rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 hover:text-orange-400"
-          >
-            <Link to="/contact">Request Full Schedule</Link>
-          </Button>
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          <WorkshopCard
-            title="Full-Stack Web Bootcamp"
-            date="Sep 05"
-            duration="4 weeks"
-            price="Free Demo"
-            invert
-          />
-          <WorkshopCard
-            title="Data Science Starter"
-            date="Sep 12"
-            duration="4 weeks"
-            price="Free Demo"
-          />
-          <WorkshopCard
-            title="GCP Associate Prep"
-            date="Sep 19"
-            duration="3 weeks"
-            price="Free Demo"
-            invert
-          />
-        </div>
-      </section>
+<WorkshopImageSection />
+     
 
 
       {/* Resume & ATS Tools */}

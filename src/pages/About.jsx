@@ -15,6 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import LockedPremium from "../pages/LockedPremium";
 
 
 /* ----- local atoms (kept simple & consistent with your system) ----- */
@@ -77,7 +78,7 @@ export default function About() {
             About Us — 'Ω' Omega Skills Academy
           </Badge>
         </div>
-
+    
 
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Built on{" "}
@@ -115,7 +116,7 @@ export default function About() {
         </div>
       </section>
 
-
+   <LockedPremium/>
       {/* Who We Are */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="who-we-are">
         <SectionTitle eyebrow="Who We Are">An Outcome-Driven EdTech</SectionTitle>

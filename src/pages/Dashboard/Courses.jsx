@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import TeachersDayOffer from "../../components/TeachersDayOffer";
+import LockedPremium from "@/pages/LockedPremium";
 
 
 // Icons
@@ -316,6 +317,8 @@ export default function Courses({ token }) {
             </div>
           )}
         </div>
+
+        <LockedPremium/>
 
 
         {/* SELECTED COURSE & EXAMS */}
