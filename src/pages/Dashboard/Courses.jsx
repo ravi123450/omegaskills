@@ -183,7 +183,7 @@ export default function Courses({ token }) {
             Placement Preparation Mock Tests
           </p>
         </div>
-           <TeachersDayOffer />
+          
 
         {/* COURSES GRID */}
         <div className="mt-6">

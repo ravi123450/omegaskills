@@ -370,6 +370,14 @@ export default function Navbar() {
                     Cloud
                   </MenuItem>
 
+                   <MenuItem
+                    to="/resources/roadmaps"
+                    icon={<Users className="h-4 w-4" />}
+                    onSelect={() => setProfileOpen(false)}
+                  >
+                    Roadmaps
+                  </MenuItem>
+
                   <MenuItem
                     to="/friends"
                     icon={<Users className="h-4 w-4" />}

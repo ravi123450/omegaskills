@@ -25,6 +25,7 @@ import { Badge } from "@/components/ui/badge";
 import { Mail, Phone } from "lucide-react";
 import HomeCoursesScrollerAd from "@/components/HomeCoursesScrollerAd";
 import TeachersDayOffer from "../components/TeachersDayOffer";
+import LiveProjects from "./projects/LiveProjects";
 
 
 /** ---------- helpers & data ---------- */
@@ -358,6 +359,8 @@ export default function OmegaHomePage() {
           ))}
         </div>
       </section>
+  {/* Live Projects — Interactive */}
+<LiveProjects/>
 
 
       {/* Our Core Offerings */}
@@ -563,7 +566,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
-
+      
       {/* Projects & Hackathons */}
       <section id="projects" className="mx-auto max-w-7xl px-4 py-12 md:px-6">
         <SectionTitle>Projects & Hackathons</SectionTitle>
@@ -735,9 +738,7 @@ export default function OmegaHomePage() {
                 >
                   info@omegaskillsacademy.online
                 </ContactLine>
-                <ContactLine icon={Phone} href="tel:+91XXXXXXXXXX">
-                  +91-XXXXXXXXXX
-                </ContactLine>
+                
 
 
                 <ContactFormCTA />

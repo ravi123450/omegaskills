@@ -379,24 +379,7 @@ export default function Contact() {
                     </a>
 
 
-                    <a
-                      href="tel:+91XXXXXXXXXX"
-                      className="flex items-center gap-3 text-slate-200 hover:text-orange-300"
-                    >
-                      <PhoneCall className="h-4 w-4 text-orange-300" />
-                      <span>Call us</span>
-                    </a>
-
-
-                    <a
-                      // href="https://wa.me/91xxxxxxx"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-slate-200 hover:text-green-400"
-                    >
-                      <MessageCircleMore className="h-4 w-4 text-green-400" />
-                      <span>Live chat (WhatsApp)</span>
-                    </a>
+                
                   </div>
 
 
@@ -475,8 +458,5 @@ export default function Contact() {
     </main>
   );
 }
-
-
-
 
 

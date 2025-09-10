@@ -18,35 +18,34 @@ export default function TeachersDayOffer() {
 
         {/* Title */}
         <h2 className="text-2xl font-bold text-indigo-600 mb-3">
-          🎉 Teachers’ Day Sale
+          🎓 Limited time Student’s Exclusive Offer
         </h2>
 
         {/* Badge */}
         <div className="inline-block px-3 py-1 mb-4 rounded-full bg-green-100 text-green-700 text-sm font-semibold">
-          25% OFF Today Only
+          Free 3 Mock Tests
         </div>
 
         {/* Main text */}
         <p className="text-gray-700 mb-3">
-          Avail <span className="font-semibold text-green-600">25% OFF</span> on all
-          courses today. Don’t miss out!
+          <span className="font-semibold text-green-600">Login now</span> to get{" "}
+          <span className="font-semibold text-green-600">3 free mock tests</span> to write,after login in dashboard scroll down to your courses.
         </p>
 
         <p className="text-sm text-gray-600 mb-6">
-          In the payments and checkout page you can grab this{" "}
-          <span className="font-bold text-green-600">25% discount</span>. Don’t waste
-          time — grab now!
+          Perfect for trying out our platform and boosting your preparation. Offer valid
+          for logged-in students only.
         </p>
 
         {/* CTA */}
         <a
-          href="https://omegaskillsacademy.online/courses"
+          href="https://omegaskillsacademy.online/login"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block rounded-lg bg-orange-500 px-6 py-2 text-base font-semibold text-white hover:bg-orange-400 transition"
           onClick={() => setShow(false)}
         >
-          Avail Now
+          Login &amp; Claim Now
         </a>
 
         {/* Quote */}

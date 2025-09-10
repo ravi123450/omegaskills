@@ -59,8 +59,8 @@ export default function OneOne() {
   }, []);
 
   useEffect(() => {
-    const KEY = "mock_interviews_form_url";
-    setFormUrl(localStorage.getItem(KEY) || "");
+    const ENV_URL = import.meta?.env?.VITE_MOCK_INTERVIEWS_FORM_URL || "";
+    setFormUrl(ENV_URL);
   }, []);
   const bookingHref =
     formUrl && /^https?:\/\//i.test(formUrl) ? formUrl : undefined;
