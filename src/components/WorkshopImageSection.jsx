@@ -1,6 +1,7 @@
 // src/components/WorkshopImageSection.jsx
 // Omega Skills Academy — Previous Workshops Section (drop directly into Home)
-// Auto-playing carousel (no manual scroll), per-image pause, seamless loop
+// Auto-playing carousel (no manual scroll), per-image dwell, seamless loop
+// ✅ Uses imported assets so images work in production (Vite)
 
 import React, { useRef, useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
@@ -9,13 +10,23 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-// ---------- Local image sources ----------
+// ---------- Import image assets (Vite will fingerprint these for production) ----------
+import img1 from "@/assets/image/1.jpg";
+import img2 from "@/assets/image/2.jpg";
+import img3 from "@/assets/image/3.jpg";
+import img4 from "@/assets/image/4.jpg";
+import img5 from "@/assets/image/5.jpg";
+
+// If you ever move images to the /public folder, you can use absolute paths like:
+// const img1 = "/image/1.jpg";
+
+// ---------- Image data ----------
 const WORKSHOP_IMAGES = [
-  { src: "/src/assets/image/1.jpg", caption: "Gemini flash 2.0" },
-  { src: "/src/assets/image/2.jpg", caption: "Gemini flash 2.0" },
-  { src: "/src/assets/image/3.jpg", caption: "Flask: Hands‑on Lab" },
-  { src: "/src/assets/image/4.jpg", caption: "Gemini flash 2.0" },
-  { src: "/src/assets/image/5.jpg", caption: "Flask: Hands‑on Lab" },
+  { src: img1, caption: "Gemini flash 2.0" },
+  { src: img2, caption: "Gemini flash 2.0" },
+  { src: img3, caption: "Flask: Hands-on Lab" },
+  { src: img4, caption: "Gemini flash 2.0" },
+  { src: img5, caption: "Flask: Hands-on Lab" },
 ];
 
 // ---------- Tiny helpers ----------
@@ -40,8 +51,12 @@ function Stat({ label, value, suffix = "" }) {
   return (
     <Card className="rounded-2xl border border-slate-800/60 bg-slate-900/40">
       <CardContent className="p-4 text-center">
-        <div className="text-2xl font-extrabold text-white">{v}{suffix}</div>
-        <div className="text-xs uppercase tracking-wide text-slate-400">{label}</div>
+        <div className="text-2xl font-extrabold text-white">
+          {v}{suffix}
+        </div>
+        <div className="text-xs uppercase tracking-wide text-slate-400">
+          {label}
+        </div>
       </CardContent>
     </Card>
   );
@@ -50,6 +65,7 @@ function Stat({ label, value, suffix = "" }) {
 // ---------- Tilted image card ----------
 function TiltCard({ src, caption, onClick }) {
   const ref = useRef(null);
+
   const handleMove = (e) => {
     const el = ref.current;
     if (!el) return;
@@ -58,13 +74,13 @@ function TiltCard({ src, caption, onClick }) {
     const y = e.clientY - rect.top;
     const rx = ((y / rect.height) - 0.5) * -8; // tilt up/down
     const ry = ((x / rect.width) - 0.5) * 8;   // tilt left/right
-    el.style.setProperty('--rx', `${rx}deg`);
-    el.style.setProperty('--ry', `${ry}deg`);
+    el.style.setProperty("--rx", `${rx}deg`);
+    el.style.setProperty("--ry", `${ry}deg`);
   };
   const reset = () => {
     const el = ref.current; if (!el) return;
-    el.style.setProperty('--rx', `0deg`);
-    el.style.setProperty('--ry', `0deg`);
+    el.style.setProperty("--rx", `0deg`);
+    el.style.setProperty("--ry", `0deg`);
   };
 
   return (
@@ -74,20 +90,23 @@ function TiltCard({ src, caption, onClick }) {
       onMouseLeave={reset}
       onClick={onClick}
       className="group relative h-64 sm:h-72 md:h-80 lg:h-96 w-[78vw] sm:w-[52vw] md:w-[40vw] xl:w-[28vw] cursor-pointer overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-900/40 will-change-transform"
-      style={{ transform: 'perspective(900px) rotateX(var(--rx)) rotateY(var(--ry))' }}
+      style={{ transform: "perspective(900px) rotateX(var(--rx)) rotateY(var(--ry))" }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      {/* Continuous Ken‑Burns loop */}
+      {/* Continuous Ken-Burns loop */}
       <motion.img
         src={src}
         alt={caption}
         className="h-full w-full object-cover"
+        loading="lazy"
+        decoding="async"
         initial={{ scale: 1.04 }}
         animate={{ scale: [1.04, 1.1, 1.04] }}
-        transition={{ duration: 12, repeat: Infinity, repeatType: 'mirror', ease: 'easeInOut' }}
+        transition={{ duration: 12, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
+        onError={(e) => { e.currentTarget.style.visibility = "hidden"; }} // fail safe
       />
       {/* overlay gradient + caption */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-60 group-hover:opacity-70 transition-opacity" />
@@ -111,10 +130,11 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
   useEffect(() => {
     const calc = () => {
       const track = trackRef.current; if (!track) return;
-      const first = track.querySelector('.carousel-card');
+      const first = track.querySelector(".carousel-card");
       if (!first) return;
       const styles = getComputedStyle(track);
-      const gap = parseFloat(styles.gap || styles.columnGap || '16');
+      const gap =
+        parseFloat(styles.gap || styles.columnGap || "16") || 16;
       stepRef.current = first.getBoundingClientRect().width + gap;
       // reset position cleanly on resize
       setAllowTransition(false);
@@ -122,8 +142,8 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
       requestAnimationFrame(() => setAllowTransition(true));
     };
     calc();
-    window.addEventListener('resize', calc);
-    return () => window.removeEventListener('resize', calc);
+    window.addEventListener("resize", calc);
+    return () => window.removeEventListener("resize", calc);
   }, []);
 
   // autoplay loop: advance one, dwell, then advance again
@@ -135,8 +155,8 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
       setAllowTransition(true);
       setIdx((prev) => {
         const next = prev + 1;
-        // after the animated slide completes, if we've crossed the original
-        // set, jump back instantly to idx 0 to keep it seamless
+        // after the animated slide completes, if we've crossed the original set,
+        // jump back instantly to idx 0 to keep it seamless
         if (next >= items.length) {
           setTimeout(() => {
             if (cancelled) return;
@@ -165,11 +185,20 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
         <div
           ref={trackRef}
           className="flex gap-4 p-3 will-change-transform"
-          style={{ transform, transition: allowTransition ? `transform ${slideMs}ms cubic-bezier(0.22,0.61,0.36,1)` : 'none' }}
+          style={{
+            transform,
+            transition: allowTransition
+              ? `transform ${slideMs}ms cubic-bezier(0.22,0.61,0.36,1)`
+              : "none",
+          }}
         >
           {photos.map((p, i) => (
             <div key={i} className="carousel-card">
-              <TiltCard src={p.src} caption={p.caption} onClick={() => window.open(p.src, '_blank')} />
+              <TiltCard
+                src={p.src}
+                caption={p.caption}
+                onClick={() => window.open(p.src, "_blank")}
+              />
             </div>
           ))}
         </div>
@@ -194,16 +223,24 @@ export default function WorkshopImageSection() {
         <Stat label="partner colleges" value={12} suffix="+" />
       </div>
 
-      {/* Auto-playing carousel (per-image pause) */}
+      {/* Auto-playing carousel (per-image dwell) */}
       <CinematicImageCarousel items={WORKSHOP_IMAGES} pauseMs={900} slideMs={700} />
 
       {/* CTA */}
       <div className="mt-10 text-center">
         <Button asChild className="rounded-2xl bg-amber-500 text-slate-900 hover:bg-amber-400">
-          <Link to="/admissions" className="inline-flex items-center gap-2">Next Workshop coming soon <ArrowRight className="h-4 w-4"/></Link>
+          <Link to="/admissions" className="inline-flex items-center gap-2">
+            Next Workshop coming soon <ArrowRight className="h-4 w-4" />
+          </Link>
         </Button>
-        <Button asChild variant="outline" className="ml-3 rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 text-slate-200">
-          <Link to="/contact" className="inline-flex items-center gap-2">Invite Us On‑Campus (mail to us) <PlayCircle className="h-4 w-4"/></Link>
+        <Button
+          asChild
+          variant="outline"
+          className="ml-3 rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 text-slate-200"
+        >
+          <Link to="/contact" className="inline-flex items-center gap-2">
+            Invite Us On-Campus (mail to us) <PlayCircle className="h-4 w-4" />
+          </Link>
         </Button>
       </div>
     </section>
