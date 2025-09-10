@@ -103,6 +103,53 @@ export default function OneOne() {
     },
   ];
 
+  /* ---------- NEW: Packages for Mock Interviews (₹199 / ₹349 / ₹599) ---------- */
+  const packages = useMemo(
+    () => [
+      {
+        slug: "basic",
+        name: "Basic",
+        price: "₹199",
+        popular: false,
+        accent: "border-slate-800/70 bg-slate-900/50",
+        pitch: "Single 1:1 mock with quick feedback. Best to try the format.",
+        features: ["1 session (30–40 min)", "10–15 min feedback", "Action plan"],
+        cta: "Choose Basic",
+      },
+      {
+        slug: "standard",
+        name: "Standard",
+        price: "₹349",
+        popular: true,
+        accent: "border-orange-600/50 bg-orange-600/10",
+        pitch:
+          "Two mocks for depth + iteration. Improve between sessions with a concrete plan.",
+        features: [
+          "2 sessions",
+          "Detailed rubric & notes",
+          "Follow-up resources",
+        ],
+        cta: "Choose Standard",
+      },
+      {
+        slug: "pro",
+        name: "Pro",
+        price: "₹599",
+        popular: false,
+        accent: "border-slate-800/70 bg-slate-900/50",
+        pitch:
+          "Three sessions + polish. Includes final review to be interview-ready.",
+        features: [
+          "3 sessions",
+          "Comms & strategy coaching",
+          "Final readiness review",
+        ],
+        cta: "Choose Pro",
+      },
+    ],
+    []
+  );
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       {/* Hero */}
@@ -280,8 +327,96 @@ export default function OneOne() {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* NEW: Packages card */}
+              <Card className="border-slate-800/70 bg-slate-900/50">
+                <CardContent className="p-6">
+                  <div className="mb-2">
+                    <Badge className="bg-orange-600/20 text-orange-300">
+                      Packages
+                    </Badge>
+                  </div>
+
+                  <div className="space-y-4">
+                    {packages.map((p) => (
+                      <div
+                        key={p.slug}
+                        className={[
+                          "rounded-2xl border p-4",
+                          p.accent,
+                          p.popular ? "shadow-[0_0_0_1px_rgba(251,146,60,.35)]" : "",
+                        ].join(" ")}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="font-semibold text-lg">{p.name}</div>
+                          <span
+                            className={[
+                              "rounded-full border px-2 py-0.5 text-xs",
+                              p.popular
+                                ? "border-orange-600/40 bg-orange-600/15 text-orange-300"
+                                : "border-slate-700/60 bg-slate-900/40 text-slate-300",
+                            ].join(" ")}
+                          >
+                            {p.price}
+                          </span>
+                        </div>
+
+                        <div className="mt-1 text-sm text-slate-300/90">{p.pitch}</div>
+
+                        <ul className="mt-3 space-y-1 text-sm">
+                          {p.features.map((f) => (
+                            <li key={f} className="flex items-start gap-2 text-slate-200">
+                              <BadgeCheck className="mt-0.5 h-4 w-4 text-orange-300" />
+                              <span>{f}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        <div className="mt-4">
+                          {bookingHref ? (
+                            <Button
+                              asChild
+                              className="w-full bg-orange-500 text-slate-900 hover:bg-orange-400"
+                              title="Open booking form"
+                            >
+                              <a href={bookingHref} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2">
+                                {p.cta} <ExternalLink className="h-4 w-4" />
+                              </a>
+                            </Button>
+                          ) : (
+                            <span className="inline-flex w-full items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/15 px-3 py-2 text-xs font-semibold text-orange-200">
+                              Booking form coming soon
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <p className="mt-4 text-xs text-slate-400">
+                    All selections and payment are completed in the secure form.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </aside>
+        </div>
+
+        {/* Final CTA */}
+        <div className="mt-12 rounded-2xl border border-slate-800/70 bg-slate-900/40 p-6 text-center">
+          <h3 className="text-xl font-bold">Ready to earn your cloud badge?</h3>
+          <p className="mt-2 text-slate-300">
+            Pick a package now — we’ll help you plan, practice, purchase the voucher, and schedule the exam.
+          </p>
+          <div className="mt-4 flex flex-wrap justify-center gap-3">
+            <BookButton bookingHref={bookingHref} big />
+            <Link
+              to={isAuthed ? "/dashboard" : "/login"}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/50 px-4 py-2 text-sm text-slate-200 hover:bg-slate-800"
+            >
+              {isAuthed ? "See plan in Dashboard" : "Log in"}
+            </Link>
+          </div>
         </div>
       </section>
     </main>
