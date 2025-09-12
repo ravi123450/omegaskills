@@ -1,8 +1,4 @@
 // src/components/WorkshopImageSection.jsx
-// Omega Skills Academy — Previous Workshops Section (drop directly into Home)
-// Auto-playing carousel (no manual scroll), per-image dwell, seamless loop
-// ✅ Uses imported assets so images work in production (Vite)
-
 import React, { useRef, useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Camera, ArrowRight, PlayCircle } from "lucide-react";
@@ -10,17 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-// ---------- Import image assets (Vite will fingerprint these for production) ----------
+// Import image assets (Vite will fingerprint these for production)
 import img1 from "@/assets/image/1.jpg";
 import img2 from "@/assets/image/2.jpg";
 import img3 from "@/assets/image/3.jpg";
 import img4 from "@/assets/image/4.jpg";
 import img5 from "@/assets/image/5.jpg";
 
-// If you ever move images to the /public folder, you can use absolute paths like:
-// const img1 = "/image/1.jpg";
-
-// ---------- Image data ----------
+// Image data for carousel
 const WORKSHOP_IMAGES = [
   { src: img1, caption: "Gemini flash 2.0" },
   { src: img2, caption: "Gemini flash 2.0" },
@@ -29,7 +22,7 @@ const WORKSHOP_IMAGES = [
   { src: img5, caption: "Flask: Hands-on Lab" },
 ];
 
-// ---------- Tiny helpers ----------
+// Tiny helpers for animation
 function useCountUp(target = 0, duration = 1200) {
   const [value, setValue] = useState(0);
   useEffect(() => {
@@ -46,6 +39,7 @@ function useCountUp(target = 0, duration = 1200) {
   return value;
 }
 
+// Stats component
 function Stat({ label, value, suffix = "" }) {
   const v = useCountUp(value);
   return (
@@ -62,7 +56,7 @@ function Stat({ label, value, suffix = "" }) {
   );
 }
 
-// ---------- Tilted image card ----------
+// Tilted image card with hover effect
 function TiltCard({ src, caption, onClick }) {
   const ref = useRef(null);
 
@@ -77,6 +71,7 @@ function TiltCard({ src, caption, onClick }) {
     el.style.setProperty("--rx", `${rx}deg`);
     el.style.setProperty("--ry", `${ry}deg`);
   };
+
   const reset = () => {
     const el = ref.current; if (!el) return;
     el.style.setProperty("--rx", `0deg`);
@@ -117,26 +112,22 @@ function TiltCard({ src, caption, onClick }) {
   );
 }
 
-// ---------- Cinematic horizontal carousel (auto, per-image dwell) ----------
+// Cinematic horizontal carousel (auto-play, per-image dwell)
 function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
-  // duplicate for seamless loop
   const photos = useMemo(() => [...items, ...items], [items]);
   const trackRef = useRef(null);
   const [idx, setIdx] = useState(0);
   const [allowTransition, setAllowTransition] = useState(true);
   const stepRef = useRef(0); // px per step
 
-  // measure step (card width + gap) responsively
   useEffect(() => {
     const calc = () => {
       const track = trackRef.current; if (!track) return;
       const first = track.querySelector(".carousel-card");
       if (!first) return;
       const styles = getComputedStyle(track);
-      const gap =
-        parseFloat(styles.gap || styles.columnGap || "16") || 16;
+      const gap = parseFloat(styles.gap || styles.columnGap || "16") || 16;
       stepRef.current = first.getBoundingClientRect().width + gap;
-      // reset position cleanly on resize
       setAllowTransition(false);
       setIdx(0);
       requestAnimationFrame(() => setAllowTransition(true));
@@ -146,7 +137,6 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
     return () => window.removeEventListener("resize", calc);
   }, []);
 
-  // autoplay loop: advance one, dwell, then advance again
   useEffect(() => {
     let cancelled = false;
     let timer;
@@ -155,8 +145,6 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
       setAllowTransition(true);
       setIdx((prev) => {
         const next = prev + 1;
-        // after the animated slide completes, if we've crossed the original set,
-        // jump back instantly to idx 0 to keep it seamless
         if (next >= items.length) {
           setTimeout(() => {
             if (cancelled) return;
@@ -169,7 +157,6 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
       });
       timer = setTimeout(tick, pauseMs + slideMs);
     };
-    // initial dwell before first move
     timer = setTimeout(tick, pauseMs);
     return () => { cancelled = true; clearTimeout(timer); };
   }, [items.length, pauseMs, slideMs]);
@@ -180,7 +167,6 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
     <div className="relative mt-8">
       <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-slate-950 to-transparent z-10" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-slate-950 to-transparent z-10" />
-
       <div className="overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-900/30">
         <div
           ref={trackRef}
@@ -207,7 +193,7 @@ function CinematicImageCarousel({ items, pauseMs = 900, slideMs = 700 }) {
   );
 }
 
-// ---------- Section Component ----------
+// Section Component for workshops
 export default function WorkshopImageSection() {
   return (
     <section id="workshop-gallery" className="mx-auto max-w-7xl px-4 py-12 md:px-6">
@@ -217,18 +203,18 @@ export default function WorkshopImageSection() {
       </h2>
 
       {/* Stats */}
-      <div className="mt-6 grid grid-cols-3 gap-3">
+      <div className="mt-6 grid grid-cols-3 gap-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
         <Stat label="workshops" value={50} suffix="+" />
         <Stat label="students" value={2400} suffix="+" />
         <Stat label="partner colleges" value={12} suffix="+" />
       </div>
 
-      {/* Auto-playing carousel (per-image dwell) */}
+      {/* Auto-playing carousel */}
       <CinematicImageCarousel items={WORKSHOP_IMAGES} pauseMs={900} slideMs={700} />
 
       {/* CTA */}
-      <div className="mt-10 text-center">
-        <Button asChild className="rounded-2xl bg-amber-500 text-slate-900 hover:bg-amber-400">
+      <div className="mt-10 text-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+        <Button asChild className="rounded-2xl bg-amber-500 text-slate-900 hover:bg-amber-400 py-2 px-4 sm:py-3 sm:px-6 w-full sm:w-auto">
           <Link to="/admissions" className="inline-flex items-center gap-2">
             Next Workshop coming soon <ArrowRight className="h-4 w-4" />
           </Link>
@@ -236,7 +222,7 @@ export default function WorkshopImageSection() {
         <Button
           asChild
           variant="outline"
-          className="ml-3 rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 text-slate-200"
+          className="rounded-2xl border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 text-slate-200 py-2 px-4 sm:py-3 sm:px-6 w-full sm:w-auto"
         >
           <Link to="/contact" className="inline-flex items-center gap-2">
             Invite Us On-Campus (mail to us) <PlayCircle className="h-4 w-4" />

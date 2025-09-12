@@ -88,7 +88,7 @@ export default function TeachersDayOffer() {
             {/* Close (X) */}
             <button
               onClick={dismiss}
-              className="ml-1 text-slate-400 hover:text-slate-200 transition"
+              className="ml-1 text-slate-400 hover:text-slate-200 transition cursor-pointer"
               aria-label="Dismiss student discount"
             >
               ✕

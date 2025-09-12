@@ -9,7 +9,7 @@ import {
   Cloud,
   Trophy,
   ShieldCheck,
-   Quote,
+  Quote,
   ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -78,7 +78,7 @@ export default function About() {
             About Us — 'Ω' Omega Skills Academy
           </Badge>
         </div>
-    
+
 
         <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
           Built on{" "}
@@ -102,7 +102,7 @@ export default function About() {
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
-            <Link to="/programs" className="flex items-center gap-2">
+            <Link to="/courses/learn" className="flex items-center gap-2">
               Explore Programs <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
@@ -116,7 +116,7 @@ export default function About() {
         </div>
       </section>
 
-   <LockedPremium/>
+      <LockedPremium />
       {/* Who We Are */}
       <section className="mx-auto max-w-7xl px-4 py-9 md:px-6" id="who-we-are">
         <SectionTitle eyebrow="Who We Are">An Outcome-Driven EdTech</SectionTitle>
@@ -324,7 +324,7 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
-     
+
 
 
       {/* Partners */}
@@ -400,8 +400,8 @@ export default function About() {
               className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-5 text-slate-200"
             >
               <div className="mb-2 inline-flex items-center gap-2">
-              <Quote className="mb-2 h-4 w-4 text-orange-300" />
-              <span className="text-base">{q}</span>
+                <Quote className="mb-2 h-4 w-4 text-orange-300" />
+                <span className="text-base">{q}</span>
               </div>
             </blockquote>
           ))}
@@ -413,7 +413,7 @@ export default function About() {
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-2 md:px-6">
         <div className="flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black">
-            <Link to="/programs" className="flex items-center gap-2">
+            <Link to="/courses/learn" className="flex items-center gap-2">
               Explore Programs <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>

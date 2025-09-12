@@ -220,13 +220,14 @@ export default function OmegaHomePage() {
 
 
   return (
-    <div className="scroll-smooth bg-slate-950 text-white dark:bg-slate-950 dark:text-slate-100 selection:bg-orange-300 selection:text-slate-900">
+    <div className="scroll-smooth bg-slate-950 text-white dark:bg-slate-950 dark:text-slate-100 selection:bg-orange-300 selection:text-slate-900 overflow-x-hidden">
+
       {/* Scroll progress bar */}
       <div
         className="fixed left-0 top-0 z-[60] h-1 bg-orange-500 transition-[width]"
         style={{ width: `${progress}%` }}
       />
-     <TeachersDayOffer />
+      <TeachersDayOffer />
 
       {/* Background blobs */}
       <div
@@ -271,7 +272,7 @@ export default function OmegaHomePage() {
               .
             </h1>
 
-          
+
             <p className="mt-4 max-w-2xl text-base md:text-lg text-slate-300">
               Become career-ready with our live cohorts, on-campus bootcamps,
               resume tools, hackathons, and certification guidance. We provide
@@ -298,7 +299,7 @@ export default function OmegaHomePage() {
                   variant="outline"
                   className="h-10 px-3 rounded-2xl border-slate-700 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60"
                 >
-                  <Link to="/admissions" className="flex items-center gap-1">
+                  <Link to="/courses/learn" className="flex items-center gap-1">
                     <GraduationCap className="h-4 w-4" /> Enroll
                   </Link>
                 </Button>
@@ -332,7 +333,7 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
-      <PricingPlans/>
+      <PricingPlans />
       {/* Student-Favorite Mock Tests*/}
       <HomeCoursesScrollerAd />
 
@@ -364,8 +365,8 @@ export default function OmegaHomePage() {
           ))}
         </div>
       </section>
-  {/* Live Projects — Interactive */}
-<LiveProjects/>
+      {/* Live Projects — Interactive */}
+      <LiveProjects />
 
 
       {/* Our Core Offerings */}
@@ -415,8 +416,8 @@ export default function OmegaHomePage() {
       </section>
 
 
-<WorkshopImageSection />
-     
+      <WorkshopImageSection />
+
 
 
       {/* Resume & ATS Tools */}
@@ -521,14 +522,14 @@ export default function OmegaHomePage() {
         </div>
       </section>
 
-      
+
       {/* Projects & Hackathons */}
       <section id="projects" className="mx-auto max-w-7xl px-4 py-12 md:px-6">
         <SectionTitle>Projects & Hackathons</SectionTitle>
         <p className="mt-8 text-sm text-slate-300">
           Build portfolio-ready projects and compete in real-world challenges.
         </p>
-<div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
+        <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
           <Button
             variant="outline"
             className="w-full sm:w-auto rounded-2xl border-slate-700 hover:text-orange-400"
@@ -562,7 +563,7 @@ export default function OmegaHomePage() {
         </div>
 
 
-       
+
       </section>
 
 
@@ -693,7 +694,7 @@ export default function OmegaHomePage() {
                 >
                   info@omegaskillsacademy.online
                 </ContactLine>
-                
+
 
 
                 <ContactFormCTA />
@@ -751,7 +752,7 @@ function WorkshopCard({ title, date, duration, price, invert = false }) {
                 : "bg-orange-500 text-slate-900 hover:bg-orange-400 hover:text-black rounded-2xl")
             }
           >
-            <Link to="/admissions">Enroll</Link>
+            <Link to="/courses/learn">Enroll</Link>
           </Button>
         </div>
       </CardContent>

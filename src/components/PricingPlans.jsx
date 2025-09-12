@@ -1,15 +1,10 @@
-// src/components/PricingPlans.jsx
-// Omega Skills Academy — Pricing plans with working ticker (using HomeCoursesScrollerAd pattern)
-// - Ticker visible with balanced card height
-// - Pricing cards remain with bottom price + CTAs
-
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Check, ArrowRight, TrendingUp, Users2, Brain, Trophy, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { CardTicker } from "@/components/ui/MarqueeTicker";
+import { PriceTicker } from "@/components/ui/MarqueeTicker";
 
 // ------------------------ Razorpay placeholders (replace) ------------------------
 const PAY = {
@@ -111,7 +106,16 @@ export default function PricingPlans() {
       </h2>
 
       {/* Auto-scroller like HomeCoursesScrollerAd */}
-      <CardTicker className="mt-6" speed={45} repeat={8} gap="1.25rem" cards={tickerCards} />
+      <PriceTicker
+        className="mt-6"
+        speed={100}
+        repeat={9}
+        gap="1rem"
+        cards={tickerCards}
+        railHeight="110px !important"
+        itemWidth="320px !important"
+        fadeEdges={false}
+      />
 
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {/* Kickstart */}

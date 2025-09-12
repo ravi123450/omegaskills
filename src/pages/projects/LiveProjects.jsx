@@ -177,7 +177,7 @@ function SpotlightShowcase({ projects, imageMs = 2500, slideMs = 300 }) {
 /* -------------------- Page -------------------- */
 export default function LiveProjects() {
   return (
-    <main className="min-h-screen text-white bg-[#0a0d14]">
+    <main className="text-white bg-[#0a0d14]">
       <style>{`
         :root{
           --glass: rgba(255,255,255,0.05);
