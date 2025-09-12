@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, CalendarDays, Clock, Video, Link as LinkIcon } from "lucide-react";
+import WorkshopImageSection from "@/components/WorkshopImageSection";
 
 // Access environment variables from Vite
 const FORM_URL = import.meta.env.VITE_REGISTRATION_FORM_URL;
@@ -192,6 +193,7 @@ export default function LiveWorkshops() {
           </div>
         </div>
       </section>
+      <WorkshopImageSection/>
     </main>
   );
 }
