@@ -117,7 +117,7 @@ export default function LiveWorkshops() {
 
       {/* List of Workshops */}
       <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6">
-        <SectionTitle eyebrow="Limited Seats">Register Now for October 1st Batch</SectionTitle>
+        <SectionTitle eyebrow="Limited Seats">Register Now for October 1st Online Batch</SectionTitle>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {workshops.map((workshop, index) => (
